@@ -16,7 +16,7 @@ Version 1.1.1
 - Updated craft files
 - Fixed RCS on Rodan
 - Added antenna on Gigan pod
-- Added Falon Heavy side decouplers (use action groups to decouple and animate the arms)
+- Added Falcon Heavy side decouplers (use action groups to decouple and animate the arms)
 - Combined interstage with normal decoupler (use B9 part switch)
 - Removed satellite parts (Moved to Tundra Technologies)
 
