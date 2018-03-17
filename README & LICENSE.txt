@@ -10,6 +10,16 @@ Near Future Solar plugin licensed by Nertea.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.1.1
+- CLEAN INSTALL - THIS UPDATE IS SAVE BREAKING!
+- Updated for KSP 1.4.1
+- Updated craft files
+- Fixed RCS on Rodan
+- Added antenna on Gigan pod
+- Added Falon Heavy side decouplers (use action groups to decouple and animate the arms)
+- Combined interstage with normal decoupler (use B9 part switch)
+- Removed satellite parts (Moved to Tundra Technologies)
+
 Version 1.1
 - Added Falcon 1 (Mothra)
 - Added Rodan lights!
