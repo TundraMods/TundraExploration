@@ -1,8 +1,8 @@
 ship = Ghidorah Heavy + Cargo
 version = 1.4.1
-description = Block 5
+description = Actionkeys:¨1 - Toggle Engine Modes¨2 - Toggle sideboosters engine ON/OFF¨3 - Decouple + animate sideboosters
 type = VAB
-size = 3.72212601,47.5827179,9.27166462
+size = 3.72212696,47.5827179,9.27167034
 persistentId = 996543810
 rot = 0,0,0,0
 missionFlag = TundraExploration/Agencies/Tundra
@@ -11,7 +11,7 @@ PART
 {
 	part = fairingSize2_4293289834
 	partName = Part
-	persistentId = 399538676
+	persistentId = 84027481
 	pos = 0.00023306215,40.8116379,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0.00023306215,40.8116379,3.53461728E-05
@@ -376,7 +376,7 @@ PART
 {
 	part = TE.F9.S2.Tank_4294524340
 	partName = Part
-	persistentId = 3915551269
+	persistentId = 2962486020
 	pos = 0.00023306215,37.5450058,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.26663208,0
@@ -397,15 +397,15 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = HotGasThruster-L_4294628990
-	link = HotGasThruster-L_4294628780
-	link = HotGasThruster-L_4294628728
-	link = HotGasThruster-L_4294628676
-	link = SurfAntenna_4294104984
-	link = SurfAntenna_4294102390
-	link = TE.F9.S2.Engine_4294498910
+	link = HotGasThruster-L_4294615408
+	link = HotGasThruster-L_4294615360
+	link = HotGasThruster-L_4294615312
+	link = HotGasThruster-L_4294615264
+	link = SurfAntenna_4294615216
+	link = SurfAntenna_4294615188
+	link = TE.F9.S2.Engine_4294615160
 	attN = top,fairingSize2_4293289834_0|3.06663|0
-	attN = bottom,TE.F9.S2.Engine_4294498910_0|-3.06663|0
+	attN = bottom,TE.F9.S2.Engine_4294615160_0|-3.06663|0
 	EVENTS
 	{
 	}
@@ -456,9 +456,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4294628990
+	part = HotGasThruster-L_4294615408
 	partName = Part
-	persistentId = 1204056892
+	persistentId = 1754807068
 	pos = -1.20126021,34.7738342,3.54653821E-05
 	attPos = 0,0,0
 	attPos0 = -1.20149326,-2.77117157,1.1920929E-07
@@ -479,9 +479,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4294628780
-	sym = HotGasThruster-L_4294628728
-	sym = HotGasThruster-L_4294628676
+	sym = HotGasThruster-L_4294615360
+	sym = HotGasThruster-L_4294615312
+	sym = HotGasThruster-L_4294615264
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -526,9 +526,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4294628780
+	part = HotGasThruster-L_4294615360
 	partName = Part
-	persistentId = 718168817
+	persistentId = 2228862164
 	pos = 0.000233121755,34.7738342,1.20152855
 	attPos = 0,0,0
 	attPos0 = 5.96046448E-08,-2.77117157,1.20149314
@@ -549,9 +549,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4294628990
-	sym = HotGasThruster-L_4294628728
-	sym = HotGasThruster-L_4294628676
+	sym = HotGasThruster-L_4294615408
+	sym = HotGasThruster-L_4294615312
+	sym = HotGasThruster-L_4294615264
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -596,9 +596,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4294628728
+	part = HotGasThruster-L_4294615312
 	partName = Part
-	persistentId = 613883746
+	persistentId = 1466388916
 	pos = 1.20172632,34.7738342,3.51077542E-05
 	attPos = 0,0,0
 	attPos0 = 1.20149326,-2.77117157,-2.38418579E-07
@@ -619,9 +619,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4294628990
-	sym = HotGasThruster-L_4294628780
-	sym = HotGasThruster-L_4294628676
+	sym = HotGasThruster-L_4294615408
+	sym = HotGasThruster-L_4294615360
+	sym = HotGasThruster-L_4294615264
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -666,9 +666,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4294628676
+	part = HotGasThruster-L_4294615264
 	partName = Part
-	persistentId = 2608683276
+	persistentId = 202768717
 	pos = 0.000232883336,34.7738342,-1.20145774
 	attPos = 0,0,0
 	attPos0 = -1.78813934E-07,-2.77117157,-1.20149314
@@ -689,9 +689,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4294628990
-	sym = HotGasThruster-L_4294628780
-	sym = HotGasThruster-L_4294628728
+	sym = HotGasThruster-L_4294615408
+	sym = HotGasThruster-L_4294615360
+	sym = HotGasThruster-L_4294615312
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -736,9 +736,9 @@ PART
 }
 PART
 {
-	part = SurfAntenna_4294104984
+	part = SurfAntenna_4294615216
 	partName = Part
-	persistentId = 2277798188
+	persistentId = 1294813410
 	pos = -1.19922006,39.2137871,3.54206459E-05
 	attPos = 0,0,0
 	attPos0 = -1.19945312,1.66878128,7.44732347E-08
@@ -759,7 +759,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SurfAntenna_4294102390
+	sym = SurfAntenna_4294615188
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -794,9 +794,9 @@ PART
 }
 PART
 {
-	part = SurfAntenna_4294102390
+	part = SurfAntenna_4294615188
 	partName = Part
-	persistentId = 2947615478
+	persistentId = 1968389991
 	pos = 1.19968617,39.2137871,3.51668386E-05
 	attPos = 0,0,0
 	attPos0 = 1.19945312,1.66878128,-1.79332744E-07
@@ -817,7 +817,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SurfAntenna_4294104984
+	sym = SurfAntenna_4294615216
 	srfN = srfAttach,TE.F9.S2.Tank_4294524340
 	EVENTS
 	{
@@ -852,9 +852,9 @@ PART
 }
 PART
 {
-	part = TE.F9.S2.Engine_4294498910
+	part = TE.F9.S2.Engine_4294615160
 	partName = Part
-	persistentId = 2196875988
+	persistentId = 2404535929
 	pos = 0.00023306215,33.9803734,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.56463242,0
@@ -875,9 +875,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F9.Decoupler.interstage_4293047444
+	link = TE.F9.Decoupler.interstage_4294615044
 	attN = top,TE.F9.S2.Tank_4294524340_0|0.498|0
-	attN = bottom,TE.F9.Decoupler.interstage_4293047444_0|-3.371|0
+	attN = bottom,TE.F9.Decoupler.interstage_4294615044_0|-3.371|0
 	EVENTS
 	{
 	}
@@ -1043,9 +1043,9 @@ PART
 }
 PART
 {
-	part = TE.F9.Decoupler.interstage_4293047444
+	part = TE.F9.Decoupler.interstage_4294615044
 	partName = Part
-	persistentId = 561711026
+	persistentId = 2331512464
 	pos = 0.00023306215,30.3848724,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.59550095,0
@@ -1066,17 +1066,17 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F9.S1.Tank_4294481280
-	link = HotGasThruster-L_4293026606
-	link = HotGasThruster-L_4293024496
-	link = HotGasThruster-L_4293024444
-	link = HotGasThruster-L_4293024392
-	link = Grid Fin M_4292998184
-	link = Grid Fin M_4292996722
-	link = Grid Fin M_4292996642
-	link = Grid Fin M_4292996562
-	attN = top,TE.F9.S2.Engine_4294498910_0|0.2245|0
-	attN = bottom,TE.F9.S1.Tank_4294481280_0|-0.2245|0
+	link = TE.F9.S1.Tank_4294614960
+	link = HotGasThruster-L_4294609784
+	link = HotGasThruster-L_4294609736
+	link = HotGasThruster-L_4294609688
+	link = HotGasThruster-L_4294609640
+	link = Grid Fin M_4294609592
+	link = Grid Fin M_4294609516
+	link = Grid Fin M_4294609440
+	link = Grid Fin M_4294609364
+	attN = top,TE.F9.S2.Engine_4294615160_0|0.2245|0
+	attN = bottom,TE.F9.S1.Tank_4294614960_0|-0.2245|0
 	EVENTS
 	{
 	}
@@ -1291,9 +1291,9 @@ PART
 }
 PART
 {
-	part = TE.F9.S1.Tank_4294481280
+	part = TE.F9.S1.Tank_4294614960
 	partName = Part
-	persistentId = 2921501831
+	persistentId = 3827602588
 	pos = 0.00023306215,16.8840828,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,-13.5007896,0
@@ -1314,15 +1314,15 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F9.S1.Engine_4294423564
-	link = SpaceXLegs-L_4294409292
-	link = SpaceXLegs-L_4294408096
-	link = SpaceXLegs-L_4294407950
-	link = SpaceXLegs-L_4294407804
-	link = TE.FH.Decoupler_4293161408
-	link = TE.FH.Decoupler_4293114402
-	attN = top,TE.F9.Decoupler.interstage_4293047444_0|13.27629|0
-	attN = bottom,TE.F9.S1.Engine_4294423564_0|-13.27629|0
+	link = TE.F9.S1.Engine_4294614860
+	link = SpaceXLegs-L_4294614380
+	link = SpaceXLegs-L_4294614220
+	link = SpaceXLegs-L_4294614060
+	link = SpaceXLegs-L_4294613900
+	link = TE.FH.Decoupler_4294613740
+	link = TE.FH.Decoupler_4294611762
+	attN = top,TE.F9.Decoupler.interstage_4294615044_0|13.27629|0
+	attN = bottom,TE.F9.S1.Engine_4294614860_0|-13.27629|0
 	EVENTS
 	{
 	}
@@ -1390,9 +1390,9 @@ PART
 }
 PART
 {
-	part = TE.F9.S1.Engine_4294423564
+	part = TE.F9.S1.Engine_4294614860
 	partName = Part
-	persistentId = 1302404221
+	persistentId = 1656818442
 	pos = 0.00023306215,2.84012604,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,-14.0439587,0
@@ -1413,7 +1413,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.F9.S1.Tank_4294481280_0|0.76767|0
+	attN = top,TE.F9.S1.Tank_4294614960_0|0.76767|0
 	EVENTS
 	{
 	}
@@ -1665,10 +1665,10 @@ PART
 }
 PART
 {
-	part = SpaceXLegs-L_4294409292
+	part = SpaceXLegs-L_4294614380
 	partName = Part
-	persistentId = 1974993811
-	pos = -0.740754843,3.61173248,0.741023421
+	persistentId = 1832832242
+	pos = -0.7407552,3.61173248,0.741023779
 	attPos = 0,0,0
 	attPos0 = -0.740985811,-13.2723522,-0.740985751
 	rot = 0,0.382683516,0,-0.923879623
@@ -1688,10 +1688,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SpaceXLegs-L_4294408096
-	sym = SpaceXLegs-L_4294407950
-	sym = SpaceXLegs-L_4294407804
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = SpaceXLegs-L_4294614220
+	sym = SpaceXLegs-L_4294614060
+	sym = SpaceXLegs-L_4294613900
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -1832,10 +1832,10 @@ PART
 }
 PART
 {
-	part = SpaceXLegs-L_4294408096
+	part = SpaceXLegs-L_4294614220
 	partName = Part
-	persistentId = 2045504895
-	pos = 0.74122107,3.61173248,0.741023302
+	persistentId = 1153016737
+	pos = 0.741221428,3.61173248,0.74102366
 	attPos = 0,0,0
 	attPos0 = -0.740985751,-13.2723522,0.740985751
 	rot = 0,-0.382683456,0,-0.923879564
@@ -1855,10 +1855,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SpaceXLegs-L_4294409292
-	sym = SpaceXLegs-L_4294407950
-	sym = SpaceXLegs-L_4294407804
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = SpaceXLegs-L_4294614380
+	sym = SpaceXLegs-L_4294614060
+	sym = SpaceXLegs-L_4294613900
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -1999,10 +1999,10 @@ PART
 }
 PART
 {
-	part = SpaceXLegs-L_4294407950
+	part = SpaceXLegs-L_4294614060
 	partName = Part
-	persistentId = 3967781598
-	pos = 0.741220951,3.61173248,-0.74095279
+	persistentId = 2213533784
+	pos = 0.741221309,3.61173248,-0.740953147
 	attPos = 0,0,0
 	attPos0 = 0.74098587,-13.2723522,0.740985751
 	rot = 0,-0.923879564,0,-0.382683456
@@ -2022,10 +2022,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SpaceXLegs-L_4294409292
-	sym = SpaceXLegs-L_4294408096
-	sym = SpaceXLegs-L_4294407804
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = SpaceXLegs-L_4294614380
+	sym = SpaceXLegs-L_4294614220
+	sym = SpaceXLegs-L_4294613900
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -2166,10 +2166,10 @@ PART
 }
 PART
 {
-	part = SpaceXLegs-L_4294407804
+	part = SpaceXLegs-L_4294613900
 	partName = Part
-	persistentId = 2726493905
-	pos = -0.740755022,3.61173248,-0.740952432
+	persistentId = 1290831456
+	pos = -0.740755379,3.61173248,-0.74095279
 	attPos = 0,0,0
 	attPos0 = 0.740985632,-13.2723522,-0.740985811
 	rot = 0,-0.923879564,0,0.382683456
@@ -2189,10 +2189,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = SpaceXLegs-L_4294409292
-	sym = SpaceXLegs-L_4294408096
-	sym = SpaceXLegs-L_4294407950
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = SpaceXLegs-L_4294614380
+	sym = SpaceXLegs-L_4294614220
+	sym = SpaceXLegs-L_4294614060
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -2333,10 +2333,10 @@ PART
 }
 PART
 {
-	part = TE.FH.Decoupler_4293161408
+	part = TE.FH.Decoupler_4294613740
 	partName = Part
-	persistentId = 4212722123
-	pos = 0.000233300569,10.7527676,1.24355161
+	persistentId = 3384467005
+	pos = 0.000233300569,10.7527676,1.24355233
 	attPos = 0,0,0
 	attPos0 = -1.24351203,-6.13131523,1.19209304E-07
 	rot = -4.13370103E-08,0.707106888,-4.13370032E-08,0.707106769
@@ -2357,8 +2357,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = TE.F9.S1.Tank_4293177442
-	sym = TE.FH.Decoupler_4293114402
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = TE.FH.Decoupler_4294611762
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -2422,7 +2422,7 @@ PART
 	part = TE.F9.S1.Tank_4293177442
 	partName = Part
 	persistentId = 1658567282
-	pos = 0.000233538987,16.8727589,2.77480125
+	pos = 0.000233538987,16.8727589,2.77480268
 	attPos = -0.0173363686,-4.67036819,-2.45868563E-07
 	attPos0 = -1.51391172,10.7903595,0
 	rot = -5.845936E-08,2.08616257E-07,0,1.00000012
@@ -2457,7 +2457,7 @@ PART
 	link = Grid Fin M Titanium_4293175450
 	link = TE.FH.NoseCone_4293102858
 	sym = TE.F9.S1.Tank_4293114122
-	srfN = srfAttach,TE.FH.Decoupler_4293161408
+	srfN = srfAttach,TE.FH.Decoupler_4294613740
 	attN = top,TE.FH.NoseCone_4293102858_0|13.27629|0
 	attN = bottom,TE.F9.S1.Engine_4293177348_0|-13.27629|0
 	EVENTS
@@ -2530,7 +2530,7 @@ PART
 	part = TE.F9.S1.Engine_4293177348
 	partName = Part
 	persistentId = 318868162
-	pos = 0.000233538987,2.82880402,2.77480316
+	pos = 0.000233538987,2.82880402,2.77480459
 	attPos = 0,0,0
 	attPos0 = 0,-14.0439587,0
 	rot = -5.845936E-08,2.08616257E-07,0,1.00000012
@@ -2806,10 +2806,10 @@ PART
 	part = SpaceXLegs-L_4293176456
 	partName = Part
 	persistentId = 2439357942
-	pos = -0.740759194,3.60041046,2.03381062
+	pos = -0.740759909,3.60041046,2.03381109
 	attPos = 0,0,0
 	attPos0 = -0.740985811,-13.2723522,-0.740985751
-	rot = 2.23714256E-08,0.923879623,-5.40094049E-08,-0.382683724
+	rot = 2.23714274E-08,0.923879623,-5.40094014E-08,-0.382683724
 	attRot = 0,0,0,1
 	attRot0 = 0,0.923879564,0,-0.382683426
 	mir = 1,1,1
@@ -2977,7 +2977,7 @@ PART
 	part = SpaceXLegs-L_4293176306
 	partName = Part
 	persistentId = 126726575
-	pos = -0.740758121,3.60041046,3.51579833
+	pos = -0.740759075,3.60041046,3.51580119
 	attPos = 0,0,0
 	attPos0 = -0.740985751,-13.2723522,0.740985751
 	rot = 5.40093907E-08,0.382683307,-2.23714238E-08,-0.923879743
@@ -3148,10 +3148,10 @@ PART
 	part = SpaceXLegs-L_4293176156
 	partName = Part
 	persistentId = 2589569668
-	pos = 0.741226137,3.60041046,3.51579809
+	pos = 0.741226614,3.60041046,3.51580095
 	attPos = 0,0,0
 	attPos0 = 0.74098587,-13.2723522,0.740985751
-	rot = 5.40094121E-08,-0.382683694,2.23714256E-08,-0.923879564
+	rot = 5.40094156E-08,-0.382683694,2.23714274E-08,-0.923879564
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.382683456,0,-0.923879564
 	mir = 1,1,1
@@ -3319,7 +3319,7 @@ PART
 	part = SpaceXLegs-L_4293176006
 	partName = Part
 	persistentId = 7393948
-	pos = 0.741225183,3.60041046,2.03380966
+	pos = 0.74122566,3.60041046,2.03381014
 	attPos = 0,0,0
 	attPos0 = 0.740985632,-13.2723522,-0.740985811
 	rot = 2.23714238E-08,-0.923879743,5.40093907E-08,-0.382683307
@@ -3490,10 +3490,10 @@ PART
 	part = HotGasThruster-L_4293175856
 	partName = Part
 	persistentId = 3980667903
-	pos = 0.000232539038,30.3200264,1.5807215
+	pos = 0.000232539038,30.3200264,1.58072197
 	attPos = -6.76204138E-07,0.505636215,-5.96046448E-07
 	attPos0 = 1.02591002E-07,12.9416313,-1.19406903
-	rot = -8.8817842E-15,-1.00000012,3.52028167E-08,1.1920929E-07
+	rot = -1.95399252E-14,-1.00000012,3.52028167E-08,1.1920929E-07
 	attRot = 0,0,0,1
 	attRot0 = -1.48210426E-15,1,2.32565665E-08,6.37284217E-08
 	mir = 1,1,1
@@ -3564,7 +3564,7 @@ PART
 	part = HotGasThruster-L_4293175804
 	partName = Part
 	persistentId = 1223253562
-	pos = -1.19384658,30.3200264,2.77479982
+	pos = -1.19384778,30.3200264,2.77480078
 	attPos = -5.96046448E-07,0.505636215,4.12183056E-07
 	attPos0 = -1.19406891,12.9416313,-1.7376442E-07
 	rot = 5.77818895E-08,0.707106829,-2.48921221E-08,-0.707106948
@@ -3638,7 +3638,7 @@ PART
 	part = HotGasThruster-L_4293175752
 	partName = Part
 	persistentId = 190727721
-	pos = 1.19431484,30.3200264,2.77479959
+	pos = 1.19431627,30.3200264,2.77480102
 	attPos = 1.19407022,0.505636215,-1.19406891
 	attPos0 = 1.80443749E-09,12.9416313,1.19406903
 	rot = 5.77819179E-08,-0.707107127,2.48921435E-08,-0.70710665
@@ -3712,7 +3712,7 @@ PART
 	part = HotGasThruster-L_4293175700
 	partName = Part
 	persistentId = 3584488572
-	pos = 0.000234538937,30.3200264,3.96888161
+	pos = 0.000234538937,30.3200264,3.96888447
 	attPos = -1.19406903,0.505636215,1.19407058
 	attPos0 = 1.19406891,12.9416313,3.1417585E-08
 	rot = 8.17159673E-08,-1.1920929E-07,1.0658141E-14,-1.00000012
@@ -3786,7 +3786,7 @@ PART
 	part = Grid Fin M Titanium_4293175648
 	partName = Part
 	persistentId = 1936069302
-	pos = -0.879331827,30.2779007,1.89523888
+	pos = -0.879333019,30.2779007,1.89523935
 	attPos = -2.32458115E-06,0.431566238,-7.15255737E-07
 	attPos0 = -0.879554033,12.9735756,-0.879553974
 	rot = 0.382683039,0.000173051041,-0.923879743,-0.000417890376
@@ -3909,10 +3909,10 @@ PART
 	part = Grid Fin M Titanium_4293175582
 	partName = Part
 	persistentId = 3950609286
-	pos = -0.879328609,30.2779007,3.65436482
+	pos = -0.879329562,30.2779007,3.65436721
 	attPos = -6.55651093E-07,0.431566238,1.25169754E-06
 	attPos0 = -0.879553974,12.9735756,0.879553914
-	rot = 0.382683724,0.000173159147,0.923879385,0.00041793476
+	rot = 0.382683724,0.000173159147,0.923879385,0.000417934702
 	attRot = -0.99999994,0,0,0
 	attRot0 = 0.382683486,0.000173105116,0.923879445,0.000417912612
 	mir = 1,1,1
@@ -4032,10 +4032,10 @@ PART
 	part = Grid Fin M Titanium_4293175516
 	partName = Part
 	persistentId = 1084063673
-	pos = 0.879797578,30.2779007,1.89523661
+	pos = 0.879799008,30.2779007,1.89523709
 	attPos = 9.53674316E-07,0.431566238,-1.75910974
 	attPos0 = 0.879554093,12.9735756,0.879553914
-	rot = 0.923879385,0.000417889969,-0.382683724,-0.000173051143
+	rot = 0.923879385,0.00041788994,-0.382683724,-0.000173051114
 	attRot = -0.99999994,0,0,0
 	attRot0 = 0.923879504,0.000417912641,0.382683307,0.000173105029
 	mir = 1,1,1
@@ -4155,7 +4155,7 @@ PART
 	part = Grid Fin M Titanium_4293175450
 	partName = Part
 	persistentId = 680807125
-	pos = 0.879799008,30.2779007,3.6543653
+	pos = 0.879799962,30.2779007,3.65436816
 	attPos = 2.32458115E-06,0.431566238,1.75910962
 	attPos0 = 0.879553854,12.9735756,-0.879554033
 	rot = 0.923879743,0.00041793508,0.382683039,0.000173159046
@@ -4278,7 +4278,7 @@ PART
 	part = TE.FH.NoseCone_4293102858
 	partName = Part
 	persistentId = 690409526
-	pos = 0.000233538987,30.5260487,2.7748003
+	pos = 0.000233538987,30.5260487,2.77480173
 	attPos = 0,0,0
 	attPos0 = 9.53695078E-08,13.6532898,3.57628011E-07
 	rot = 5.02429663E-15,0,3.04774736E-16,1.00000012
@@ -4475,10 +4475,10 @@ PART
 }
 PART
 {
-	part = TE.FH.Decoupler_4293114402
+	part = TE.FH.Decoupler_4294611762
 	partName = Part
-	persistentId = 3502991787
-	pos = 0.000232704522,10.7527676,-1.2434808
+	persistentId = 3793626112
+	pos = 0.000232704522,10.7527676,-1.24348152
 	attPos = 0,0,0
 	attPos0 = 1.24351203,-6.13131523,-2.38418608E-07
 	rot = -4.13369996E-08,0.707106709,4.13370138E-08,-0.707106948
@@ -4499,8 +4499,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = TE.F9.S1.Tank_4293114122
-	sym = TE.FH.Decoupler_4293161408
-	srfN = srfAttach,TE.F9.S1.Tank_4294481280
+	sym = TE.FH.Decoupler_4294613740
+	srfN = srfAttach,TE.F9.S1.Tank_4294614960
 	EVENTS
 	{
 	}
@@ -4564,7 +4564,7 @@ PART
 	part = TE.F9.S1.Tank_4293114122
 	partName = Part
 	persistentId = 3923159258
-	pos = 0.000232108476,16.8727589,-2.77472925
+	pos = 0.000232108476,16.8727589,-2.77473068
 	attPos = -0.017334938,-4.67036819,-1.62048536E-07
 	attPos0 = -1.51391172,10.7903595,0
 	rot = 5.32907052E-15,1.00000012,5.84593565E-08,-2.38418579E-07
@@ -4599,7 +4599,7 @@ PART
 	link = Grid Fin M Titanium_4293112078
 	link = TE.FH.NoseCone_4293101806
 	sym = TE.F9.S1.Tank_4293177442
-	srfN = srfAttach,TE.FH.Decoupler_4293114402
+	srfN = srfAttach,TE.FH.Decoupler_4294611762
 	attN = top,TE.FH.NoseCone_4293101806_0|13.27629|0
 	attN = bottom,TE.F9.S1.Engine_4293114022_0|-13.27629|0
 	EVENTS
@@ -4672,7 +4672,7 @@ PART
 	part = TE.F9.S1.Engine_4293114022
 	partName = Part
 	persistentId = 1745163636
-	pos = 0.000232108476,2.82880402,-2.77473068
+	pos = 0.000232108476,2.82880402,-2.77473211
 	attPos = 0,0,0
 	attPos0 = 0,-14.0439587,0
 	rot = 5.32907052E-15,1.00000012,5.84593565E-08,-2.38418579E-07
@@ -4948,10 +4948,10 @@ PART
 	part = SpaceXLegs-L_4293113100
 	partName = Part
 	persistentId = 213677498
-	pos = 0.741224706,3.60041046,-2.03373814
+	pos = 0.741225421,3.60041046,-2.03373861
 	attPos = 0,0,0
 	attPos0 = -0.740985811,-13.2723522,-0.740985751
-	rot = -5.40093765E-08,-0.382683784,-2.23714096E-08,-0.923879623
+	rot = -5.40093623E-08,-0.382683784,-2.23714007E-08,-0.923879623
 	attRot = 0,0,0,1
 	attRot0 = 0,0.923879564,0,-0.382683426
 	mir = 1,1,1
@@ -5119,10 +5119,10 @@ PART
 	part = SpaceXLegs-L_4293112946
 	partName = Part
 	persistentId = 1446509937
-	pos = 0.741223752,3.60041046,-3.5157268
+	pos = 0.741224706,3.60041046,-3.51572967
 	attPos = 0,0,0
 	attPos0 = -0.740985751,-13.2723522,0.740985751
-	rot = -2.23714274E-08,-0.923879743,-5.40093943E-08,-0.382683367
+	rot = -2.2371422E-08,-0.923879743,-5.40093907E-08,-0.382683367
 	attRot = 0,0,0,1
 	attRot0 = 0,0.382683456,0,-0.923879564
 	mir = 1,1,1
@@ -5290,10 +5290,10 @@ PART
 	part = SpaceXLegs-L_4293112792
 	partName = Part
 	persistentId = 3623956334
-	pos = -0.740760744,3.60041046,-3.51572347
+	pos = -0.74076122,3.60041046,-3.5157268
 	attPos = 0,0,0
 	attPos0 = 0.74098587,-13.2723522,0.740985751
-	rot = 2.23714149E-08,-0.923879623,-5.40093907E-08,0.382683784
+	rot = 2.23714061E-08,-0.923879623,-5.40093801E-08,0.382683784
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.382683456,0,-0.923879564
 	mir = 1,1,1
@@ -5461,10 +5461,10 @@ PART
 	part = SpaceXLegs-L_4293112638
 	partName = Part
 	persistentId = 801509640
-	pos = -0.740759075,3.60041046,-2.03373766
+	pos = -0.740759552,3.60041046,-2.03373814
 	attPos = 0,0,0
 	attPos0 = 0.740985632,-13.2723522,-0.740985811
-	rot = 5.40093943E-08,-0.382683367,-2.23714274E-08,0.923879743
+	rot = 5.40093907E-08,-0.382683367,-2.2371422E-08,0.923879743
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.923879564,0,-0.382683456
 	mir = 1,1,1
@@ -5632,7 +5632,7 @@ PART
 	part = HotGasThruster-L_4293112484
 	partName = Part
 	persistentId = 2575679011
-	pos = 1.19431317,30.3200264,-2.77472782
+	pos = 1.19431436,30.3200264,-2.77472878
 	attPos = -1.19407082,0.505636215,1.19406998
 	attPos0 = 1.02591002E-07,12.9416313,-1.19406903
 	rot = -2.48921417E-08,-0.707106888,-5.77818788E-08,-0.707106888
@@ -5706,7 +5706,7 @@ PART
 	part = HotGasThruster-L_4293112432
 	partName = Part
 	persistentId = 1246875053
-	pos = 0.000230656588,30.3200264,-3.96881199
+	pos = 0.000230656588,30.3200264,-3.96881485
 	attPos = 1.19406867,0.505636215,1.19407356
 	attPos0 = -1.19406891,12.9416313,-1.7376442E-07
 	rot = 3.55271368E-15,-1.00000012,-8.17159673E-08,2.38418579E-07
@@ -5780,7 +5780,7 @@ PART
 	part = HotGasThruster-L_4293112380
 	partName = Part
 	persistentId = 2462262262
-	pos = -1.19385064,30.3200264,-2.77472854
+	pos = -1.19385207,30.3200264,-2.77472997
 	attPos = 1.19407165,0.505636215,-1.19406784
 	attPos0 = 1.80443749E-09,12.9416313,1.19406903
 	rot = 2.48921381E-08,-0.707106769,-5.77819179E-08,0.707107008
@@ -5854,7 +5854,7 @@ PART
 	part = HotGasThruster-L_4293112328
 	partName = Part
 	persistentId = 881224998
-	pos = 0.000233441155,30.3200264,-1.58064902
+	pos = 0.000233441155,30.3200264,-1.5806495
 	attPos = -1.1940695,0.505636215,-1.19406903
 	attPos0 = 1.19406891,12.9416313,3.1417585E-08
 	rot = 3.52028096E-08,2.38418579E-07,-8.8817842E-15,1.00000012
@@ -5928,10 +5928,10 @@ PART
 	part = Grid Fin M Titanium_4293112276
 	partName = Part
 	persistentId = 1975564550
-	pos = 0.879795194,30.2779007,-3.65429568
+	pos = 0.879796147,30.2779007,-3.65429807
 	attPos = -1.60932541E-06,0.431566238,1.75911176
 	attPos0 = -0.879554033,12.9735756,-0.879553974
-	rot = 0.923879385,0.000417934993,-0.382683724,-0.000173159264
+	rot = 0.923879385,0.000417934934,-0.382683724,-0.000173159206
 	attRot = -0.99999994,0,0,0
 	attRot0 = -0.382683337,-0.000173105043,0.923879504,0.000417912641
 	mir = 1,1,1
@@ -6051,7 +6051,7 @@ PART
 	part = Grid Fin M Titanium_4293112210
 	partName = Part
 	persistentId = 3873564032
-	pos = -0.879334807,30.2779007,-3.65429473
+	pos = -0.879335761,30.2779007,-3.65429759
 	attPos = 1.75911105,0.431566238,4.23192978E-06
 	attPos0 = -0.879553974,12.9735756,0.879553914
 	rot = 0.382683009,0.000173159046,-0.923879743,-0.00041793508
@@ -6174,7 +6174,7 @@ PART
 	part = Grid Fin M Titanium_4293112144
 	partName = Part
 	persistentId = 1075118901
-	pos = -0.879333615,30.2779007,-1.89516318
+	pos = -0.879335046,30.2779007,-1.89516366
 	attPos = 2.38418579E-06,0.431566238,-1.75910938
 	attPos0 = 0.879554093,12.9735756,0.879553914
 	rot = -0.382683724,-0.000173051274,-0.923879385,-0.00041789026
@@ -6297,7 +6297,7 @@ PART
 	part = Grid Fin M Titanium_4293112078
 	partName = Part
 	persistentId = 1495464193
-	pos = 0.879799128,30.2779007,-1.89516616
+	pos = 0.87980032,30.2779007,-1.89516664
 	attPos = -1.7591114,0.431566238,-5.96046448E-08
 	attPos0 = 0.879553854,12.9735756,-0.879554033
 	rot = -0.923879743,-0.000417890347,-0.382683009,-0.000173050939
@@ -6420,7 +6420,7 @@ PART
 	part = TE.FH.NoseCone_4293101806
 	partName = Part
 	persistentId = 2159284784
-	pos = 0.000232108476,30.5260487,-2.77472782
+	pos = 0.000232108476,30.5260487,-2.77472925
 	attPos = 0,0,0
 	attPos0 = -7.15235089E-08,13.6532898,3.57628011E-07
 	rot = 5.02429621E-15,1.00000012,0,0
@@ -6617,9 +6617,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4293026606
+	part = HotGasThruster-L_4294609784
 	partName = Part
-	persistentId = 1266758738
+	persistentId = 470358583
 	pos = -1.20466423,30.3827629,3.54260374E-05
 	attPos = 0,0,0
 	attPos0 = -1.20489728,-0.00210952759,7.98645488E-08
@@ -6640,10 +6640,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4293024496
-	sym = HotGasThruster-L_4293024444
-	sym = HotGasThruster-L_4293024392
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = HotGasThruster-L_4294609736
+	sym = HotGasThruster-L_4294609688
+	sym = HotGasThruster-L_4294609640
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -6687,9 +6687,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4293024496
+	part = HotGasThruster-L_4294609736
 	partName = Part
-	persistentId = 1747463107
+	persistentId = 4183913777
 	pos = 0.000233070197,30.3827629,1.20493257
 	attPos = 0,0,0
 	attPos0 = 8.04720912E-09,-0.00210952759,1.20489717
@@ -6710,10 +6710,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4293026606
-	sym = HotGasThruster-L_4293024444
-	sym = HotGasThruster-L_4293024392
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = HotGasThruster-L_4294609784
+	sym = HotGasThruster-L_4294609688
+	sym = HotGasThruster-L_4294609640
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -6757,9 +6757,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4293024444
+	part = HotGasThruster-L_4294609688
 	partName = Part
-	persistentId = 1344637266
+	persistentId = 3521656409
 	pos = 1.20513034,30.3827629,3.51609742E-05
 	attPos = 0,0,0
 	attPos0 = 1.20489728,-0.00210952759,-1.85198587E-07
@@ -6780,10 +6780,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4293026606
-	sym = HotGasThruster-L_4293024496
-	sym = HotGasThruster-L_4293024392
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = HotGasThruster-L_4294609784
+	sym = HotGasThruster-L_4294609736
+	sym = HotGasThruster-L_4294609640
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -6827,9 +6827,9 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4293024392
+	part = HotGasThruster-L_4294609640
 	partName = Part
-	persistentId = 2589965349
+	persistentId = 853363084
 	pos = 0.000232910461,30.3827629,-1.20486176
 	attPos = 0,0,0
 	attPos0 = -1.51689164E-07,-0.00210952759,-1.20489717
@@ -6850,10 +6850,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = HotGasThruster-L_4293026606
-	sym = HotGasThruster-L_4293024496
-	sym = HotGasThruster-L_4293024444
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = HotGasThruster-L_4294609784
+	sym = HotGasThruster-L_4294609736
+	sym = HotGasThruster-L_4294609688
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -6897,9 +6897,9 @@ PART
 }
 PART
 {
-	part = Grid Fin M_4292998184
+	part = Grid Fin M_4294609592
 	partName = Part
-	persistentId = 3146995003
+	persistentId = 2254095909
 	pos = -0.88129735,30.2854939,0.881565571
 	attPos = 0,-0.0895385742,0
 	attPos0 = -0.881530404,-0.0098400116,0.881530225
@@ -6920,10 +6920,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Grid Fin M_4292996722
-	sym = Grid Fin M_4292996642
-	sym = Grid Fin M_4292996562
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = Grid Fin M_4294609516
+	sym = Grid Fin M_4294609440
+	sym = Grid Fin M_4294609364
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -7016,9 +7016,9 @@ PART
 }
 PART
 {
-	part = Grid Fin M_4292996722
+	part = Grid Fin M_4294609516
 	partName = Part
-	persistentId = 3437158682
+	persistentId = 2818800033
 	pos = 0.88176316,30.2854939,0.88156575
 	attPos = 0,-0.0895385742,0
 	attPos0 = 0.881530106,-0.0098400116,0.881530404
@@ -7039,10 +7039,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Grid Fin M_4292998184
-	sym = Grid Fin M_4292996642
-	sym = Grid Fin M_4292996562
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = Grid Fin M_4294609592
+	sym = Grid Fin M_4294609440
+	sym = Grid Fin M_4294609364
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -7135,9 +7135,9 @@ PART
 }
 PART
 {
-	part = Grid Fin M_4292996642
+	part = Grid Fin M_4294609440
 	partName = Part
-	persistentId = 3651902317
+	persistentId = 2817691259
 	pos = 0.881763399,30.2854939,-0.881494939
 	attPos = 0,-0.0895385742,0
 	attPos0 = 0.881530344,-0.0098400116,-0.881530285
@@ -7158,10 +7158,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Grid Fin M_4292998184
-	sym = Grid Fin M_4292996722
-	sym = Grid Fin M_4292996562
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = Grid Fin M_4294609592
+	sym = Grid Fin M_4294609516
+	sym = Grid Fin M_4294609364
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -7254,9 +7254,9 @@ PART
 }
 PART
 {
-	part = Grid Fin M_4292996562
+	part = Grid Fin M_4294609364
 	partName = Part
-	persistentId = 1652997733
+	persistentId = 2309197614
 	pos = -0.881297171,30.2854939,-0.881494939
 	attPos = 0,-0.0895385742,0
 	attPos0 = -0.881530225,-0.0098400116,-0.881530285
@@ -7277,10 +7277,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = Grid Fin M_4292998184
-	sym = Grid Fin M_4292996722
-	sym = Grid Fin M_4292996642
-	srfN = srfAttach,TE.F9.Decoupler.interstage_4293047444
+	sym = Grid Fin M_4294609592
+	sym = Grid Fin M_4294609516
+	sym = Grid Fin M_4294609440
+	srfN = srfAttach,TE.F9.Decoupler.interstage_4294615044
 	EVENTS
 	{
 	}
@@ -7375,7 +7375,7 @@ PART
 {
 	part = probeStackLarge_4292643472
 	partName = Part
-	persistentId = 2301504605
+	persistentId = 3339800197
 	pos = 0.00023306215,41.2216377,3.53461728E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.409999847,0
