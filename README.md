@@ -13,3 +13,9 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 - Ghidorah Heavy Parts
 
 No IVA on Gojira, but coming in future update
+
+#Known issues
+
+- Landing Gojira might be hard. A guide is being made to teach you how to use Gojira.
+- Caution using Gojira for stations, it can wobble and break it. Use "Autostruts" on Gojira for a temporary fix!
+- Cargo Gojira's textures are weird (I haven't redone the model yet)
