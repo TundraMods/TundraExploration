@@ -14,7 +14,7 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 
 No IVA on Gojira, but coming in future update
 
-#Known issues
+# Known issues
 
 - Landing Gojira might be hard. A guide is being made to teach you how to use Gojira.
 - Caution using Gojira for stations, it can wobble and break it. Use "Autostruts" on Gojira for a temporary fix!
