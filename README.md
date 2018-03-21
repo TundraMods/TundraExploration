@@ -4,11 +4,10 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 # Current parts
 
 - Rodan command pod, heatshield, and trunk. It also has a nice IVA included. (Dragon V2)
-- Ghidorah 9 fuel tanks, second stage engine, first stage engine, legs, grid fins, and decoupler (Falcon 9)
+- Ghidorah 9 fuel tanks, second stage engine, first stage engine, legs, grid fins, and decoupler (Falcon 9) (Needs B9 Part Switch)
 - Gigan pod, heatshield, shroud, trunk, solar panel, solar shroud. (Cargo Dragon)
 - Gojira command pod with fuel tank, engine shroud and engines (SpaceX's BFS)
 - Gojira BFT-9000 Fuel Tank, engines and probe core (SpaceX's BFR)
-- Revamp Ghidorah 9 textures (includes a brand new version as well as a landed/reused one) (Needs B9 Part Switch)
 - Mothra Launcher (Falcon 1)
 - Ghidorah Heavy Parts
 
