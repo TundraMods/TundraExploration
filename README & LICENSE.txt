@@ -4,21 +4,26 @@ Continued by damonvv.
 
 
 LICENSE
-Any Code or configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models are distributed under All Rights Reserved License.
-Near Future Solar plugin licensed by Nertea.
+Any  of the configs are distributed under CC-NC-SA-4.0 License.
+All Textures/models and plugins are distributed under All Rights Reserved License.
+Near Future Solar plugin licensed by Nertea. https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
+ModuleDockingNodeStageable plugin licensed by Sarbian. https://github.com/sarbian/ModuleDockingNodeStageable
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
 Version 1.1.1
-- CLEAN INSTALL - THIS UPDATE IS SAVE BREAKING!
+- ***CLEAN INSTALL - THIS UPDATE IS CRAFT BREAKING!***
 - Updated for KSP 1.4.1
 - Updated craft files
 - Fixed RCS on Rodan
-- Added antenna on Gigan pod
+- Docking hatch moved from 95 degrees to 110
+- Added antenna on Gigan pod and Gojiras first stage probe
 - Added Falcon Heavy side decouplers (use action groups to decouple and animate the arms)
 - Combined interstage with normal decoupler (use B9 part switch)
 - Removed satellite parts (Moved to Tundra Technologies)
+- Fixed BFR docking port staging
+- Fixed RealPlume and SmokeScreen patches
+- New Ghidorah 9 Block 5 textures
 
 Version 1.1
 - Added Falcon 1 (Mothra)
