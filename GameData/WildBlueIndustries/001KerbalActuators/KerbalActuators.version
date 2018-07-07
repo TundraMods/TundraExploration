@@ -1,0 +1,29 @@
+{
+    "NAME":"Kerbal Actuators",
+    "URL":"https://raw.githubusercontent.com/Angel-125/MOLE/master/GameData/WildBlueIndustries/KerbalActuators/KerbalActuators.version",
+    "DOWNLOAD":"https://github.com/Angel-125/KerbalActuators/releases",
+    "GITHUB":
+    {
+        "USERNAME":"Angel-125",
+        "REPOSITORY":"KerbalActuators",
+        "ALLOW_PRE_RELEASE":false,
+    },
+    "VERSION":
+    {
+	"MAJOR":1,
+	"MINOR":4,
+	"PATCH":6,
+	"BUILD":0
+    },
+    "KSP_VERSION":
+    {
+        "MAJOR":1,
+        "MINOR":4,
+        "PATCH":4
+    },
+     "KSP_VERSION_MIN":{
+         "MAJOR":1,
+         "MINOR":4,
+         "PATCH":1
+     },
+}
