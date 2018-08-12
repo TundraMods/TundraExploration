@@ -1,0 +1,70 @@
+@PART[WBI_SAFER]
+{
+	MODULE
+	{
+		name = ModuleResourceConverter
+		ConverterName = Nuclear Reactor
+		StartActionName = Start Nuclear Reactor
+		StopActionName = Stop Nuclear Reactor
+		ToggleActionName = Toggle Nuclear Reactor
+		FillAmount = 1.0
+		AutoShutdown = false
+		GeneratesHeat = true
+		DefaultShutoffTemp = .8
+		UseSpecialistBonus = false
+ 		 
+		TemperatureModifier
+		{
+			key = 0 100000
+			key = 750 50000
+			key = 1000 10000
+			key = 1250 500	
+			key = 2000 50	
+			key = 4000 0
+		}
+				
+		ThermalEfficiency 
+		{
+			key = 0 0 0 0
+			key = 500 0.1 0 0
+			key = 1000 1.0 0 0
+			key = 1250 0.1 0 0
+			key = 3000 0 0 0 
+		}
+
+		INPUT_RESOURCE
+		{
+			ResourceName = EnrichedUranium
+			Ratio = 0.000001
+			FlowMode = NO_FLOW
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = DepletedUranium
+			Ratio = 0.0000009
+			FlowMode = NO_FLOW
+		}
+
+		OUTPUT_RESOURCE
+		{
+			ResourceName = ElectricCharge
+			Ratio = 125
+			DumpExcess = false
+		}
+	}
+
+	RESOURCE
+	{
+		name = EnrichedUranium
+		amount = 100
+		maxAmount = 100
+	}
+
+	RESOURCE
+	{
+		name = DepletedUranium
+		amount = 0
+		maxAmount = 100
+	}
+}

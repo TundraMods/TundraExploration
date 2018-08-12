@@ -1,0 +1,18 @@
+STORAGE_TEMPLATE
+{
+	author = Angel-125
+	name = Karborundum
+	shortName = Karborundum
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/ExoticMinerals
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/ExoticMineralsGlow
+	description = This kit stores Karborundum
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = Karborundum
+		amount = 5600
+		maxAmount = 5600
+	}
+
+}

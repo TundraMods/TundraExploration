@@ -1,0 +1,33 @@
+//Density based on an average of 2400kg/m3
+//https://en.wikipedia.org/wiki/Properties_of_concrete
+RESOURCE_DEFINITION
+{
+	name = Konkrete
+	displayName = Konkrete
+	density = 0.0024
+	unitCost = 1.5
+	flowMode = ALL_VESSEL 
+	transfer = PUMP
+	isTweakable = true
+	isVisible = true
+	volume = 1
+}
+
+STORAGE_TEMPLATE
+{
+	name = Konkrete
+	author = Angel-125
+	shortName = Konkrete
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Konkrete
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/KonkreteGlow
+	description = This kit stores konkrete, the prime building material used in permanent dwellings.
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = Konkrete
+		amount = 5600
+		maxAmount = 5600
+	}
+
+}

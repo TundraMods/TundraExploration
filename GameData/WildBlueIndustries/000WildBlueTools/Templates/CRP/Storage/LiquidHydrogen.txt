@@ -1,0 +1,39 @@
+STORAGE_TEMPLATE
+{
+	name = LiquidHydrogen
+	author = Angel-125
+	shortName = Liquid Hydrogen
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogen
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/LiquidHydrogenGlow
+	description = This kit stores liquid hydrogen.
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = LqdHydrogen
+		amount = 5600
+		maxAmount = 5600
+	}
+
+	MODULE:NEEDS[SimpleBoiloff]
+	{
+		name =  ModuleCryoTank
+		moduleIsEnabled = false
+		FuelName = LqdHydrogen
+		// in % per hour
+		BoiloffRate = 0.05
+		// in Ec per 1000 units per second
+		CoolingCost = 0.08
+
+		showUpgradesInModuleInfo = true
+		UPGRADES
+		{
+			UPGRADE
+			{
+				name__ = WBICryoTankUpgrade
+				description__ = Zero Boil Off Enabled
+				moduleIsEnabled = true
+			}
+		}
+	}
+}

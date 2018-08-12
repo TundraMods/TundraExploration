@@ -1,0 +1,18 @@
+STORAGE_TEMPLATE
+{
+	name = Uraninite
+	author = Angel-125
+	shortName = Uraninite
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/Nuclear
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/Nuclear
+	description = This kit stores uraninite.
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = Uraninite
+		amount = 5600
+		maxAmount = 5600
+	}
+
+}

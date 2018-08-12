@@ -1,0 +1,18 @@
+STORAGE_TEMPLATE
+{
+	name = Xenon Gas
+	author = Angel-125
+	shortName = XenonGas
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/XenonGas
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/XenonGasGlow
+	description = This kit stores XenonGas for your ion propulsion needs.
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = XenonGas
+		amount = 56000
+		maxAmount = 56000
+	}
+
+}

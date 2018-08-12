@@ -24,6 +24,9 @@ Copy the contents of the mod's GameData directory into your GameData folder.
 
 ---REVISION HISORY---
 
+1.5.1
+- Bug fixes
+
 1.5.0
 - WBIPropSpinner now supports RCS! You don't need a ModuleEnginesFX; just set enabledByRCS to true in WBIPropSpinner, and minThrottleBlur to determine when to start blurring the rotor.
 

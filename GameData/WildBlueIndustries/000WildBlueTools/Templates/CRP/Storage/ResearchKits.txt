@@ -1,0 +1,29 @@
+RESOURCE_DEFINITION
+{
+	name = ResearchKits
+	density = 0.000216
+	unitCost = 0.15
+	flowMode = STAGE_PRIORITY_FLOW
+	transfer = PUMP
+	isTweakable = true
+	volume = 1
+}
+
+STORAGE_TEMPLATE
+{
+	name = ResearchKits
+	author = Angel-125
+	shortName = Research Kits
+	logoPanel = WildBlueIndustries/000WildBlueTools/Decals/ResearchKits
+	glowPanel = WildBlueIndustries/000WildBlueTools/Decals/ResearchKitsGlow
+	description = This kit stores ResearchKits for your research needs.
+	templateTags = stowage
+
+	RESOURCE
+	{
+		name = ResearchKits
+		amount = 5600
+		maxAmount = 5600
+	}
+
+}
