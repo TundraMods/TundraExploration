@@ -8,9 +8,48 @@ Any  of the configs are distributed under CC-NC-SA-4.0 License.
 All Textures/models and plugins are distributed under All Rights Reserved License.
 Near Future Solar plugin licensed by Nertea. https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
 ModuleDockingNodeStageable plugin licensed by Sarbian. https://github.com/sarbian/ModuleDockingNodeStageable
+WildBlueIndustry plugins licensed by Angle-125. https://github.com/Angel-125
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.1.4
+- Updated to KSP 1.4.5
+- Added 3 engine modes for Ghidorah 9
+- Added new RCS plumes for Gigan
+- Added new plumes for Ghidorah 9 (Thank you @JadeOfMaar)
+- Fixed Antenna on BFS
+- Added black nosecones for Ghidorah Heavy B5
+
+Version 1.1.3
+- Added new Block 5 textures
+- Added new `Block 4` textures
+- Added new fairing adapter
+- Added new fairings
+- Revamped the Ghidorah Heavy nosecone
+- Fixed a small bug with Gojira
+- Updated the .craft files
+- Updated B9PS and NFS
++ Added Tundra Technologies back in!
+
+Version 1.1.2
+- KSP 1.4.x
+- Added indentations within some part configs
+- separated resource defaults without B9PS into patch with same name
+- Deleted entries that made KSP think RealPlume is always installed with this mod.
+- Merged RealPlume configs into one file
+- Added title field to agency and updated scaled logo. Tundra Exploration now appears in Manufacturers filter in VAB.
+- Added B9 Part Switch integration to all tanks:
+    - Provides fuel options where appropriate.
+    - Supports CryoTanks with BoilOff.
+    - Provides life support options for USI, TAC, Snacks in Gigan and Rodan command pods.
+    - Reduced Ore units per volume due to its volume rating.
+- Added Wild Blue Industries integration:
+    - WBI resource switching module instead of B9 (B9 option is still there for changing Ghidorah texture).
+    - (Only activates when Pathfinder is installed).
+- Updated Near Future Solar
+- Added B9 Part Switch
+Many thanks to @JadeOfMaar for making these patches!
+
 Version 1.1.1
 - ***CLEAN INSTALL - THIS UPDATE IS CRAFT BREAKING!***
 - Updated for KSP 1.4.1
