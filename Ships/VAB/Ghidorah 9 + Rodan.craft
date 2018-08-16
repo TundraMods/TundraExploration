@@ -1,8 +1,9 @@
 ship = Ghidorah 9 + Rodan
-version = 1.4.3
+version = 1.4.5
 description = Block 5
 type = VAB
-size = 3.708184,44.6403427,3.70818377
+size = 3.71247005,44.6403427,3.71246886
+steamPublishedFileId = 0
 persistentId = 996543810
 rot = 0,0,0,0
 missionFlag = TundraExploration/Agencies/Tundra
@@ -29,8 +30,8 @@ PART
 	sqor = 0
 	sepI = -1
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = 413.599976
+	modMass = 0.412499994
 	modSize = 0,0,0
 	link = TE.Rodan.Heatshield_4293486556
 	attN = bottom,TE.Rodan.Heatshield_4293486556_0|-0.779|0
@@ -291,6 +292,113 @@ PART
 	}
 	MODULE
 	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = 
+				nodeType = Stack
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Service
+		currentSubtype = Ore
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+		isEnabled = True
+		Initialized = False
+		EntryAngle = 3.1415926535897931
+		EntryHorizon = False
+		HighAngle = 3.1415926535897931
+		HighHorizon = False
+		LowAngle = 3.1415926535897931
+		LowHorizon = False
+		GroundAngle = 3.1415926535897931
+		GroundHorizon = False
+		ProgradeEntry = False
+		RetrogradeEntry = True
+		TargetBody = 
+		TargetPosition_x = 0
+		TargetPosition_y = 0
+		TargetPosition_z = 0
+		ManualTargetTxt = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -330,6 +438,17 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	RESOURCE
+	{
+		name = Ore
+		amount = 55
+		maxAmount = 55
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
@@ -339,7 +458,7 @@ PART
 	pos = -0.00188276172,42.8888016,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-1.00999832,0
-	rot = 0,0,0,1.00000012
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -410,6 +529,50 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = 
+				nodeType = Stack
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = Ablator
@@ -430,7 +593,7 @@ PART
 	pos = -0.00188276172,42.5062981,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-0.38250351,0
-	rot = 0,-0.707106888,0,-0.707106888
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,-0.707106709,0,-0.707106709
 	attRot0 = 0,-0.707106829,0,-0.707106829
 	mir = 1,1,1
@@ -481,6 +644,54 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleCurvedSolarPanel
+		isEnabled = True
+		SavedState = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RetractPanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			TogglePanelsAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -501,7 +712,7 @@ PART
 	pos = -0.00188276172,40.0677986,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-2.43849945,0
-	rot = 0,0,0,1.00000024
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,-0.707106829
 	mir = 1,1,1
@@ -704,6 +915,69 @@ PART
 	}
 	MODULE
 	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+		isEnabled = True
+		Initialized = False
+		EntryAngle = 3.1415926535897931
+		EntryHorizon = False
+		HighAngle = 3.1415926535897931
+		HighHorizon = False
+		LowAngle = 3.1415926535897931
+		LowHorizon = False
+		GroundAngle = 3.1415926535897931
+		GroundHorizon = False
+		ProgradeEntry = False
+		RetrogradeEntry = True
+		TargetBody = 
+		TargetPosition_x = 0
+		TargetPosition_y = 0
+		TargetPosition_z = 0
+		ManualTargetTxt = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -741,7 +1015,7 @@ PART
 	pos = -0.00188276172,36.7766685,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-3.29113007,0
-	rot = 0,0,0,1.00000024
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -755,8 +1029,8 @@ PART
 	sqor = -1
 	sepI = 2
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = 3403.19995
+	modMass = 0.600000024
 	modSize = 0,0,0
 	link = TE.F9.S2.Engine_4294498910
 	link = SurfAntenna_4294104984
@@ -779,6 +1053,55 @@ PART
 		name = FlagDecal
 		isEnabled = True
 		flagDisplayed = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Fuel
+		currentSubtype = LFO
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -821,12 +1144,12 @@ PART
 	pos = -0.00188276172,33.2120399,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-3.5646286,0
-	rot = 0,0,0,1.00000024
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
-	autostrutMode = Off
+	autostrutMode = Heaviest
 	rigidAttachment = False
 	istg = 3
 	resPri = 0
@@ -992,6 +1315,50 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = 
+				nodeType = Stack
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1012,7 +1379,7 @@ PART
 	pos = -0.00188276172,29.6165409,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-3.59550095,0
-	rot = 0,0,0,1.00000024
+	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1221,6 +1588,69 @@ PART
 	}
 	MODULE
 	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+		isEnabled = True
+		Initialized = False
+		EntryAngle = 3.1415926535897931
+		EntryHorizon = False
+		HighAngle = 3.1415926535897931
+		HighHorizon = False
+		LowAngle = 3.1415926535897931
+		LowHorizon = False
+		GroundAngle = 3.1415926535897931
+		GroundHorizon = False
+		ProgradeEntry = False
+		RetrogradeEntry = True
+		TargetBody = 
+		TargetPosition_x = 0
+		TargetPosition_y = 0
+		TargetPosition_z = 0
+		ManualTargetTxt = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -1255,10 +1685,10 @@ PART
 	part = Grid Fin M Titanium_4294374528
 	partName = Part
 	persistentId = 448407449
-	pos = -0.833874345,29.837925,-0.822764277
+	pos = -0.833875418,29.837925,-0.82276535
 	attPos = 0.0512714982,0,0.0512715578
 	attPos0 = -0.883261025,0.221384048,-0.883260965
-	rot = -0.382683545,-1.13499325E-08,0.923879862,2.74011676E-08
+	rot = -0.382683456,-1.13499272E-08,0.923879504,2.74011605E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.382683426,1.13499361E-08,-0.923879564,-2.74011729E-08
 	mir = 1,1,1
@@ -1368,16 +1798,55 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294372578
 	partName = Part
 	persistentId = 3133145314
-	pos = -0.833873987,29.837925,0.841218889
+	pos = -0.83387506,29.837925,0.841219962
 	attPos = 0.0512717366,0,-0.0512711406
 	attPos0 = -0.883260965,0.221384048,0.883260846
-	rot = 0.382683545,1.13499379E-08,0.923879743,2.74011658E-08
+	rot = 0.382683456,1.13499352E-08,0.923879504,2.74011587E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.382683456,-1.13499379E-08,-0.923879564,-2.74011711E-08
 	mir = 1,1,1
@@ -1487,16 +1956,55 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294372512
 	partName = Part
 	persistentId = 3627201513
-	pos = 0.830108881,29.837925,0.841218472
+	pos = 0.830109954,29.837925,0.841219544
 	attPos = -0.0512714386,0,-0.0512715578
 	attPos0 = 0.883261085,0.221384048,0.883260846
-	rot = 0.923879862,2.74011676E-08,0.382683545,1.13499325E-08
+	rot = 0.923879504,2.74011605E-08,0.382683456,1.13499272E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.923879564,-2.74011729E-08,-0.382683396,-1.13499352E-08
 	mir = 1,1,1
@@ -1606,16 +2114,55 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294372446
 	partName = Part
 	persistentId = 1228353309
-	pos = 0.83010757,29.837925,-0.822763443
+	pos = 0.830108643,29.837925,-0.822764516
 	attPos = -0.0512725115,0,0.0512724519
 	attPos0 = 0.883260846,0.221384048,-0.883261025
-	rot = -0.923879743,-2.74011676E-08,0.382683545,1.13499361E-08
+	rot = -0.923879504,-2.74011605E-08,0.382683456,1.13499334E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.923879564,-2.74011711E-08,0.382683456,1.13499379E-08
 	mir = 1,1,1
@@ -1725,16 +2272,55 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SurfAntenna_4294104984
 	partName = Part
 	persistentId = 217331739
-	pos = -1.20134401,38.4454498,0.00922727585
+	pos = -1.20134509,38.4454498,0.00922727585
 	attPos = 0,0,0
 	attPos0 = -1.19945312,1.66878128,7.44732347E-08
-	rot = 0.707107008,0.707107008,0,0
+	rot = 0.707106829,0.707106829,0,0
 	attRot = 0.707106709,0,-0.707106709,0
 	attRot0 = 0.707106829,0.707106829,0,0
 	mir = 1,1,1
@@ -1783,16 +2369,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = SurfAntenna_4294102390
 	partName = Part
 	persistentId = 3375520193
-	pos = 1.19757843,38.4454498,0.00922691822
+	pos = 1.1975795,38.4454498,0.00922691822
 	attPos = 0,0,0
 	attPos0 = 1.19945312,1.66878128,-1.79332744E-07
-	rot = 0,0,-0.707107008,-0.707107008
+	rot = 0,0,-0.707106829,-0.707106829
 	attRot = 0.707106709,0,-0.707106709,0
 	attRot0 = -3.09086197E-08,-3.09086197E-08,-0.707106829,-0.707106829
 	mir = 1,1,1
@@ -1841,6 +2444,23 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -1850,7 +2470,7 @@ PART
 	pos = -0.00188276172,16.1157494,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-13.5007915,0
-	rot = 0,-1.00000024,0,0
+	rot = 0,-1,0,0
 	attRot = 0,-0.99999994,0,0
 	attRot0 = 0,-1,0,0
 	mir = 1,1,1
@@ -1864,8 +2484,8 @@ PART
 	sqor = -1
 	sepI = 4
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = 15881.5996
+	modMass = 2.80000019
 	modSize = 0,0,0
 	link = TE.F9.S1.Engine_4294423564
 	link = KRE-FalconLeg-M_4294438132
@@ -1916,6 +2536,55 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Fuel
+		currentSubtype = LFO
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -1947,7 +2616,7 @@ PART
 	pos = -0.00188276172,2.0717926,0.00922715664
 	attPos = 0,0,0
 	attPos0 = 0,-14.0439587,0
-	rot = 0,-1.00000024,0,0
+	rot = 0,-1,0,0
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1980,9 +2649,10 @@ PART
 	}
 	MODULE
 	{
-		name = MultiModeEngine
+		name = WBIMultiModeEngine
 		isEnabled = True
-		runningPrimary = True
+		currentEngineID = AllEngines
+		currentEngineIndex = 0
 		autoSwitch = True
 		stagingEnabled = True
 		EVENTS
@@ -1990,9 +2660,9 @@ PART
 		}
 		ACTIONS
 		{
-			ModeAction
+			ActivateAction
 			{
-				actionGroup = Custom01
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
@@ -2000,14 +2670,14 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			ActivateAction
+			OnAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			OnAction
+			OnToggleModeAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -2018,14 +2688,14 @@ PART
 	MODULE
 	{
 		name = ModuleEnginesFX
-		isEnabled = True
+		isEnabled = False
 		staged = False
 		flameout = False
 		EngineIgnited = False
 		engineShutdown = False
 		currentThrottle = 0
 		thrustPercentage = 100
-		manuallyOverridden = False
+		manuallyOverridden = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2075,16 +2745,59 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = False
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -2206,6 +2919,108 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = Collider
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = 1.45094728,-0.956604004,1.4509474
+					rotation = 0,0.923879504,0,-0.382683426
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Collider
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = 1.4509474,-0.956604004,-1.45094728
+					rotation = 0,0.382683486,0,-0.923879504
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Collider
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = -1.4509474,-0.956604004,-1.45094728
+					rotation = 0,-0.382683426,0,-0.923879504
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Collider
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = -1.45094728,-0.956604004,1.4509474
+					rotation = 0,-0.923879504,0,-0.382683486
+					orientation = 0,0,0
+				}
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2223,10 +3038,10 @@ PART
 	part = launchClamp1_4294359796
 	partName = Part
 	persistentId = 3598843276
-	pos = 1.44906747,1.1151886,1.4601773
+	pos = 1.44906878,1.1151886,1.46017861
 	attPos = 0,0,0
 	attPos0 = -1.45093989,-0.956604004,-1.45093966
-	rot = 0,0.923879743,0,-0.382683545
+	rot = 0,0.923879504,0,-0.382683456
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.382683486,0,-0.923879564
 	mir = 1,1,1
@@ -2260,8 +3075,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.703607678
-		height = 1.77534103
+		scaleFactor = 0.703607082
+		height = 1.7753396
 		stagingEnabled = True
 		towerRot = 0,-0.923879504,0,-0.382683456
 		EVENTS
@@ -2329,16 +3144,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = launchClamp1_4294356016
 	partName = Part
 	persistentId = 1072761898
-	pos = 1.44906735,1.1151886,-1.44172311
+	pos = 1.44906867,1.1151886,-1.44172442
 	attPos = 0,0,0
 	attPos0 = -1.45093966,-0.956604004,1.45093977
-	rot = 0,0.382683545,0,-0.923879743
+	rot = 0,0.382683456,0,-0.923879504
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.923879564,0,-0.382683396
 	mir = 1,1,1
@@ -2372,8 +3204,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.703607678
-		height = 1.77534103
+		scaleFactor = 0.703607082
+		height = 1.7753396
 		stagingEnabled = True
 		towerRot = 0,-0.382683456,0,-0.923879504
 		EVENTS
@@ -2441,16 +3273,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = launchClamp1_4294355896
 	partName = Part
 	persistentId = 1829500857
-	pos = -1.45283318,1.1151886,-1.44172287
+	pos = -1.45283449,1.1151886,-1.44172418
 	attPos = 0,0,0
 	attPos0 = 1.45094001,-0.956604004,1.45093954
-	rot = 0,-0.382683545,0,-0.923879743
+	rot = 0,-0.382683456,0,-0.923879504
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.923879564,0,0.382683516
 	mir = 1,1,1
@@ -2484,8 +3333,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.703607678
-		height = 1.77534103
+		scaleFactor = 0.703607082
+		height = 1.7753396
 		stagingEnabled = True
 		towerRot = 0,0.382683456,0,-0.923879504
 		EVENTS
@@ -2553,16 +3402,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = launchClamp1_4294355776
 	partName = Part
 	persistentId = 3296818706
-	pos = -1.45283282,1.1151886,1.46017754
+	pos = -1.45283413,1.1151886,1.46017885
 	attPos = 0,0,0
 	attPos0 = 1.45093954,-0.956604004,-1.45093989
-	rot = 0,-0.923879743,0,-0.382683545
+	rot = 0,-0.923879504,0,-0.382683456
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.382683396,0,0.923879564
 	mir = 1,1,1
@@ -2596,8 +3462,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.703607678
-		height = 1.77534103
+		scaleFactor = 0.703607082
+		height = 1.7753396
 		stagingEnabled = True
 		towerRot = 0,0.923879504,0,-0.382683456
 		EVENTS
@@ -2665,16 +3531,33 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = HotGasThruster-L_4294628728
 	partName = Part
 	persistentId = 3600259705
-	pos = 1.20111883,34.0201721,0.00922727585
+	pos = 1.2011199,34.0201721,0.00922727585
 	attPos = 0,0,0
 	attPos0 = 1.20299947,-2.75649643,1.19209318E-07
-	rot = 0,0.707107008,0,0.707107008
+	rot = 0,0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -2737,7 +3620,25 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -2754,10 +3655,10 @@ PART
 	part = HotGasThruster-L_4294466012
 	partName = Part
 	persistentId = 657984605
-	pos = -1.20488441,34.0201721,0.00922715664
+	pos = -1.20488548,34.0201721,0.00922715664
 	attPos = 0,0,0
 	attPos0 = -1.20299947,-2.75649643,0
-	rot = 0,0.707106829,0,-0.707106948
+	rot = 0,0.707106769,0,-0.707106888
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106709,0,-0.707106829
 	mir = 1,1,1
@@ -2820,7 +3721,25 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -2837,10 +3756,10 @@ PART
 	part = HotGasThruster-L_4294367396
 	partName = Part
 	persistentId = 386376391
-	pos = -0.00188264251,29.6102886,-1.19138265
+	pos = -0.00188264251,29.6102886,-1.19138372
 	attPos = 0,0,0
 	attPos0 = 1.19209247E-07,-0.00625228882,-1.20060766
-	rot = 0,1.00000024,-2.30375203E-08,1.1920929E-07
+	rot = 0,1,-2.3037515E-08,1.19209261E-07
 	attRot = 0,0,0,1
 	attRot0 = 0,1,-2.3037515E-08,1.19209261E-07
 	mir = 1,1,1
@@ -2903,8 +3822,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -2921,10 +3858,10 @@ PART
 	part = HotGasThruster-L_4294465928
 	partName = Part
 	persistentId = 1528421114
-	pos = -0.00188276172,29.6102886,1.20983696
+	pos = -0.00188276172,29.6102886,1.20983803
 	attPos = 0,0,0
 	attPos0 = 3.55271436E-14,-0.00625228882,1.20060766
-	rot = -2.30375203E-08,0,0,-1.00000024
+	rot = -2.3037515E-08,0,0,-1
 	attRot = 0,0,0,1
 	attRot0 = -2.3037515E-08,0,0,-1
 	mir = 1,1,1
@@ -2987,8 +3924,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -3005,10 +3960,10 @@ PART
 	part = KRE-FalconLeg-M_4294438132
 	partName = Part
 	persistentId = 2535717997
-	pos = -0.763095975,2.69314957,0.770440161
+	pos = -0.763097048,2.69314957,0.770441234
 	attPos = 0,0,0
 	attPos0 = 0.761212349,-13.4225998,-0.761212111
-	rot = -0.00017305302,0.923879683,0.000417786883,0.382683456
+	rot = -0.000173052977,0.923879445,0.000417786796,0.382683367
 	attRot = 0,0,0,1
 	attRot0 = 0.000417786796,0.382683367,0.000173052977,-0.923879445
 	mir = 1,1,1
@@ -3155,8 +4110,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -3173,10 +4146,10 @@ PART
 	part = KRE-FalconLeg-M_4294431600
 	partName = Part
 	persistentId = 3436349594
-	pos = 0.759330153,2.69314957,0.77044034
+	pos = 0.759331226,2.69314957,0.770441413
 	attPos = 0,0,0
 	attPos0 = -0.761212051,-13.4225998,-0.761212289
-	rot = 0.00017305302,0.923879683,0.000417786883,-0.382683456
+	rot = 0.000173052977,0.923879445,0.000417786796,-0.382683367
 	attRot = 0,0,0,1
 	attRot0 = 0.000417786796,-0.382683367,-0.000173052977,-0.923879445
 	mir = 1,1,1
@@ -3323,8 +4296,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -3341,10 +4332,10 @@ PART
 	part = KRE-FalconLeg-M_4294431422
 	partName = Part
 	persistentId = 1989911856
-	pos = 0.759330392,2.69314957,-0.751985908
+	pos = 0.759331465,2.69314957,-0.75198698
 	attPos = 0,0,0
 	attPos0 = -0.761212289,-13.4225998,0.76121217
-	rot = 0.000417786912,0.382683456,0.000173052977,-0.923879683
+	rot = 0.000417786825,0.382683367,0.000173052933,-0.923879445
 	attRot = 0,0,0,1
 	attRot0 = 0.000173052948,-0.923879504,-0.000417786825,-0.382683337
 	mir = 1,1,1
@@ -3491,8 +4482,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -3509,10 +4518,10 @@ PART
 	part = KRE-FalconLeg-M_4294431244
 	partName = Part
 	persistentId = 2808362457
-	pos = -0.763095737,2.69314957,-0.751985908
+	pos = -0.763096809,2.69314957,-0.75198698
 	attPos = 0,0,0
 	attPos0 = 0.761212051,-13.4225998,0.76121217
-	rot = 0.000417786883,-0.382683456,-0.00017305302,-0.923879683
+	rot = 0.000417786796,-0.382683367,-0.000173052977,-0.923879445
 	attRot = 0,0,0,1
 	attRot0 = -0.000173052977,-0.923879445,-0.000417786796,0.382683367
 	mir = 1,1,1
@@ -3659,8 +4668,26 @@ PART
 	{
 		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
 		EVENTS
 		{
 		}
