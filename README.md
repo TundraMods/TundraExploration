@@ -23,6 +23,6 @@ No IVA on Gojira, but coming in future update
 
 
 Any Code or configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models are distributed under All Rights Reserved License.
+All Textures/models are distributed under CC BY_NC-ND.
 
 This mod includes version checking using Mini-AVC. If you opt-in, it will use the internet to check whether there is a new version available. Data is only read from the internet and no personal information is sent. For a more comprehensive version checking experience, please download the KSP-AVC Plugin.
