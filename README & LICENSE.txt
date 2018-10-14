@@ -5,7 +5,7 @@ Continued by damonvv.
 
 LICENSE
 Any  of the configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models and plugins are distributed under All Rights Reserved License.
+All Textures/models and plugins are distributed under CC BY_NC-ND.
 Near Future Solar plugin licensed by Nertea. https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
 ModuleDockingNodeStageable plugin licensed by Sarbian. https://github.com/sarbian/ModuleDockingNodeStageable
 WildBlueIndustry plugins licensed by Angle-125. https://github.com/Angel-125
