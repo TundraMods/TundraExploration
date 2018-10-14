@@ -12,6 +12,14 @@ WildBlueIndustry plugins licensed by Angle-125. https://github.com/Angel-125
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.2.0
+- Added the 2018 BFS design
+- Added the 2018 BFB design
+- Added the 2018 Dragon V2 look
+- Fixed some small issues
+- Fixed antenna from New Horizons in wrong tab
+- Added lots of new plumes!
+
 Version 1.1.4
 - Updated to KSP 1.4.5
 - Added 3 engine modes for Ghidorah 9
