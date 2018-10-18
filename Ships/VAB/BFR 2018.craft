@@ -2,7 +2,7 @@ ship = BFR 2018
 version = 1.4.5
 description = 
 type = VAB
-size = 9.88877106,63.2543793,8.56550121
+size = 9.88877296,63.2543793,8.56550312
 steamPublishedFileId = 0
 persistentId = 1559956097
 rot = 0,0,0,0
@@ -12,7 +12,7 @@ PART
 {
 	part = TE.18.BFS.CommandPod_4293971030
 	partName = Part
-	persistentId = 312174449
+	persistentId = 2389997789
 	pos = -1.14440918E-05,57.8033371,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = -1.14440918E-05,57.8033371,-0.000343084335
@@ -394,7 +394,7 @@ PART
 {
 	part = TE.18.BFS.BACK.TANK_4293848028
 	partName = Part
-	persistentId = 820802934
+	persistentId = 3676917025
 	pos = -1.14440918E-05,48.6713371,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = 0,-9.13199997,0
@@ -415,9 +415,9 @@ PART
 	modCost = 18150.4004
 	modMass = 3.20000005
 	modSize = 0,0,0
-	link = TE.18.BFS.Engine.Fairing_4292483720
+	link = TE.18.BFS.Engine.Fairing_4293143590
 	attN = top,TE.18.BFS.CommandPod_4293971030_0|4.224|0
-	attN = bottom,TE.18.BFS.Engine.Fairing_4292483720_0|-4.047|0
+	attN = bottom,TE.18.BFS.Engine.Fairing_4293143590_0|-4.047|0
 	EVENTS
 	{
 	}
@@ -501,9 +501,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.Engine.Fairing_4292483720
+	part = TE.18.BFS.Engine.Fairing_4293143590
 	partName = Part
-	persistentId = 1847440517
+	persistentId = 3755752019
 	pos = -1.14440918E-05,40.6633377,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = 0,-8.00799942,0
@@ -524,35 +524,35 @@ PART
 	modCost = 14520.3203
 	modMass = 2.56000018
 	modSize = 0,0,0
-	link = TE.18.BFS.TAIL_4292483248
-	link = TE.18.BFS.TAIL.WING.R_4292483204
-	link = TE.18.BFS.SL.RAPTOR_4292483046
-	link = TE.18.BFS.SL.RAPTOR_4292482702
-	link = TE.18.BFS.SL.RAPTOR_4292482358
-	link = TE.18.BFS.SL.RAPTOR_4292482014
-	link = TE.18.BFS.SL.RAPTOR_4292481670
-	link = TE.18.BFS.SL.RAPTOR_4292481326
-	link = TE.18.BFS.SL.RAPTOR_4292480982
-	link = TE.18.BFS.TAIL.WING.L_4292480638
-	link = TE.18.BFS.ATP.CARGO_4292480576
-	link = TE.18.BFS.ATP.CARGO_4292480548
-	link = TE.18.BFS.ATP.CARGO_4292480520
-	link = TE.18.BFS.ATP.CARGO_4292480492
-	link = TE.18.BFS.ATP.CARGO_4292480464
-	link = TE.18.BFS.ATP.CARGO_4292480436
-	link = TE.18.BFS.ATP.CARGO_4292480408
-	link = TE.18.BFS.ATP.CARGO_4292480380
-	link = TE.18.BFS.ATP.CARGO_4292480352
-	link = TE.18.BFS.ATP.CARGO_4292480324
-	link = TE.18.BFS.ATP.CARGO_4292480296
-	link = TE.18.BFS.ATP.CARGO_4292480268
+	link = TE.18.BFS.TAIL_4293143118
+	link = TE.18.BFS.TAIL.WING.R_4293143074
+	link = TE.18.BFS.SL.RAPTOR_4293142916
+	link = TE.18.BFS.SL.RAPTOR_4293142566
+	link = TE.18.BFS.SL.RAPTOR_4293142216
+	link = TE.18.BFS.SL.RAPTOR_4293141866
+	link = TE.18.BFS.SL.RAPTOR_4293141516
+	link = TE.18.BFS.SL.RAPTOR_4293141166
+	link = TE.18.BFS.SL.RAPTOR_4293140816
+	link = TE.18.BFS.TAIL.WING.L_4293140466
+	link = TE.18.BFS.ATP.CARGO_4293140404
+	link = TE.18.BFS.ATP.CARGO_4293140364
+	link = TE.18.BFS.ATP.CARGO_4293140324
+	link = TE.18.BFS.ATP.CARGO_4293140284
+	link = TE.18.BFS.ATP.CARGO_4293140244
+	link = TE.18.BFS.ATP.CARGO_4293140204
+	link = TE.18.BFS.ATP.CARGO_4293140164
+	link = TE.18.BFS.ATP.CARGO_4293140124
+	link = TE.18.BFS.ATP.CARGO_4293140084
+	link = TE.18.BFS.ATP.CARGO_4293140044
+	link = TE.18.BFS.ATP.CARGO_4293140004
+	link = TE.18.BFS.ATP.CARGO_4293139964
 	link = TE.18.BFB.INTERSTAGE_4292480240
 	attN = top,TE.18.BFS.BACK.TANK_4293848028_0|3.961|0
 	attN = bottom,TE.18.BFB.INTERSTAGE_4292480240_0|-4.088|0
-	attN = finDorsal,TE.18.BFS.TAIL_4292483248_0|-1.261481|-2.811267
-	attN = finLeft,TE.18.BFS.TAIL.WING.L_4292480638_-2.43021|-1.117413|1.401912
-	attN = finRight,TE.18.BFS.TAIL.WING.R_4292483204_2.428806|-1.117413|1.401912
-	attN = Engine,TE.18.BFS.SL.RAPTOR_4292482014_0.8660254|-2.485|-0.5
+	attN = finDorsal,TE.18.BFS.TAIL_4293143118_0|-1.261481|-2.811267
+	attN = finLeft,TE.18.BFS.TAIL.WING.L_4293140466_-2.43021|-1.117413|1.401912
+	attN = finRight,TE.18.BFS.TAIL.WING.R_4293143074_2.428806|-1.117413|1.401912
+	attN = Engine,TE.18.BFS.SL.RAPTOR_4293141866_0.8660254|-2.485|-0.5
 	EVENTS
 	{
 	}
@@ -737,9 +737,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.TAIL_4292483248
+	part = TE.18.BFS.TAIL_4293143118
 	partName = Part
-	persistentId = 599069618
+	persistentId = 1271173602
 	pos = -1.14440918E-05,39.4018555,-2.81160998
 	attPos = 0,0,0
 	attPos0 = 0,-1.26148224,-2.8112669
@@ -760,7 +760,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,TE.18.BFS.Engine.Fairing_4292483720_0|0|0
+	attN = bottom,TE.18.BFS.Engine.Fairing_4293143590_0|0|0
 	EVENTS
 	{
 	}
@@ -805,9 +805,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.TAIL.WING.R_4292483204
+	part = TE.18.BFS.TAIL.WING.R_4293143074
 	partName = Part
-	persistentId = 2342747299
+	persistentId = 1990047469
 	pos = 2.42879462,39.5459251,1.40156889
 	attPos = 0,0,0
 	attPos0 = 2.42880607,-1.11741257,1.40191197
@@ -828,7 +828,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,TE.18.BFS.Engine.Fairing_4292483720_0|0|0
+	attN = bottom,TE.18.BFS.Engine.Fairing_4293143590_0|0|0
 	EVENTS
 	{
 	}
@@ -928,7 +928,7 @@ PART
 {
 	part = TE.18.BFS.Forward.FIN.R_4293812474
 	partName = Part
-	persistentId = 2680537930
+	persistentId = 1882295550
 	pos = 1.68698859,61.169342,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = 1.68700004,3.36600494,0
@@ -1049,7 +1049,7 @@ PART
 {
 	part = TE.18.BFS.Forward.FIN.L_4293800660
 	partName = Part
-	persistentId = 1259189205
+	persistentId = 2658461542
 	pos = -1.68101144,61.169342,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = -1.68099999,3.36600494,0
@@ -1168,9 +1168,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292483046
+	part = TE.18.BFS.SL.RAPTOR_4293142916
 	partName = Part
-	persistentId = 742480929
+	persistentId = 1060969522
 	pos = -0.866036832,37.5280838,0.499656916
 	attPos = 0,0,0
 	attPos0 = -0.866025388,-3.13525391,0.5
@@ -1191,7 +1191,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -1337,6 +1337,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -1388,9 +1464,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292482702
+	part = TE.18.BFS.SL.RAPTOR_4293142566
 	partName = Part
-	persistentId = 529127569
+	persistentId = 2197205092
 	pos = -1.14440918E-05,37.5280838,0.999656916
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525391,1
@@ -1411,7 +1487,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -1557,6 +1633,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -1608,9 +1760,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292482358
+	part = TE.18.BFS.SL.RAPTOR_4293142216
 	partName = Part
-	persistentId = 252818899
+	persistentId = 1638564936
 	pos = 0.866013944,37.5280838,0.499656916
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525391,0.5
@@ -1631,7 +1783,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -1777,6 +1929,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -1828,9 +2056,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292482014
+	part = TE.18.BFS.SL.RAPTOR_4293141866
 	partName = Part
-	persistentId = 1760643323
+	persistentId = 2150952318
 	pos = 0.866013944,37.5280838,-0.500343084
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525391,-0.5
@@ -1851,7 +2079,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -1997,6 +2225,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -2048,9 +2352,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292481670
+	part = TE.18.BFS.SL.RAPTOR_4293141516
 	partName = Part
-	persistentId = 885184672
+	persistentId = 4202047394
 	pos = -1.14440918E-05,37.5280838,-0.000343084335
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525391,0
@@ -2071,7 +2375,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -2217,6 +2521,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -2268,9 +2648,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292481326
+	part = TE.18.BFS.SL.RAPTOR_4293141166
 	partName = Part
-	persistentId = 3266676283
+	persistentId = 1197649134
 	pos = -0.866036832,37.5280838,-0.500343084
 	attPos = 0,0,0
 	attPos0 = -0.866025388,-3.13525391,-0.5
@@ -2291,7 +2671,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -2437,6 +2817,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -2488,9 +2944,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.SL.RAPTOR_4292480982
+	part = TE.18.BFS.SL.RAPTOR_4293140816
 	partName = Part
-	persistentId = 599783894
+	persistentId = 138149146
 	pos = -1.14440918E-05,37.5280838,-1.00034308
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525391,-0.99999994
@@ -2511,7 +2967,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.6502519|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.6502519|0
 	EVENTS
 	{
 	}
@@ -2657,6 +3113,82 @@ PART
 	}
 	MODULE
 	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleThrottleEffects
+		isEnabled = True
+		state = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -2708,9 +3240,9 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.TAIL.WING.L_4292480638
+	part = TE.18.BFS.TAIL.WING.L_4293140466
 	partName = Part
-	persistentId = 869378526
+	persistentId = 37440441
 	pos = -2.43022156,39.5459251,1.40156889
 	attPos = 0,0,0
 	attPos0 = -2.43021011,-1.11741257,1.40191197
@@ -2731,7 +3263,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,TE.18.BFS.Engine.Fairing_4292483720_0|0|0
+	attN = bottom,TE.18.BFS.Engine.Fairing_4293143590_0|0|0
 	EVENTS
 	{
 	}
@@ -2829,13 +3361,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480576
+	part = TE.18.BFS.ATP.CARGO_4293140404
 	partName = Part
-	persistentId = 749161159
-	pos = 0.549632311,37.6096268,2.05095506
-	attPos = 0,0,0
+	persistentId = 3663201538
+	pos = -1.8930608,37.6096268,-0.507583916
+	attPos = -2.44269323,0,-2.55853891
 	attPos0 = 0.549643755,-3.05371094,2.05129814
-	rot = 0.991444886,-9.72495862E-10,-0.130526185,-7.38684047E-09
+	rot = -0.608761489,-5.91094329E-09,-0.793353319,4.53562654E-09
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.991444886,-9.72495862E-10,-0.130526185,-7.38684047E-09
 	mir = 1,1,1
@@ -2852,12 +3384,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480548
-	sym = TE.18.BFS.ATP.CARGO_4292480520
-	sym = TE.18.BFS.ATP.CARGO_4292480492
-	sym = TE.18.BFS.ATP.CARGO_4292480464
-	sym = TE.18.BFS.ATP.CARGO_4292480436
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140364
+	sym = TE.18.BFS.ATP.CARGO_4293140324
+	sym = TE.18.BFS.ATP.CARGO_4293140284
+	sym = TE.18.BFS.ATP.CARGO_4293140244
+	sym = TE.18.BFS.ATP.CARGO_4293140204
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -2887,13 +3419,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480548
+	part = TE.18.BFS.ATP.CARGO_4293140364
 	partName = Part
-	persistentId = 2777497524
-	pos = 2.0512867,37.6096268,0.549300551
-	attPos = 0,0,0
+	persistentId = 1997973401
+	pos = -1.38581944,37.6096268,1.3854655
+	attPos = -3.43710613,0,0.836164951
 	attPos0 = 2.05129814,-3.05371094,0.549643636
-	rot = 0.793353379,-4.53562654E-09,-0.60876143,-5.91094329E-09
+	rot = -0.923879623,-2.85121349E-09,-0.382683367,6.88344004E-09
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.793353379,-4.53562654E-09,-0.60876143,-5.91094329E-09
 	mir = 1,1,1
@@ -2910,12 +3442,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480576
-	sym = TE.18.BFS.ATP.CARGO_4292480520
-	sym = TE.18.BFS.ATP.CARGO_4292480492
-	sym = TE.18.BFS.ATP.CARGO_4292480464
-	sym = TE.18.BFS.ATP.CARGO_4292480436
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140404
+	sym = TE.18.BFS.ATP.CARGO_4293140324
+	sym = TE.18.BFS.ATP.CARGO_4293140284
+	sym = TE.18.BFS.ATP.CARGO_4293140244
+	sym = TE.18.BFS.ATP.CARGO_4293140204
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -2945,13 +3477,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480520
+	part = TE.18.BFS.ATP.CARGO_4293140324
 	partName = Part
-	persistentId = 2890290808
-	pos = 1.50164282,37.6096268,-1.50199783
-	attPos = 0,0,0
+	persistentId = 505381916
+	pos = 0.507229984,37.6096268,1.89270616
+	attPos = -0.994412839,0,3.39470387
 	attPos0 = 1.50165427,-3.05371094,-1.50165474
-	rot = 0.382683426,-6.8834396E-09,-0.923879564,-2.85121393E-09
+	rot = -0.991444886,9.72496528E-10,0.130526274,7.38684047E-09
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.382683426,-6.8834396E-09,-0.923879564,-2.85121393E-09
 	mir = 1,1,1
@@ -2968,12 +3500,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480576
-	sym = TE.18.BFS.ATP.CARGO_4292480548
-	sym = TE.18.BFS.ATP.CARGO_4292480492
-	sym = TE.18.BFS.ATP.CARGO_4292480464
-	sym = TE.18.BFS.ATP.CARGO_4292480436
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140404
+	sym = TE.18.BFS.ATP.CARGO_4293140364
+	sym = TE.18.BFS.ATP.CARGO_4293140284
+	sym = TE.18.BFS.ATP.CARGO_4293140244
+	sym = TE.18.BFS.ATP.CARGO_4293140204
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3003,11 +3535,11 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480492
+	part = TE.18.BFS.ATP.CARGO_4293140284
 	partName = Part
-	persistentId = 709349856
-	pos = -0.549655378,37.6096268,-2.05164123
-	attPos = 0,0,0
+	persistentId = 1364604044
+	pos = -0.507252693,37.6096268,-1.89339232
+	attPos = 0.0424026847,0,0.158248901
 	attPos0 = -0.549643934,-3.05371094,-2.05129814
 	rot = -0.13052623,-7.38684047E-09,-0.991444886,9.72496195E-10
 	attRot = 0.999999881,0,0,0
@@ -3026,12 +3558,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480576
-	sym = TE.18.BFS.ATP.CARGO_4292480548
-	sym = TE.18.BFS.ATP.CARGO_4292480520
-	sym = TE.18.BFS.ATP.CARGO_4292480464
-	sym = TE.18.BFS.ATP.CARGO_4292480436
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140404
+	sym = TE.18.BFS.ATP.CARGO_4293140364
+	sym = TE.18.BFS.ATP.CARGO_4293140324
+	sym = TE.18.BFS.ATP.CARGO_4293140244
+	sym = TE.18.BFS.ATP.CARGO_4293140204
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3061,13 +3593,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480464
+	part = TE.18.BFS.ATP.CARGO_4293140244
 	partName = Part
-	persistentId = 3633043745
-	pos = -2.05130982,37.6096268,-0.54998666
-	attPos = 0,0,0
+	persistentId = 887903804
+	pos = 1.89303815,37.6096268,0.506897688
+	attPos = 3.94434786,0,1.05688429
 	attPos0 = -2.05129838,-3.05371094,-0.549643576
-	rot = -0.608761489,-5.91094329E-09,-0.793353319,4.53562699E-09
+	rot = -0.793353319,4.53562699E-09,0.608761549,5.91094329E-09
 	attRot = 0.999999881,0,0,0
 	attRot0 = -0.608761489,-5.91094329E-09,-0.793353319,4.53562699E-09
 	mir = 1,1,1
@@ -3084,12 +3616,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480576
-	sym = TE.18.BFS.ATP.CARGO_4292480548
-	sym = TE.18.BFS.ATP.CARGO_4292480520
-	sym = TE.18.BFS.ATP.CARGO_4292480492
-	sym = TE.18.BFS.ATP.CARGO_4292480436
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140404
+	sym = TE.18.BFS.ATP.CARGO_4293140364
+	sym = TE.18.BFS.ATP.CARGO_4293140324
+	sym = TE.18.BFS.ATP.CARGO_4293140284
+	sym = TE.18.BFS.ATP.CARGO_4293140204
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3119,13 +3651,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480436
+	part = TE.18.BFS.ATP.CARGO_4293140204
 	partName = Part
-	persistentId = 2549861827
-	pos = -1.50166619,37.6096268,1.5013113
-	attPos = 0,0,0
+	persistentId = 3292184755
+	pos = 1.3857969,37.6096268,-1.38615131
+	attPos = 2.88746309,0,-2.88746262
 	attPos0 = -1.50165474,-3.05371094,1.50165439
-	rot = -0.923879564,-2.8512146E-09,-0.382683516,6.8834396E-09
+	rot = -0.382683486,6.8834396E-09,0.923879564,2.85121438E-09
 	attRot = 0.999999881,0,0,0
 	attRot0 = -0.923879564,-2.8512146E-09,-0.382683516,6.8834396E-09
 	mir = 1,1,1
@@ -3142,12 +3674,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480576
-	sym = TE.18.BFS.ATP.CARGO_4292480548
-	sym = TE.18.BFS.ATP.CARGO_4292480520
-	sym = TE.18.BFS.ATP.CARGO_4292480492
-	sym = TE.18.BFS.ATP.CARGO_4292480464
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140404
+	sym = TE.18.BFS.ATP.CARGO_4293140364
+	sym = TE.18.BFS.ATP.CARGO_4293140324
+	sym = TE.18.BFS.ATP.CARGO_4293140284
+	sym = TE.18.BFS.ATP.CARGO_4293140244
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3177,13 +3709,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480408
+	part = TE.18.BFS.ATP.CARGO_4293140164
 	partName = Part
-	persistentId = 417496079
-	pos = -0.550829113,37.6252556,2.05533648
-	attPos = 0,0,0
+	persistentId = 2537720975
+	pos = -1.38114464,37.6252556,-1.38147593
+	attPos = -0.83031553,0,-3.4368124
 	attPos0 = -0.550817668,-3.03808212,2.05567956
-	rot = 0.991444886,3.79833231E-18,0.130526319,-2.88511697E-17
+	rot = -0.382683367,-2.6885011E-17,-0.923879564,1.11361341E-17
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.991444886,3.79833231E-18,0.130526319,-2.88511697E-17
 	mir = 1,1,1
@@ -3200,12 +3732,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480380
-	sym = TE.18.BFS.ATP.CARGO_4292480352
-	sym = TE.18.BFS.ATP.CARGO_4292480324
-	sym = TE.18.BFS.ATP.CARGO_4292480296
-	sym = TE.18.BFS.ATP.CARGO_4292480268
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140124
+	sym = TE.18.BFS.ATP.CARGO_4293140084
+	sym = TE.18.BFS.ATP.CARGO_4293140044
+	sym = TE.18.BFS.ATP.CARGO_4293140004
+	sym = TE.18.BFS.ATP.CARGO_4293139964
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3235,13 +3767,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480380
+	part = TE.18.BFS.ATP.CARGO_4293140124
 	partName = Part
-	persistentId = 1537322003
-	pos = 1.50485039,37.6252556,1.50451875
-	attPos = 0,0,0
+	persistentId = 861089401
+	pos = -1.88667417,37.6252556,0.505187154
+	attPos = -3.39152455,0,-0.999331594
 	attPos0 = 1.50486183,-3.03808212,1.50486183
-	rot = 0.923879623,-1.11361324E-17,-0.382683337,-2.6885011E-17
+	rot = -0.793353379,-1.77150357E-17,-0.608761489,2.3086682E-17
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.923879623,-1.11361324E-17,-0.382683337,-2.6885011E-17
 	mir = 1,1,1
@@ -3258,12 +3790,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480408
-	sym = TE.18.BFS.ATP.CARGO_4292480352
-	sym = TE.18.BFS.ATP.CARGO_4292480324
-	sym = TE.18.BFS.ATP.CARGO_4292480296
-	sym = TE.18.BFS.ATP.CARGO_4292480268
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140164
+	sym = TE.18.BFS.ATP.CARGO_4293140084
+	sym = TE.18.BFS.ATP.CARGO_4293140044
+	sym = TE.18.BFS.ATP.CARGO_4293140004
+	sym = TE.18.BFS.ATP.CARGO_4293139964
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3293,13 +3825,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480352
+	part = TE.18.BFS.ATP.CARGO_4293140084
 	partName = Part
-	persistentId = 1552235331
-	pos = 2.05566812,37.6252556,-0.551161051
-	attPos = 0,0,0
+	persistentId = 3461176962
+	pos = -0.505540788,37.6252556,1.88631976
+	attPos = -2.56120896,0,2.43748093
 	attPos0 = 2.05567956,-3.03808212,-0.550817966
-	rot = 0.608761549,-2.30866804E-17,-0.793353319,-1.77150357E-17
+	rot = -0.991444886,-3.79832983E-18,-0.13052623,2.88511697E-17
 	attRot = 0.999999881,0,0,0
 	attRot0 = 0.608761549,-2.30866804E-17,-0.793353319,-1.77150357E-17
 	mir = 1,1,1
@@ -3316,12 +3848,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480408
-	sym = TE.18.BFS.ATP.CARGO_4292480380
-	sym = TE.18.BFS.ATP.CARGO_4292480324
-	sym = TE.18.BFS.ATP.CARGO_4292480296
-	sym = TE.18.BFS.ATP.CARGO_4292480268
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140164
+	sym = TE.18.BFS.ATP.CARGO_4293140124
+	sym = TE.18.BFS.ATP.CARGO_4293140044
+	sym = TE.18.BFS.ATP.CARGO_4293140004
+	sym = TE.18.BFS.ATP.CARGO_4293139964
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3351,11 +3883,11 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480324
+	part = TE.18.BFS.ATP.CARGO_4293140044
 	partName = Part
-	persistentId = 2928277061
-	pos = 0.550806046,37.6252556,-2.05602264
-	attPos = 0,0,0
+	persistentId = 4287761157
+	pos = 0.505518079,37.6252556,-1.88700593
+	attPos = -0.0452879667,0,0.169016719
 	attPos0 = 0.55081749,-3.03808212,-2.05567956
 	rot = 0.130526274,-2.88511697E-17,-0.991444886,-3.79833107E-18
 	attRot = 0.999999881,0,0,0
@@ -3374,12 +3906,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480408
-	sym = TE.18.BFS.ATP.CARGO_4292480380
-	sym = TE.18.BFS.ATP.CARGO_4292480352
-	sym = TE.18.BFS.ATP.CARGO_4292480296
-	sym = TE.18.BFS.ATP.CARGO_4292480268
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140164
+	sym = TE.18.BFS.ATP.CARGO_4293140124
+	sym = TE.18.BFS.ATP.CARGO_4293140084
+	sym = TE.18.BFS.ATP.CARGO_4293140004
+	sym = TE.18.BFS.ATP.CARGO_4293139964
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3409,13 +3941,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480296
+	part = TE.18.BFS.ATP.CARGO_4293140004
 	partName = Part
-	persistentId = 3781013702
-	pos = -1.50487351,37.6252556,-1.50520504
-	attPos = 0,0,0
+	persistentId = 1379826340
+	pos = 1.38112199,37.6252556,1.38078976
+	attPos = 2.88599539,0,2.88599491
 	attPos0 = -1.50486207,-3.03808212,-1.50486195
-	rot = -0.382683396,-2.6885011E-17,-0.923879623,1.11361341E-17
+	rot = -0.923879564,1.11361357E-17,0.382683426,2.6885011E-17
 	attRot = 0.999999881,0,0,0
 	attRot0 = -0.382683396,-2.6885011E-17,-0.923879623,1.11361341E-17
 	mir = 1,1,1
@@ -3432,12 +3964,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480408
-	sym = TE.18.BFS.ATP.CARGO_4292480380
-	sym = TE.18.BFS.ATP.CARGO_4292480352
-	sym = TE.18.BFS.ATP.CARGO_4292480324
-	sym = TE.18.BFS.ATP.CARGO_4292480268
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140164
+	sym = TE.18.BFS.ATP.CARGO_4293140124
+	sym = TE.18.BFS.ATP.CARGO_4293140084
+	sym = TE.18.BFS.ATP.CARGO_4293140044
+	sym = TE.18.BFS.ATP.CARGO_4293139964
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3467,13 +3999,13 @@ PART
 }
 PART
 {
-	part = TE.18.BFS.ATP.CARGO_4292480268
+	part = TE.18.BFS.ATP.CARGO_4293139964
 	partName = Part
-	persistentId = 3389361820
-	pos = -2.05569124,37.6252556,0.550474286
-	attPos = 0,0,0
+	persistentId = 3783317406
+	pos = 1.8866514,37.6252556,-0.505872846
+	attPos = 3.94234276,0,-1.05634713
 	attPos0 = -2.0556798,-3.03808212,0.55081737
-	rot = -0.79335326,-1.7715039E-17,-0.608761609,2.30866787E-17
+	rot = -0.608761549,2.30866804E-17,0.793353319,1.77150373E-17
 	attRot = 0.999999881,0,0,0
 	attRot0 = -0.79335326,-1.7715039E-17,-0.608761609,2.30866787E-17
 	mir = 1,1,1
@@ -3490,12 +4022,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = TE.18.BFS.ATP.CARGO_4292480408
-	sym = TE.18.BFS.ATP.CARGO_4292480380
-	sym = TE.18.BFS.ATP.CARGO_4292480352
-	sym = TE.18.BFS.ATP.CARGO_4292480324
-	sym = TE.18.BFS.ATP.CARGO_4292480296
-	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4292483720
+	sym = TE.18.BFS.ATP.CARGO_4293140164
+	sym = TE.18.BFS.ATP.CARGO_4293140124
+	sym = TE.18.BFS.ATP.CARGO_4293140084
+	sym = TE.18.BFS.ATP.CARGO_4293140044
+	sym = TE.18.BFS.ATP.CARGO_4293140004
+	srfN = srfAttach,TE.18.BFS.Engine.Fairing_4293143590
 	EVENTS
 	{
 	}
@@ -3504,6 +4036,108 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = dockingPort2_4292485756
+	partName = Part
+	persistentId = 3497268860
+	pos = -1.14440918E-05,53.8673363,-1.78123868
+	attPos = 0,0,-0.0548956394
+	attPos0 = 0,-3.93600082,-1.72599995
+	rot = -0.707106829,0,0,0.707106829
+	attRot = -0.707106709,0,0,0.707106709
+	attRot0 = -0.707106829,0,0,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,TE.18.BFS.CommandPod_4293971030_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		crossfeed = True
+		stagingEnabled = False
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -3538,12 +4172,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 7
-	sqor = 0
-	sepI = 0
+	sidx = 0
+	sqor = 1
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -3557,7 +4191,7 @@ PART
 	link = Grid Fin L Titanium_4292475782
 	link = Grid Fin L Titanium_4292475716
 	link = Grid Fin L Titanium_4292475650
-	attN = top,TE.18.BFS.Engine.Fairing_4292483720_0|0.7252|0
+	attN = top,TE.18.BFS.Engine.Fairing_4293143590_0|0.7252|0
 	attN = bottom,TE.18.BFB.FUELTANK_4292479658_0|-1.339|0
 	EVENTS
 	{
@@ -3818,12 +4452,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 40838.3984
 	modMass = 7.20000029
@@ -3927,12 +4561,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 0
 	modCost = 40838.3984
 	modMass = 7.20000029
@@ -4036,16 +4670,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 3
 	resPri = 0
 	dstg = 0
-	sidx = 8
-	sqor = 0
-	sepI = 0
+	sidx = 0
+	sqor = 3
+	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
+	link = launchClamp1_4292897586
+	link = launchClamp1_4292889736
+	link = launchClamp1_4292889608
+	link = launchClamp1_4292889480
+	link = launchClamp1_4292889352
+	link = launchClamp1_4292889224
 	attN = top,TE.18.BFB.FUELTANK_4292479624_0|2.8948|0
 	EVENTS
 	{
@@ -4070,7 +4710,7 @@ PART
 		{
 			ModeAction
 			{
-				actionGroup = None
+				actionGroup = Custom01
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
@@ -4336,6 +4976,78 @@ PART
 		}
 		ATTACHED_PART_INFOS
 		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = 3.39027381,2.27878046,-2.21509254E-07
+					rotation = 0.0154623846,-0.706937671,0.0154623836,0.70693773
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = 1.69513667,2.27878046,-2.93606329
+					rotation = 0.0211220104,-0.258757144,0.00565962493,0.965694904
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = -1.6951375,2.27878046,-2.93606305
+					rotation = 0.0211220104,0.258757263,-0.00565962726,0.965694845
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = -3.39027381,2.27878046,5.17902663E-07
+					rotation = 0.0154623827,0.70693779,-0.0154623855,0.706937611
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = -1.69513667,2.27878046,2.93606377
+					rotation = 0.00565962354,0.965694904,-0.0211220104,0.258757055
+					orientation = 0,0,0
+				}
+			}
+			ATTACH_NODE_INFO
+			{
+				colliderName = Mesh
+				nodeType = Surface
+				POS_ROT
+				{
+					name = offset
+					position = 1.69513667,2.27878046,2.93606353
+					rotation = -0.00565962493,0.965694904,-0.0211220104,-0.258757144
+					orientation = 0,0,0
+				}
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4385,12 +5097,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4489,12 +5201,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4593,12 +5305,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4697,12 +5409,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4801,12 +5513,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4959,12 +5671,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5117,12 +5829,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5275,12 +5987,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 1
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -5420,30 +6132,35 @@ PART
 }
 PART
 {
-	part = dockingPort2_4292485756
+	part = launchClamp1_4292897586
 	partName = Part
-	persistentId = 321249860
-	pos = -1.14440918E-05,53.8673363,-1.78123868
-	attPos = 0,0,-0.0548956394
-	attPos0 = 0,-3.93600082,-1.72599995
-	rot = -0.707106829,0,0,0.707106829
-	attRot = -0.707106709,0,0,0.707106709
-	attRot0 = -0.707106829,0,0,0.707106829
+	persistentId = 1249145610
+	pos = -3.39028525,3.32785797,-0.000342862826
+	attPos = 0,0,0
+	attPos0 = -3.39027381,0.968780518,2.21509254E-07
+	rot = 0.0154623836,0.70693773,-0.0154623846,0.706937671
+	attRot = 0,0,0,1
+	attRot0 = 0.0154623836,0.70693773,-0.0154623846,0.706937671
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = -1
+	istg = 2
 	resPri = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = bottom,TE.18.BFS.CommandPod_4293971030_0|0|0
+	sym = launchClamp1_4292889736
+	sym = launchClamp1_4292889608
+	sym = launchClamp1_4292889480
+	sym = launchClamp1_4292889352
+	sym = launchClamp1_4292889224
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
 	EVENTS
 	{
 	}
@@ -5455,48 +6172,727 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDockingNode
+		name = LaunchClamp
 		isEnabled = True
-		crossfeed = True
-		stagingEnabled = False
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = -0.0154623836,-0.70693773,0.0154623846,0.706937671
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			UndockAction
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			DecoupleAction
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292889736
+	partName = Part
+	persistentId = 1906542706
+	pos = -1.69514811,3.32785797,2.93572021
+	attPos = 0,0,0
+	attPos0 = -1.69513667,0.968780518,2.93606329
+	rot = 0.00565962493,0.965694904,-0.0211220104,0.258757144
+	attRot = 0,0,0,1
+	attRot0 = 0.00565962493,0.965694904,-0.0211220104,0.258757144
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292897586
+	sym = launchClamp1_4292889608
+	sym = launchClamp1_4292889480
+	sym = launchClamp1_4292889352
+	sym = launchClamp1_4292889224
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = -0.00565962493,-0.965694904,0.0211220104,0.258757144
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			MakeReferenceToggle
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292889608
+	partName = Part
+	persistentId = 3912622797
+	pos = 1.69512606,3.32785797,2.93571997
+	attPos = 0,0,0
+	attPos0 = 1.6951375,0.968780518,2.93606305
+	rot = -0.00565962726,0.965694845,-0.0211220104,-0.258757263
+	attRot = 0,0,0,1
+	attRot0 = -0.00565962726,0.965694845,-0.0211220104,-0.258757263
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292897586
+	sym = launchClamp1_4292889736
+	sym = launchClamp1_4292889480
+	sym = launchClamp1_4292889352
+	sym = launchClamp1_4292889224
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = 0.00565962726,-0.965694845,0.0211220104,-0.258757263
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			EnableXFeedAction
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292889480
+	partName = Part
+	persistentId = 528291787
+	pos = 3.39026237,3.32785797,-0.000343602238
+	attPos = 0,0,0
+	attPos0 = 3.39027381,0.968780518,-5.17902663E-07
+	rot = -0.0154623855,0.706937611,-0.0154623827,-0.70693779
+	attRot = 0,0,0,1
+	attRot0 = -0.0154623855,0.706937611,-0.0154623827,-0.70693779
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292897586
+	sym = launchClamp1_4292889736
+	sym = launchClamp1_4292889608
+	sym = launchClamp1_4292889352
+	sym = launchClamp1_4292889224
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = 0.0154623855,-0.706937611,0.0154623827,-0.70693779
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			DisableXFeedAction
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292889352
+	partName = Part
+	persistentId = 967705912
+	pos = 1.69512522,3.32785797,-2.93640685
+	attPos = 0,0,0
+	attPos0 = 1.69513667,0.968780518,-2.93606377
+	rot = -0.0211220104,0.258757055,-0.00565962354,-0.965694904
+	attRot = 0,0,0,1
+	attRot0 = -0.0211220104,0.258757055,-0.00565962354,-0.965694904
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292897586
+	sym = launchClamp1_4292889736
+	sym = launchClamp1_4292889608
+	sym = launchClamp1_4292889480
+	sym = launchClamp1_4292889224
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = 0.0211220104,-0.258757055,0.00565962354,-0.965694904
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			ToggleXFeedAction
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292889224
+	partName = Part
+	persistentId = 3508361257
+	pos = -1.69514811,3.32785797,-2.93640661
+	attPos = 0,0,0
+	attPos0 = -1.69513667,0.968780518,-2.93606353
+	rot = -0.0211220104,-0.258757144,0.00565962493,-0.965694904
+	attRot = 0,0,0,1
+	attRot0 = -0.0211220104,-0.258757144,0.00565962493,-0.965694904
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292897586
+	sym = launchClamp1_4292889736
+	sym = launchClamp1_4292889608
+	sym = launchClamp1_4292889480
+	sym = launchClamp1_4292889352
+	srfN = srfAttach,TE.18.BFB.ENGINE.CLUSTER_4292479590
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.59653258
+		height = 4.02836609
+		stagingEnabled = True
+		towerRot = 0.0211220104,0.258757144,-0.00565962493,-0.965694904
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
