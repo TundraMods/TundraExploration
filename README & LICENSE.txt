@@ -5,13 +5,21 @@ Continued by damonvv.
 
 LICENSE
 Any  of the configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models and plugins are distributed under All Rights Reserved License.
+All Textures/models and plugins are distributed under CC BY_NC-ND.
 Near Future Solar plugin licensed by Nertea. https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
 ModuleDockingNodeStageable plugin licensed by Sarbian. https://github.com/sarbian/ModuleDockingNodeStageable
 WildBlueIndustry plugins licensed by Angle-125. https://github.com/Angel-125
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.2.0
+- Added the 2018 BFS design
+- Added the 2018 BFB design
+- Added the 2018 Dragon V2 look
+- Fixed some small issues
+- Fixed antenna from New Horizons in wrong tab
+- Added lots of new plumes!
+
 Version 1.1.4
 - Updated to KSP 1.4.5
 - Added 3 engine modes for Ghidorah 9
