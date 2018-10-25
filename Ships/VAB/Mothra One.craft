@@ -1,8 +1,9 @@
 ship = Mothra One
-version = 1.4.1
-description = 
+version = 1.4.5
+description = Recreating Falcon 1
 type = VAB
-size = 1.76776695,15.9224815,1.76776695
+size = 1.76776695,15.9224796,1.76776695
+steamPublishedFileId = 0
 persistentId = 788356159
 rot = 0,0,0,0
 missionFlag = TundraExploration/Agencies/Tundra
@@ -12,9 +13,9 @@ PART
 	part = probeCoreCube_4294511520
 	partName = Part
 	persistentId = 4282985981
-	pos = -0.00841224194,18.9917374,0.00827264786
+	pos = -0.00841537677,15.4743214,0.00829949323
 	attPos = 0,0,0
-	attPos0 = -0.00841224194,18.9917374,0.00827264786
+	attPos0 = -0.00841537677,15.4743214,0.00829949323
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -130,6 +131,54 @@ PART
 	}
 	MODULE
 	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TrajectoriesVesselSettings
+		isEnabled = True
+		Initialized = False
+		EntryAngle = 3.1415926535897931
+		EntryHorizon = False
+		HighAngle = 3.1415926535897931
+		HighHorizon = False
+		LowAngle = 3.1415926535897931
+		LowHorizon = False
+		GroundAngle = 3.1415926535897931
+		GroundHorizon = False
+		ProgradeEntry = False
+		RetrogradeEntry = True
+		TargetBody = 
+		TargetPosition_x = 0
+		TargetPosition_y = 0
+		TargetPosition_z = 0
+		ManualTargetTxt = 
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -164,7 +213,7 @@ PART
 	part = TE.F1.PayloadFairing_4294430400
 	partName = Part
 	persistentId = 4170781948
-	pos = -0.00841224194,18.4081421,0.00827264786
+	pos = -0.00841537677,14.8907261,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-0.58359623,0
 	rot = 0,0,0,1
@@ -251,13 +300,30 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE.F1.S2.Tank_4294397038
 	partName = Part
 	persistentId = 3961069148
-	pos = -0.00841224194,17.3941422,0.00827264786
+	pos = -0.00841537677,13.8767262,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-1.01399994,0
 	rot = 0,0,0,1
@@ -274,8 +340,8 @@ PART
 	sqor = -1
 	sepI = -1
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = 567.200012
+	modMass = 0.100000001
 	modSize = 0,0,0
 	link = TE.F1.S2.Engine_4294394802
 	attN = top,TE.F1.PayloadFairing_4294430400_0|0.9|0
@@ -288,6 +354,55 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Fuel
+		currentSubtype = LFO
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	RESOURCE
 	{
@@ -317,7 +432,7 @@ PART
 	part = TE.F1.S2.Engine_4294394802
 	partName = Part
 	persistentId = 4120182642
-	pos = -0.00841224194,15.5141411,0.00827264786
+	pos = -0.00841537677,11.9967251,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-1.88000011,0
 	rot = 0,0,0,1
@@ -491,6 +606,50 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+			ATTACH_NODE_INFO
+			{
+				colliderName = 
+				nodeType = Stack
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -508,7 +667,7 @@ PART
 	part = TE.F1.Interstage_4294398332
 	partName = Part
 	persistentId = 1082729538
-	pos = -0.00841224194,14.4831409,0.00827264786
+	pos = -0.00841537677,10.9657249,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-1.03100014,0
 	rot = 0,0,0,1
@@ -577,13 +736,30 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE.F1.S1.Tank_4294399610
 	partName = Part
 	persistentId = 3538443096
-	pos = -0.00841224194,10.2201414,0.00827264786
+	pos = -0.00841537677,6.70272541,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-4.26299953,0
 	rot = 0,0,0,1
@@ -600,10 +776,13 @@ PART
 	sqor = -1
 	sepI = 1
 	attm = 0
-	modCost = 0
-	modMass = 0
+	modCost = 1134.40002
+	modMass = 0.200000003
 	modSize = 0,0,0
 	link = TE.F1.S1.Engine_4294392082
+	link = launchClamp1_4292541396
+	link = launchClamp1_4292540726
+	link = launchClamp1_4292540604
 	attN = top,TE.F1.Interstage_4294398332_0|4.179|0
 	attN = bottom,TE.F1.S1.Engine_4294392082_0|-3.599|0
 	EVENTS
@@ -620,6 +799,55 @@ PART
 		name = FlagDecal
 		isEnabled = True
 		flagDisplayed = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Fuel
+		currentSubtype = LFO
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -659,7 +887,7 @@ PART
 	part = TE.F1.S1.Engine_4294392082
 	partName = Part
 	persistentId = 1511490470
-	pos = -0.00841224194,6.06614113,0.00827264786
+	pos = -0.00841537677,2.54872513,0.00829949323
 	attPos = 0,0,0
 	attPos0 = 0,-4.15400028,0
 	rot = 0,0,0,1
@@ -669,11 +897,11 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 3
 	resPri = 0
 	dstg = 2
 	sidx = 0
-	sqor = 2
+	sqor = 3
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -808,6 +1036,45 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -818,5 +1085,389 @@ PART
 		hideFlow = True
 		isVisible = True
 		flowMode = Both
+	}
+}
+PART
+{
+	part = launchClamp1_4292541396
+	partName = Part
+	persistentId = 1103383614
+	pos = -1.01839817,2.45773411,-1.00168324
+	attPos = 0,0,0
+	attPos0 = -1.00998282,-4.2449913,-1.00998271
+	rot = 0,-0.382683456,0,-0.923879564
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.382683456,0,-0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292540726
+	sym = launchClamp1_4292540604
+	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.23568881
+		height = 3.11788559
+		stagingEnabled = True
+		towerRot = 0,0.382683456,0,-0.923879564
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292540726
+	partName = Part
+	persistentId = 303604917
+	pos = -0.378094494,2.45773411,1.38796175
+	attPos = 0,0,0
+	attPos0 = -0.369679123,-4.2449913,1.37966228
+	rot = 0,-0.991444945,0,-0.13052614
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.991444945,0,-0.13052614
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292541396
+	sym = launchClamp1_4292540604
+	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.23568881
+		height = 3.11788559
+		stagingEnabled = True
+		towerRot = 0,0.991444945,0,-0.13052614
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = launchClamp1_4292540604
+	partName = Part
+	persistentId = 1801040338
+	pos = 1.37124681,2.45773411,-0.361380041
+	attPos = 0,0,0
+	attPos0 = 1.37966216,-4.2449913,-0.36967954
+	rot = 0,-0.60876143,0,0.793353438
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.60876143,0,0.793353438
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 2
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = launchClamp1_4292541396
+	sym = launchClamp1_4292540726
+	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = LaunchClamp
+		isEnabled = True
+		scaleFactor = 1.23568881
+		height = 3.11788559
+		stagingEnabled = True
+		towerRot = 0,0.60876143,0,0.793353438
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ReleaseClamp
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FMRS_PM
+		isEnabled = True
+		stagingEnabled = True
+		MM_DYNAMIC = true
+		parent_vessel = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 }
