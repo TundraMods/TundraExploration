@@ -6,19 +6,25 @@ Continued by damonvv.
 LICENSE
 Any  of the configs are distributed under CC-NC-SA-4.0 License.
 All Textures/models and plugins are distributed under CC BY_NC-ND.
-Near Future Solar plugin licensed by Nertea. https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
-ModuleDockingNodeStageable plugin licensed by Sarbian. https://github.com/sarbian/ModuleDockingNodeStageable
-WildBlueIndustry plugins licensed by Angle-125. https://github.com/Angel-125
+Near Future Solar plugin licensed by Nertea > https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
+WildBlueIndustry plugins licensed by Angle-125 > https://github.com/Angel-125
+Retractableliftingsurface plugin is licensed by linuxgurugamer >https://forum.kerbalspaceprogram.com/index.php?/topic/145583-14x-retractableliftingsurface-module-released/
+AnimatedDecoupler plugin is licensed by Starwaster > https://forum.kerbalspaceprogram.com/index.php?/topic/170880-14x-animated-decouplers-140/
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
 Version 1.2.0
-- Added the 2018 BFS design
-- Added the 2018 BFB design
-- Added the 2018 Dragon V2 look
-- Fixed some small issues
-- Fixed antenna from New Horizons in wrong tab
-- Added lots of new plumes!
+- Added new Gojira parts (2018 BFR)
+- Added new Rodan parts (2018 Crew Dragon)
+- Added more new plumes (By JadeOfMaar and Nessus_)
+- Changed Ghidorah 9 textures slightly
+- Balanced some parts
+- Cleanup configs
+- Fixed SMURFF support
+- Fixed Ghidorah Heavy decoupler (now uses Animated Decouplers)
+- Fixed Ghidorah 9 interstage being wobbly
+- Fixed antenna being in wrong tab
+- Fixed Ghidorah fairing
 
 Version 1.1.4
 - Updated to KSP 1.4.5
@@ -27,6 +33,7 @@ Version 1.1.4
 - Added new plumes for Ghidorah 9 (Thank you @JadeOfMaar)
 - Fixed Antenna on BFS
 - Added black nosecones for Ghidorah Heavy B5
+- Fixed Ghidorah 9 landed texture
 
 Version 1.1.3
 - Added new Block 5 textures
