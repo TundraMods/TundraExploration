@@ -13,6 +13,13 @@ AnimatedDecoupler plugin is licensed by Starwaster > https://forum.kerbalspacepr
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.2.1
+- Added Gojira Tanker version
+- Fixed Shielding on parts (Thanks JadeOfMaar!)
+- Fixed craft files
+- Removed hatch inside cargo bay on Gojira Command Pod
+- Revamp Ghidorah sound
+
 Version 1.2.0
 - Added new Gojira parts (2018 BFR)
 - Added new Rodan parts (2018 Crew Dragon)
