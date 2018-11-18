@@ -20,7 +20,7 @@ Version 1.2.1
 - Removed hatch inside cargo bay on Gojira Command Pod
 - Revamp Ghidorah sound
 
-Version 1.2.0
+Version 1.2.0.1
 - Added new Gojira parts (2018 BFR)
 - Added new Rodan parts (2018 Crew Dragon)
 - Added more new plumes (By JadeOfMaar and Nessus_)
