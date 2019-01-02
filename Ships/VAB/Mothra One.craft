@@ -1,21 +1,21 @@
 ship = Mothra One
-version = 1.3.1
-description = Recreating Falcon 1
+version = 1.5.1
+description = 
 type = VAB
-size = 1.76776695,15.9224796,1.76776695
+size = 1.76776695,15.9405212,1.76776695
 steamPublishedFileId = 0
-persistentId = 788356159
+persistentId = 2312600681
 rot = 0,0,0,0
-missionFlag = TundraExploration/Agencies/Tundra
+missionFlag = Squad/Flags/default
 vesselType = Debris
 PART
 {
-	part = probeCoreCube_4294511520
+	part = probeCoreCube_4294313204
 	partName = Part
-	persistentId = 4282985981
-	pos = -0.00841537677,15.4743214,0.00829949323
+	persistentId = 2164431564
+	pos = 0,15,0
 	attPos = 0,0,0
-	attPos0 = -0.00841537677,15.4743214,0.00829949323
+	attPos0 = 0,15,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -33,8 +33,12 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.PayloadFairing_4294430400
-	attN = bottom,TE.F1.PayloadFairing_4294430400_0|-0.2845967|0
+	link = SurfAntenna_4294169454
+	link = SurfAntenna_4294167842
+	link = SurfAntenna_4294167808
+	link = SurfAntenna_4294167774
+	link = Decoupler.0_4294141254
+	attN = bottom,Decoupler.0_4294141254_0|-0.2845967|0
 	EVENTS
 	{
 	}
@@ -131,41 +135,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -210,12 +181,312 @@ PART
 }
 PART
 {
-	part = TE.F1.PayloadFairing_4294430400
+	part = SurfAntenna_4294169454
 	partName = Part
-	persistentId = 4170781948
-	pos = -0.00841537677,14.8907261,0.00829949323
+	persistentId = 2611704913
+	pos = -0.184700295,15.2663097,-0.18470028
 	attPos = 0,0,0
-	attPos0 = 0,-0.58359623,0
+	attPos0 = -0.184700295,0.266309738,-0.18470028
+	rot = 0.270598054,-0.270598054,-0.65328151,0.65328151
+	attRot = 0.707106709,0,0.707106709,0
+	attRot0 = 0.270598054,-0.270598054,-0.65328151,0.65328151
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SurfAntenna_4294167842
+	sym = SurfAntenna_4294167808
+	sym = SurfAntenna_4294167774
+	srfN = srfAttach,probeCoreCube_4294313204
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SurfAntenna_4294167842
+	partName = Part
+	persistentId = 3815980481
+	pos = -0.18470028,15.2663097,0.18470028
+	attPos = 0,0,0
+	attPos0 = -0.18470028,0.266309738,0.18470028
+	rot = -0.270598054,0.270598054,-0.65328151,0.65328151
+	attRot = 0.707106709,0,0.707106709,0
+	attRot0 = -0.270598054,0.270598054,-0.65328151,0.65328151
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SurfAntenna_4294169454
+	sym = SurfAntenna_4294167808
+	sym = SurfAntenna_4294167774
+	srfN = srfAttach,probeCoreCube_4294313204
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SurfAntenna_4294167808
+	partName = Part
+	persistentId = 3561158046
+	pos = 0.18470031,15.2663097,0.184700266
+	attPos = 0,0,0
+	attPos0 = 0.18470031,0.266309738,0.184700266
+	rot = -0.65328151,0.65328151,-0.270598024,0.270598024
+	attRot = 0.707106709,0,0.707106709,0
+	attRot0 = -0.65328151,0.65328151,-0.270598024,0.270598024
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SurfAntenna_4294169454
+	sym = SurfAntenna_4294167842
+	sym = SurfAntenna_4294167774
+	srfN = srfAttach,probeCoreCube_4294313204
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SurfAntenna_4294167774
+	partName = Part
+	persistentId = 1485930754
+	pos = 0.184700266,15.2663097,-0.184700295
+	attPos = 0,0,0
+	attPos0 = 0.184700266,0.266309738,-0.184700295
+	rot = -0.65328151,0.65328151,0.270598054,-0.270598054
+	attRot = 0.707106709,0,0.707106709,0
+	attRot0 = -0.65328151,0.65328151,0.270598054,-0.270598054
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = SurfAntenna_4294169454
+	sym = SurfAntenna_4294167842
+	sym = SurfAntenna_4294167808
+	srfN = srfAttach,probeCoreCube_4294313204
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Decoupler.0_4294141254
+	partName = Part
+	persistentId = 280635096
+	pos = 0,14.6829033,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.31709671,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -225,17 +496,138 @@ PART
 	rigidAttachment = False
 	istg = 0
 	resPri = 0
-	dstg = 0
+	dstg = 1
 	sidx = 0
 	sqor = 0
-	sepI = -1
+	sepI = 0
 	attm = 0
-	modCost = 85.7124329
-	modMass = 0.0857124403
+	modCost = 0
+	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.S2.Tank_4294397038
-	attN = top,probeCoreCube_4294511520_0|0.299|0
-	attN = bottom,TE.F1.S2.Tank_4294397038_0|-0.114|0
+	link = TE.F1.PayloadFairing_4294138744
+	attN = top,probeCoreCube_4294313204_0|0.0325|0
+	attN = bottom,TE.F1.PayloadFairing_4294138744_0|-0.0325|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = TE.F1.PayloadFairing_4294138744
+	partName = Part
+	persistentId = 3609412132
+	pos = 0,14.3514032,0
+	attPos = 0,0,0
+	attPos0 = 0,-0.331500053,0
+	rot = 0,0,0,1
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 1
+	sepI = 0
+	attm = 0
+	modCost = 86.9608383
+	modMass = 0.0869608372
+	modSize = 0,0,0
+	link = TE.F1.S2.Tank_4294102584
+	attN = top,Decoupler.0_4294141254_0|0.299|0
+	attN = bottom,TE.F1.S2.Tank_4294102584_0|-0.114|0
 	EVENTS
 	{
 	}
@@ -250,7 +642,7 @@ PART
 		name = ModuleProceduralFairing
 		isEnabled = True
 		interstageCraftID = 0
-		nArcs = 2
+		nArcs = 3
 		ejectionForce = 100
 		useClamshell = False
 		stagingEnabled = True
@@ -273,12 +665,17 @@ PART
 		}
 		XSECTION
 		{
-			h = 1.29195499
+			h = 1.16108131
 			r = 0.594799995
 		}
 		XSECTION
 		{
-			h = 2.03732681
+			h = 1.64632225
+			r = 0.457287729
+		}
+		XSECTION
+		{
+			h = 2.08240128
 			r = 0.200000003
 		}
 		UPGRADESAPPLIED
@@ -302,11 +699,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -320,10 +715,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S2.Tank_4294397038
+	part = TE.F1.S2.Tank_4294102584
 	partName = Part
-	persistentId = 3961069148
-	pos = -0.00841537677,13.8767262,0.00829949323
+	persistentId = 3378168937
+	pos = 0,13.3374033,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.01399994,0
 	rot = 0,0,0,1
@@ -333,19 +728,19 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
-	dstg = 0
+	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = -1
+	sepI = 0
 	attm = 0
-	modCost = 567.200012
-	modMass = 0.100000001
+	modCost = 212.699997
+	modMass = 0.0375000015
 	modSize = 0,0,0
-	link = TE.F1.S2.Engine_4294394802
-	attN = top,TE.F1.PayloadFairing_4294430400_0|0.9|0
-	attN = bottom,TE.F1.S2.Engine_4294394802_0|-0.9|0
+	link = TE.F1.S2.Engine_4294093628
+	attN = top,TE.F1.PayloadFairing_4294138744_0|0.9|0
+	attN = bottom,TE.F1.S2.Engine_4294093628_0|-0.9|0
 	EVENTS
 	{
 	}
@@ -357,11 +752,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -374,11 +769,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -407,8 +800,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 360
-		maxAmount = 360
+		amount = 135
+		maxAmount = 135
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -418,8 +811,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 440
-		maxAmount = 440
+		amount = 165
+		maxAmount = 165
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -429,10 +822,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S2.Engine_4294394802
+	part = TE.F1.S2.Engine_4294093628
 	partName = Part
-	persistentId = 4120182642
-	pos = -0.00841537677,11.9967251,0.00829949323
+	persistentId = 248679613
+	pos = 0,11.4574032,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.88000011,0
 	rot = 0,0,0,1
@@ -442,19 +835,19 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 2
 	resPri = 0
-	dstg = 0
-	sidx = 1
-	sqor = 0
-	sepI = -1
+	dstg = 2
+	sidx = 0
+	sqor = 2
+	sepI = 0
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.Interstage_4294398332
-	attN = top,TE.F1.S2.Tank_4294397038_0|0.98|0
-	attN = bottom,TE.F1.Interstage_4294398332_0|-0.947|0
+	link = TE.F1.Interstage_4294100122
+	attN = top,TE.F1.S2.Tank_4294102584_0|0.98|0
+	attN = bottom,TE.F1.Interstage_4294100122_0|-0.947|0
 	EVENTS
 	{
 	}
@@ -608,38 +1001,9 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -664,10 +1028,10 @@ PART
 }
 PART
 {
-	part = TE.F1.Interstage_4294398332
+	part = TE.F1.Interstage_4294100122
 	partName = Part
-	persistentId = 1082729538
-	pos = -0.00841537677,10.9657249,0.00829949323
+	persistentId = 204261359
+	pos = 0,10.426403,0
 	attPos = 0,0,0
 	attPos0 = 0,-1.03100014,0
 	rot = 0,0,0,1
@@ -677,19 +1041,19 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 3
 	resPri = 0
-	dstg = 1
+	dstg = 3
 	sidx = 0
-	sqor = 1
-	sepI = 1
+	sqor = 3
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.S1.Tank_4294399610
-	attN = top,TE.F1.S2.Engine_4294394802_0|0.084|0
-	attN = bottom,TE.F1.S1.Tank_4294399610_0|-0.084|0
+	link = TE.F1.S1.Tank_4294098144
+	attN = top,TE.F1.S2.Engine_4294093628_0|0.084|0
+	attN = bottom,TE.F1.S1.Tank_4294098144_0|-0.084|0
 	EVENTS
 	{
 	}
@@ -738,11 +1102,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -756,10 +1118,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S1.Tank_4294399610
+	part = TE.F1.S1.Tank_4294098144
 	partName = Part
-	persistentId = 3538443096
-	pos = -0.00841537677,6.70272541,0.00829949323
+	persistentId = 2073461891
+	pos = 0,6.16340351,0
 	attPos = 0,0,0
 	attPos0 = 0,-4.26299953,0
 	rot = 0,0,0,1
@@ -769,22 +1131,22 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 3
 	resPri = 0
-	dstg = 2
+	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 1
+	sepI = 3
 	attm = 0
 	modCost = 1134.40002
 	modMass = 0.200000003
 	modSize = 0,0,0
-	link = TE.F1.S1.Engine_4294392082
-	link = launchClamp1_4292541396
-	link = launchClamp1_4292540726
-	link = launchClamp1_4292540604
-	attN = top,TE.F1.Interstage_4294398332_0|4.179|0
-	attN = bottom,TE.F1.S1.Engine_4294392082_0|-3.599|0
+	link = TE.F1.S1.Engine_4294095948
+	link = launchClamp1_4294081152
+	link = launchClamp1_4294077050
+	link = launchClamp1_4294076928
+	attN = top,TE.F1.Interstage_4294100122_0|4.179|0
+	attN = bottom,TE.F1.S1.Engine_4294095948_0|-3.599|0
 	EVENTS
 	{
 	}
@@ -812,11 +1174,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -829,11 +1191,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -884,10 +1244,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S1.Engine_4294392082
+	part = TE.F1.S1.Engine_4294095948
 	partName = Part
-	persistentId = 1511490470
-	pos = -0.00841537677,2.54872513,0.00829949323
+	persistentId = 210331681
+	pos = 0,2.00940323,0
 	attPos = 0,0,0
 	attPos0 = 0,-4.15400028,0
 	rot = 0,0,0,1
@@ -897,17 +1257,17 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 5
 	resPri = 0
-	dstg = 2
+	dstg = 4
 	sidx = 0
-	sqor = 3
-	sepI = 1
+	sqor = 5
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.F1.S1.Tank_4294399610_0|0.555|0
+	attN = top,TE.F1.S1.Tank_4294098144_0|0.555|0
 	EVENTS
 	{
 	}
@@ -1038,33 +1398,9 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -1089,32 +1425,32 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292541396
+	part = launchClamp1_4294081152
 	partName = Part
-	persistentId = 1103383614
-	pos = -1.01839817,2.45773411,-1.00168324
+	persistentId = 2312984060
+	pos = -1.43089175,1.65284538,1.33383949E-07
 	attPos = 0,0,0
-	attPos0 = -1.00998282,-4.2449913,-1.00998271
-	rot = 0,-0.382683456,0,-0.923879564
+	attPos0 = -1.43089175,-4.51055813,1.33383949E-07
+	rot = 0,0.707106829,0,0.707106709
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.382683456,0,-0.923879564
+	attRot0 = 0,0.707106829,0,0.707106709
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
-	dstg = 2
+	dstg = 4
 	sidx = 0
-	sqor = 2
-	sepI = 2
+	sqor = 4
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292540726
-	sym = launchClamp1_4292540604
-	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	sym = launchClamp1_4294077050
+	sym = launchClamp1_4294076928
+	srfN = srfAttach,TE.F1.S1.Tank_4294098144
 	EVENTS
 	{
 	}
@@ -1128,10 +1464,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.23568881
-		height = 3.11788559
+		scaleFactor = 0.916692555
+		height = 2.31299591
 		stagingEnabled = True
-		towerRot = 0,0.382683456,0,-0.923879564
+		towerRot = 0,-0.707106829,0,0.707106709
 		EVENTS
 		{
 		}
@@ -1199,11 +1535,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -1217,32 +1551,32 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292540726
+	part = launchClamp1_4294077050
 	partName = Part
-	persistentId = 303604917
-	pos = -0.378094494,2.45773411,1.38796175
+	persistentId = 4006441929
+	pos = 0.715446174,1.65284538,1.23918855
 	attPos = 0,0,0
-	attPos0 = -0.369679123,-4.2449913,1.37966228
-	rot = 0,-0.991444945,0,-0.13052614
+	attPos0 = 0.715446174,-4.51055813,1.23918855
+	rot = 0,0.965925813,0,-0.258819163
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.991444945,0,-0.13052614
+	attRot0 = 0,0.965925813,0,-0.258819163
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
-	dstg = 2
+	dstg = 4
 	sidx = 0
-	sqor = 2
-	sepI = 2
+	sqor = 4
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292541396
-	sym = launchClamp1_4292540604
-	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	sym = launchClamp1_4294081152
+	sym = launchClamp1_4294076928
+	srfN = srfAttach,TE.F1.S1.Tank_4294098144
 	EVENTS
 	{
 	}
@@ -1256,10 +1590,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.23568881
-		height = 3.11788559
+		scaleFactor = 0.916692555
+		height = 2.31299591
 		stagingEnabled = True
-		towerRot = 0,0.991444945,0,-0.13052614
+		towerRot = 0,-0.965925813,0,-0.258819163
 		EVENTS
 		{
 		}
@@ -1327,11 +1661,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -1345,32 +1677,32 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292540604
+	part = launchClamp1_4294076928
 	partName = Part
-	persistentId = 1801040338
-	pos = 1.37124681,2.45773411,-0.361380041
+	persistentId = 1086124366
+	pos = 0.715445757,1.65284538,-1.23918879
 	attPos = 0,0,0
-	attPos0 = 1.37966216,-4.2449913,-0.36967954
-	rot = 0,-0.60876143,0,0.793353438
+	attPos0 = 0.715445757,-4.51055813,-1.23918879
+	rot = 0,0.258818895,0,-0.965925872
 	attRot = 0,0,0,1
-	attRot0 = 0,-0.60876143,0,0.793353438
+	attRot0 = 0,0.258818895,0,-0.965925872
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
-	dstg = 2
+	dstg = 4
 	sidx = 0
-	sqor = 2
-	sepI = 2
+	sqor = 4
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292541396
-	sym = launchClamp1_4292540726
-	srfN = srfAttach,TE.F1.S1.Tank_4294399610
+	sym = launchClamp1_4294081152
+	sym = launchClamp1_4294077050
+	srfN = srfAttach,TE.F1.S1.Tank_4294098144
 	EVENTS
 	{
 	}
@@ -1384,10 +1716,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.23568881
-		height = 3.11788559
+		scaleFactor = 0.916692555
+		height = 2.31299591
 		stagingEnabled = True
-		towerRot = 0,0.60876143,0,0.793353438
+		towerRot = 0,-0.258818895,0,-0.965925872
 		EVENTS
 		{
 		}
@@ -1455,11 +1787,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}

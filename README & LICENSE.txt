@@ -13,6 +13,13 @@ AnimatedDecoupler plugin is licensed by Starwaster > https://forum.kerbalspacepr
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Changelog:
+Version 1.2.2
+- Fixed Rodan re-entry
+- Fixed Mothra One fueltanks (Thanks Jade)
+- Fixed cryo tank types
+- Fixed tank volume for Mothra upper stage
+- Added placeholder IVA for Starship
+
 Version 1.2.1
 - Added Gojira Tanker version
 - Fixed Shielding on parts (Thanks JadeOfMaar!)
