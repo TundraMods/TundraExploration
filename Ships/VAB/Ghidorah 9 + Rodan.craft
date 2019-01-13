@@ -1256,8 +1256,8 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 2160
-		maxAmount = 2160
+		amount = 2340
+		maxAmount = 2340
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -1267,8 +1267,8 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 2640
-		maxAmount = 2640
+		amount = 2860
+		maxAmount = 2860
 		flowState = True
 		isTweakable = True
 		hideFlow = False
