@@ -1,8 +1,8 @@
 ship = Gojira 2018 Tanker
-version = 1.3.1
+version = 1.6.1
 description = Recreation of the BFR¨¨- Action key 1 = switch first stage engine + 4 raptor engines on the pod¨- Action key 2 = control forward fins¨- Action key 3 = control backward fins
 type = VAB
-size = 9.88877487,63.2215424,8.56550694
+size = 9.88877106,63.2215424,8.56550217
 steamPublishedFileId = 0
 persistentId = 641885596
 rot = 0,0,0,0
@@ -35,8 +35,8 @@ PART
 	modSize = 0,0,0
 	link = TE.18.BFS.BACK.TANK_4292021206
 	link = TE.18.BFS.Forward.FIN.L_4292136430
-	link = TE.18.BFS.Forward.FIN.R_4292119866
 	link = dockingPort2_4291708394
+	link = TE.18.BFS.Forward.FIN.R_4292119866
 	attN = WingL,TE.18.BFS.Forward.FIN.L_4292136430_-1.681|4.56201|0
 	attN = WingR,TE.18.BFS.Forward.FIN.R_4292119866_1.687|4.56201|0
 	attN = Node_bottom,TE.18.BFS.BACK.TANK_4292021206_0|-3.744|-0.004000068
@@ -56,6 +56,7 @@ PART
 		isEnabled = True
 		hibernation = False
 		hibernateOnWarp = False
+		activeControlPointName = _default
 		stagingEnabled = True
 		EVENTS
 		{
@@ -214,39 +215,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleLogisticsConsumer
-		isEnabled = True
-		lastCheck = -1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
@@ -264,24 +232,8 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -365,7 +317,7 @@ PART
 {
 	part = TE.18.BFS.BACK.TANK_4292021206
 	partName = Part
-	persistentId = 1517602907
+	persistentId = 545042161
 	pos = 0.260535449,48.6406403,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-7.91399765,-0.00400006771
@@ -400,11 +352,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -417,11 +369,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -474,7 +424,7 @@ PART
 {
 	part = TE.18.BFS.Engine.Fairing_4292097858
 	partName = Part
-	persistentId = 4223703060
+	persistentId = 1648162816
 	pos = 0.260535449,40.6326408,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-8.00799942,0
@@ -685,11 +635,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -702,11 +652,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -759,7 +707,7 @@ PART
 {
 	part = TE.18.BFS.TAIL_4292085696
 	partName = Part
-	persistentId = 2317447383
+	persistentId = 1459470697
 	pos = 0.260535449,39.3711586,-3.08855009
 	attPos = 0,0,0
 	attPos0 = 0,-1.26148224,-2.8112669
@@ -807,11 +755,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -827,7 +773,7 @@ PART
 {
 	part = TE.18.BFS.TAIL.WING.R_4292066336
 	partName = Part
-	persistentId = 1420062844
+	persistentId = 1040674527
 	pos = 2.68934155,39.5152283,1.12462866
 	attPos = 0,0,0
 	attPos0 = 2.42880607,-1.11741257,1.40191197
@@ -906,11 +852,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -926,7 +870,7 @@ PART
 {
 	part = TE.18.BFS.TAIL.WING.L_4292063150
 	partName = Part
-	persistentId = 534423732
+	persistentId = 1670229290
 	pos = -2.16967463,39.5152283,1.12462866
 	attPos = 0,0,0
 	attPos0 = -2.43021011,-1.11741257,1.40191197
@@ -1005,11 +949,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -1025,7 +967,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291749198
 	partName = Part
-	persistentId = 2948282841
+	persistentId = 581384684
 	pos = -0.605489969,37.4973869,-0.777283251
 	attPos = 0,0,0
 	attPos0 = -0.866025448,-3.13525295,-0.5
@@ -1067,6 +1009,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1268,25 +1211,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1314,7 +1240,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291740724
 	partName = Part
-	persistentId = 2583337510
+	persistentId = 944313096
 	pos = 0.260535449,37.4973869,-1.27728319
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,-1
@@ -1356,6 +1282,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1557,25 +1484,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1603,7 +1513,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291739972
 	partName = Part
-	persistentId = 3369013847
+	persistentId = 3007053079
 	pos = 1.12656081,37.4973869,-0.777283251
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525295,-0.5
@@ -1645,6 +1555,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1846,25 +1757,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1892,7 +1786,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291739220
 	partName = Part
-	persistentId = 2933450798
+	persistentId = 2733683358
 	pos = -0.605489969,37.4973869,0.222716808
 	attPos = 0,0,0
 	attPos0 = -0.866025448,-3.13525295,0.5
@@ -1934,6 +1828,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2135,25 +2030,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2181,7 +2059,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291738468
 	partName = Part
-	persistentId = 767657191
+	persistentId = 3498483764
 	pos = 0.260535449,37.4973869,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,0
@@ -2223,6 +2101,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2424,25 +2303,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2470,7 +2332,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291737716
 	partName = Part
-	persistentId = 3034488579
+	persistentId = 2688584612
 	pos = 1.12656081,37.4973869,0.222716808
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525295,0.5
@@ -2512,6 +2374,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2713,25 +2576,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2759,7 +2605,7 @@ PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291736964
 	partName = Part
-	persistentId = 3270280951
+	persistentId = 1573212001
 	pos = 0.260535449,37.4973869,0.722716928
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,1
@@ -2801,6 +2647,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3002,25 +2849,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3048,7 +2878,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293076328
 	partName = Part
-	persistentId = 1377473251
+	persistentId = 3712178640
 	pos = -0.251035005,37.5726395,1.62676895
 	attPos = 0,0,0
 	attPos0 = -0.511570454,-3.06000137,1.90405214
@@ -3103,27 +2933,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3155,7 +2966,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293073528
 	partName = Part
-	persistentId = 1596632470
+	persistentId = 2834582210
 	pos = 1.6537044,37.5726395,1.11777127
 	attPos = 0,0,0
 	attPos0 = 1.39316893,-3.06000137,1.39505446
@@ -3210,27 +3021,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3262,7 +3054,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293073468
 	partName = Part
-	persistentId = 629625601
+	persistentId = 1833180046
 	pos = 2.16527176,37.5726395,-0.786275566
 	attPos = 0,0,0
 	attPos0 = 1.9047364,-3.06000137,-0.508992374
@@ -3317,27 +3109,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3369,7 +3142,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293073408
 	partName = Part
-	persistentId = 2773227128
+	persistentId = 814803516
 	pos = 0.772104025,37.5726395,-2.18133068
 	attPos = 0,0,0
 	attPos0 = 0.511568546,-3.06000137,-1.90404749
@@ -3424,27 +3197,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3476,7 +3230,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293073348
 	partName = Part
-	persistentId = 168468766
+	persistentId = 2612278666
 	pos = -1.13263679,37.5726395,-1.67234135
 	attPos = 0,0,0
 	attPos0 = -1.39317226,-3.06000137,-1.39505816
@@ -3531,27 +3285,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3583,7 +3318,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO_4293073288
 	partName = Part
-	persistentId = 1989684244
+	persistentId = 3383870132
 	pos = -1.64420724,37.5726395,0.231710792
 	attPos = 0,0,0
 	attPos0 = -1.90474272,-3.06000137,0.508993983
@@ -3638,27 +3373,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleKISInventory
-		isEnabled = True
-		invName = 
-		helmetEquipped = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3690,7 +3406,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293064562
 	partName = Part
-	persistentId = 2230289257
+	persistentId = 2965818719
 	pos = 0.769528031,37.5726395,1.62745392
 	attPos = 0,0,0
 	attPos0 = 0.508992553,-3.06000137,1.90473711
@@ -3745,11 +3461,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -3762,11 +3478,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -3808,7 +3522,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293035030
 	partName = Part
-	persistentId = 3954405821
+	persistentId = 808702212
 	pos = 2.16458201,37.5726395,0.234285116
 	attPos = 0,0,0
 	attPos0 = 1.90404654,-3.06000137,0.511568308
@@ -3863,11 +3577,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -3880,11 +3594,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -3926,7 +3638,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293034966
 	partName = Part
-	persistentId = 3182843366
+	persistentId = 1799409773
 	pos = 1.65559006,37.5726395,-1.67045188
 	attPos = 0,0,0
 	attPos0 = 1.39505458,-3.06000137,-1.39316869
@@ -3981,11 +3693,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -3998,11 +3710,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4044,7 +3754,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293034902
 	partName = Part
-	persistentId = 3492382827
+	persistentId = 3949969806
 	pos = -0.248458058,37.5726395,-2.18202353
 	attPos = 0,0,0
 	attPos0 = -0.508993506,-3.06000137,-1.90474033
@@ -4099,11 +3809,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4116,11 +3826,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4162,7 +3870,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293034838
 	partName = Part
-	persistentId = 154570071
+	persistentId = 3135608755
 	pos = -1.64351797,37.5726395,-0.788853228
 	attPos = 0,0,0
 	attPos0 = -1.90405345,-3.06000137,-0.511570036
@@ -4217,11 +3925,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4234,11 +3942,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4280,7 +3986,7 @@ PART
 {
 	part = TE.18.BFS.ATP.CARGO2_4293034774
 	partName = Part
-	persistentId = 1335912783
+	persistentId = 1434035844
 	pos = -1.13452387,37.5726395,1.11588919
 	attPos = 0,0,0
 	attPos0 = -1.39505935,-3.06000137,1.39317238
@@ -4335,11 +4041,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Service
+		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4352,11 +4058,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Service
-		currentSubtype = Ore
 		EVENTS
 		{
 		}
@@ -4398,7 +4102,7 @@ PART
 {
 	part = TE.18.BFB.INTERSTAGE_4291707740
 	partName = Part
-	persistentId = 3597745229
+	persistentId = 3305799379
 	pos = 0.260535449,35.8194389,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-4.8132019,0
@@ -4445,6 +4149,7 @@ PART
 		isEnabled = True
 		hibernation = False
 		hibernateOnWarp = False
+		activeControlPointName = _default
 		stagingEnabled = True
 		EVENTS
 		{
@@ -4551,6 +4256,22 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleSAS
+		isEnabled = True
+		standaloneToggle = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleTestSubject
 		isEnabled = True
 		stagingEnabled = True
@@ -4597,72 +4318,8 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleLogisticsConsumer
-		isEnabled = True
-		lastCheck = -1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = tjs_DecouplerLight
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		ProgradeEntry = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -4709,7 +4366,7 @@ PART
 {
 	part = Grid Fin L Titanium_4291698998
 	partName = Part
-	persistentId = 1249812186
+	persistentId = 3652959515
 	pos = -2.18985319,35.3117027,-0.277282953
 	attPos = 0,0,0
 	attPos0 = -2.45038867,-0.507736206,2.38418579E-07
@@ -4825,11 +4482,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -4845,7 +4500,7 @@ PART
 {
 	part = Grid Fin L Titanium_4291691994
 	partName = Part
-	persistentId = 1603775604
+	persistentId = 709301976
 	pos = 0.260535449,35.3117027,2.17310524
 	attPos = 0,0,0
 	attPos0 = 0,-0.507736206,2.45038843
@@ -4961,11 +4616,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -4981,7 +4634,7 @@ PART
 {
 	part = Grid Fin L Titanium_4291691924
 	partName = Part
-	persistentId = 2344461586
+	persistentId = 3641368907
 	pos = 2.71092415,35.3117027,-0.27728343
 	attPos = 0,0,0
 	attPos0 = 2.45038867,-0.507736206,-2.38418579E-07
@@ -5097,11 +4750,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5117,7 +4768,7 @@ PART
 {
 	part = Grid Fin L Titanium_4291691854
 	partName = Part
-	persistentId = 4215638418
+	persistentId = 2282405261
 	pos = 0.26053521,35.3117027,-2.72767162
 	attPos = 0,0,0
 	attPos0 = -2.38418579E-07,-0.507736206,-2.45038843
@@ -5233,11 +4884,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5253,7 +4902,7 @@ PART
 {
 	part = HotGasThruster-L_4291694374
 	partName = Part
-	persistentId = 3313969761
+	persistentId = 170262170
 	pos = -2.19869328,35.8388138,-0.277282953
 	attPos = 0,0,0
 	attPos0 = -2.45922875,0.0193748474,2.38418579E-07
@@ -5337,11 +4986,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5357,7 +5004,7 @@ PART
 {
 	part = HotGasThruster-L_4291691730
 	partName = Part
-	persistentId = 181072107
+	persistentId = 3573623257
 	pos = 0.260535449,35.8388138,2.18194532
 	attPos = 0,0,0
 	attPos0 = 0,0.0193748474,2.45922852
@@ -5441,11 +5088,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5461,7 +5106,7 @@ PART
 {
 	part = HotGasThruster-L_4291691670
 	partName = Part
-	persistentId = 182020557
+	persistentId = 3737267567
 	pos = 2.71976423,35.8388138,-0.27728343
 	attPos = 0,0,0
 	attPos0 = 2.45922875,0.0193748474,-2.38418579E-07
@@ -5545,11 +5190,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5565,7 +5208,7 @@ PART
 {
 	part = HotGasThruster-L_4291691610
 	partName = Part
-	persistentId = 1076539220
+	persistentId = 3896091143
 	pos = 0.26053521,35.8388138,-2.73651171
 	attPos = 0,0,0
 	attPos0 = -2.38418579E-07,0.0193748474,-2.45922852
@@ -5649,11 +5292,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -5669,7 +5310,7 @@ PART
 {
 	part = TE.18.BFB.FUELTANK_4291685368
 	partName = Part
-	persistentId = 2413299300
+	persistentId = 3336386963
 	pos = 0.260535449,27.1661224,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-8.65331745,0
@@ -5704,11 +5345,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -5721,11 +5362,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -5778,7 +5417,7 @@ PART
 {
 	part = TE.18.BFB.FUELTANK_4291685078
 	partName = Part
-	persistentId = 4082299841
+	persistentId = 38967445
 	pos = 0.260535449,12.5374908,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-14.6286306,0
@@ -5813,11 +5452,11 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
+		moduleID = TE_Fuel
+		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -5830,11 +5469,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		moduleID = TE_Fuel
-		currentSubtype = LFO
 		EVENTS
 		{
 		}
@@ -5887,7 +5524,7 @@ PART
 {
 	part = TE.18.BFB.ENGINE.CLUSTER_4291664480
 	partName = Part
-	persistentId = 1321281340
+	persistentId = 2204862770
 	pos = 0.260535449,2.32837677,-0.277283192
 	attPos = 0,0,0
 	attPos0 = 0,-10.209115,0
@@ -5972,6 +5609,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -6012,6 +5650,7 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = True
+		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -6189,25 +5828,8 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = EngineLightEffect
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -6235,7 +5857,7 @@ PART
 {
 	part = launchClamp1_4291488612
 	partName = Part
-	persistentId = 2632464467
+	persistentId = 1787422189
 	pos = -3.17783713,2.13509369,-0.277282953
 	attPos = 0,0,0
 	attPos0 = -3.43837261,-0.193283081,2.38418579E-07
@@ -6346,11 +5968,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -6366,7 +5986,7 @@ PART
 {
 	part = launchClamp1_4291484356
 	partName = Part
-	persistentId = 542222049
+	persistentId = 1336975323
 	pos = -1.45865035,2.13509369,2.70043421
 	attPos = 0,0,0
 	attPos0 = -1.71918583,-0.193283081,2.97771764
@@ -6477,11 +6097,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -6497,7 +6115,7 @@ PART
 {
 	part = launchClamp1_4291484234
 	partName = Part
-	persistentId = 465815401
+	persistentId = 3873052522
 	pos = 1.97972226,2.13509369,2.70043421
 	attPos = 0,0,0
 	attPos0 = 1.71918678,-0.193283081,2.97771764
@@ -6608,11 +6226,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -6628,7 +6244,7 @@ PART
 {
 	part = launchClamp1_4291484112
 	partName = Part
-	persistentId = 1349635648
+	persistentId = 4238772505
 	pos = 3.69890785,2.13509369,-0.277283788
 	attPos = 0,0,0
 	attPos0 = 3.43837237,-0.193283081,-5.96046448E-07
@@ -6739,11 +6355,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -6759,7 +6373,7 @@ PART
 {
 	part = launchClamp1_4291483990
 	partName = Part
-	persistentId = 3466272567
+	persistentId = 2346854878
 	pos = 1.97972143,2.13509369,-3.25500154
 	attPos = 0,0,0
 	attPos0 = 1.71918595,-0.193283081,-2.97771835
@@ -6870,11 +6484,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -6890,7 +6502,7 @@ PART
 {
 	part = launchClamp1_4291483868
 	partName = Part
-	persistentId = 1394358056
+	persistentId = 3171949160
 	pos = -1.45865035,2.13509369,-3.25500107
 	attPos = 0,0,0
 	attPos0 = -1.71918583,-0.193283081,-2.97771811
@@ -7001,11 +6613,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -7021,7 +6631,7 @@ PART
 {
 	part = TE.18.BFS.Forward.FIN.L_4292136430
 	partName = Part
-	persistentId = 4283415069
+	persistentId = 3504396197
 	pos = -1.42046452,61.1166458,-0.273283124
 	attPos = 0,0,0
 	attPos0 = -1.68099999,4.5620079,0
@@ -7100,110 +6710,9 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
-		isEnabled = True
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = TE.18.BFS.Forward.FIN.R_4292119866
-	partName = Part
-	persistentId = 1136129409
-	pos = 1.94753551,61.1166458,-0.273283124
-	attPos = 0,0,0
-	attPos0 = 1.68700004,4.5620079,0
-	rot = 0,1,0,0
-	attRot = 0,0.999999881,0,0
-	attRot0 = 0,1,0,0
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 0
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = bottom,TE.18.BFS.TANKER_4291747308_0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Custom03
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = RetractableLiftingSurface
-		isEnabled = True
-		retractedDeflectionLiftCoeff = 0.5
-		extendedDeflectionLiftCoeff = 0.899999976
-		retracted = 1
-		retractedCtlSfcDeflectionLiftCoeff = 0.5
-		extendedCtlSfcDeflectionLiftCoeff = 0.899999976
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FMRS_PM
-		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
 		EVENTS
 		{
 		}
@@ -7301,35 +6810,29 @@ PART
 	}
 	MODULE
 	{
-		name = FMRS_PM
+		name = MASRadar
 		isEnabled = True
-		stagingEnabled = True
-		MM_DYNAMIC = true
-		parent_vessel = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
+		radarEnabled = False
+		targetDebris = False
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ToggleAction
+			RadarOffAction
 			{
-				actionGroup = Light
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			RadarOnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleRadarAction
+			{
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -7339,11 +6842,17 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartSwitch
+		name = MASCamera
 		isEnabled = True
+		goalFov = 10
+		currentFov = 10
+		goalPan = 0
+		currentPan = 0
+		goalTilt = 0
+		currentTilt = 0
+		cameraName = DockCam
+		activeMode = 0
 		stagingEnabled = True
-		moduleID = lookSwitch
-		currentSubtype = Stripe
 		EVENTS
 		{
 		}
@@ -7356,8 +6865,105 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartInfo
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = TE.18.BFS.Forward.FIN.R_4292119866
+	partName = Part
+	persistentId = 2707446516
+	pos = 1.94753551,61.1166458,-0.273283124
+	attPos = 0,0,0
+	attPos0 = 1.68700004,4.5620079,0
+	rot = 0,1,0,0
+	attRot = 0,0.999999881,0,0
+	attRot0 = 0,1,0,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 0
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = bottom,TE.18.BFS.TANKER_4291747308_0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
 		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = Custom03
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = RetractableLiftingSurface
+		isEnabled = True
+		retractedDeflectionLiftCoeff = 0.5
+		extendedDeflectionLiftCoeff = 0.899999976
+		retracted = 1
+		retractedCtlSfcDeflectionLiftCoeff = 0.5
+		extendedCtlSfcDeflectionLiftCoeff = 0.899999976
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
 		stagingEnabled = True
 		EVENTS
 		{
