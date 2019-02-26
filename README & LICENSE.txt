@@ -5,20 +5,44 @@ Continued by damonvv.
 
 LICENSE
 Any  of the configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models and plugins are distributed under CC BY_NC-ND.
-Near Future Solar plugin licensed by Nertea > https://forum.kerbalspaceprogram.com/index.php?/topic/155465-131-near-future-technologies/
-WildBlueIndustry plugins licensed by Angle-125 > https://github.com/Angel-125
-Retractableliftingsurface plugin is licensed by linuxgurugamer >https://forum.kerbalspaceprogram.com/index.php?/topic/145583-14x-retractableliftingsurface-module-released/
-AnimatedDecoupler plugin is licensed by Starwaster > https://forum.kerbalspaceprogram.com/index.php?/topic/170880-14x-animated-decouplers-140/
+The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
-Changelog:
+Version 1.4.0.0
+- Added Revamped New Horizons (Paneer) parts
+- Fixed fairing colliding with interstage
+- Fixed Ghidorah interstage not pushing second stage away
+- Octopus plume update
+- Cargo box adjustments
+- Updated CoL heatshield Gigan
+- 
+
+Version 1.3.0.3
+- Fixed Gigan trunk node
+- Fixed missing parts that caused breaking saves
+
+Version 1.3
+- Revamped Mothra 1 launcher
+- Revamped Ghidorah 9 launcher
+- Revamped Gigan parts
+- Updated sounds/patches
+- Expandable plumes by Nessus_ (needs Smokescreen)
+- Added strongback (Needs Advanced Textures)
+- Added CCK support
+
+Version 1.2.3
+- Updated Rodan pods textures
+- Added new Ghidorah 9 textures
+- Added the Transporter Erector (must install AdvancedTextures)
+- Fixed SAS on Gojira Super Heavy
+- Fixed bulkheadProfiles on TT_NewHorizons_Antenna and TT_NewHorizons_Body
+
 Version 1.2.2
 - Fixed Rodan re-entry
-- Fixed Mothra One fueltanks (Thanks Jade)
 - Fixed cryo tank types
 - Fixed tank volume for Mothra upper stage
 - Added placeholder IVA for Starship
+- Added Tweakscale support
 
 Version 1.2.1
 - Added Gojira Tanker version
