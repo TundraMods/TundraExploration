@@ -37,6 +37,7 @@ PART
 	link = TE.19.C-Dragon.Heatshield_4294003634
 	link = parachuteRadial_4293815314
 	link = parachuteRadial_4293812692
+	link = radialDrogue_4294051398
 	attN = node_top,TE.19.C-Dragon.Nosecone_4294011130_0|1.342|0
 	attN = node_down,TE.19.C-Dragon.Heatshield_4294003634_0|-0.5976782|0
 	EVENTS
@@ -330,12 +331,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 3
+	istg = 5
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 3
-	sepI = 3
+	sqor = 5
+	sepI = 5
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -483,12 +484,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 0
-	sepI = 0
+	sqor = 2
+	sepI = 2
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -510,6 +511,43 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleColorChanger
+		isEnabled = True
+		animState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -575,12 +613,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 2
-	sepI = 2
+	sqor = 4
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -746,12 +784,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 3
 	resPri = 0
 	dstg = 1
 	sidx = 0
-	sqor = 1
-	sepI = 1
+	sqor = 3
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -819,12 +857,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 4
 	attm = 0
 	modCost = 3686.80005
 	modMass = 0.650000036
@@ -944,12 +982,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Grandparent
 	rigidAttachment = False
-	istg = 4
+	istg = 6
 	resPri = 0
 	dstg = 2
 	sidx = 0
-	sqor = 4
-	sepI = 2
+	sqor = 6
+	sepI = 4
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1219,12 +1257,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Root
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 5
-	sepI = 5
+	sqor = 7
+	sepI = 7
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1439,6 +1477,44 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleEngines
+		isEnabled = True
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleB9PropagateCopyEvents
 		isEnabled = False
 		stagingEnabled = True
@@ -1497,6 +1573,17 @@ PART
 		isVisible = True
 		flowMode = Both
 	}
+	RESOURCE
+	{
+		name = SolidFuel
+		amount = 5
+		maxAmount = 5
+		flowState = True
+		isTweakable = True
+		hideFlow = False
+		isVisible = True
+		flowMode = Both
+	}
 }
 PART
 {
@@ -1513,12 +1600,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Root
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 0
 	modCost = 15881.5996
 	modMass = 2.80000019
@@ -1708,12 +1795,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Grandparent
 	rigidAttachment = False
-	istg = 7
+	istg = 9
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 7
-	sepI = 5
+	sqor = 9
+	sepI = 7
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -1779,6 +1866,47 @@ PART
 		currentThrottle = 0
 		thrustPercentage = 100
 		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = False
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = True
 		includeinDVCalcs = False
 		stagingEnabled = True
 		EVENTS
@@ -2005,47 +2133,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnginesFX
-		isEnabled = False
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = True
-		includeinDVCalcs = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PropagateCopyEvents
 		isEnabled = False
 		stagingEnabled = True
@@ -2086,12 +2173,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Heaviest
 	rigidAttachment = False
-	istg = 6
+	istg = 8
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 6
-	sepI = 6
+	sqor = 8
+	sepI = 8
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -2333,19 +2420,19 @@ PART
 	pos = 0.766337276,1.93835068,-0.766982198
 	attPos = 0,0,0
 	attPos0 = 0.767067373,-17.8116989,-0.767067194
-	rot = -0.000418269716,0.382683337,-0.000173253226,-0.923879564
+	rot = -0.000418269716,0.382683337,-0.00017325324,-0.923879564
 	attRot = 0,0,0,1
 	attRot0 = -0.00041827056,0.382683069,-0.000173253167,-0.923879564
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -2525,12 +2612,12 @@ PART
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -2703,19 +2790,19 @@ PART
 	pos = -0.767805934,1.93835068,0.76715827
 	attPos = 0,0,0
 	attPos0 = -0.767067313,-17.8116989,0.767067254
-	rot = -0.000173253051,-0.923879564,0.000418269687,-0.382683337
+	rot = -0.000173253065,-0.923879564,0.000418269687,-0.382683337
 	attRot = 0,0,0,1
 	attRot0 = -0.000173253153,-0.923879564,0.00041827056,-0.382683039
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -2895,12 +2982,12 @@ PART
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3080,12 +3167,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3180,12 +3267,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3270,7 +3357,7 @@ PART
 	part = Grid Fin M Titanium_4292049114
 	partName = Part
 	persistentId = 2656232208
-	pos = -0.852327585,29.1029282,-0.851505756
+	pos = -0.852327585,29.1029282,-0.851505995
 	attPos = 0.0320440531,0,0.0320440531
 	attPos0 = -0.883637428,-0.138124466,-0.883637309
 	rot = 0.382683456,-3.34052679E-08,-0.923879623,8.06474674E-08
@@ -3280,12 +3367,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3404,7 +3491,7 @@ PART
 	part = Grid Fin M Titanium_4292047046
 	partName = Part
 	persistentId = 937886317
-	pos = -0.852327943,29.1029282,0.851681113
+	pos = -0.852328062,29.1029282,0.851681113
 	attPos = 0.0320440531,0,-0.0320440531
 	attPos0 = -0.883637309,-0.138124466,0.883637309
 	rot = -0.382683456,3.34052785E-08,-0.923879743,8.06474745E-08
@@ -3414,12 +3501,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3541,19 +3628,19 @@ PART
 	pos = 0.850859284,29.1029282,0.851681471
 	attPos = -0.0320440531,0,-0.0320440531
 	attPos0 = 0.883637488,-0.138124466,0.883637249
-	rot = -0.923879623,8.06475313E-08,-0.382683456,3.34052892E-08
+	rot = -0.923879623,8.06475811E-08,-0.382683456,3.34053034E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.923879564,8.06474532E-08,-0.382683396,3.34052608E-08
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3682,12 +3769,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 5
+	istg = 7
 	resPri = 0
 	dstg = 4
 	sidx = -1
 	sqor = -1
-	sepI = 5
+	sepI = 7
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3816,12 +3903,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -3915,12 +4002,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 2
+	istg = 4
 	resPri = 0
 	dstg = 2
 	sidx = -1
 	sqor = -1
-	sepI = 2
+	sepI = 4
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4014,12 +4101,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4037,8 +4124,11 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = KopernicusSolarPanel
 		isEnabled = True
+		trackingBodyName = The Sun
+		manualTracking = False
+		relativeSunAOA = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (0, -0.707106829, 0, 0.707106829)
@@ -4058,7 +4148,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom02
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -4095,19 +4185,19 @@ PART
 	pos = 0.186079875,40.6581154,1.04388213
 	attPos = 0,0,0
 	attPos0 = -0.251417696,0.0810661316,1.03014314
-	rot = 0.545643985,-1.083173E-09,-0.838017225,1.66357217E-09
+	rot = 0.545643985,-1.08317288E-09,-0.838017166,1.66357206E-09
 	attRot = -0.999999881,0,0,0
 	attRot0 = 0.707106769,-1.40369771E-09,-0.707106829,1.40369794E-09
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 2
 	resPri = 0
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = 2
 	attm = 1
 	modCost = 0
 	modMass = 0
@@ -4125,8 +4215,11 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleDeployableSolarPanel
+		name = KopernicusSolarPanel
 		isEnabled = True
+		trackingBodyName = The Sun
+		manualTracking = False
+		relativeSunAOA = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (0, -0.707106829, 0, 0.707106829)
@@ -4146,7 +4239,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom02
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -4180,7 +4273,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294397442
 	partName = Part
 	persistentId = 2036224820
-	pos = -0.481334716,40.5580482,-1.08635902
+	pos = -0.481334776,40.5580482,-1.08635902
 	attPos = 0,0,0
 	attPos0 = 0,-0.0190010071,-1.18799996
 	rot = 0,0.978396118,0,-0.206739292
@@ -4190,12 +4283,12 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 3
 	resPri = 0
 	dstg = 1
 	sidx = 1
-	sqor = 1
-	sepI = 1
+	sqor = 3
+	sepI = 3
 	attm = 0
 	modCost = 0
 	modMass = 0
@@ -4253,12 +4346,139 @@ PART
 	part = parachuteRadial_4293815314
 	partName = Part
 	persistentId = 2872085486
-	pos = 0.767001271,43.0428925,-0.255031735
-	attPos = -0.14043498,-0.0351753235,0.0426004827
+	pos = 0.768565297,43.0428925,-0.255031735
+	attPos = -0.138870955,-0.0351753235,0.0426004827
 	attPos0 = 0.908170462,0.692398071,-0.297720164
 	rot = -0.0942574143,0.591583312,-0.0699060485,-0.797657788
 	attRot = 0,0,0,1
 	attRot0 = -0.0942574143,0.591583312,-0.0699060485,-0.797657788
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,TE.19.C-Dragon.Pod_4294454934
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			CutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PropagateCopyEvents
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293812692
+	partName = Part
+	persistentId = 2417188816
+	pos = 0.785971761,43.0302811,0.224075705
+	attPos = -0.130479336,-0.0409812927,-0.0496331751
+	attPos0 = 0.917185307,0.685592651,0.273620933
+	rot = -0.0699060634,0.797657728,-0.0942574218,-0.591583371
+	attRot = 0,0,0,1
+	attRot0 = -0.0699060634,0.797657728,-0.0942574218,-0.591583371
 	mir = 1,1,1
 	symMethod = Mirror
 	autostrutMode = Off
@@ -4377,24 +4597,24 @@ PART
 }
 PART
 {
-	part = parachuteRadial_4293812692
+	part = radialDrogue_4294051398
 	partName = Part
-	persistentId = 2417188816
-	pos = 0.752832294,43.0302811,0.224075705
-	attPos = -0.163618803,-0.0409812927,-0.0496331751
-	attPos0 = 0.917185307,0.685592651,0.273620933
-	rot = -0.0699060634,0.797657728,-0.0942574218,-0.591583371
+	persistentId = 1279610366
+	pos = 0.851225138,43.1856689,8.79466534E-05
+	attPos = -0.0639851093,-0.0668258667,-5.459151E-08
+	attPos0 = 0.915944457,0.866825104,5.459151E-08
+	rot = -0.082979843,0.702221036,-0.0829798505,-0.702221036
 	attRot = 0,0,0,1
-	attRot0 = -0.0699060634,0.797657728,-0.0942574218,-0.591583371
+	attRot0 = -0.082979843,0.702221036,-0.0829798505,-0.702221036
 	mir = 1,1,1
-	symMethod = Mirror
+	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 2
-	sqor = 0
+	sidx = 0
+	sqor = 1
 	sepI = -1
 	attm = 1
 	modCost = 0
@@ -4416,8 +4636,8 @@ PART
 		isEnabled = True
 		persistentState = STOWED
 		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
+		minAirPressureToOpen = 0.0199999996
+		deployAltitude = 2500
 		spreadAngle = 7
 		automateSafeDeploy = 0
 		stagingEnabled = True
