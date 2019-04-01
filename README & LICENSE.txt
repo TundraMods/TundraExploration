@@ -15,7 +15,7 @@ Version 1.4.0.0
 - Octopus plume update
 - Cargo box adjustments
 - Updated CoL heatshield Gigan
-- 
+- Revamped Rodan IVA
 
 Version 1.3.0.3
 - Fixed Gigan trunk node
