@@ -13,9 +13,9 @@ PART
 	part = TE.18.BFS.CommandPod_4292493178
 	partName = Part
 	persistentId = 1818868425
-	pos = -0.000223017822,57.936142,0.000270581018
+	pos = 0.108835995,60.6796761,-0.145091534
 	attPos = 0,0,0
-	attPos0 = -0.000223017822,57.936142,0.000270581018
+	attPos0 = 0.108835995,60.6796761,-0.145091534
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -49,6 +49,88 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = -30.3333321
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoBay
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -125,58 +207,6 @@ PART
 				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = -27.5
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = -30.3333321
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -310,21 +340,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -359,7 +374,7 @@ PART
 	part = TE.18.BFS.Forward.FIN.L_4292136430
 	partName = Part
 	persistentId = 4283415069
-	pos = -1.68122303,61.3021469,0.000270581018
+	pos = -1.57216406,64.0456848,-0.145091534
 	attPos = 0,0,0
 	attPos0 = -1.68099999,3.36600494,0
 	rot = 0,0,0,1
@@ -415,48 +430,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = RetractableLiftingSurface
-		isEnabled = True
-		retractedDeflectionLiftCoeff = 0.5
-		extendedDeflectionLiftCoeff = 0.899999976
-		retracted = 1
-		retractedCtlSfcDeflectionLiftCoeff = 0.5
-		extendedCtlSfcDeflectionLiftCoeff = 0.899999976
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFS.BACK.TANK_4292021206
 	partName = Part
 	persistentId = 1517602907
-	pos = -0.000223017822,48.8371391,-0.00372948661
+	pos = 0.108835995,51.5806732,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-9.09900284,-0.00400006771
 	rot = 0,0,0,1
@@ -500,21 +480,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -563,7 +543,7 @@ PART
 	part = TE.18.BFS.Engine.Fairing_4292097858
 	partName = Part
 	persistentId = 4223703060
-	pos = -0.000223017822,40.8291397,-0.00372948661
+	pos = 0.108835995,43.5726738,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-8.00799942,0
 	rot = 0,0,0,1
@@ -783,21 +763,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -846,7 +826,7 @@ PART
 	part = TE.18.BFS.TAIL_4292085696
 	partName = Part
 	persistentId = 2317447383
-	pos = -0.000223017822,39.5676575,-2.81499648
+	pos = 0.108835995,42.3111916,-2.96035862
 	attPos = 0,0,0
 	attPos0 = 0,-1.26148224,-2.8112669
 	rot = 0,-0.707106829,0,0.707106829
@@ -891,28 +871,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFS.TAIL.WING.R_4292066336
 	partName = Part
 	persistentId = 1420062844
-	pos = 2.42858315,39.7117271,1.39818239
+	pos = 2.537642,42.4552612,1.25282025
 	attPos = 0,0,0
 	attPos0 = 2.42880607,-1.11741257,1.40191197
 	rot = 0,0.965924203,0,0.258825243
@@ -968,48 +933,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = RetractableLiftingSurface
-		isEnabled = True
-		retractedDeflectionLiftCoeff = 2
-		extendedDeflectionLiftCoeff = 2.79999995
-		retracted = 1
-		retractedCtlSfcDeflectionLiftCoeff = 2
-		extendedCtlSfcDeflectionLiftCoeff = 2.79999995
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFS.TAIL.WING.L_4292063150
 	partName = Part
 	persistentId = 534423732
-	pos = -2.43043303,39.7117271,1.39818239
+	pos = -2.32137418,42.4552612,1.25282025
 	attPos = 0,0,0
 	attPos0 = -2.43021011,-1.11741257,1.40191197
 	rot = 0,0.258825243,0,0.965924203
@@ -1065,48 +995,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = RetractableLiftingSurface
-		isEnabled = True
-		retractedDeflectionLiftCoeff = 2
-		extendedDeflectionLiftCoeff = 2.79999995
-		retracted = 1
-		retractedCtlSfcDeflectionLiftCoeff = 2
-		extendedCtlSfcDeflectionLiftCoeff = 2.79999995
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFS.SL.RAPTOR_4291749198
 	partName = Part
 	persistentId = 2948282841
-	pos = -0.866248488,37.6938858,-0.503729522
+	pos = -0.757189453,40.4374199,-0.649091661
 	attPos = 0,0,0
 	attPos0 = -0.866025448,-3.13525295,-0.5
 	rot = 0,0,0,1
@@ -1347,21 +1242,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1379,7 +1259,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291740724
 	partName = Part
 	persistentId = 2583337510
-	pos = -0.000223017822,37.6938858,-1.00372946
+	pos = 0.108835995,40.4374199,-1.1490916
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,-1
 	rot = 0,0,0,1
@@ -1620,21 +1500,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1652,7 +1517,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291739972
 	partName = Part
 	persistentId = 3369013847
-	pos = 0.865802348,37.6938858,-0.503729522
+	pos = 0.974861383,40.4374199,-0.649091661
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525295,-0.5
 	rot = 0,0,0,1
@@ -1893,21 +1758,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1925,7 +1775,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291739220
 	partName = Part
 	persistentId = 2933450798
-	pos = -0.866248488,37.6938858,0.496270508
+	pos = -0.757189453,40.4374199,0.350908399
 	attPos = 0,0,0
 	attPos0 = -0.866025448,-3.13525295,0.5
 	rot = 0,0,0,1
@@ -2166,21 +2016,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2198,7 +2033,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291738468
 	partName = Part
 	persistentId = 767657191
-	pos = -0.000223017822,37.6938858,-0.00372948661
+	pos = 0.108835995,40.4374199,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,0
 	rot = 0,0,0,1
@@ -2439,21 +2274,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2471,7 +2291,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291737716
 	partName = Part
 	persistentId = 3034488579
-	pos = 0.865802348,37.6938858,0.496270508
+	pos = 0.974861383,40.4374199,0.350908399
 	attPos = 0,0,0
 	attPos0 = 0.866025388,-3.13525295,0.5
 	rot = 0,0,0,1
@@ -2712,21 +2532,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2744,7 +2549,7 @@ PART
 	part = TE.18.BFS.SL.RAPTOR_4291736964
 	partName = Part
 	persistentId = 3270280951
-	pos = -0.000223017822,37.6938858,0.996270657
+	pos = 0.108835995,40.4374199,0.850908518
 	attPos = 0,0,0
 	attPos0 = 0,-3.13525295,1
 	rot = 0,0,0,1
@@ -2985,21 +2790,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -3017,7 +2807,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293076328
 	partName = Part
 	persistentId = 1377473251
-	pos = -0.511793494,37.7691383,1.90032268
+	pos = -0.402734458,40.5126724,1.75496054
 	attPos = 0,0,0
 	attPos0 = -0.511570454,-3.06000137,1.90405214
 	rot = 0,-0.133190662,0,0.991090417
@@ -3064,21 +2854,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3105,7 +2895,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293073528
 	partName = Part
 	persistentId = 1596632470
-	pos = 1.39294589,37.7691383,1.391325
+	pos = 1.50200486,40.5126724,1.24596286
 	attPos = 0,0,0
 	attPos0 = 1.39316893,-3.06000137,1.39505446
 	rot = 0,0.380198717,0,0.924904823
@@ -3152,21 +2942,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3193,7 +2983,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293073468
 	partName = Part
 	persistentId = 629625601
-	pos = 1.90451336,37.7691383,-0.512721837
+	pos = 2.01357245,40.5126724,-0.658083975
 	attPos = 0,0,0
 	attPos0 = 1.9047364,-3.06000137,-0.508992374
 	rot = 0,0.791714191,0,0.6108917
@@ -3240,21 +3030,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3281,7 +3071,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293073408
 	partName = Part
 	persistentId = 2773227128
-	pos = 0.511345506,37.7691383,-1.90777695
+	pos = 0.620404541,40.5126724,-2.05313921
 	attPos = 0,0,0
 	attPos0 = 0.511568546,-3.06000137,-1.90404749
 	rot = 0,0.991090477,0,0.133190632
@@ -3328,21 +3118,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3369,7 +3159,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293073348
 	partName = Part
 	persistentId = 168468766
-	pos = -1.3933953,37.7691383,-1.39878762
+	pos = -1.28433633,40.5126724,-1.54414976
 	attPos = 0,0,0
 	attPos0 = -1.39317226,-3.06000137,-1.39505816
 	rot = 0,0.924904823,0,-0.380198777
@@ -3416,21 +3206,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3457,7 +3247,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO_4293073288
 	partName = Part
 	persistentId = 1989684244
-	pos = -1.90496576,37.7691383,0.505264521
+	pos = -1.79590678,40.5126724,0.359902382
 	attPos = 0,0,0
 	attPos0 = -1.90474272,-3.06000137,0.508993983
 	rot = 0,0.610891759,0,-0.791714132
@@ -3504,21 +3294,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3545,7 +3335,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293064562
 	partName = Part
 	persistentId = 2230289257
-	pos = 0.508769512,37.7691383,1.90100765
+	pos = 0.617828548,40.5126724,1.75564551
 	attPos = 0,0,0
 	attPos0 = 0.508992553,-3.06000137,1.90473711
 	rot = 0,0.127860963,0,0.991792142
@@ -3592,6 +3382,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3609,21 +3414,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3661,7 +3466,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293035030
 	partName = Part
 	persistentId = 3954405821
-	pos = 1.90382349,37.7691383,0.507838845
+	pos = 2.01288247,40.5126724,0.362476707
 	attPos = 0,0,0
 	attPos0 = 1.90404654,-3.06000137,0.511568308
 	rot = 0,0.606626928,0,0.794986665
@@ -3708,6 +3513,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3725,21 +3545,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3777,7 +3597,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293034966
 	partName = Part
 	persistentId = 3182843366
-	pos = 1.39483154,37.7691383,-1.39689815
+	pos = 1.50389051,40.5126724,-1.54226029
 	attPos = 0,0,0
 	attPos0 = 1.39505458,-3.06000137,-1.39316869
 	rot = 0,0.922847688,0,0.385165185
@@ -3824,6 +3644,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3841,21 +3676,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3893,7 +3728,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293034902
 	partName = Part
 	persistentId = 3492382827
-	pos = -0.509216547,37.7691383,-1.9084698
+	pos = -0.400157511,40.5126724,-2.05383205
 	attPos = 0,0,0
 	attPos0 = -0.508993506,-3.06000137,-1.90474033
 	rot = 0,0.991792142,0,-0.127861008
@@ -3940,6 +3775,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3957,21 +3807,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4009,7 +3859,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293034838
 	partName = Part
 	persistentId = 154570071
-	pos = -1.90427649,37.7691383,-0.515299499
+	pos = -1.79521751,40.5126724,-0.660661638
 	attPos = 0,0,0
 	attPos0 = -1.90405345,-3.06000137,-0.511570036
 	rot = 0,0.794986665,0,-0.606626987
@@ -4056,6 +3906,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4073,21 +3938,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4125,7 +3990,7 @@ PART
 	part = TE.18.BFS.ATP.CARGO2_4293034774
 	partName = Part
 	persistentId = 1335912783
-	pos = -1.39528239,37.7691383,1.38944292
+	pos = -1.28622341,40.5126724,1.24408078
 	attPos = 0,0,0
 	attPos0 = -1.39505935,-3.06000137,1.39317238
 	rot = 0,0.385165304,0,-0.922847688
@@ -4172,6 +4037,21 @@ PART
 		}
 		ACTIONS
 		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4189,21 +4069,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4241,7 +4121,7 @@ PART
 	part = TE.18.BFB.INTERSTAGE_4291707740
 	partName = Part
 	persistentId = 3597745229
-	pos = -0.000223017822,36.0159378,-0.00372948661
+	pos = 0.108835995,38.7594719,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-4.8132019,0
 	rot = 0,0,0,1
@@ -4456,21 +4336,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -4505,7 +4370,7 @@ PART
 	part = Grid Fin L Titanium_4291698998
 	partName = Part
 	persistentId = 1249812186
-	pos = -2.45061159,35.5082016,-0.00372924819
+	pos = -2.34155273,38.2517357,-0.149091363
 	attPos = 0,0,0
 	attPos0 = -2.45038867,-0.507736206,2.38418579E-07
 	rot = -1.68587405E-07,0,-1,0
@@ -4618,28 +4483,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin L Titanium_4291691994
 	partName = Part
 	persistentId = 1603775604
-	pos = -0.000223017822,35.5082016,2.44665885
+	pos = 0.108835995,38.2517357,2.30129671
 	attPos = 0,0,0
 	attPos0 = 0,-0.507736206,2.45038843
 	rot = -0.707106888,0,-0.70710665,0
@@ -4752,28 +4602,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin L Titanium_4291691924
 	partName = Part
 	persistentId = 2344461586
-	pos = 2.45016575,35.5082016,-0.00372972502
+	pos = 2.55922461,38.2517357,-0.14909184
 	attPos = 0,0,0
 	attPos0 = 2.45038867,-0.507736206,-2.38418579E-07
 	rot = -1,0,2.12298801E-07,0
@@ -4886,28 +4721,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin L Titanium_4291691854
 	partName = Part
 	persistentId = 4215638418
-	pos = -0.00022325624,35.5082016,-2.45411801
+	pos = 0.108835757,38.2517357,-2.59948015
 	attPos = 0,0,0
 	attPos0 = -2.38418579E-07,-0.507736206,-2.45038843
 	rot = -0.70710665,0,0.707106888,0
@@ -5020,28 +4840,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = HotGasThruster-L_4291694374
 	partName = Part
 	persistentId = 3313969761
-	pos = -2.45945168,36.0353127,-0.00372924819
+	pos = -2.35039282,38.7788467,-0.149091363
 	attPos = 0,0,0
 	attPos0 = -2.45922875,0.0193748474,2.38418579E-07
 	rot = 0,-0.70710665,0,0.707106888
@@ -5122,28 +4927,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = HotGasThruster-L_4291691730
 	partName = Part
 	persistentId = 181072107
-	pos = -0.000223017822,36.0353127,2.45549893
+	pos = 0.108835995,38.7788467,2.3101368
 	attPos = 0,0,0
 	attPos0 = 0,0.0193748474,2.45922852
 	rot = 0,1.68587405E-07,0,1
@@ -5224,28 +5014,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = HotGasThruster-L_4291691670
 	partName = Part
 	persistentId = 182020557
-	pos = 2.45900583,36.0353127,-0.00372972502
+	pos = 2.56806469,38.7788467,-0.14909184
 	attPos = 0,0,0
 	attPos0 = 2.45922875,0.0193748474,-2.38418579E-07
 	rot = 0,0.707106948,0,0.70710659
@@ -5326,28 +5101,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = HotGasThruster-L_4291691610
 	partName = Part
 	persistentId = 1076539220
-	pos = -0.00022325624,36.0353127,-2.4629581
+	pos = 0.108835757,38.7788467,-2.60832024
 	attPos = 0,0,0
 	attPos0 = -2.38418579E-07,0.0193748474,-2.45922852
 	rot = 0,1,0,-1.68587405E-07
@@ -5428,28 +5188,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFB.FUELTANK_4291685368
 	partName = Part
 	persistentId = 2413299300
-	pos = -0.000223017822,27.3626213,-0.00372948661
+	pos = 0.108835995,30.1061554,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-8.65331745,0
 	rot = 0,0,0,1
@@ -5493,21 +5238,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -5556,7 +5301,7 @@ PART
 	part = TE.18.BFB.FUELTANK_4291685078
 	partName = Part
 	persistentId = 4082299841
-	pos = -0.000223017822,12.7339897,-0.00372948661
+	pos = 0.108835995,15.4775238,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-14.6286306,0
 	rot = 0,0,0,1
@@ -5600,21 +5345,21 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
+			ShowSubtypesWindowAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousSubtypeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -5663,7 +5408,7 @@ PART
 	part = TE.18.BFB.ENGINE.CLUSTER_4291664480
 	partName = Part
 	persistentId = 1321281340
-	pos = -0.000223017822,2.52487564,-0.00372948661
+	pos = 0.108835995,5.26840973,-0.149091601
 	attPos = 0,0,0
 	attPos0 = 0,-10.209115,0
 	rot = 0,0,0,1
@@ -5964,21 +5709,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -5996,7 +5726,7 @@ PART
 	part = launchClamp1_4291488612
 	partName = Part
 	persistentId = 2632464467
-	pos = -3.43859553,2.33159256,-0.00372924819
+	pos = -3.32953668,5.07512665,-0.149091363
 	attPos = 0,0,0
 	attPos0 = -3.43837261,-0.193283081,2.38418579E-07
 	rot = 0.0154623911,0.70693773,-0.0154623929,0.706937671
@@ -6035,8 +5765,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = -0.0154623911,-0.70693773,0.0154623929,0.706937671
 		EVENTS
@@ -6104,28 +5834,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = launchClamp1_4291484356
 	partName = Part
 	persistentId = 542222049
-	pos = -1.71940887,2.33159256,2.97398782
+	pos = -1.61034989,5.07512665,2.82862568
 	attPos = 0,0,0
 	attPos0 = -1.71918583,-0.193283081,2.97771764
 	rot = 0.00565962726,0.965694904,-0.0211220216,0.258757144
@@ -6164,8 +5879,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = -0.00565962726,-0.965694904,0.0211220216,0.258757144
 		EVENTS
@@ -6233,28 +5948,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = launchClamp1_4291484234
 	partName = Part
 	persistentId = 465815401
-	pos = 1.71896374,2.33159256,2.97398782
+	pos = 1.82802272,5.07512665,2.82862568
 	attPos = 0,0,0
 	attPos0 = 1.71918678,-0.193283081,2.97771764
 	rot = -0.00565963052,0.965694845,-0.0211220197,-0.258757263
@@ -6293,8 +5993,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = 0.00565963052,-0.965694845,0.0211220197,-0.258757263
 		EVENTS
@@ -6362,28 +6062,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = launchClamp1_4291484112
 	partName = Part
 	persistentId = 1349635648
-	pos = 3.43814945,2.33159256,-0.00373008265
+	pos = 3.54720831,5.07512665,-0.149092197
 	attPos = 0,0,0
 	attPos0 = 3.43837237,-0.193283081,-5.96046448E-07
 	rot = -0.0154623939,0.706937611,-0.0154623901,-0.70693779
@@ -6422,8 +6107,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = 0.0154623939,-0.706937611,0.0154623901,-0.70693779
 		EVENTS
@@ -6491,28 +6176,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = launchClamp1_4291483990
 	partName = Part
 	persistentId = 3466272567
-	pos = 1.71896291,2.33159256,-2.98144794
+	pos = 1.828022,5.07512665,-3.12681007
 	attPos = 0,0,0
 	attPos0 = 1.71918595,-0.193283081,-2.97771835
 	rot = -0.0211220216,0.258757055,-0.00565962587,-0.965694904
@@ -6551,8 +6221,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = 0.0211220216,-0.258757055,0.00565962587,-0.965694904
 		EVENTS
@@ -6620,28 +6290,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = launchClamp1_4291483868
 	partName = Part
 	persistentId = 1394358056
-	pos = -1.71940887,2.33159256,-2.98144746
+	pos = -1.61034989,5.07512665,-3.1268096
 	attPos = 0,0,0
 	attPos0 = -1.71918583,-0.193283081,-2.97771811
 	rot = -0.0211220197,-0.258757144,0.00565962819,-0.965694904
@@ -6680,8 +6335,8 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 1.20168972
-		height = 3.03210068
+		scaleFactor = 2.2890141
+		height = 5.77563477
 		stagingEnabled = True
 		towerRot = 0.0211220197,0.258757144,-0.00565962819,-0.965694904
 		EVENTS
@@ -6749,28 +6404,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = dockingPort2_4291859782
 	partName = Part
 	persistentId = 699528943
-	pos = -0.000223017822,54.0088577,-1.84472942
+	pos = 0.108835995,56.7523918,-1.99009156
 	attPos = 0,0,0
 	attPos0 = 0,-3.92728424,-1.84500003
 	rot = -0.707106829,0,0,0.707106829
@@ -6849,83 +6489,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = MASRadar
-		isEnabled = True
-		radarEnabled = False
-		targetDebris = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			RadarOffAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			RadarOnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRadarAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = MASCamera
-		isEnabled = True
-		goalFov = 10
-		currentFov = 10
-		goalPan = 0
-		currentPan = 0
-		goalTilt = 0
-		currentTilt = 0
-		cameraName = DockCam
-		activeMode = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.18.BFS.Forward.FIN.R_4292119866
 	partName = Part
 	persistentId = 1136129409
-	pos = 1.686777,61.3021469,0.000270581018
+	pos = 1.79583597,64.0456848,-0.145091534
 	attPos = 0,0,0
 	attPos0 = 1.68700004,3.36600494,0
 	rot = 0,1,0,0
@@ -6976,41 +6546,6 @@ PART
 				actionGroup = Custom03
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = RetractableLiftingSurface
-		isEnabled = True
-		retractedDeflectionLiftCoeff = 0.5
-		extendedDeflectionLiftCoeff = 0.899999976
-		retracted = 1
-		retractedCtlSfcDeflectionLiftCoeff = 0.5
-		extendedCtlSfcDeflectionLiftCoeff = 0.899999976
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PropagateCopyEvents
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
