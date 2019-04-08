@@ -9,7 +9,10 @@ The art assets in this pack (all .dds, .png and .mu files) are distributed under
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
 Version 1.4.0.0
+- Added new shader to solar panels
+- Added custom shader for soot change on Ghidorah
 - Added Revamped New Horizons (Paneer) parts
+- Added Iridium parts
 - Fixed fairing colliding with interstage
 - Fixed Ghidorah interstage not pushing second stage away
 - Octopus plume update
