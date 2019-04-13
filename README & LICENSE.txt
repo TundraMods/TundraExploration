@@ -8,6 +8,9 @@ Any  of the configs are distributed under CC-NC-SA-4.0 License.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
+Version 1.4.0.1
+- Fixed Plumes not working with RealPlume installed
+
 Version 1.4.0.0
 - Added new shader to solar panels
 - Added custom shader for soot change on Ghidorah
