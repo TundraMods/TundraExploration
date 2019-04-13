@@ -1,8 +1,8 @@
 ship = Ghidorah 9 + Fairing
-version = 1.6.1
+version = 1.7.0
 description = 
 type = VAB
-size = 9.71936607,49.1182709,14.5349598
+size = 9.71935558,49.1188736,14.5349445
 steamPublishedFileId = 0
 persistentId = 1467892032
 rot = 0,0,0,0
@@ -435,8 +435,8 @@ PART
 	modMass = 0.650000036
 	modSize = 0,0,0
 	link = TE.19.F9.S2.Engine_4293947380
-	link = HotGasThruster-L_4293943340
-	link = HotGasThruster-L_4293943284
+	link = HotGasThruster-M_4294115464
+	link = HotGasThruster-M_4294112654
 	attN = node_top,TE.F9.Fairing.Adapter_4294214428_0|3.066|0
 	attN = node_down,TE.19.F9.S2.Engine_4293947380_0|-3.066|0
 	EVENTS
@@ -476,21 +476,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -514,7 +499,7 @@ PART
 	RESOURCE
 	{
 		name = LiquidFuel
-		amount = 2160
+		amount = 2105.9999442100525
 		maxAmount = 2340
 		flowState = True
 		isTweakable = True
@@ -525,7 +510,7 @@ PART
 	RESOURCE
 	{
 		name = Oxidizer
-		amount = 2640
+		amount = 2573.9999318122864
 		maxAmount = 2860
 		flowState = True
 		isTweakable = True
@@ -819,13 +804,15 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = HotGasThruster-L_4293943708
-	link = HotGasThruster-L_4293943652
 	link = Grid Fin M Titanium_4293943596
 	link = Grid Fin M Titanium_4293943532
 	link = Grid Fin M Titanium_4293943468
 	link = Grid Fin M Titanium_4293943404
 	link = TE.19.F9.S1.Tank_4293946584
+	link = HotGasThruster-M_4294123694
+	link = HotGasThruster-M_4294122218
+	link = HotGasThruster-M_4294122160
+	link = HotGasThruster-M_4294122102
 	attN = node_top,TE.19.F9.S2.Engine_4293947380_0|0.1060009|0
 	attN = node_down,TE.19.F9.S1.Tank_4293946584_0|-0.3739996|0
 	EVENTS
@@ -1005,21 +992,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1037,21 +1009,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -1175,180 +1132,10 @@ PART
 }
 PART
 {
-	part = HotGasThruster-L_4293943708
-	partName = Part
-	persistentId = 4266565383
-	pos = -1.19987857,29.1823921,1.25301813E-06
-	attPos = 0,0,0
-	attPos0 = -1.19986093,-0.0951881409,6.61530066E-08
-	rot = -7.43707531E-08,-0.707106769,-7.43707531E-08,0.707106888
-	attRot = 0,0,0,1
-	attRot0 = -7.43707318E-08,-0.707106709,-7.43707318E-08,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HotGasThruster-L_4293943652
-	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = Dark
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = HotGasThruster-L_4293943652
-	partName = Part
-	persistentId = 2000925840
-	pos = 1.19987333,29.1823921,2.92194818E-06
-	attPos = 0,0,0
-	attPos0 = 1.19986093,-0.0951881409,-1.71047759E-07
-	rot = -7.43707531E-08,0.707106948,7.43707531E-08,0.707106709
-	attRot = 0,0,0,1
-	attRot0 = -7.43707318E-08,0.707106888,7.43707318E-08,0.70710665
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HotGasThruster-L_4293943708
-	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		selectedVariant = Dark
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = Grid Fin M Titanium_4293943596
 	partName = Part
 	persistentId = 1684919338
-	pos = -0.830562353,29.1620445,-0.830559075
+	pos = -0.830565929,29.1620445,-0.830562651
 	attPos = 0.0518316627,0,0.0518316627
 	attPos0 = -0.882378161,-0.115535736,-0.882378042
 	rot = -0.382683396,1.37568783E-08,0.923879564,-3.32120429E-08
@@ -1467,7 +1254,7 @@ PART
 	part = Grid Fin M Titanium_4293943532
 	partName = Part
 	persistentId = 31415169
-	pos = -0.830563843,29.1620445,0.830562353
+	pos = -0.83056742,29.1620445,0.830565929
 	attPos = 0.0518317223,0,-0.0518313646
 	attPos0 = -0.882378042,-0.115535736,0.882378042
 	rot = 0.382683396,-1.37568783E-08,0.923879564,-3.32120429E-08
@@ -1586,7 +1373,7 @@ PART
 	part = Grid Fin M Titanium_4293943468
 	partName = Part
 	persistentId = 926053966
-	pos = 0.830557466,29.1620445,0.830563128
+	pos = 0.830561042,29.1620445,0.830566704
 	attPos = -0.0518316031,0,-0.0518317223
 	attPos0 = 0.882378221,-0.115535736,0.882377982
 	rot = 0.923879564,-3.32120429E-08,0.382683396,-1.37568783E-08
@@ -1705,7 +1492,7 @@ PART
 	part = Grid Fin M Titanium_4293943404
 	partName = Part
 	persistentId = 1145371126
-	pos = 0.830558896,29.1620445,-0.830558121
+	pos = 0.830562472,29.1620445,-0.830561697
 	attPos = -0.0518315434,0,0.0518315434
 	attPos0 = 0.882377923,-0.115535736,-0.882378161
 	rot = -0.923879564,3.32120429E-08,0.382683396,-1.37568783E-08
@@ -1807,174 +1594,6 @@ PART
 	{
 		name = ModuleDeployableAero
 		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = HotGasThruster-L_4293943340
-	partName = Part
-	persistentId = 1418276625
-	pos = -1.20383799,33.3122025,1.25301813E-06
-	attPos = 0,0,0
-	attPos0 = -1.20382047,-2.79837799,7.97999746E-08
-	rot = 0,-0.707106829,0,0.707106829
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HotGasThruster-L_4293943284
-	srfN = srfAttach,TE.19.F9.S2.Tank_4293947506
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = HotGasThruster-L_4293943284
-	partName = Part
-	persistentId = 647297140
-	pos = 1.20383298,33.3122025,2.80273889E-06
-	attPos = 0,0,0
-	attPos0 = 1.20382047,-2.79837799,-1.85041245E-07
-	rot = 0,0.707106888,0,0.707106769
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106888,0,0.707106769
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = HotGasThruster-L_4293943340
-	srfN = srfAttach,TE.19.F9.S2.Tank_4293947506
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2096,7 +1715,7 @@ PART
 	part = TE.19.F9.Fairing_4294215090
 	partName = Part
 	persistentId = 822821468
-	pos = -0.885005534,39.4385796,1.96827386E-06
+	pos = -0.885007322,39.4385796,1.96827386E-06
 	attPos = 0,0,0
 	attPos0 = -2.56299941E-08,-0.119998932,0.885001063
 	rot = 0,-0.707106829,0,0.707106829
@@ -2223,7 +1842,7 @@ PART
 	part = TE.19.F9.Fairing_4293633998
 	partName = Part
 	persistentId = 3314384435
-	pos = 0.885000408,39.4385796,2.38550638E-06
+	pos = 0.885002196,39.4385796,2.38550638E-06
 	attPos = 0,0,0
 	attPos0 = 1.53779908E-07,-0.119998932,-0.885000944
 	rot = 0,0.707106888,0,0.707106769
@@ -2435,21 +2054,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2467,21 +2071,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2499,21 +2088,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2531,21 +2105,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2563,21 +2122,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2626,7 +2170,7 @@ PART
 	part = KRE-FalconLeg-M_4293944412
 	partName = Part
 	persistentId = 2833121310
-	pos = -0.767085433,1.97488022,0.767083347
+	pos = -0.767089009,1.97488022,0.767086923
 	attPos = 0,0,0
 	attPos0 = 0.767067373,-17.8116989,-0.767067194
 	rot = 0.00017325308,0.923879623,-0.000418270385,0.382683128
@@ -2796,10 +2340,10 @@ PART
 	part = KRE-FalconLeg-M_4293944236
 	partName = Part
 	persistentId = 2579603543
-	pos = 0.767078519,1.97488022,0.767084897
+	pos = 0.767082095,1.97488022,0.767088473
 	attPos = 0,0,0
 	attPos0 = -0.767067075,-17.8116989,-0.767067373
-	rot = -0.000173252134,0.923879385,-0.000418267009,-0.382683694
+	rot = -0.000173251654,0.923879385,-0.000418265845,-0.382683694
 	attRot = 0,0,0,1
 	attRot0 = -0.000418270472,-0.382683724,0.000173253473,-0.923879325
 	mir = 1,1,1
@@ -2966,7 +2510,7 @@ PART
 	part = KRE-FalconLeg-M_4293944060
 	partName = Part
 	persistentId = 3907793638
-	pos = 0.767080367,1.97488022,-0.767079234
+	pos = 0.767083943,1.97488022,-0.76708281
 	attPos = 0,0,0
 	attPos0 = -0.767067313,-17.8116989,0.767067254
 	rot = -0.000418270094,0.382683128,-0.000173252774,-0.923879623
@@ -3136,10 +2680,10 @@ PART
 	part = KRE-FalconLeg-M_4293943884
 	partName = Part
 	persistentId = 2328463761
-	pos = -0.767083645,1.97488022,-0.767080605
+	pos = -0.767087221,1.97488022,-0.767084181
 	attPos = 0,0,0
 	attPos0 = 0.767067194,-17.8116989,0.767067254
-	rot = -0.000418267009,-0.382683694,0.000173252134,-0.923879385
+	rot = -0.000418265845,-0.382683694,0.000173251654,-0.923879385
 	attRot = 0,0,0,1
 	attRot0 = 0.000173253473,-0.923879325,0.000418270472,0.382683724
 	mir = 1,1,1
@@ -3628,7 +3172,7 @@ PART
 	part = TE.Ghidorah.Erector_4293945972
 	partName = Part
 	persistentId = 336208082
-	pos = 0.0299979243,0.3295784,2.09120844E-06
+	pos = 0.0299980361,0.3295784,2.09120844E-06
 	attPos = 0,0,0
 	attPos0 = 0.0299999993,-1.26700211,-1.86264559E-09
 	rot = 0,-0.707106829,0,0.707106829
@@ -3711,7 +3255,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = None
+				actionGroup = Custom10
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -3754,21 +3298,6 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3786,17 +3315,87 @@ PART
 		}
 		ACTIONS
 		{
-			ShowSubtypesWindowAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			NextSubtypeAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			PreviousSubtypeAction
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294123694
+	partName = Part
+	persistentId = 4189138526
+	pos = -2.59843887E-06,29.0740204,-1.21374977
+	attPos = 0,0,0
+	attPos0 = -1.19209247E-07,-0.203559875,-1.21374953
+	rot = 0,1,-1.90813182E-07,0
+	attRot = 0,0,0,1
+	attRot0 = 0,1,-1.90813182E-07,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294122218
+	sym = HotGasThruster-M_4294122160
+	sym = HotGasThruster-M_4294122102
+	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
@@ -3808,8 +3407,439 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleB9PartInfo
+		name = ModulePartVariants
 		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294122218
+	partName = Part
+	persistentId = 107460129
+	pos = -1.2137543,29.0740204,2.08748315E-06
+	attPos = 0,0,0
+	attPos0 = -1.21374941,-0.203559875,0
+	rot = -1.3492533E-07,0.707106829,-1.34925301E-07,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -1.34925315E-07,0.707106829,-1.34925287E-07,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294122160
+	sym = HotGasThruster-M_4294122102
+	sym = HotGasThruster-M_4294123694
+	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294122160
+	partName = Part
+	persistentId = 2917066710
+	pos = -2.24081055E-06,29.0740204,1.21375406
+	attPos = 0,0,0
+	attPos0 = 2.38418522E-07,-0.203559875,1.21374953
+	rot = -1.90813182E-07,-1.19209275E-07,2.13162804E-14,-1
+	attRot = 0,0,0,1
+	attRot0 = -1.90813182E-07,-1.19209275E-07,2.13162804E-14,-1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294122102
+	sym = HotGasThruster-M_4294123694
+	sym = HotGasThruster-M_4294122218
+	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294122102
+	partName = Part
+	persistentId = 1506624611
+	pos = 1.21374929,29.0740204,1.96827386E-06
+	attPos = 0,0,0
+	attPos0 = 1.21374941,-0.203559875,-1.19209318E-07
+	rot = -1.34925301E-07,-0.707106829,1.3492533E-07,-0.707106829
+	attRot = 0,0,0,1
+	attRot0 = -1.34925287E-07,-0.707106829,1.34925315E-07,-0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294123694
+	sym = HotGasThruster-M_4294122218
+	sym = HotGasThruster-M_4294122160
+	srfN = srfAttach,TE.19.F9.S1.Interstage_4293947138
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		selectedVariant = Dark
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294115464
+	partName = Part
+	persistentId = 1759172669
+	pos = -1.20979846,33.208847,2.20669244E-06
+	attPos = -5.96046448E-07,-0.0204429626,0
+	attPos0 = -1.20979297,-2.88129044,1.19209318E-07
+	rot = -5.50554091E-08,-0.707106769,-5.5055402E-08,0.707106888
+	attRot = 0,0,0,1
+	attRot0 = -5.50554127E-08,-0.707106769,-5.50554056E-08,0.707106888
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294112654
+	srfN = srfAttach,TE.19.F9.S2.Tank_4293947506
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = HotGasThruster-M_4294112654
+	partName = Part
+	persistentId = 3971410443
+	pos = 1.20979404,33.208847,1.84906457E-06
+	attPos = 1.1920929E-06,-0.0204429626,-1.19209318E-07
+	attPos0 = 1.20979297,-2.88129044,-1.19209318E-07
+	rot = -5.50554127E-08,0.707106948,5.50554198E-08,0.707106709
+	attRot = 0,0,0,1
+	attRot0 = -5.50554056E-08,0.707106948,5.50554198E-08,0.707106709
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = HotGasThruster-M_4294115464
+	srfN = srfAttach,TE.19.F9.S2.Tank_4293947506
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModulePartVariants
+		isEnabled = True
+		useVariantMass = True
 		stagingEnabled = True
 		EVENTS
 		{
