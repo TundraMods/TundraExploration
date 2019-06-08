@@ -1,21 +1,25 @@
-ship = Mothra 1
-version = 1.6.1
+ship = Mothra One
+version = 1.7.1
 description = 
 type = VAB
-size = 1.76776695,16.3108215,1.76776695
+size = 1.76776695,16.0846901,1.76776695
 steamPublishedFileId = 0
-persistentId = 2348031779
+persistentId = 4274533427
 rot = 0,0,0,0
-missionFlag = Squad/Flags/default
+missionFlag = TundraExploration/Flags/TELogo
 vesselType = Debris
+OverrideDefault = False,False,False,False
+OverrideActionControl = 0,0,0,0
+OverrideAxisControl = 0,0,0,0
+OverrideGroupNames = ,,,
 PART
 {
-	part = probeCoreCube_4292830256
+	part = probeCoreCube_4292319132
 	partName = Part
-	persistentId = 94392486
-	pos = 0,15,0
+	persistentId = 3548417044
+	pos = -0.000219248119,14.8303308,5.96091195E-05
 	attPos = 0,0,0
-	attPos0 = 0,15,0
+	attPos0 = -0.000219248119,14.8303308,5.96091195E-05
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -33,8 +37,9 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.PayloadFairing_4293554980
-	attN = bottom,TE.F1.PayloadFairing_4293554980_0|-0.2845967|0
+	link = TE.F1.PayloadFairing_4292300184
+	attN = bottom,TE.F1.PayloadFairing_4292300184_0|-0.284596711|0_0|-1|0_0|-0.284596711|0_0|-1|0
+	attN = top,Null_0_0|0.284596711|0_0|1|0_0|0.284596711|0_0|1|0
 	EVENTS
 	{
 	}
@@ -132,22 +137,6 @@ PART
 	}
 	MODULE
 	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -179,10 +168,10 @@ PART
 }
 PART
 {
-	part = TE.F1.PayloadFairing_4293554980
+	part = TE.F1.PayloadFairing_4292300184
 	partName = Part
-	persistentId = 1656790623
-	pos = 0,14.4164038,0
+	persistentId = 2310792843
+	pos = -0.000219248119,14.2467346,5.96091195E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.58359623,0
 	rot = 0,0,0,1
@@ -199,12 +188,12 @@ PART
 	sqor = 0
 	sepI = -1
 	attm = 0
-	modCost = 98.7871552
-	modMass = 0.0987871513
+	modCost = 89.0907669
+	modMass = 0.0890907645
 	modSize = 0,0,0
-	link = TE.F1.S2.Tank_4293526720
-	attN = top,probeCoreCube_4292830256_0|0.299|0
-	attN = bottom,TE.F1.S2.Tank_4293526720_0|-0.114|0
+	link = TE.F1.S2.Tank_4292272960
+	attN = top,probeCoreCube_4292319132_0|0.298999995|0_0|1|0_0|0.298999995|0_0|1|0
+	attN = bottom,TE.F1.S2.Tank_4292272960_0|-0.114|0_0|-1|0_0|-0.114|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -242,12 +231,12 @@ PART
 		}
 		XSECTION
 		{
-			h = 1.49425411
+			h = 1.28744602
 			r = 0.594799995
 		}
 		XSECTION
 		{
-			h = 2.37696552
+			h = 2.15589333
 			r = 0.200000003
 		}
 		UPGRADESAPPLIED
@@ -272,10 +261,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S2.Tank_4293526720
+	part = TE.F1.S2.Tank_4292272960
 	partName = Part
-	persistentId = 2580340794
-	pos = 0,13.4024038,0
+	persistentId = 1488432094
+	pos = -0.000219248119,13.2327347,5.96091195E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.01399994,0
 	rot = 0,0,0,1
@@ -295,9 +284,9 @@ PART
 	modCost = 226.880005
 	modMass = 0.0400000028
 	modSize = 0,0,0
-	link = TE.F1.S2.Engine_4293524148
-	attN = top,TE.F1.PayloadFairing_4293554980_0|0.9|0
-	attN = bottom,TE.F1.S2.Engine_4293524148_0|-0.9|0
+	link = TE.F1.S2.Engine_4292267246
+	attN = top,TE.F1.PayloadFairing_4292300184_0|0.899999976|0_0|1|0_0|0.899999976|0_0|1|0
+	attN = bottom,TE.F1.S2.Engine_4292267246_0|-0.899999976|0_0|-1|0_0|-0.899999976|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -364,12 +353,12 @@ PART
 }
 PART
 {
-	part = TE.F1.S2.Engine_4293524148
+	part = TE.F1.S2.Engine_4292267246
 	partName = Part
-	persistentId = 1914274945
-	pos = 0,11.5224047,0
+	persistentId = 2757659591
+	pos = -0.000219248119,11.3527346,5.96091195E-05
 	attPos = 0,0,0
-	attPos0 = 0,-1.87999916,0
+	attPos0 = 0,-1.88000011,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -377,19 +366,19 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 0
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = 1
-	sqor = 0
+	sidx = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.Interstage_4293526076
-	attN = top,TE.F1.S2.Tank_4293526720_0|0.98|0
-	attN = bottom,TE.F1.Interstage_4293526076_0|-0.947|0
+	link = TE.F1.Interstage_4292269712
+	attN = top,TE.F1.S2.Tank_4292272960_0|0.980000019|0_0|1|0_0|0.980000019|0_0|1|0
+	attN = bottom,TE.F1.Interstage_4292269712_0|-0.947000027|0_0|-1|0_0|-0.947000027|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -556,10 +545,10 @@ PART
 }
 PART
 {
-	part = TE.F1.Interstage_4293526076
+	part = TE.F1.Interstage_4292269712
 	partName = Part
-	persistentId = 2988078021
-	pos = 0,10.4914045,0
+	persistentId = 813084324
+	pos = -0.000219248119,10.3217344,5.96091195E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.03100014,0
 	rot = 0,0,0,1
@@ -572,16 +561,16 @@ PART
 	istg = 1
 	resPri = 0
 	dstg = 1
-	sidx = 0
+	sidx = 1
 	sqor = 1
 	sepI = 1
 	attm = 0
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	link = TE.F1.S1.Tank_4293521376
-	attN = top,TE.F1.S2.Engine_4293524148_0|0.084|0
-	attN = bottom,TE.F1.S1.Tank_4293521376_0|-0.084|0
+	link = TE.F1.S1.Tank_4292258690
+	attN = top,TE.F1.S2.Engine_4292267246_0|0.0839999989|0_0|1|0_0|0.0839999989|0_0|1|0
+	attN = bottom,TE.F1.S1.Tank_4292258690_0|-0.0839999989|0_0|-1|0_0|-0.0839999989|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -631,10 +620,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S1.Tank_4293521376
+	part = TE.F1.S1.Tank_4292258690
 	partName = Part
-	persistentId = 4012673067
-	pos = 0,6.228405,0
+	persistentId = 1255920402
+	pos = -0.000219248119,6.05873489,5.96091195E-05
 	attPos = 0,0,0
 	attPos0 = 0,-4.26299953,0
 	rot = 0,0,0,1
@@ -654,13 +643,13 @@ PART
 	modCost = 1134.40002
 	modMass = 0.200000003
 	modSize = 0,0,0
-	link = TE.F1.S1.Engine_4293518532
-	link = launchClamp1_4292849216
-	link = launchClamp1_4292848344
-	link = launchClamp1_4292848224
-	link = launchClamp1_4292848104
-	attN = top,TE.F1.Interstage_4293526076_0|4.179|0
-	attN = bottom,TE.F1.S1.Engine_4293518532_0|-3.599|0
+	link = TE.F1.S1.Engine_4292256324
+	link = launchClamp1_4292237560
+	link = launchClamp1_4292236156
+	link = launchClamp1_4292236036
+	link = launchClamp1_4292235916
+	attN = top,TE.F1.Interstage_4292269712_0|4.1789999|0_0|1|0_0|4.1789999|0_0|1|0
+	attN = bottom,TE.F1.S1.Engine_4292256324_0|-3.59899998|0_0|-1|0_0|-3.59899998|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -743,10 +732,10 @@ PART
 }
 PART
 {
-	part = TE.F1.S1.Engine_4293518532
+	part = TE.F1.S1.Engine_4292256324
 	partName = Part
-	persistentId = 3484047785
-	pos = 0,2.07440472,0
+	persistentId = 4019544363
+	pos = -0.000219248119,1.90473461,5.96091195E-05
 	attPos = 0,0,0
 	attPos0 = 0,-4.15400028,0
 	rot = 0,0,0,1
@@ -766,7 +755,7 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	attN = top,TE.F1.S1.Tank_4293521376_0|0.555|0
+	attN = top,TE.F1.S1.Tank_4292258690_0|0.555000007|0_0|1|0_0|0.555000007|0_0|1|0
 	EVENTS
 	{
 	}
@@ -910,15 +899,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292849216
+	part = launchClamp1_4292237560
 	partName = Part
-	persistentId = 3514679029
-	pos = -1.42694128,1.77066898,1.33150024E-07
+	persistentId = 712909367
+	pos = -1.01006866,1.39307117,-1.00978971
 	attPos = 0,0,0
-	attPos0 = -1.42694128,-4.45773602,1.33150024E-07
-	rot = 0,0.707106829,0,0.707106709
+	attPos0 = -1.00984943,-4.66566372,-1.00984931
+	rot = 0,-0.382683456,0,-0.923879564
 	attRot = 0,0,0,1
-	attRot0 = 0,0.707106829,0,0.707106709
+	attRot0 = 0,-0.382683456,0,-0.923879564
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -933,10 +922,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292848344
-	sym = launchClamp1_4292848224
-	sym = launchClamp1_4292848104
-	srfN = srfAttach,TE.F1.S1.Tank_4293521376
+	sym = launchClamp1_4292236156
+	sym = launchClamp1_4292236036
+	sym = launchClamp1_4292235916
+	srfN = srfAttach,TE.F1.S1.Tank_4292258690,F1_S1_Tank
 	EVENTS
 	{
 	}
@@ -950,10 +939,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.963388741
-		height = 2.43081951
+		scaleFactor = 0.813738167
+		height = 2.0532217
 		stagingEnabled = True
-		towerRot = 0,-0.707106829,0,0.707106709
+		towerRot = 0,0.382683456,0,-0.923879564
 		EVENTS
 		{
 		}
@@ -1022,15 +1011,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292848344
+	part = launchClamp1_4292236156
 	partName = Part
-	persistentId = 2359696129
-	pos = 4.80940798E-08,1.77066898,1.42694116
+	persistentId = 2680954280
+	pos = -1.01006854,1.39307117,1.00990891
 	attPos = 0,0,0
-	attPos0 = 4.80940798E-08,-4.45773602,1.42694116
-	rot = 0,1,0,-8.42937027E-08
+	attPos0 = -1.00984931,-4.66566372,1.00984931
+	rot = 0,-0.923879564,0,-0.382683426
 	attRot = 0,0,0,1
-	attRot0 = 0,1,0,-8.42937027E-08
+	attRot0 = 0,-0.923879564,0,-0.382683426
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1045,10 +1034,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292848224
-	sym = launchClamp1_4292848104
-	sym = launchClamp1_4292849216
-	srfN = srfAttach,TE.F1.S1.Tank_4293521376
+	sym = launchClamp1_4292236036
+	sym = launchClamp1_4292235916
+	sym = launchClamp1_4292237560
+	srfN = srfAttach,TE.F1.S1.Tank_4292258690,F1_S1_Tank
 	EVENTS
 	{
 	}
@@ -1062,10 +1051,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.963388741
-		height = 2.43081951
+		scaleFactor = 0.813738167
+		height = 2.0532217
 		stagingEnabled = True
-		towerRot = 0,-1,0,-8.42937027E-08
+		towerRot = 0,0.923879564,0,-0.382683426
 		EVENTS
 		{
 		}
@@ -1134,15 +1123,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292848224
+	part = launchClamp1_4292236036
 	partName = Part
-	persistentId = 3875114473
-	pos = 1.42694128,1.77066898,-2.57896318E-07
+	persistentId = 1477905583
+	pos = 1.00963032,1.39307117,1.0099088
 	attPos = 0,0,0
-	attPos0 = 1.42694128,-4.45773602,-2.57896318E-07
-	rot = 0,0.70710665,0,-0.707106888
+	attPos0 = 1.00984955,-4.66566372,1.00984919
+	rot = 0,-0.923879564,0,0.382683486
 	attRot = 0,0,0,1
-	attRot0 = 0,0.70710665,0,-0.707106888
+	attRot0 = 0,-0.923879564,0,0.382683486
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1157,10 +1146,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292848104
-	sym = launchClamp1_4292849216
-	sym = launchClamp1_4292848344
-	srfN = srfAttach,TE.F1.S1.Tank_4293521376
+	sym = launchClamp1_4292235916
+	sym = launchClamp1_4292237560
+	sym = launchClamp1_4292236156
+	srfN = srfAttach,TE.F1.S1.Tank_4292258690,F1_S1_Tank
 	EVENTS
 	{
 	}
@@ -1174,10 +1163,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.963388741
-		height = 2.43081951
+		scaleFactor = 0.813738167
+		height = 2.0532217
 		stagingEnabled = True
-		towerRot = 0,-0.70710665,0,-0.707106888
+		towerRot = 0,0.923879564,0,0.382683486
 		EVENTS
 		{
 		}
@@ -1246,15 +1235,15 @@ PART
 }
 PART
 {
-	part = launchClamp1_4292848104
+	part = launchClamp1_4292235916
 	partName = Part
-	persistentId = 777437000
-	pos = -2.18205969E-07,1.77066898,-1.42694116
+	persistentId = 1131494418
+	pos = 1.00962996,1.39307117,-1.00978982
 	attPos = 0,0,0
-	attPos0 = -2.18205969E-07,-4.45773602,-1.42694116
-	rot = 0,-8.42937027E-08,0,-1
+	attPos0 = 1.00984919,-4.66566372,-1.00984943
+	rot = 0,-0.382683426,0,0.923879564
 	attRot = 0,0,0,1
-	attRot0 = 0,-8.42937027E-08,0,-1
+	attRot0 = 0,-0.382683426,0,0.923879564
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1269,10 +1258,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = launchClamp1_4292849216
-	sym = launchClamp1_4292848344
-	sym = launchClamp1_4292848224
-	srfN = srfAttach,TE.F1.S1.Tank_4293521376
+	sym = launchClamp1_4292237560
+	sym = launchClamp1_4292236156
+	sym = launchClamp1_4292236036
+	srfN = srfAttach,TE.F1.S1.Tank_4292258690,F1_S1_Tank
 	EVENTS
 	{
 	}
@@ -1286,10 +1275,10 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 0.963388741
-		height = 2.43081951
+		scaleFactor = 0.813738167
+		height = 2.0532217
 		stagingEnabled = True
-		towerRot = 0,8.42937027E-08,0,-1
+		towerRot = 0,0.382683426,0,0.923879564
 		EVENTS
 		{
 		}
