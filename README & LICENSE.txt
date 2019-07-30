@@ -8,6 +8,16 @@ Any  of the configs are distributed under CC-NC-SA-4.0 License.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
+Version 1.5.0.2
+- Fixed Raptor plume being always on
+- Fixed EngineResponseTime for mechjeb (you can land again)
+- Added node for Mothra's first stage engine
+- All decals can be toggled off
+- Slight balance on the Starship landing fins
+
+Version 1.5.0.1
+- Fixed Gojira fins not showing up in TechTree
+
 Version 1.5.0
 - Added Bagorah 9 parts (Falcon 9 v1.0)
 - Added Bagorah 9 strongback
@@ -19,7 +29,6 @@ Version 1.5.0
 - Fixed Agent images not linked correctly in TundraTech
 - More tweaks to plumes by Nessus_
 - Balance of all parts by neistridlar (Make sure to use/make new .craft files)
-- 
 
 Version 1.4.0.1
 - Fixed Plumes not working with RealPlume installed
