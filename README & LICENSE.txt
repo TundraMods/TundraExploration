@@ -1,5 +1,5 @@
 
-Special thanks to Nertea, Beale, Cobalt and the people on the forum for helping with modding!
+Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar and the people on the forum for helping with modding!
 Continued by damonvv.
 
 
