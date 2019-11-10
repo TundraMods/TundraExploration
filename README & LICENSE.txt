@@ -4,9 +4,17 @@ Continued by damonvv.
 
 
 LICENSE
-Any  of the configs are distributed under CC-NC-SA-4.0 License.
+All codes and configs are distributed under CC-NC-SA-4.0 License.
+Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
+All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
+
+Version 1.7.0
+- Updated to KSP 1.8.x
+- Renamed 2018 Gojira as "Mk3"
+- Added MK4 Gojira parts (2019 Starship)
+- Updated textures for Unity 2019
 
 Version 1.6.0
 - Fixed Gimbal issue on Ghidorah Octopus engine
