@@ -10,6 +10,15 @@ The art assets in this pack (all .dds, .png and .mu files) are distributed under
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 
+Version 1.7.1
+- Added umbilical to Rodan's trunk
+- Added missing Mk4 SH tank fuel types
+- Methalox mode engine nerf for same launch TWR
+- Mk4 SL Raptors should be a little weaker
+- Control toggle for all the big command pods
+- Added stock subcats
+- Fixed CGT links
+
 Version 1.7.0
 - Updated to KSP 1.8.x
 - Renamed 2018 Gojira as "Mk3"
