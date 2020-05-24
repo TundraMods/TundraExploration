@@ -9,6 +9,14 @@ Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
+Updated on May 24, 2020
+
+Version 1.7.2
+- Updated to KSP 1.9.x
+- Removed 2 windows on Rodan
+- Added red Tundra logo on Ghidorah
+- Updated soot texture on Ghidorah
+- Added !RealFuels to the NEEDS..
 
 Version 1.7.1
 - Added umbilical to Rodan's trunk
