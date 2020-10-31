@@ -9,7 +9,41 @@ Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on May 24, 2020
+Updated on October 31, 2020
+
+Version 3.0.0
+- Revamped Crew Rodan
+- Added Cargo Rodan
+- Remodeled Rodan Trunk
+- Remodeled Rodan Heatshield
+- Added Standalone Octaweb
+- Added Standalone Merlin 1D
+- Added Starlink Dish
+
+Version 2.1.0
+- Added drag cubes to erectors
+- Fixed USI patches
+- Fixed drag cubes with B9PS modules
+- Fixed Ghidorah 9 Fairing texture
+- Fixed soot on Ghidorah nose cone
+- B9 LS switch to Gojira pods
+- Fixed CC tank volume
+- Added Configurable Containers support
+
+Version 2.0.0
+- Revamped Ghidorah Octopus
+- Revamped Ghidorah stage 1 tank
+- Revamped Ghidorah Interstage
+- Revamped Ghidorah stage 2 engine
+- Revamped Ghidorah stage 2 tank
+- Revamped Ghidorah fairing
+- Revamped Rodan trunk
+- Revamped Command pod decoupler
+- Fixed fairing band on erectors
+- Added colors to B9PS switches
+- Fixed RCS thrust curves
+- Revamped Ghidorah Heavy parts
+- Revamped Ghidorah soot
 
 Version 1.7.2
 - Updated to KSP 1.9.x
