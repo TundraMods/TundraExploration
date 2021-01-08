@@ -11,6 +11,11 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on October 31, 2020
 
+Version 3.2.0
+- Added part switch option to remove heatshield from Gojira
+- Added Waterfall configs for Gojira
+- Removed red glow on RPTR Vac
+
 Version 3.0.0
 - Revamped Crew Rodan
 - Added Cargo Rodan
