@@ -1,5 +1,5 @@
 ship = Gojira Mk4 Sn9
-version = 1.11.0
+version = 1.8.2
 description = 
 type = VAB
 size = 5.71564388,30.7114334,10.6581306
@@ -52,17 +52,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -84,13 +81,11 @@ PART
 			MakeReferenceToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			HibernateToggle
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -130,22 +125,18 @@ PART
 			CycleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Activate
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Deactivate
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			Toggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -167,7 +158,6 @@ PART
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -198,53 +188,7 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -318,7 +262,6 @@ PART
 	link = TE2.21.SN.LEG_4293943288
 	link = TE2.21.SN.LEG_4293943216
 	link = TE2.21.SN.LEG_4293943144
-	link = AM.MLP.LargeLaunchStand_4291173944
 	attN = node_aft_1,Null_0_-2.16479492|-4.93897963|1.51536751_0.819152415|0|-0.573576331_-2.16479492|-4.93897963|1.51536751_0.819152415|0|-0.573576331
 	attN = node_aft_2,Null_0_-0.000366210938|-4.93897963|-2.64247513_0|0|1_-0.000366210938|-4.93897963|-2.64247513_0|0|1
 	attN = node_aft_3,Null_0_2.16479492|-4.93898058|1.51536751_-0.819152176|0|-0.57357657_2.16479492|-4.93898058|1.51536751_-0.819152176|0|-0.57357657
@@ -331,7 +274,7 @@ PART
 	attN = node_sl_3,TE2.19.BFS.SL.RAPTOR_4293519232_-0.519607544|-4.32789946|0.300018311_0|-1.00000012|-9.68575478E-08_-0.519607544|-4.32789946|0.300018311_0|-1.00000012|-9.68575478E-08
 	attN = node_fin_left,TE2.19.SS.RF.L_4293523246_-3.20599413|-2.44902468|0_-1.00000012|-1.1920929E-07|-2.38418579E-07_-3.20599413|-2.44902468|0_-1.00000012|-1.1920929E-07|-2.38418579E-07
 	attN = node_fin_right,TE2.19.SS.RF.R_4293522742_3.20599413|-2.4490037|0_1|5.96046448E-08|0_3.20599413|-2.4490037|0_1|5.96046448E-08|0
-	attN = node_bottom,AM.MLP.LargeLaunchStand_4291173944_0|-7.46000004|0_0|-1|0_0|-7.46000004|0_0|-1|0
+	attN = node_bottom,Null_0_0|-7.46000004|0_0|-1|0_0|-7.46000004|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -340,17 +283,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -371,7 +311,6 @@ PART
 			{
 				actionGroup = None
 				active = False
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -411,32 +350,26 @@ PART
 			UndockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DecoupleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			MakeReferenceToggle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			EnableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DisableXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleXFeedAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -457,7 +390,6 @@ PART
 			StartTransmissionAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -578,22 +510,18 @@ PART
 			AutoLevelAction
 			{
 				actionGroup = Custom09
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DeployAction
 			{
 				actionGroup = Custom07
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
 			{
 				actionGroup = Custom08
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -624,7 +552,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -680,21 +607,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = LiquidFuel
@@ -723,7 +635,7 @@ PART
 	part = TE2.19.BFS.SL.RAPTOR_4293519232
 	partName = Part
 	persistentId = 1463826614
-	pos = -0.431764185,5.99670219,-0.48596105
+	pos = -0.431764126,5.99670219,-0.485960931
 	attPos = 0,0,0
 	attPos0 = -0.519607544,-4.92200089,0.300018311
 	rot = 0,-0.707106709,0,0.707106829
@@ -733,7 +645,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
@@ -754,17 +666,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -793,22 +702,18 @@ PART
 			OnAction
 			{
 				actionGroup = Custom03
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = Custom02
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -882,32 +787,26 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			FreeAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitchAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYawAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -917,43 +816,6 @@ PART
 	MODULE
 	{
 		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -983,7 +845,7 @@ PART
 	part = TE2.19.BFS.SL.RAPTOR_4293823932
 	partName = Part
 	persistentId = 2817303537
-	pos = -0.431763589,5.99670601,0.553265393
+	pos = -0.43176347,5.99670601,0.553265274
 	attPos = 0,0,0
 	attPos0 = 0.519622803,-4.92199707,0.300018311
 	rot = 0,0.258819193,0,0.965925813
@@ -993,7 +855,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 1
@@ -1014,17 +876,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -1053,22 +912,18 @@ PART
 			OnAction
 			{
 				actionGroup = Custom03
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = Custom01
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -1142,32 +997,26 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			FreeAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitchAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYawAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1177,43 +1026,6 @@ PART
 	MODULE
 	{
 		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -1243,7 +1055,7 @@ PART
 	part = TE2.19.BFS.SL.RAPTOR_4293823626
 	partName = Part
 	persistentId = 2124256307
-	pos = 0.468242109,5.99670219,0.0336443521
+	pos = 0.46824199,5.99670219,0.0336443521
 	attPos = 0,0,0
 	attPos0 = 0,-4.92200089,-0.599990845
 	rot = 0,0.965925813,0,0.258818924
@@ -1253,7 +1065,7 @@ PART
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 2
@@ -1274,17 +1086,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -1313,22 +1122,18 @@ PART
 			OnAction
 			{
 				actionGroup = Custom03
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -1402,32 +1207,26 @@ PART
 			ToggleAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			LockAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			FreeAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitchAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYawAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRollAction
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1437,43 +1236,6 @@ PART
 	MODULE
 	{
 		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -1503,7 +1265,7 @@ PART
 	part = TE2.19.SS.RF.L_4293523246
 	partName = Part
 	persistentId = 1793825006
-	pos = -0.131747469,9.43969154,-3.13134027
+	pos = -0.131747469,9.43969154,-3.13133979
 	attPos = 0,0,0
 	attPos0 = -3.1649909,-1.47901154,2.38418636E-07
 	rot = 0.502176881,-0.497813702,-0.502176762,0.497813612
@@ -1533,17 +1295,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -1572,72 +1331,58 @@ PART
 			ActionToggle
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYaw
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DeactivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -1688,28 +1433,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -1721,17 +1444,14 @@ PART
 			ToggleYaw
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1759,7 +1479,7 @@ PART
 	part = TE2.19.SS.RF.R_4293522742
 	partName = Part
 	persistentId = 1633371388
-	pos = -0.131746039,9.43971062,3.19862914
+	pos = -0.131746039,9.43971062,3.19862866
 	attPos = 0,0,0
 	attPos0 = 3.1649909,-1.47899246,-2.38418636E-07
 	rot = -0.502176821,-0.497813493,0.50217706,0.497813642
@@ -1789,17 +1509,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -1828,72 +1545,58 @@ PART
 			ActionToggle
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYaw
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DeactivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -1944,28 +1647,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -1977,17 +1658,14 @@ PART
 			ToggleYaw
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2015,7 +1693,7 @@ PART
 	part = TE2.19.SS.FF.L_4293523608
 	partName = Part
 	persistentId = 3688247479
-	pos = -0.132784829,29.2847633,-2.77137494
+	pos = -0.132784829,29.2847633,-2.77137446
 	attPos = 0,0,0
 	attPos0 = -2.80502248,4.28509903,0.00103759766
 	rot = -0.533776462,0.463770151,0.533776402,-0.463770181
@@ -2045,17 +1723,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2084,72 +1759,58 @@ PART
 			ActionToggle
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYaw
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DeactivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2200,28 +1861,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -2233,17 +1872,14 @@ PART
 			ToggleYaw
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2271,10 +1907,10 @@ PART
 	part = TE2.19.SS.FF.R_4293523980
 	partName = Part
 	persistentId = 2471349272
-	pos = -0.132768616,29.2847481,2.79865575
+	pos = -0.132768616,29.2847481,2.79865527
 	attPos = 0,0,0
 	attPos0 = 2.76501441,4.28508377,0.00102233887
-	rot = 0.529710233,0.468409002,-0.529710352,-0.468409032
+	rot = 0.529710233,0.468409002,-0.529710293,-0.468409032
 	attRot = 0.49999994,0.49999994,-0.49999994,-0.49999994
 	attRot0 = 2.98023224E-08,0,-0.749123454,-0.662430465
 	mir = 1,1,1
@@ -2301,17 +1937,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2340,72 +1973,58 @@ PART
 			ActionToggle
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionExtend
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActionRetract
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			PitchInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			YawInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleYaw
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollActive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			RollInactive
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 			DeactivateAllControls
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2456,28 +2075,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -2489,17 +2086,14 @@ PART
 			ToggleYaw
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			TogglePitch
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleRoll
 			{
 				actionGroup = Custom05
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -2527,7 +2121,7 @@ PART
 	part = TE2.21.SN.LEG_4293944604
 	partName = Part
 	persistentId = 965642530
-	pos = -2.44776726,5.1387825,1.37080026
+	pos = -2.44776678,5.1387825,1.37080002
 	attPos = -0.0942103863,0,-0.163177013
 	attPos0 = 1.43136656,-5.77992058,2.47919941
 	rot = 2.3140224E-08,0.258819103,8.63604868E-08,0.965925753
@@ -2562,17 +2156,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2597,7 +2188,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2614,35 +2204,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.21.SN.LEG_4293943432
 	partName = Part
 	persistentId = 2282828064
-	pos = -0.131746277,5.1387825,2.70795441
+	pos = -0.131746277,5.1387825,2.70795393
 	attPos = -0.188421249,0,0
 	attPos0 = 2.86273313,-5.77992058,0
 	rot = 6.32202628E-08,0.707106829,6.32202628E-08,0.707106709
@@ -2677,17 +2245,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2712,7 +2277,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2729,38 +2293,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.21.SN.LEG_4293943360
 	partName = Part
 	persistentId = 3692101133
-	pos = 2.1842742,5.1387825,1.37079883
+	pos = 2.18427372,5.1387825,1.37079859
 	attPos = -0.0942105055,0,0.163177252
 	attPos0 = 1.43136632,-5.77992058,-2.47919965
-	rot = 8.6360501E-08,0.965925813,2.31402169E-08,0.258818924
+	rot = 8.63605081E-08,0.965925813,2.31402169E-08,0.258818924
 	attRot = 0,0.999999881,0,0
 	attRot0 = 7.74287088E-08,0.866025388,-4.47034836E-08,-0.5
 	mir = 1,1,1
@@ -2792,17 +2334,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2827,7 +2366,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2844,35 +2382,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.21.SN.LEG_4293943288
 	partName = Part
 	persistentId = 634876797
-	pos = 2.18427324,5.1387825,-1.30351138
+	pos = 2.18427277,5.1387825,-1.30351114
 	attPos = 0.0942105055,0,0.163177013
 	attPos0 = -1.4313668,-5.77992058,-2.47919893
 	rot = 8.63604868E-08,0.965925753,-2.3140224E-08,-0.258819103
@@ -2907,17 +2423,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -2942,7 +2455,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -2959,35 +2471,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.21.SN.LEG_4293943216
 	partName = Part
 	persistentId = 1340655220
-	pos = -0.131747469,5.1387825,-2.64066601
+	pos = -0.131747469,5.1387825,-2.64066553
 	attPos = 0.188421011,0,0
 	attPos0 = -2.86273336,-5.77992058,2.38418636E-07
 	rot = 6.32202557E-08,0.707106709,-6.32202699E-08,-0.707106829
@@ -3022,17 +2512,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -3057,7 +2544,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -3074,35 +2560,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.21.SN.LEG_4293943144
 	partName = Part
 	persistentId = 1927189271
-	pos = -2.44776726,5.1387825,-1.30351055
+	pos = -2.44776678,5.1387825,-1.30351031
 	attPos = 0.0942106247,0,-0.16317749
 	attPos0 = -1.43136704,-5.77992058,2.47919941
 	rot = 2.31402311E-08,0.258819014,-8.6360501E-08,-0.965925813
@@ -3137,17 +2601,14 @@ PART
 		ToggleSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		SetSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 		RemoveSameVesselInteraction
 		{
 			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
 		}
 	}
 	PARTDATA
@@ -3172,7 +2633,6 @@ PART
 			ToggleAction
 			{
 				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		AXISGROUPS
@@ -3184,276 +2644,6 @@ PART
 				axisSpeedMultiplier = 0
 				axisInverted = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = AM.MLP.LargeLaunchStand_4291173944
-	partName = Part
-	persistentId = 252437940
-	pos = -0.131746754,-3.10243988,0.0336444713
-	attPos = 0,-0.0611419678,0
-	attPos0 = 0,-13.960001,0
-	rot = 0,0,0,1
-	attRot = 0,0,0,1
-	attRot0 = 0,0.707106709,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = 0
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = top,TE2.19.SS.Fuel.Tank_4293825826_0|6.5|0_0|1|0_0|6.5|0_0|1|0
-	attN = top01,Null_0_8.35000038|1|0_0|-1|0_8.35000038|1|0_0|-1|0
-	attN = top02,Null_0_0|1|-8.35000038_0|-1|0_0|1|-8.35000038_0|-1|0
-	attN = top03,Null_0_-8.35000038|1|0_0|-1|0_-8.35000038|1|0_0|-1|0
-	attN = top04,Null_0_0|1|8.35000038_0|-1|0_0|1|8.35000038_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = LaunchClamp
-		isEnabled = True
-		scaleFactor = 0.379511982
-		height = 1.89756012
-		stagingEnabled = True
-		towerRot = 0,0,0,1
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ReleaseClamp
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
-		stagingEnabled = True
-		moduleID = meshSwitch
-		currentSubtype = 4.25m
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PartSwitch
-		isEnabled = True
-		stagingEnabled = True
-		moduleID = clampSwitch
-		currentSubtype = 8x
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = CLAMPED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 0
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9AssignUiGroups
-		isEnabled = True
-		stagingEnabled = True
-		moduleID = 
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleB9PartInfo
-		isEnabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
