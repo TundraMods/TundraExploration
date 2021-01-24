@@ -11,6 +11,20 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on October 31, 2020
 
+Version 3.3.0
+- Fixed soot on Block 5 texture to match with the new Mk2 KRE leg.
+- Updated craft files
+- Deprecated Mk3 Gojira (2018 Starship)
+- Mk3 Gojira fin is still available
+- Fixed pipes clipping with vac engine on Mk4 SN9 variant
+- Fixed attachment node on SN leg
+- Added new parts to subcats
+- Updated Gojiras body variant text
+- Added SN8 nose cone to RCS switch
+- Fixed Ghidorah Heavy nosecone raceway
+- Fixed gimbal range on Kingfish booster (Mk4 Gojira)
+- Fixed soot texture on Block 4 Interstage
+
 Version 3.2.0
 - Added part switch option to remove heatshield from Gojira
 - Added Waterfall configs for Gojira
