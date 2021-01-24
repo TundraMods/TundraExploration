@@ -16,7 +16,7 @@ PART
 {
 	part = TE.20.CargoRodan_4291636920
 	partName = Part
-	persistentId = 1606676809
+	persistentId = 286750414
 	pos = 0.000195212851,42.9995956,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0.000195212851,42.9995956,-0.000247607997
@@ -574,7 +574,7 @@ PART
 {
 	part = TE.18.DRAGONV2.HEATSHIELD_4293884688
 	partName = Part
-	persistentId = 964766772
+	persistentId = 1925769096
 	pos = 0.000195212851,41.8535957,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-1.14599991,0
@@ -703,7 +703,7 @@ PART
 				POS_ROT
 				{
 					name = offset
-					position = 0,4.29711733E-08,0.360468358
+					position = 0,4.29711804E-08,0.360468417
 					rotation = -0.707106829,0,0,0.707106829
 					orientation = 0,0,0
 				}
@@ -729,7 +729,7 @@ PART
 {
 	part = TE.18.DRAGONV2.TRUNK_4293884496
 	partName = Part
-	persistentId = 1695467140
+	persistentId = 3768542674
 	pos = 0.000195212851,41.3371277,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-0.516468048,0
@@ -745,7 +745,7 @@ PART
 	dstg = 0
 	sidx = -1
 	sqor = -1
-	sepI = 0
+	sepI = -1
 	attm = 0
 	sameVesselCollision = False
 	modCost = 0
@@ -1046,7 +1046,7 @@ PART
 {
 	part = TE.19.C.Dragon.Decoupler_4293865240
 	partName = Part
-	persistentId = 2745339502
+	persistentId = 3711487261
 	pos = 0.000195212851,38.9720879,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-2.36503959,0
@@ -1280,7 +1280,7 @@ PART
 {
 	part = TE.19.F9.S2.Tank_4293566586
 	partName = Part
-	persistentId = 757695416
+	persistentId = 1312567111
 	pos = 0.000195212851,35.7802773,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-3.19181061,-1.46397448E-15
@@ -1422,7 +1422,7 @@ PART
 {
 	part = TE.19.F9.S2.Engine_4293561372
 	partName = Part
-	persistentId = 2321469892
+	persistentId = 2135441047
 	pos = 0.000195212851,32.0312767,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-3.74900055,0
@@ -1764,7 +1764,7 @@ PART
 {
 	part = TE.19.F9.S1.Interstage_4293559828
 	partName = Part
-	persistentId = 2148839910
+	persistentId = 210660374
 	pos = 0.000195212851,28.9472771,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-3.08399963,0
@@ -2191,7 +2191,7 @@ PART
 {
 	part = TE.19.F9.S1.Tank_4293568600
 	partName = Part
-	persistentId = 4027676717
+	persistentId = 2124059854
 	pos = 0.000195212851,19.4562759,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-9.49100113,2.70010387E-16
@@ -2214,10 +2214,10 @@ PART
 	modMass = 2.80000019
 	modSize = 0,0,0
 	link = TE.19.F9.S1.Engine_4293524006
-	link = KRE-FalconLegMk2-M_4293656248
-	link = KRE-FalconLegMk2-M_4293651984
-	link = KRE-FalconLegMk2-M_4293651804
-	link = KRE-FalconLegMk2-M_4293651624
+	link = KRE-FalconLegMk2-M_4293723694
+	link = KRE-FalconLegMk2-M_4293720858
+	link = KRE-FalconLegMk2-M_4293720678
+	link = KRE-FalconLegMk2-M_4293720498
 	attN = node_top,TE.19.F9.S1.Interstage_4293559828_0|9.11700058|0_0|1.00000012|-1.1920929E-07_0|9.11700058|0_0|1.00000012|-1.1920929E-07
 	attN = node_down,TE.19.F9.S1.Engine_4293524006_0|-17.4309998|0_0|-1.00000012|-1.1920929E-07_0|-17.4309998|0_0|-1.00000012|-1.1920929E-07
 	EVENTS
@@ -2265,7 +2265,7 @@ PART
 	{
 		name = ModuleSootyShader
 		isEnabled = True
-		SootyState = False
+		SootyState = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2409,7 +2409,7 @@ PART
 {
 	part = TE.19.F9.S1.Engine_4293524006
 	partName = Part
-	persistentId = 3623522434
+	persistentId = 1588053147
 	pos = 0.000195212851,1.26627731,-0.000247607997
 	attPos = 0,0,0
 	attPos0 = 0,-18.1899986,0
@@ -2894,7 +2894,7 @@ PART
 				POS_ROT
 				{
 					name = offset
-					position = 0,5.34179136E-08,0.448101997
+					position = 0,5.34179279E-08,0.448102117
 					rotation = -0.50000006,0.50000006,-0.50000006,0.50000006
 					orientation = 0,0,0
 				}
@@ -3142,8 +3142,8 @@ PART
 {
 	part = Grid Fin M Titanium_4293483416
 	partName = Part
-	persistentId = 477932579
-	pos = 0.883180559,28.7987747,0.882737517
+	persistentId = 15023028
+	pos = 0.883181751,28.7987747,0.882738709
 	attPos = 0,0,0
 	attPos0 = 0.882980049,-0.14850235,0.88297981
 	rot = 0.923879683,1.19518063E-07,0.382683456,4.95060064E-08
@@ -3424,8 +3424,8 @@ PART
 {
 	part = Grid Fin M Titanium_4293482638
 	partName = Part
-	persistentId = 3121553118
-	pos = 0.88318032,28.7987747,-0.883232772
+	persistentId = 3071171995
+	pos = 0.883181512,28.7987747,-0.883233964
 	attPos = 0,0,0
 	attPos0 = 0.88297981,-0.14850235,-0.88297987
 	rot = 0.923879683,1.19518063E-07,-0.382683456,-4.95060064E-08
@@ -3694,8 +3694,8 @@ PART
 {
 	part = Grid Fin M Titanium_4293482568
 	partName = Part
-	persistentId = 948410162
-	pos = -0.882790208,28.7987747,-0.883232653
+	persistentId = 2373827910
+	pos = -0.8827914,28.7987747,-0.883233845
 	attPos = 0,0,0
 	attPos0 = -0.882980108,-0.14850235,-0.882979751
 	rot = 0.382683456,4.95059993E-08,-0.923879683,-1.19518077E-07
@@ -3964,8 +3964,8 @@ PART
 {
 	part = Grid Fin M Titanium_4293482498
 	partName = Part
-	persistentId = 409299533
-	pos = -0.882789791,28.7987747,0.882737696
+	persistentId = 760755180
+	pos = -0.882790983,28.7987747,0.882738888
 	attPos = 0,0,0
 	attPos0 = -0.882979691,-0.14850235,0.882979989
 	rot = -0.382683456,-4.95060064E-08,-0.923879683,-1.19518063E-07
@@ -4234,8 +4234,8 @@ PART
 {
 	part = TE2.19.F9.CGT_4293480302
 	partName = Part
-	persistentId = 403734765
-	pos = 0.000195332061,28.7498302,-1.24748242
+	persistentId = 1601780995
+	pos = 0.000195332061,28.7498302,-1.2474848
 	attPos = 0,0,0
 	attPos0 = 1.1920924E-07,-0.197446823,-1.2472254
 	rot = 1.42108547E-14,1.00000012,-2.460622E-07,1.1920929E-07
@@ -4335,8 +4335,8 @@ PART
 {
 	part = TE2.19.F9.CGT_4293479342
 	partName = Part
-	persistentId = 946518803
-	pos = 0.000195212851,28.7498302,1.24698722
+	persistentId = 3887259042
+	pos = 0.000195212851,28.7498302,1.24698961
 	attPos = 0,0,0
 	attPos0 = -1.42108454E-14,-0.197446823,1.2472254
 	rot = -2.460622E-07,0,0,-1.00000012
@@ -4436,7 +4436,7 @@ PART
 {
 	part = parachuteRadial_4293264954
 	partName = Part
-	persistentId = 785956500
+	persistentId = 992387504
 	pos = -0.60684669,43.8214645,0.0173628815
 	attPos = 0.0162088033,-0.0564842224,0.164571881
 	attPos0 = -0.0338192619,0.858352661,-0.771613717
@@ -4582,7 +4582,7 @@ PART
 {
 	part = parachuteRadial_4293264736
 	partName = Part
-	persistentId = 4036364735
+	persistentId = 490081335
 	pos = -0.606846571,43.8214645,-0.01785798
 	attPos = -0.0162088927,-0.0564842224,0.164572001
 	attPos0 = 0.0338193178,0.858352661,-0.771613717
@@ -4728,7 +4728,7 @@ PART
 {
 	part = dockingPort2_4293259692
 	partName = Part
-	persistentId = 1290263403
+	persistentId = 3604128370
 	pos = 0.000195212851,44.0227623,-0.000247607997
 	attPos = 0,-0.0578346252,0
 	attPos0 = 0,1.08100128,0
@@ -4846,15 +4846,15 @@ PART
 }
 PART
 {
-	part = KRE-FalconLegMk2-M_4293656248
+	part = KRE-FalconLegMk2-M_4293723694
 	partName = Part
-	persistentId = 3308109805
-	pos = 0.739665866,1.63030243,-0.73971808
-	attPos = 0,0,0
-	attPos0 = -0.739470303,-17.8259735,0.739470124
-	rot = -1.70270965E-07,0.382683516,-7.05285572E-08,-0.923879623
+	persistentId = 3463500190
+	pos = 0.696109354,1.66019821,-0.696161628
+	attPos = -7.15255737E-07,0.0630836487,7.15255737E-07
+	attPos0 = -0.695913076,-17.8591614,0.695912957
+	rot = 0,0.382683516,0,-0.923879623
 	attRot = 0,0,0,1
-	attRot0 = -7.05285572E-08,-0.923879504,1.70270937E-07,-0.382683456
+	attRot0 = 0,-0.923879504,0,-0.382683456
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
@@ -4870,10 +4870,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293651984
-	sym = KRE-FalconLegMk2-M_4293651804
-	sym = KRE-FalconLegMk2-M_4293651624
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.200000003,0|0|-2,0|2|-0.200000003
+	sym = KRE-FalconLegMk2-M_4293720858
+	sym = KRE-FalconLegMk2-M_4293720678
+	sym = KRE-FalconLegMk2-M_4293720498
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
 	EVENTS
 	{
 	}
@@ -5016,15 +5016,15 @@ PART
 }
 PART
 {
-	part = KRE-FalconLegMk2-M_4293651984
+	part = KRE-FalconLegMk2-M_4293720858
 	partName = Part
-	persistentId = 3528781682
-	pos = -0.739275277,1.63030243,-0.739718258
-	attPos = 0,0,0
-	attPos0 = 0.739470124,-17.8259735,0.739470303
-	rot = -1.70271008E-07,-0.382683456,7.0528543E-08,-0.923879683
+	persistentId = 1147228812
+	pos = -0.695719123,1.66019821,-0.696162105
+	attPos = 1.07288361E-06,0.0630836487,1.07288361E-06
+	attPos0 = 0.695912898,-17.8591614,0.695913076
+	rot = 0,-0.382683456,0,-0.923879683
 	attRot = 0,0,0,1
-	attRot0 = 7.05285288E-08,-0.923879564,1.7027098E-07,0.382683396
+	attRot0 = 0,-0.923879564,0,0.382683396
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
@@ -5040,10 +5040,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293651804
-	sym = KRE-FalconLegMk2-M_4293651624
-	sym = KRE-FalconLegMk2-M_4293656248
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.200000003,0|0|-2,0|2|-0.200000003
+	sym = KRE-FalconLegMk2-M_4293720678
+	sym = KRE-FalconLegMk2-M_4293720498
+	sym = KRE-FalconLegMk2-M_4293723694
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
 	EVENTS
 	{
 	}
@@ -5186,15 +5186,15 @@ PART
 }
 PART
 {
-	part = KRE-FalconLegMk2-M_4293651804
+	part = KRE-FalconLegMk2-M_4293720678
 	partName = Part
-	persistentId = 145049452
-	pos = -0.739275396,1.63030243,0.739222944
-	attPos = 0,0,0
-	attPos0 = 0.739470243,-17.8259735,-0.739470184
-	rot = -7.05285501E-08,-0.923879683,1.70270994E-07,-0.382683456
+	persistentId = 2495903906
+	pos = -0.695719242,1.66019821,0.69566685
+	attPos = 1.07288361E-06,0.0630836487,-1.07288361E-06
+	attPos0 = 0.695913017,-17.8591614,-0.695913017
+	rot = 0,-0.923879623,0,-0.382683516
 	attRot = 0,0,0,1
-	attRot0 = 1.7027098E-07,-0.382683396,7.05285501E-08,0.923879564
+	attRot0 = 0,-0.382683396,0,0.923879564
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
@@ -5210,10 +5210,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293651624
-	sym = KRE-FalconLegMk2-M_4293656248
-	sym = KRE-FalconLegMk2-M_4293651984
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.200000003,0|0|-2,0|2|-0.200000003
+	sym = KRE-FalconLegMk2-M_4293720498
+	sym = KRE-FalconLegMk2-M_4293723694
+	sym = KRE-FalconLegMk2-M_4293720858
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
 	EVENTS
 	{
 	}
@@ -5356,15 +5356,15 @@ PART
 }
 PART
 {
-	part = KRE-FalconLegMk2-M_4293651624
+	part = KRE-FalconLegMk2-M_4293720498
 	partName = Part
-	persistentId = 3762276862
-	pos = 0.739665747,1.63030243,0.739223003
-	attPos = 0,0,0
-	attPos0 = -0.739470184,-17.8259735,-0.739470243
-	rot = 7.0528543E-08,-0.923879683,1.70271008E-07,0.382683456
+	persistentId = 3235604144
+	pos = 0.696109593,1.66019821,0.69566685
+	attPos = -1.07288361E-06,0.0630836487,-1.07288361E-06
+	attPos0 = -0.695912957,-17.8591614,-0.695913017
+	rot = 0,-0.923879683,0,0.382683456
 	attRot = 0,0,0,1
-	attRot0 = 1.7027098E-07,0.382683396,-7.05285288E-08,0.923879564
+	attRot0 = 0,0.382683396,0,0.923879564
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = ForceHeaviest
@@ -5380,10 +5380,10 @@ PART
 	modCost = 0
 	modMass = 0
 	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293656248
-	sym = KRE-FalconLegMk2-M_4293651984
-	sym = KRE-FalconLegMk2-M_4293651804
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.200000003,0|0|-2,0|2|-0.200000003
+	sym = KRE-FalconLegMk2-M_4293723694
+	sym = KRE-FalconLegMk2-M_4293720858
+	sym = KRE-FalconLegMk2-M_4293720678
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
 	EVENTS
 	{
 	}
