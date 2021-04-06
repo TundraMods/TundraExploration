@@ -1,8 +1,8 @@
 ship = Ghidorah 9 - Fairing
-version = 1.8.1
+version = 1.11.2
 description = Ghidorah 9 first stage carrying the Cargo Rodan pod. Check action groups tab for more info.
 type = VAB
-size = 10.432888,51.1335907,9.4865303
+size = 10.4328985,51.1336517,9.4865427
 steamPublishedFileId = 0
 persistentId = 3110757768
 rot = 0,0,0,0
@@ -267,7 +267,7 @@ PART
 	part = TE.19.F9.Fairing_4293207410
 	partName = Part
 	persistentId = 3884046573
-	pos = 0.885063946,39.3742256,4.63426113E-05
+	pos = 0.885064662,39.3742256,4.63426113E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.119998932,0.88499999
 	rot = 0,0.707106829,0,0.707106829
@@ -443,7 +443,7 @@ PART
 	part = TE.19.F9.Fairing_4293206640
 	partName = Part
 	persistentId = 3173267331
-	pos = -0.884936988,39.3742256,4.61637974E-05
+	pos = -0.884937704,39.3742256,4.61637974E-05
 	attPos = 0,0,0
 	attPos0 = 3.7591235E-08,-0.119998932,-0.88500011
 	rot = 0,0.707106769,0,-0.707106888
@@ -640,11 +640,9 @@ PART
 	modCost = 3686.80005
 	modMass = 0.650000036
 	modSize = 0,0,0
-	link = TE.19.F9.S2.Engine_4293561372
-	link = TE2.19.F9.CGT_4293191422
-	link = TE2.19.F9.CGT_4293190300
+	link = TE.19.F9.S2.Engine_4293655428
 	attN = node_top,TE.F9.Fairing.Adapter_4293240872_0|3.06599998|0_0|1|0_0|3.06599998|0_0|1|0
-	attN = node_down,TE.19.F9.S2.Engine_4293561372_0|-3.06599998|0_0|-1|0_0|-3.06599998|0_0|-1|0
+	attN = node_down,TE.19.F9.S2.Engine_4293655428_0|-3.06599998|0_0|-1|0_0|-3.06599998|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -760,15 +758,15 @@ PART
 }
 PART
 {
-	part = TE.19.F9.S2.Engine_4293561372
+	part = TE.19.F9.S2.Engine_4293655428
 	partName = Part
-	persistentId = 1328841011
-	pos = 6.35236502E-05,32.297226,4.62830067E-05
+	persistentId = 2628698762
+	pos = 6.35236502E-05,32.2972221,4.62830067E-05
 	attPos = 0,0,0
-	attPos0 = 0,-3.74900055,0
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attPos0 = 0,-3.74900436,0
+	rot = 0,0.707106888,0,0.707106888
+	attRot = 0,0.707106769,0,0.707106769
+	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -785,8 +783,8 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = TE.19.F9.S1.Interstage_4293559828
-	attN = node_top,TE.19.F9.S2.Tank_4293566586_0|0.682999611|0_0|1.00000012|-1.1920929E-07_0|0.682999611|0_0|1.00000012|-1.1920929E-07
-	attN = node_down,TE.19.F9.S1.Interstage_4293559828_0|-2.97799993|0_0|-1.00000012|-1.1920929E-07_0|-2.97799993|0_0|-1.00000012|-1.1920929E-07
+	attN = top,TE.19.F9.S2.Tank_4293566586_0|0.683000624|0_0|1|0_0|0.683000624|0_0|1|0
+	attN = bottom,TE.19.F9.S1.Interstage_4293559828_0|-2.97800112|0_0|-1|0_0|-2.97800112|0_0|-1|0
 	EVENTS
 	{
 	}
@@ -875,6 +873,37 @@ PART
 				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleRCSFX
+		isEnabled = True
+		rcsEnabled = True
+		thrustPercentage = 100
+		currentShowToggles = False
+		enableYaw = True
+		enablePitch = True
+		enableRoll = True
+		enableX = True
+		enableY = True
+		enableZ = True
+		useThrottle = False
+		fullThrust = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
 			}
 		}
 		UPGRADESAPPLIED
@@ -1056,6 +1085,40 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Foil
+		currentSubtype = FoilOn
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_Dome
+		currentSubtype = Dome1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -1075,14 +1138,22 @@ PART
 			{
 				colliderName = 
 				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 0,1.26363773E-08,0.10600163
-					rotation = -0.707106829,0,0,0.707106829
-					orientation = 0,0,0
-				}
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1102,215 +1173,15 @@ PART
 }
 PART
 {
-	part = TE2.19.F9.CGT_4293191422
-	partName = Part
-	persistentId = 3076407937
-	pos = 6.36428595E-05,32.7908096,-1.10897839
-	attPos = 0,-0.205375671,0.140978456
-	attPos0 = -1.19209211E-07,-3.0500412,-1.25000036
-	rot = 0,1.00000012,0,1.1920929E-07
-	attRot = 0,0,0,1
-	attRot0 = 0,1,0,8.94069672E-08
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = TE2.19.F9.CGT_4293190300
-	srfN = srfAttach,TE.19.F9.S2.Tank_4293566586,TE_20_F9_S2_Collider,0|0|0,0|0|1.25,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = TE2.19.F9.CGT_4293190300
-	partName = Part
-	persistentId = 3363354122
-	pos = 6.35236502E-05,32.7908096,1.10907102
-	attPos = 0,-0.205375671,-0.140978336
-	attPos0 = 2.38418423E-07,-3.0500412,1.25000036
-	rot = 0,1.1920929E-07,0,-1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = TE2.19.F9.CGT_4293191422
-	srfN = srfAttach,TE.19.F9.S2.Tank_4293566586,TE_20_F9_S2_Collider,0|0|0,0|0|1.25,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleRCSFX
-		isEnabled = True
-		rcsEnabled = True
-		thrustPercentage = 100
-		currentShowToggles = False
-		enableYaw = True
-		enablePitch = True
-		enableRoll = True
-		enableX = True
-		enableY = True
-		enableZ = True
-		useThrottle = False
-		fullThrust = False
-		stagingEnabled = False
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModulePartVariants
-		isEnabled = True
-		useVariantMass = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = TE.19.F9.S1.Interstage_4293559828
 	partName = Part
 	persistentId = 2380373568
-	pos = 6.35236502E-05,29.2132244,4.62830067E-05
+	pos = 6.35236502E-05,29.2132206,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.08400154,0
-	rot = 0,0,0,1.00000012
+	rot = 0,0,0,1.00000024
 	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
+	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -1333,7 +1204,7 @@ PART
 	link = Grid Fin M Titanium_4293482498
 	link = TE2.19.F9.CGT_4293480302
 	link = TE2.19.F9.CGT_4293479342
-	attN = node_top,TE.19.F9.S2.Engine_4293561372_0|0.1060009|0_0|1|0_0|0.1060009|0_0|1|0
+	attN = node_top,TE.19.F9.S2.Engine_4293655428_0|0.1060009|0_0|1|0_0|0.1060009|0_0|1|0
 	attN = node_down,TE.19.F9.S1.Tank_4293568600_0|-0.373999596|0_0|-1|0_0|-0.373999596|0_0|-1|0
 	EVENTS
 	{
@@ -1732,10 +1603,10 @@ PART
 	part = TE.19.F9.S1.Tank_4293568600
 	partName = Part
 	persistentId = 3986360870
-	pos = 6.35236502E-05,19.7222233,4.62830067E-05
+	pos = 6.35236502E-05,19.7222023,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0,-9.49100113,2.70010387E-16
-	rot = 0,-1.00000012,0,0
+	rot = 0,-1.00000024,0,0
 	attRot = 0,-0.99999994,0,0
 	attRot0 = 0,-1,0,0
 	mir = 1,1,1
@@ -1950,10 +1821,10 @@ PART
 	part = TE.19.F9.S1.Engine_4293524006
 	partName = Part
 	persistentId = 3880303924
-	pos = 6.35236502E-05,1.53222656,4.62830067E-05
+	pos = 6.35236502E-05,1.53217316,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0,-18.1899986,0
-	rot = 0,-1.00000012,0,0
+	rot = 0,-1.00000024,0,0
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2412,6 +2283,44 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleSootyShader
+		isEnabled = True
+		SootyState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleSootyAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
+		moduleID = TE_OCTA_VARIANT
+		currentSubtype = marked1
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = AnimatedAttachment
 		isEnabled = True
 		activated = True
@@ -2444,6 +2353,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2458,13 +2382,865 @@ PART
 }
 PART
 {
+	part = TE.Ghidorah.Erector.2_4293607386
+	partName = Part
+	persistentId = 320682394
+	pos = -2.89994001,1.10217285,-0.0479540527
+	attPos = 0,0,0
+	attPos0 = 2.89999914,-0.430000305,0.0480003245
+	rot = 0,-0.707107008,0,0.707107008
+	attRot = 0,-0.707106769,0,0.707106769
+	attRot0 = 0,0.707106829,0,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 3
+	resPri = 0
+	dstg = 2
+	sidx = 0
+	sqor = 3
+	sepI = 3
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_stack_top,TE.19.F9.S1.Engine_4293524006_0.0480005741|-0.507001877|-2.89999962_0|1.00000012|-1.19209375E-07_0.0480005741|-0.507001758|-2.89999962_0|1.00000012|-1.19209375E-07
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleGenerator
+		isEnabled = True
+		generatorIsActive = False
+		throttle = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ActivateAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownAction
+			{
+				actionGroup = None
+				active = False
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimateGeneric
+		isEnabled = True
+		aniState = LOCKED
+		animSwitch = True
+		animTime = 0
+		animSpeed = 1
+		deployPercent = 100
+		animationIsDisabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = Custom02
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			deployPercent
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleAnimatedDecoupler
+		isEnabled = True
+		animationComplete = False
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = AnimatedAttachment
+		isEnabled = True
+		activated = True
+		maximumForce = 100000
+		positionDamper = 1000
+		positionSpring = 100000
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		ATTACHED_PART_INFOS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KRE-FalconLegMk2-M_4293778960
+	partName = Part
+	persistentId = 1402698182
+	pos = 0.695910275,1.93852997,-0.695800304
+	attPos = 0,0,0
+	attPos0 = -0.695843339,-17.7836399,0.69584316
+	rot = -6.98688325E-08,0.382683545,-2.89406241E-08,-0.923879743
+	attRot = 0,0,0,1
+	attRot0 = -2.89406206E-08,-0.923879564,6.98688325E-08,-0.382683396
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = ForceHeaviest
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KRE-FalconLegMk2-M_4293776808
+	sym = KRE-FalconLegMk2-M_4293776624
+	sym = KRE-FalconLegMk2-M_4293776440
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleWheelBase
+		isEnabled = True
+		wheelType = LEG
+		isGrounded = False
+		autoFriction = False
+		frictionMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActAutoFrictionToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		autoSpringDamper = True
+		suspensionPos = (-1, -1, -1)
+		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
+		autoBoost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		isEnabled = True
+		shieldedCanDeploy = False
+		stateDisplayString = Retracted
+		stateString = Retracted
+		stagingEnabled = True
+		position = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+		isEnabled = True
+		isDamaged = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KRE-FalconLegMk2-M_4293776808
+	partName = Part
+	persistentId = 4082729005
+	pos = -0.695783019,1.93852997,-0.695800424
+	attPos = 0,0,0
+	attPos0 = 0.695843101,-17.7836399,0.695843279
+	rot = -6.98688325E-08,-0.382683545,2.89406135E-08,-0.923879743
+	attRot = 0,0,0,1
+	attRot0 = 2.89406135E-08,-0.923879564,6.98688325E-08,0.382683396
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = ForceHeaviest
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KRE-FalconLegMk2-M_4293776624
+	sym = KRE-FalconLegMk2-M_4293776440
+	sym = KRE-FalconLegMk2-M_4293778960
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleWheelBase
+		isEnabled = True
+		wheelType = LEG
+		isGrounded = False
+		autoFriction = False
+		frictionMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActAutoFrictionToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		autoSpringDamper = True
+		suspensionPos = (-1, -1, -1)
+		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
+		autoBoost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		isEnabled = True
+		shieldedCanDeploy = False
+		stateDisplayString = Retracted
+		stateString = Retracted
+		stagingEnabled = True
+		position = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+		isEnabled = True
+		isDamaged = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KRE-FalconLegMk2-M_4293776624
+	partName = Part
+	persistentId = 2194862574
+	pos = -0.695783138,1.93852997,0.695893168
+	attPos = 0,0,0
+	attPos0 = 0.695843279,-17.7836399,-0.695843279
+	rot = -2.89406206E-08,-0.923879743,6.9868868E-08,-0.382683545
+	attRot = 0,0,0,1
+	attRot0 = 6.98688396E-08,-0.382683396,2.89406188E-08,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = ForceHeaviest
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KRE-FalconLegMk2-M_4293776440
+	sym = KRE-FalconLegMk2-M_4293778960
+	sym = KRE-FalconLegMk2-M_4293776808
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleWheelBase
+		isEnabled = True
+		wheelType = LEG
+		isGrounded = False
+		autoFriction = False
+		frictionMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActAutoFrictionToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		autoSpringDamper = True
+		suspensionPos = (-1, -1, -1)
+		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
+		autoBoost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		isEnabled = True
+		shieldedCanDeploy = False
+		stateDisplayString = Retracted
+		stateString = Retracted
+		stagingEnabled = True
+		position = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+		isEnabled = True
+		isDamaged = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = KRE-FalconLegMk2-M_4293776440
+	partName = Part
+	persistentId = 3479897233
+	pos = 0.695910215,1.93852997,0.695893168
+	attPos = 0,0,0
+	attPos0 = -0.69584322,-17.7836399,-0.695843279
+	rot = 2.89406135E-08,-0.923879743,6.98688325E-08,0.382683545
+	attRot = 0,0,0,1
+	attRot0 = 6.98688325E-08,0.382683396,-2.89406135E-08,0.923879564
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = ForceHeaviest
+	rigidAttachment = False
+	istg = 2
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 2
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = KRE-FalconLegMk2-M_4293778960
+	sym = KRE-FalconLegMk2-M_4293776808
+	sym = KRE-FalconLegMk2-M_4293776624
+	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleWheelBase
+		isEnabled = True
+		wheelType = LEG
+		isGrounded = False
+		autoFriction = False
+		frictionMultiplier = 1
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActAutoFrictionToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelSuspension
+		isEnabled = True
+		springTweakable = 1
+		damperTweakable = 1
+		autoSpringDamper = True
+		suspensionPos = (-1, -1, -1)
+		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
+		autoBoost = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDeployment
+		isEnabled = True
+		shieldedCanDeploy = False
+		stateDisplayString = Retracted
+		stateString = Retracted
+		stagingEnabled = True
+		position = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ActionToggle
+			{
+				actionGroup = Gear
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelLock
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWheelDamage
+		isEnabled = True
+		isDamaged = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = FXModuleLookAtConstraint
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
 	part = Grid Fin M Titanium_4293483416
 	partName = Part
 	persistentId = 4207519008
-	pos = 0.883048773,29.0647221,0.883031607
+	pos = 0.88305378,29.0647182,0.883036733
 	attPos = 0,0,0
 	attPos0 = 0.882980049,-0.14850235,0.88297981
-	rot = 0.923879683,1.19518077E-07,0.382683456,4.95059993E-08
+	rot = 0.923879743,1.19518077E-07,0.382683545,4.95059993E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.923879564,1.19518049E-07,0.382683396,4.95059993E-08
 	mir = 1,1,1
@@ -2743,10 +3519,10 @@ PART
 	part = Grid Fin M Titanium_4293482638
 	partName = Part
 	persistentId = 2750045681
-	pos = 0.883048952,29.0647221,-0.882938862
+	pos = 0.883053839,29.0647182,-0.882943869
 	attPos = 0,0,0
 	attPos0 = 0.88297981,-0.14850235,-0.88297987
-	rot = 0.923879683,1.19518077E-07,-0.382683456,-4.95059993E-08
+	rot = 0.923879743,1.19518077E-07,-0.382683545,-4.95059993E-08
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.923879564,1.19518049E-07,-0.382683396,-4.95059993E-08
 	mir = 1,1,1
@@ -3013,10 +3789,10 @@ PART
 	part = Grid Fin M Titanium_4293482568
 	partName = Part
 	persistentId = 1636363633
-	pos = -0.882921815,29.0647221,-0.882938981
+	pos = -0.882926702,29.0647182,-0.882943988
 	attPos = 0,0,0
 	attPos0 = -0.882980108,-0.14850235,-0.882979751
-	rot = 0.382683456,4.95059993E-08,-0.923879683,-1.19518077E-07
+	rot = 0.382683545,4.95059993E-08,-0.923879743,-1.19518077E-07
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.382683396,4.95059957E-08,-0.923879564,-1.19518063E-07
 	mir = 1,1,1
@@ -3283,10 +4059,10 @@ PART
 	part = Grid Fin M Titanium_4293482498
 	partName = Part
 	persistentId = 1405752407
-	pos = -0.882921755,29.0647221,0.883031487
+	pos = -0.882926643,29.0647182,0.883036613
 	attPos = 0,0,0
 	attPos0 = -0.882979691,-0.14850235,0.882979989
-	rot = -0.382683456,-4.95059993E-08,-0.923879683,-1.19518077E-07
+	rot = -0.382683545,-4.95059993E-08,-0.923879743,-1.19518077E-07
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.382683396,-4.95059993E-08,-0.923879564,-1.19518049E-07
 	mir = 1,1,1
@@ -3553,10 +4329,10 @@ PART
 	part = TE2.19.F9.CGT_4293480302
 	partName = Part
 	persistentId = 3055342828
-	pos = 6.3881278E-05,29.0157776,-1.24718845
+	pos = 6.3881278E-05,29.0157757,-1.24719703
 	attPos = 0,0,0
 	attPos0 = 1.1920924E-07,-0.197446823,-1.2472254
-	rot = 2.84217094E-14,1.00000012,-2.46062228E-07,1.1920929E-07
+	rot = 2.84217094E-14,1.00000024,-2.46062257E-07,1.1920929E-07
 	attRot = 0,0,0,1
 	attRot0 = 1.4210853E-14,1,-2.46062172E-07,1.19209275E-07
 	mir = 1,1,1
@@ -3654,10 +4430,10 @@ PART
 	part = TE2.19.F9.CGT_4293479342
 	partName = Part
 	persistentId = 1011784950
-	pos = 6.32852316E-05,29.0157776,1.24728096
+	pos = 6.32852316E-05,29.0157757,1.24728954
 	attPos = 0,0,0
 	attPos0 = -1.42108454E-14,-0.197446823,1.2472254
-	rot = -2.46062228E-07,0,0,-1.00000012
+	rot = -2.46062257E-07,0,0,-1.00000024
 	attRot = 0,0,0,1
 	attRot0 = -2.46062172E-07,0,0,-1
 	mir = 1,1,1
@@ -3739,858 +4515,6 @@ PART
 		useVariantMass = True
 		stagingEnabled = True
 		selectedVariant = Dark
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = TE.Ghidorah.Erector.2_4293607386
-	partName = Part
-	persistentId = 320682394
-	pos = -2.89993691,1.10222626,-0.0479540527
-	attPos = 0,0,0
-	attPos0 = 2.89999914,-0.430000305,0.0480003245
-	rot = 0,-0.707106888,0,0.707106888
-	attRot = 0,-0.707106769,0,0.707106769
-	attRot0 = 0,0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 3
-	resPri = 0
-	dstg = 2
-	sidx = 0
-	sqor = 3
-	sepI = 3
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = node_stack_top,TE.19.F9.S1.Engine_4293524006_0.0480005741|-0.507001877|-2.89999962_0|1.00000012|-1.19209375E-07_0.0480005741|-0.507001758|-2.89999962_0|1.00000012|-1.19209375E-07
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleGenerator
-		isEnabled = True
-		generatorIsActive = False
-		throttle = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimateGeneric
-		isEnabled = True
-		aniState = LOCKED
-		animSwitch = True
-		animTime = 0
-		animSpeed = 1
-		deployPercent = 100
-		animationIsDisabled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = Custom02
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			deployPercent
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleAnimatedDecoupler
-		isEnabled = True
-		animationComplete = False
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KRE-FalconLegMk2-M_4293778960
-	partName = Part
-	persistentId = 1402698182
-	pos = 0.695907176,1.93858337,-0.695797205
-	attPos = 0,0,0
-	attPos0 = -0.695843339,-17.7836399,0.69584316
-	rot = -6.98688396E-08,0.382683456,-2.89406241E-08,-0.923879683
-	attRot = 0,0,0,1
-	attRot0 = -2.89406206E-08,-0.923879564,6.98688325E-08,-0.382683396
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = ForceHeaviest
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293776808
-	sym = KRE-FalconLegMk2-M_4293776624
-	sym = KRE-FalconLegMk2-M_4293776440
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleWheelBase
-		isEnabled = True
-		wheelType = LEG
-		isGrounded = False
-		autoFriction = False
-		frictionMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActAutoFrictionToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelSuspension
-		isEnabled = True
-		springTweakable = 1
-		damperTweakable = 1
-		autoSpringDamper = True
-		suspensionPos = (-1, -1, -1)
-		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
-		autoBoost = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		isEnabled = True
-		shieldedCanDeploy = False
-		stateDisplayString = Retracted
-		stateString = Retracted
-		stagingEnabled = True
-		position = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelLock
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDamage
-		isEnabled = True
-		isDamaged = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KRE-FalconLegMk2-M_4293776808
-	partName = Part
-	persistentId = 4082729005
-	pos = -0.69577986,1.93858337,-0.695797324
-	attPos = 0,0,0
-	attPos0 = 0.695843101,-17.7836399,0.695843279
-	rot = -6.98688396E-08,-0.382683456,2.8940617E-08,-0.923879683
-	attRot = 0,0,0,1
-	attRot0 = 2.89406135E-08,-0.923879564,6.98688325E-08,0.382683396
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = ForceHeaviest
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293776624
-	sym = KRE-FalconLegMk2-M_4293776440
-	sym = KRE-FalconLegMk2-M_4293778960
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleWheelBase
-		isEnabled = True
-		wheelType = LEG
-		isGrounded = False
-		autoFriction = False
-		frictionMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActAutoFrictionToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelSuspension
-		isEnabled = True
-		springTweakable = 1
-		damperTweakable = 1
-		autoSpringDamper = True
-		suspensionPos = (-1, -1, -1)
-		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
-		autoBoost = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		isEnabled = True
-		shieldedCanDeploy = False
-		stateDisplayString = Retracted
-		stateString = Retracted
-		stagingEnabled = True
-		position = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelLock
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDamage
-		isEnabled = True
-		isDamaged = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KRE-FalconLegMk2-M_4293776624
-	partName = Part
-	persistentId = 2194862574
-	pos = -0.695780039,1.93858337,0.695889831
-	attPos = 0,0,0
-	attPos0 = 0.695843279,-17.7836399,-0.695843279
-	rot = -2.89406206E-08,-0.923879683,6.98688467E-08,-0.382683456
-	attRot = 0,0,0,1
-	attRot0 = 6.98688396E-08,-0.382683396,2.89406188E-08,0.923879564
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = ForceHeaviest
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293776440
-	sym = KRE-FalconLegMk2-M_4293778960
-	sym = KRE-FalconLegMk2-M_4293776808
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleWheelBase
-		isEnabled = True
-		wheelType = LEG
-		isGrounded = False
-		autoFriction = False
-		frictionMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActAutoFrictionToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelSuspension
-		isEnabled = True
-		springTweakable = 1
-		damperTweakable = 1
-		autoSpringDamper = True
-		suspensionPos = (-1, -1, -1)
-		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
-		autoBoost = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		isEnabled = True
-		shieldedCanDeploy = False
-		stateDisplayString = Retracted
-		stateString = Retracted
-		stagingEnabled = True
-		position = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelLock
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDamage
-		isEnabled = True
-		isDamaged = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = KRE-FalconLegMk2-M_4293776440
-	partName = Part
-	persistentId = 3479897233
-	pos = 0.695907056,1.93858337,0.695889831
-	attPos = 0,0,0
-	attPos0 = -0.69584322,-17.7836399,-0.695843279
-	rot = 2.8940617E-08,-0.923879683,6.98688396E-08,0.382683456
-	attRot = 0,0,0,1
-	attRot0 = 6.98688325E-08,0.382683396,-2.89406135E-08,0.923879564
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = ForceHeaviest
-	rigidAttachment = False
-	istg = 2
-	resPri = 0
-	dstg = 2
-	sidx = -1
-	sqor = -1
-	sepI = 2
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = KRE-FalconLegMk2-M_4293778960
-	sym = KRE-FalconLegMk2-M_4293776808
-	sym = KRE-FalconLegMk2-M_4293776624
-	srfN = srfAttach,TE.19.F9.S1.Tank_4293568600,Collider,0|2|-0.25999999,0|0|-2,0|2|-0.25999999
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleWheelBase
-		isEnabled = True
-		wheelType = LEG
-		isGrounded = False
-		autoFriction = False
-		frictionMultiplier = 1
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActAutoFrictionToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelSuspension
-		isEnabled = True
-		springTweakable = 1
-		damperTweakable = 1
-		autoSpringDamper = True
-		suspensionPos = (-1, -1, -1)
-		suspensionDefaultPos = (0, -0.119000003, 2.71799994)
-		autoBoost = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDeployment
-		isEnabled = True
-		shieldedCanDeploy = False
-		stateDisplayString = Retracted
-		stateString = Retracted
-		stagingEnabled = True
-		position = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ActionToggle
-			{
-				actionGroup = Gear
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelLock
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWheelDamage
-		isEnabled = True
-		isDamaged = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleLookAtConstraint
-		isEnabled = True
-		stagingEnabled = True
 		EVENTS
 		{
 		}

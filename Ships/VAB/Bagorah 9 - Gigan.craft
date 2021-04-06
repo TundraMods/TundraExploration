@@ -1,8 +1,8 @@
 ship = Bagorah 9 - Gigan
-version = 1.8.1
+version = 1.11.2
 description = 
 type = VAB
-size = 10.1633444,34.1064262,7.38397121
+size = 10.1633959,34.1064301,7.38400936
 steamPublishedFileId = 0
 persistentId = 3924314273
 rot = 0,0,0,0
@@ -16,10 +16,10 @@ PART
 {
 	part = TE.19.C-Dragon.Pod_4294150454
 	partName = Part
-	persistentId = 368772975
-	pos = 4.39882278E-05,41.8407593,-1.57356262E-05
+	persistentId = 2761011072
+	pos = 3.86296142E-06,31.8434811,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = 4.39882278E-05,41.8407593,-1.57356262E-05
+	attPos0 = 3.86296142E-06,31.8434811,4.93330808E-05
 	rot = 0,0.707106829,0,0.707106829
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
@@ -390,8 +390,8 @@ PART
 {
 	part = TE.19.C-Dragon.Heatshield_4294146436
 	partName = Part
-	persistentId = 1242811227
-	pos = 4.39882278E-05,41.1410789,-1.57356262E-05
+	persistentId = 354631796
+	pos = 3.86296142E-06,31.1438007,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-0.699680328,0
 	rot = 0,-0.707106829,0,-0.707106829
@@ -471,8 +471,8 @@ PART
 {
 	part = TE.19.C-Dragon.Trunk_4294146914
 	partName = Part
-	persistentId = 1294602495
-	pos = 4.39882278E-05,40.0321388,-1.57356262E-05
+	persistentId = 1551504946
+	pos = 3.86296142E-06,30.0348606,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.10894012,0
 	rot = 0,0.707106829,0,0.707106829
@@ -602,8 +602,8 @@ PART
 {
 	part = TE.19.C.Dragon.Decoupler_4294149988
 	partName = Part
-	persistentId = 4267032424
-	pos = 4.39882278E-05,38.7161407,-1.57356262E-05
+	persistentId = 201228490
+	pos = 3.86296142E-06,28.7188625,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.31599808,0
 	rot = 0,0.707106829,0,0.707106829
@@ -836,8 +836,8 @@ PART
 {
 	part = TE.CargoV2.Panel_4294144758
 	partName = Part
-	persistentId = 1913670636
-	pos = 0.228604421,40.1159821,-1.03016162
+	persistentId = 2573337519
+	pos = 0.228564352,30.1187038,-1.03009677
 	attPos = 0,0,0
 	attPos0 = 1.03014374,0.0838432312,0.228559986
 	rot = 2.63417483E-08,0.707106113,-2.63418016E-08,-0.707107544
@@ -920,31 +920,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = KopernicusSolarPanels
-		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
-		_relativeSunAoa = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.CargoV2.Panel_4294142546
 	partName = Part
-	persistentId = 1252537529
-	pos = -0.228516325,40.1159821,1.03013015
+	persistentId = 10676026
+	pos = -0.228556514,30.1187038,1.03019547
 	attPos = 0,0,0
 	attPos0 = -1.03014374,0.0838432312,-0.228559867
 	rot = -2.63418034E-08,-0.707107604,-2.63417466E-08,-0.707106054
@@ -1027,31 +1009,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = KopernicusSolarPanels
-		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
-		_relativeSunAoa = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.19.C.Dragon.Solar.Shield_4294149180
 	partName = Part
-	persistentId = 3857117409
-	pos = 4.42266464E-05,40.0131378,1.18798673
+	persistentId = 1968350815
+	pos = 4.10138E-06,30.0158596,1.18805218
 	attPos = 0,0,0
 	attPos0 = -1.18799961,-0.0190010071,1.1920924E-07
 	rot = 0,0.707106829,0,0.707106829
@@ -1157,8 +1121,8 @@ PART
 {
 	part = TE.19.C.Dragon.Solar.Shield_4294138516
 	partName = Part
-	persistentId = 2721800577
-	pos = 4.37498093E-05,40.0131378,-1.1880182
+	persistentId = 3858793726
+	pos = 3.62454284E-06,30.0158596,-1.18795347
 	attPos = 0,0,0
 	attPos0 = 1.18799961,-0.0190010071,-1.1920924E-07
 	rot = 0,0.707106769,0,-0.707106888
@@ -1264,8 +1228,8 @@ PART
 {
 	part = dockingPort2_4294136936
 	partName = Part
-	persistentId = 4105101212
-	pos = 4.39882278E-05,43.1827583,-1.57356262E-05
+	persistentId = 2380845460
+	pos = 3.86296142E-06,33.1854782,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,1.34199905,0
 	rot = 0,0,0,1.00000012
@@ -1369,6 +1333,7 @@ PART
 		isEnabled = True
 		beingAttached = False
 		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1385,8 +1350,8 @@ PART
 {
 	part = TE.19.C-Dragon.Nosecone_4294137622
 	partName = Part
-	persistentId = 3202107341
-	pos = 4.39882278E-05,43.486969,-1.57356262E-05
+	persistentId = 4228664734
+	pos = 3.86296142E-06,33.4896927,4.93330808E-05
 	attPos = 0,-0.266670227,0
 	attPos0 = 0,0.57088089,0
 	rot = 0,0,0,1.00000012
@@ -1459,8 +1424,8 @@ PART
 {
 	part = parachuteRadial_4293873674
 	partName = Part
-	persistentId = 1230947472
-	pos = 0.768967628,42.5087967,-0.20604825
+	persistentId = 4238265476
+	pos = 0.768927753,32.5115204,-0.205983236
 	attPos = -0.0405228436,-0.037525177,-0.151233077
 	attPos0 = 0.246554971,0.705562592,0.920155644
 	rot = -0.0931010172,0.60455519,-0.071438916,-0.787871778
@@ -1589,6 +1554,7 @@ PART
 		isEnabled = True
 		beingAttached = False
 		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1605,8 +1571,8 @@ PART
 {
 	part = parachuteRadial_4293873356
 	partName = Part
-	persistentId = 118990298
-	pos = 0.768967867,42.5087967,0.20601666
+	persistentId = 587392249
+	pos = 0.768927991,32.5115204,0.206081793
 	attPos = 0.0405227393,-0.037525177,-0.151232839
 	attPos0 = -0.246554986,0.705562592,0.920155644
 	rot = 0.0714388564,-0.787871599,0.0931009725,0.604555368
@@ -1735,6 +1701,7 @@ PART
 		isEnabled = True
 		beingAttached = False
 		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1751,10 +1718,10 @@ PART
 {
 	part = TE.19.F910.S2.Tank_4293615406
 	partName = Part
-	persistentId = 570504170
-	pos = 4.39882278E-05,36.9222527,-1.57356262E-05
+	persistentId = 4033598006
+	pos = 3.86296142E-06,26.9249725,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = 0,-1.79388809,0
+	attPos0 = 0,-1.79389,0
 	rot = 0,0.707106829,0,0.707106829
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
@@ -1859,12 +1826,12 @@ PART
 {
 	part = TE.19.F910.S2.Engine_4293612174
 	partName = Part
-	persistentId = 171951054
-	pos = 4.39882278E-05,33.6207428,-1.57356262E-05
+	persistentId = 3404175032
+	pos = 3.86296142E-06,23.6234627,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.30150986,0
 	rot = 0,0.707106829,0,0.707106829
-	attRot = 0,0,0,1
+	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
@@ -2224,12 +2191,12 @@ PART
 {
 	part = TE.19.C.Dragon.Decoupler_4293605812
 	partName = Part
-	persistentId = 2830592567
-	pos = 4.39882278E-05,31.1754627,-1.57356262E-05
+	persistentId = 1428952676
+	pos = 3.86296142E-06,21.1781826,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-2.44528008,0
 	rot = 0,1.00000012,0,0
-	attRot = 0,0.707106769,0,0.707106769
+	attRot = 0,0.99999994,0,0
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
@@ -2458,12 +2425,12 @@ PART
 {
 	part = TE.19.F910.S1.Tank_4293612356
 	partName = Part
-	persistentId = 2085707174
-	pos = 4.39882278E-05,21.7898521,-1.57356262E-05
+	persistentId = 4071157275
+	pos = 3.86296142E-06,11.792572,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = -1.11697187E-15,-9.38561058,-1.05879074E-22
+	attPos0 = -1.11697102E-15,-9.38561058,-1.05878998E-22
 	rot = 0,0.707106888,0,0.707106888
-	attRot = 0,0,0,1
+	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
@@ -2584,12 +2551,12 @@ PART
 {
 	part = TE.19.F910.S1.Engine_4293613164
 	partName = Part
-	persistentId = 4210581886
-	pos = 4.39882278E-05,11.6278534,-1.57356262E-05
+	persistentId = 3218539223
+	pos = 3.86296142E-06,1.63057327,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = 0,-10.1619987,0
+	attPos0 = -5.67977324E-29,-10.1619987,-1.58818021E-21
 	rot = 0,0.707106888,0,0.707106888
-	attRot = 0,0,0,1
+	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
 	symMethod = Radial
@@ -2835,8 +2802,8 @@ PART
 {
 	part = TE.Ghidorah.Erector.3_4293611186
 	partName = Part
-	persistentId = 1567655261
-	pos = -1.70995927,11.0878525,-1.54972076E-05
+	persistentId = 4284620087
+	pos = -1.71001804,1.09057236,4.95714994E-05
 	attPos = 0,0,0
 	attPos0 = -7.10542871E-14,-0.540000916,-1.7099998
 	rot = 0,-0.707106888,0,0.707106888
