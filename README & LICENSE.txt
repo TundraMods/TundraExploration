@@ -1,5 +1,5 @@
 
-Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar and the people on the forum for helping with modding!
+Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar, DylanSemrau and the people on the forum for helping with modding!
 Continued by damonvv.
 
 
@@ -9,10 +9,10 @@ Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on October 31, 2020
+Updated on April 8th, 2021
 
 Version 4.0.0:
-- Added white Octopus variant on Ghidorah 9
+- Added white Octopus variant on Ghidorah 9/Heavy
 - Added Rideshare adapter variants
 - Added Waterfall to Haddock RCS puck
 - Revamped all Mothra One parts
@@ -25,7 +25,7 @@ Version 4.0.0:
 - Fixed M1D displayname
 - Fixed soot on Ghidorah Heavy Nosecone
 - Fixed Rodan trunk node not showing up on cargo side
-- Fixed Waterfall plume during center engine only mode on the Gojira SH engine
+- Fixed Waterfall plume during center engine only mode on the Gojira SH engine cluster
 - Fixed Smokescreen + Waterfall mishap on Mothra
 - Fixed Mothra Interstage node offset
 - Fixed Ghidorah Heavy sideboosters flipping during descent
@@ -35,7 +35,7 @@ Version 4.0.0:
 - Removed Gojira Mk3 parts completely
 - Updated Category tab
 - Updated Tweakscale config
-- Updated Crytanks config
+- Updated Cryotanks config
 - Updated craft files
 
 Version 3.3.0
