@@ -3,24 +3,24 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 
 # Current parts
 
-- Rodan command pod, heatshield, and trunk. It also has a nice IVA included. (Dragon V2)
-- Ghidorah 9 fuel tanks, second stage engine, first stage engine, legs, grid fins, and decoupler (Falcon 9) (Needs B9 Part Switch)
-- Gigan pod, heatshield, shroud, trunk, solar panel, solar shroud. (Cargo Dragon)
-- Gojira command pod with fuel tank, engine shroud and engines (SpaceX's BFS)
-- Gojira BFT-9000 Fuel Tank, engines and probe core (SpaceX's BFR)
-- Mothra Launcher (Falcon 1)
-- Ghidorah Heavy Parts
-
-No IVA on Gojira, but coming in future update
+- Rodan (Crew & Cargo Dragon V2)
+- Gigan (Cargo Dragon (CRS1
+- Ghidorah 9 (Falcon 9)
+- Ghidorah Heavy (Falcon Heavy)
+- Gojira (Starship 2019)
+- Mothra One (Falcon 1)
 
 # Known issues
 
 - Landing Gojira might be hard. A guide is being made to teach you how to use Gojira.
 - Caution using Gojira for stations, it can wobble and break it. Use "Autostruts" on Gojira for a temporary fix!
-- Cargo Gojira's textures are weird (I haven't redone the model yet)
+- No IVA on Gojira.
 
+# LICENSE
 
-
-
-Any Code or configs are distributed under CC-NC-SA-4.0 License.
-All Textures/models are distributed under CC BY_NC-ND 4.0 License.
+All codes and configs are distributed under CC-NC-SA-4.0 License.
+Nertea's HabUtils.dll is distributed under a MIT license.
+The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
+All bundled mods are distributed under their own licenses.
+This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
+Updated on October 31, 2020
