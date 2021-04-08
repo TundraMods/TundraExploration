@@ -1,8 +1,8 @@
 ship = Gojira Mk4 Cargo
-version = 1.8.1
+version = 1.10.1
 description = 
 type = VAB
-size = 10.6581526,72.2956696,9.08776093
+size = 10.6581459,72.2956696,9.08776093
 steamPublishedFileId = 0
 persistentId = 2599299960
 rot = 0,0,0,0
@@ -255,64 +255,6 @@ PART
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 0,1.49718835E-06,12.5593281
-					rotation = -0.707106829,0,0,0.707106829
-					orientation = 0,0,0
-				}
-			}
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = -8.66862138E-13,1.89301363E-06,2.33405586E-07
-					rotation = 0.499999881,0.50000006,-0.500000179,-0.499999911
-					orientation = 0,0,0
-				}
-			}
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 5.75539616E-13,1.89301488E-06,2.33395525E-07
-					rotation = 0.504344046,-0.495617807,0.504344225,-0.495617688
-					orientation = 0,0,0
-				}
 			}
 		}
 		UPGRADESAPPLIED
@@ -735,6 +677,23 @@ PART
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
 		moduleID = TE_Fuel
 		currentSubtype = LFO
 		EVENTS
@@ -998,28 +957,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1239,28 +1176,6 @@ PART
 		{
 		}
 		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -1492,28 +1407,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1699,20 +1592,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -1744,6 +1632,21 @@ PART
 				actionGroup = Custom06
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1923,20 +1826,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -1968,6 +1866,21 @@ PART
 				actionGroup = Custom06
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -2114,44 +2027,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -2314,44 +2189,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2504,44 +2341,6 @@ PART
 		}
 		ACTIONS
 		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -3479,28 +3278,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -3741,28 +3518,6 @@ PART
 		{
 		}
 		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -4019,28 +3774,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -4281,28 +4014,6 @@ PART
 		{
 		}
 		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -4882,28 +4593,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -5089,20 +4778,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -5134,6 +4818,21 @@ PART
 				actionGroup = Custom05
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -5313,20 +5012,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -5358,6 +5052,21 @@ PART
 				actionGroup = Custom05
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{

@@ -1,8 +1,8 @@
 ship = Bagorah 9 - Gigan
-version = 1.11.2
+version = 1.10.1
 description = 
 type = VAB
-size = 10.1633959,34.1064301,7.38400936
+size = 10.1633034,34.1064301,7.3839426
 steamPublishedFileId = 0
 persistentId = 3924314273
 rot = 0,0,0,0
@@ -38,12 +38,12 @@ PART
 	modCost = 876.959961
 	modMass = 0.870000005
 	modSize = 0,0,0
-	link = TE.19.C-Dragon.Heatshield_4294146436
 	link = dockingPort2_4294136936
 	link = parachuteRadial_4293873674
 	link = parachuteRadial_4293873356
+	link = TE.19.C-Dragon.Heatshield_4293893856
 	attN = node_top,dockingPort2_4294136936_0|1.34200001|0_0|1.00000012|-1.1920929E-07_0|1.34200001|0_0|1.00000012|-1.1920929E-07
-	attN = node_down,TE.19.C-Dragon.Heatshield_4294146436_0|-0.597678244|0_0|-1.00000012|-1.1920929E-07_0|-0.597678244|0_0|-1.00000012|-1.1920929E-07
+	attN = node_down,TE.19.C-Dragon.Heatshield_4293893856_0|-0.597678244|0_0|-1.00000012|-1.1920929E-07_0|-0.597678244|0_0|-1.00000012|-1.1920929E-07
 	EVENTS
 	{
 	}
@@ -388,15 +388,505 @@ PART
 }
 PART
 {
-	part = TE.19.C-Dragon.Heatshield_4294146436
+	part = dockingPort2_4294136936
 	partName = Part
-	persistentId = 354631796
-	pos = 3.86296142E-06,31.1438007,4.93330808E-05
+	persistentId = 2380845460
+	pos = 3.86296142E-06,33.1854782,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = 0,-0.699680328,0
-	rot = 0,-0.707106829,0,-0.707106829
-	attRot = 0,-0.707106709,0,-0.707106709
-	attRot0 = 0,0,0,-1
+	attPos0 = 0,1.34199905,0
+	rot = 0,0,0,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.707106829,0,0.707106829
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = 0
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	link = TE.19.C-Dragon.Nosecone_4294137622
+	attN = top,TE.19.C-Dragon.Nosecone_4294137622_0|0.282883197|0_0|1|0_0|0.282883197|0_0|1|0
+	attN = bottom,TE.19.C-Dragon.Pod_4294150454_0|0|0_0|-1|0_0|0|0_0|-1|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDockingNode
+		isEnabled = True
+		acquireForceTweak = 100
+		crossfeed = True
+		stagingEnabled = False
+		state = Ready
+		dockUId = 0
+		dockNodeIdx = 0
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			UndockAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			MakeReferenceToggle
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleXFeedAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = TE.19.C-Dragon.Nosecone_4294137622
+	partName = Part
+	persistentId = 4228664734
+	pos = 3.86296142E-06,33.4896927,4.93330808E-05
+	attPos = 0,-0.266670227,0
+	attPos0 = 0,0.57088089,0
+	rot = 0,0,0,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 0,0,0,1
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 4
+	resPri = 0
+	dstg = 1
+	sidx = 0
+	sqor = 4
+	sepI = 4
+	attm = 0
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	attN = node_down,dockingPort2_4294136936_0|-0.287999988|0_0|-1.00000012|-1.1920929E-07_0|-0.287999988|0_0|-1.00000012|-1.1920929E-07
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293873674
+	partName = Part
+	persistentId = 4238265476
+	pos = 0.76892823,32.5115204,-0.205983356
+	attPos = -0.0405228436,-0.037525177,-0.151233077
+	attPos0 = 0.246554971,0.705562592,0.920155644
+	rot = -0.0931010172,0.60455519,-0.071438916,-0.787871778
+	attRot = 0,0,0,1
+	attRot0 = -0.0153174214,0.984594464,-0.116347298,-0.129624367
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293873356
+	srfN = srfAttach,TE.19.C-Dragon.Pod_4294150454,mesh,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			CutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = parachuteRadial_4293873356
+	partName = Part
+	persistentId = 587392249
+	pos = 0.768928468,32.5115204,0.206081912
+	attPos = 0.0405227393,-0.037525177,-0.151232839
+	attPos0 = -0.246554986,0.705562592,0.920155644
+	rot = 0.0714388564,-0.787871599,0.0931009725,0.604555368
+	attRot = 0,0,0,1
+	attRot0 = -0.0153174046,-0.984594464,0.116347268,-0.129624262
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 0
+	resPri = 0
+	dstg = 0
+	sidx = 0
+	sqor = 0
+	sepI = -1
+	attm = 1
+	sameVesselCollision = False
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	sym = parachuteRadial_4293873674
+	srfN = srfAttach,TE.19.C-Dragon.Pod_4294150454,mesh,0|0|0,0|0|-1,0|0|0
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+		ToggleSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		SetSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+		RemoveSameVesselInteraction
+		{
+			actionGroup = None
+			wasActiveBeforePartWasAdjusted = False
+		}
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleParachute
+		isEnabled = True
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0399999991
+		deployAltitude = 1000
+		spreadAngle = 7
+		automateSafeDeploy = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			CutAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleCargoPart
+		isEnabled = True
+		beingAttached = False
+		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = TE.19.C-Dragon.Heatshield_4293893856
+	partName = Part
+	persistentId = 1086963752
+	pos = 3.86296142E-06,31.1438026,4.93330808E-05
+	attPos = 0,0,0
+	attPos0 = 0,-0.699678421,0
+	rot = 0,0,0,1.00000012
+	attRot = 0,0,0,1
+	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -458,8 +948,8 @@ PART
 	RESOURCE
 	{
 		name = Ablator
-		amount = 100
-		maxAmount = 100
+		amount = 800
+		maxAmount = 800
 		flowState = True
 		isTweakable = True
 		hideFlow = False
@@ -472,12 +962,12 @@ PART
 	part = TE.19.C-Dragon.Trunk_4294146914
 	partName = Part
 	persistentId = 1551504946
-	pos = 3.86296142E-06,30.0348606,4.93330808E-05
+	pos = 3.86296142E-06,30.0348644,4.93330808E-05
 	attPos = 0,0,0
-	attPos0 = 0,-1.10894012,0
-	rot = 0,0.707106829,0,0.707106829
+	attPos0 = 0,-1.10893822,0
+	rot = 0,0.707106888,0,0.707106888
 	attRot = 0,0.707106769,0,0.707106769
-	attRot0 = 0,0,0,-1
+	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
@@ -498,7 +988,7 @@ PART
 	link = TE.CargoV2.Panel_4294142546
 	link = TE.19.C.Dragon.Solar.Shield_4294149180
 	link = TE.19.C.Dragon.Solar.Shield_4294138516
-	attN = node_top,TE.19.C-Dragon.Heatshield_4294146436_0|0.924000025|0_0|1.00000012|-1.1920929E-07_0|0.924000025|0_0|1.00000012|-1.1920929E-07
+	attN = node_top,TE.19.C-Dragon.Heatshield_4293893856_0|0.924000025|0_0|1.00000012|-1.1920929E-07_0|0.924000025|0_0|1.00000012|-1.1920929E-07
 	attN = node_down,TE.19.C.Dragon.Decoupler_4294149988_0|-0.894599974|0_0|-1.00000012|-1.1920929E-07_0|-0.894599974|0_0|-1.00000012|-1.1920929E-07
 	attN = NODE_LEFT,TE.19.C.Dragon.Solar.Shield_4294149180_-1.05100012|0.0290001631|1.1920929E-07_-1.00000012|0|-1.1920929E-07_-1.05100012|0.0290001631|1.1920929E-07_-1.00000012|0|-1.1920929E-07
 	attN = NODE_RIGHT,TE.19.C.Dragon.Solar.Shield_4294138516_1.05100012|0.0290001631|-1.1920929E-07_1.00000012|0|-1.1920929E-07_1.05100012|0.0290001631|-1.1920929E-07_1.00000012|0|-1.1920929E-07
@@ -603,10 +1093,10 @@ PART
 	part = TE.19.C.Dragon.Decoupler_4294149988
 	partName = Part
 	persistentId = 201228490
-	pos = 3.86296142E-06,28.7188625,4.93330808E-05
+	pos = 3.86296142E-06,28.7188663,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.31599808,0
-	rot = 0,0.707106829,0,0.707106829
+	rot = 0,0.707106888,0,0.707106888
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -837,10 +1327,10 @@ PART
 	part = TE.CargoV2.Panel_4294144758
 	partName = Part
 	persistentId = 2573337519
-	pos = 0.228564352,30.1187038,-1.03009677
+	pos = 0.228564933,30.1187077,-1.03009915
 	attPos = 0,0,0
 	attPos0 = 1.03014374,0.0838432312,0.228559986
-	rot = 2.63417483E-08,0.707106113,-2.63418016E-08,-0.707107544
+	rot = 2.63417554E-08,0.707106173,-2.63418087E-08,-0.707107604
 	attRot = 0,0,0,1
 	attRot0 = 3.72528923E-08,1,-3.73034902E-14,-1.04308117E-06
 	mir = 1,1,1
@@ -926,10 +1416,10 @@ PART
 	part = TE.CargoV2.Panel_4294142546
 	partName = Part
 	persistentId = 10676026
-	pos = -0.228556514,30.1187038,1.03019547
+	pos = -0.228557095,30.1187077,1.03019786
 	attPos = 0,0,0
 	attPos0 = -1.03014374,0.0838432312,-0.228559867
-	rot = -2.63418034E-08,-0.707107604,-2.63417466E-08,-0.707106054
+	rot = -2.63418105E-08,-0.707107663,-2.63417537E-08,-0.707106113
 	attRot = 0,0,0,1
 	attRot0 = -4.08562039E-14,-1.07288349E-06,-3.72528923E-08,-1
 	mir = 1,1,1
@@ -1015,10 +1505,10 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294149180
 	partName = Part
 	persistentId = 1968350815
-	pos = 4.10138E-06,30.0158596,1.18805218
+	pos = 4.10138E-06,30.0158634,1.18805492
 	attPos = 0,0,0
 	attPos0 = -1.18799961,-0.0190010071,1.1920924E-07
-	rot = 0,0.707106829,0,0.707106829
+	rot = 0,0.707106888,0,0.707106888
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1122,10 +1612,10 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294138516
 	partName = Part
 	persistentId = 3858793726
-	pos = 3.62454284E-06,30.0158596,-1.18795347
+	pos = 3.62454284E-06,30.0158634,-1.18795621
 	attPos = 0,0,0
 	attPos0 = 1.18799961,-0.0190010071,-1.1920924E-07
-	rot = 0,0.707106769,0,-0.707106888
+	rot = 0,0.707106829,0,-0.707106948
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,1,0,-1.19209275E-07
 	mir = 1,1,1
@@ -1226,503 +1716,13 @@ PART
 }
 PART
 {
-	part = dockingPort2_4294136936
-	partName = Part
-	persistentId = 2380845460
-	pos = 3.86296142E-06,33.1854782,4.93330808E-05
-	attPos = 0,0,0
-	attPos0 = 0,1.34199905,0
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,-0.707106829,0,0.707106829
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = 0
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	link = TE.19.C-Dragon.Nosecone_4294137622
-	attN = top,TE.19.C-Dragon.Nosecone_4294137622_0|0.282883197|0_0|1|0_0|0.282883197|0_0|1|0
-	attN = bottom,TE.19.C-Dragon.Pod_4294150454_0|0|0_0|-1|0_0|0|0_0|-1|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDockingNode
-		isEnabled = True
-		acquireForceTweak = 100
-		crossfeed = True
-		stagingEnabled = False
-		state = Ready
-		dockUId = 0
-		dockNodeIdx = 0
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			UndockAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			MakeReferenceToggle
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			EnableXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			DisableXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleXFeedAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = TE.19.C-Dragon.Nosecone_4294137622
-	partName = Part
-	persistentId = 4228664734
-	pos = 3.86296142E-06,33.4896927,4.93330808E-05
-	attPos = 0,-0.266670227,0
-	attPos0 = 0,0.57088089,0
-	rot = 0,0,0,1.00000012
-	attRot = 0,0,0,1
-	attRot0 = 0,0,0,1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 4
-	resPri = 0
-	dstg = 1
-	sidx = 0
-	sqor = 4
-	sepI = 4
-	attm = 0
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	attN = node_down,dockingPort2_4294136936_0|-0.287999988|0_0|-1.00000012|-1.1920929E-07_0|-0.287999988|0_0|-1.00000012|-1.1920929E-07
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleDecouple
-		isEnabled = True
-		ejectionForcePercent = 100
-		isDecoupled = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DecoupleAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = parachuteRadial_4293873674
-	partName = Part
-	persistentId = 4238265476
-	pos = 0.768927753,32.5115204,-0.205983236
-	attPos = -0.0405228436,-0.037525177,-0.151233077
-	attPos0 = 0.246554971,0.705562592,0.920155644
-	rot = -0.0931010172,0.60455519,-0.071438916,-0.787871778
-	attRot = 0,0,0,1
-	attRot0 = -0.0153174214,0.984594464,-0.116347298,-0.129624367
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4293873356
-	srfN = srfAttach,TE.19.C-Dragon.Pod_4294150454,mesh,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			CutAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = parachuteRadial_4293873356
-	partName = Part
-	persistentId = 587392249
-	pos = 0.768927991,32.5115204,0.206081793
-	attPos = 0.0405227393,-0.037525177,-0.151232839
-	attPos0 = -0.246554986,0.705562592,0.920155644
-	rot = 0.0714388564,-0.787871599,0.0931009725,0.604555368
-	attRot = 0,0,0,1
-	attRot0 = -0.0153174046,-0.984594464,0.116347268,-0.129624262
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = -1
-	attm = 1
-	sameVesselCollision = False
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	sym = parachuteRadial_4293873674
-	srfN = srfAttach,TE.19.C-Dragon.Pod_4294150454,mesh,0|0|0,0|0|-1,0|0|0
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-		ToggleSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		SetSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-		RemoveSameVesselInteraction
-		{
-			actionGroup = None
-			wasActiveBeforePartWasAdjusted = False
-		}
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0399999991
-		deployAltitude = 1000
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			CutAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleCargoPart
-		isEnabled = True
-		beingAttached = False
-		beingSettled = False
-		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = TE.19.F910.S2.Tank_4293615406
 	partName = Part
 	persistentId = 4033598006
-	pos = 3.86296142E-06,26.9249725,4.93330808E-05
+	pos = 3.86296142E-06,26.9249763,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.79389,0
-	rot = 0,0.707106829,0,0.707106829
+	rot = 0,0.707106888,0,0.707106888
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1827,10 +1827,10 @@ PART
 	part = TE.19.F910.S2.Engine_4293612174
 	partName = Part
 	persistentId = 3404175032
-	pos = 3.86296142E-06,23.6234627,4.93330808E-05
+	pos = 3.86296142E-06,23.6234665,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.30150986,0
-	rot = 0,0.707106829,0,0.707106829
+	rot = 0,0.707106888,0,0.707106888
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2141,40 +2141,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 0,5.0234803E-08,0.42140013
-					rotation = -0.50000006,0.50000006,-0.50000006,0.50000006
-					orientation = 0,0,0
-				}
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2192,10 +2158,10 @@ PART
 	part = TE.19.C.Dragon.Decoupler_4293605812
 	partName = Part
 	persistentId = 1428952676
-	pos = 3.86296142E-06,21.1781826,4.93330808E-05
+	pos = 3.86296142E-06,21.1781864,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = 0,-2.44528008,0
-	rot = 0,1.00000012,0,0
+	rot = 0,1.00000024,0,0
 	attRot = 0,0.99999994,0,0
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -2426,10 +2392,10 @@ PART
 	part = TE.19.F910.S1.Tank_4293612356
 	partName = Part
 	persistentId = 4071157275
-	pos = 3.86296142E-06,11.792572,4.93330808E-05
+	pos = 3.86296142E-06,11.7925758,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = -1.11697102E-15,-9.38561058,-1.05878998E-22
-	rot = 0,0.707106888,0,0.707106888
+	rot = 0,0.707107008,0,0.707107008
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,-0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -2552,10 +2518,10 @@ PART
 	part = TE.19.F910.S1.Engine_4293613164
 	partName = Part
 	persistentId = 3218539223
-	pos = 3.86296142E-06,1.63057327,4.93330808E-05
+	pos = 3.86296142E-06,1.63057709,4.93330808E-05
 	attPos = 0,0,0
 	attPos0 = -5.67977324E-29,-10.1619987,-1.58818021E-21
-	rot = 0,0.707106888,0,0.707106888
+	rot = 0,0.707107008,0,0.707107008
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2752,40 +2718,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = -7.10542871E-14,-1.71000016,-1.20999897
-					rotation = 0,-0.707106829,0.707106829,0
-					orientation = 0,0,0
-				}
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2803,10 +2735,10 @@ PART
 	part = TE.Ghidorah.Erector.3_4293611186
 	partName = Part
 	persistentId = 4284620087
-	pos = -1.71001804,1.09057236,4.95714994E-05
+	pos = -1.71000683,1.09057617,4.95714994E-05
 	attPos = 0,0,0
 	attPos0 = -7.10542871E-14,-0.540000916,-1.7099998
-	rot = 0,-0.707106888,0,0.707106888
+	rot = 0,-0.707107008,0,0.707107008
 	attRot = 0,-0.99999994,0,0
 	attRot0 = 0,-1,0,0
 	mir = 1,1,1
@@ -2957,28 +2889,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
 		}
 		UPGRADESAPPLIED
 		{

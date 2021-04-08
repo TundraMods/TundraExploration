@@ -1,8 +1,8 @@
 ship = Gojira Mk4 Crew
-version = 1.8.1
+version = 1.10.1
 description = 
 type = VAB
-size = 10.6581516,72.2956619,9.08776093
+size = 10.658145,72.2956619,9.08776093
 steamPublishedFileId = 0
 persistentId = 2599299960
 rot = 0,0,0,0
@@ -336,76 +336,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = -1.73372428E-12,3.78602726E-06,4.66811173E-07
-					rotation = 0.499999881,0.50000006,-0.500000179,-0.499999911
-					orientation = 0,0,0
-				}
-			}
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 1.15107923E-12,3.78602977E-06,4.6679105E-07
-					rotation = 0.504344046,-0.495617807,0.504344225,-0.495617688
-					orientation = 0,0,0
-				}
-			}
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 0,0,0
-					rotation = 0.707106829,0,0,0.707106829
-					orientation = 0,0,0
-				}
-			}
-			ATTACH_NODE_INFO
-			{
-				colliderName = 
-				nodeType = Stack
-				POS_ROT
-				{
-					name = offset
-					position = 0,1.49718812E-06,12.5593262
-					rotation = -0.707106829,0,0,0.707106829
-					orientation = 0,0,0
-				}
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
@@ -501,7 +431,7 @@ PART
 {
 	part = TE2.19.SS.FF.R_4293523980
 	partName = Part
-	persistentId = 2341696485
+	persistentId = 4256695246
 	pos = 2.76503778,67.11026,0.00101041747
 	attPos = 0,0,0
 	attPos0 = 2.76501465,4.28508377,0.00102233887
@@ -670,20 +600,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -720,12 +645,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE2.19.SS.FF.L_4293523608
 	partName = Part
-	persistentId = 3622438697
+	persistentId = 1740593970
 	pos = -2.80500007,67.1102753,0.00102567626
 	attPos = 0,0,0
 	attPos0 = -2.80502319,4.28509903,0.00103759766
@@ -894,20 +834,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -939,6 +874,21 @@ PART
 				actionGroup = Custom05
 				wasActiveBeforePartWasAdjusted = False
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1053,6 +1003,7 @@ PART
 		isEnabled = True
 		beingAttached = False
 		beingSettled = False
+		reinitResourcesOnStoreInVessel = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1069,7 +1020,7 @@ PART
 {
 	part = TE2.19.SS.Fuel.Tank_4293825826
 	partName = Part
-	persistentId = 343201265
+	persistentId = 521735601
 	pos = 2.31260965E-05,48.7442093,-1.19214346E-05
 	attPos = 0,0,0
 	attPos0 = 0,-14.0809593,0
@@ -1420,6 +1371,23 @@ PART
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleB9PartSwitch
+		isEnabled = True
+		stagingEnabled = True
 		moduleID = TE_Fuel
 		currentSubtype = LFO
 		EVENTS
@@ -1474,7 +1442,7 @@ PART
 {
 	part = TE2.19.BFS.SL.RAPTOR_4293519232
 	partName = Part
-	persistentId = 2072228917
+	persistentId = 2000768602
 	pos = -0.519584417,43.8222084,0.30000639
 	attPos = 0,0,0
 	attPos0 = -0.519607544,-4.92200089,0.300018311
@@ -1683,28 +1651,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1721,7 +1667,7 @@ PART
 {
 	part = TE2.19.BFS.SL.RAPTOR_4293823932
 	partName = Part
-	persistentId = 3249469532
+	persistentId = 3464412701
 	pos = 0.519645929,43.8222122,0.30000639
 	attPos = 0,0,0
 	attPos0 = 0.519622803,-4.92199707,0.300018311
@@ -1930,28 +1876,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -1968,7 +1892,7 @@ PART
 {
 	part = TE2.19.BFS.SL.RAPTOR_4293823626
 	partName = Part
-	persistentId = 1190671343
+	persistentId = 2468054976
 	pos = 2.31260965E-05,43.8222084,-0.600002766
 	attPos = 0,0,0
 	attPos0 = 0,-4.92200089,-0.599990845
@@ -2177,28 +2101,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2215,7 +2117,7 @@ PART
 {
 	part = TE2.19.SS.RF.L_4293523246
 	partName = Part
-	persistentId = 4047383718
+	persistentId = 1622408245
 	pos = -3.16496849,47.2651978,-1.19053802E-05
 	attPos = 0,0,0
 	attPos0 = -3.16499162,-1.47901154,1.60544502E-08
@@ -2384,20 +2286,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -2434,12 +2331,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE2.19.SS.RF.R_4293522742
 	partName = Part
-	persistentId = 3205831708
+	persistentId = 3420350800
 	pos = 3.16501451,47.2652168,-1.19161514E-05
 	attPos = 0,0,0
 	attPos0 = 3.16499138,-1.47899246,5.28330357E-09
@@ -2608,20 +2520,15 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
+		name = ModuleB9PartSwitch
 		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
 		stagingEnabled = True
+		moduleID = STARSHIPVARIATION
+		currentSubtype = SS
 		EVENTS
 		{
 		}
 		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
@@ -2658,12 +2565,27 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleB9PartInfo
+		isEnabled = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE2.19.SS.RPTR.VAC_4293514322
 	partName = Part
-	persistentId = 2100474522
+	persistentId = 3618897155
 	pos = -1.59519172,44.3482132,-0.921003819
 	attPos = 0,0,0
 	attPos0 = -1.59521484,-4.39599609,-0.920991898
@@ -2804,44 +2726,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -2858,7 +2742,7 @@ PART
 {
 	part = TE2.19.SS.RPTR.VAC_4293821470
 	partName = Part
-	persistentId = 1238342610
+	persistentId = 1206556592
 	pos = 2.31260965E-05,44.3482132,1.84200048
 	attPos = 0,0,0
 	attPos0 = 0,-4.39599609,1.84201241
@@ -2999,44 +2883,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -3053,7 +2899,7 @@ PART
 {
 	part = TE2.19.SS.RPTR.VAC_4293821318
 	partName = Part
-	persistentId = 4143090854
+	persistentId = 1113587981
 	pos = 1.59523797,44.3482132,-0.921001911
 	attPos = 0,0,0
 	attPos0 = 1.59521484,-4.39599609,-0.92098999
@@ -3194,44 +3040,6 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = FXModuleThrottleEffects
-		isEnabled = True
-		state = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleColorChanger
-		isEnabled = True
-		animState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-				active = False
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 	RESOURCE
 	{
 		name = ElectricCharge
@@ -3248,7 +3056,7 @@ PART
 {
 	part = TE2.19.SS.AFT_4293818196
 	partName = Part
-	persistentId = 2934577756
+	persistentId = 1885479366
 	pos = -0.00034308483,43.8052292,-2.00548697
 	attPos = 0,0,0
 	attPos0 = -0.000366210938,-4.9389801,-2.00547504
@@ -3324,7 +3132,7 @@ PART
 {
 	part = TE2.19.SS.AFT_4293816702
 	partName = Part
-	persistentId = 515955851
+	persistentId = 594859322
 	pos = -1.61311364,43.8052292,1.19685555
 	attPos = 0,0,0
 	attPos0 = -1.61313677,-4.9389801,1.19686747
@@ -3400,7 +3208,7 @@ PART
 {
 	part = TE2.19.SS.AFT_4293816642
 	partName = Part
-	persistentId = 4172352499
+	persistentId = 694510508
 	pos = 1.61315978,43.8052292,1.19685555
 	attPos = 0,0,0
 	attPos0 = 1.61313665,-4.9389801,1.19686747
@@ -3476,7 +3284,7 @@ PART
 {
 	part = TE2.19.SH.Interstage_4293508438
 	partName = Part
-	persistentId = 1867275125
+	persistentId = 2807594663
 	pos = 2.31260965E-05,41.0472336,-1.19214346E-05
 	attPos = 0,0,0
 	attPos0 = 0,-7.69697571,4.8894943E-14
@@ -3769,7 +3577,7 @@ PART
 {
 	part = TE2.19.SH.HGT_4293507686
 	partName = Part
-	persistentId = 3935124243
+	persistentId = 1684181830
 	pos = -2.7987113,40.4373436,-1.17546169E-05
 	attPos = 0,0,0
 	attPos0 = -2.79873443,-0.609889984,1.66817699E-07
@@ -3853,7 +3661,7 @@ PART
 {
 	part = TE2.19.SH.HGT_4293507618
 	partName = Part
-	persistentId = 2100051138
+	persistentId = 3422291584
 	pos = 2.79875755,40.4373436,-1.23329255E-05
 	attPos = 0,0,0
 	attPos0 = 2.79873443,-0.609889984,-4.11490873E-07
@@ -3937,7 +3745,7 @@ PART
 {
 	part = TE2.19.SH.GRIDFIN_4293507404
 	partName = Part
-	persistentId = 1296421809
+	persistentId = 3402358259
 	pos = -1.90585744,40.4462204,-1.90589237
 	attPos = 0,0,0
 	attPos0 = -1.90588057,-0.601013184,-1.90588045
@@ -4164,28 +3972,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -4219,7 +4005,7 @@ PART
 {
 	part = TE2.19.SH.GRIDFIN_4293507000
 	partName = Part
-	persistentId = 4219913760
+	persistentId = 396389713
 	pos = -1.90585732,40.4462204,1.90586841
 	attPos = 0,0,0
 	attPos0 = -1.90588045,-0.601013184,1.90588033
@@ -4434,28 +4220,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -4489,7 +4253,7 @@ PART
 {
 	part = TE2.19.SH.GRIDFIN_4293506902
 	partName = Part
-	persistentId = 3652413
+	persistentId = 3763583052
 	pos = 1.90590382,40.4462204,1.90586841
 	attPos = 0,0,0
 	attPos0 = 1.90588069,-0.601013184,1.90588033
@@ -4704,28 +4468,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -4759,7 +4501,7 @@ PART
 {
 	part = TE2.19.SH.GRIDFIN_4293506804
 	partName = Part
-	persistentId = 728985340
+	persistentId = 2295828417
 	pos = 1.90590334,40.4462204,-1.90589249
 	attPos = 0,0,0
 	attPos0 = 1.90588021,-0.601013184,-1.90588057
@@ -4974,28 +4716,6 @@ PART
 	}
 	MODULE
 	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ControlActionGroup
 		isEnabled = True
 		stagingEnabled = True
@@ -5029,7 +4749,7 @@ PART
 {
 	part = TE2.19.SH.Tank_4293505860
 	partName = Part
-	persistentId = 1003321922
+	persistentId = 854465614
 	pos = 2.31260965E-05,23.9937859,-1.19214346E-05
 	attPos = 0,0,0
 	attPos0 = 0,-17.0534477,0
@@ -5137,7 +4857,7 @@ PART
 {
 	part = TE2.19.SH.Engine_4293504158
 	partName = Part
-	persistentId = 2539957787
+	persistentId = 2531000088
 	pos = 2.31260965E-05,4.8758812,-1.19214346E-05
 	attPos = 0,0,0
 	attPos0 = 0,-19.1179047,0
@@ -5561,28 +5281,6 @@ PART
 		{
 		}
 		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = AnimatedAttachment
-		isEnabled = True
-		activated = True
-		maximumForce = 100000
-		positionDamper = 1000
-		positionSpring = 100000
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		ATTACHED_PART_INFOS
 		{
 		}
 		UPGRADESAPPLIED
