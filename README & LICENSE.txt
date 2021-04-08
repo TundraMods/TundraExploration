@@ -11,6 +11,33 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on October 31, 2020
 
+Version 4.0.0:
+- Added white Octopus variant on Ghidorah 9
+- Added Rideshare adapter variants
+- Added Waterfall to Haddock RCS puck
+- Revamped all Mothra One parts
+- Revamped Ghidorah 9 Mvac engine
+- Revamped Ghidorah Heavy Nosecone
+- Revamped Ghidorah Heavy Decoupler
+- Revamped Ghidorah 9 Fairing half
+- Fixed TPA naming issue on Ghidorah Fairing
+- Fixed naming issue on Gojira SNX Legs
+- Fixed M1D displayname
+- Fixed soot on Ghidorah Heavy Nosecone
+- Fixed Rodan trunk node not showing up on cargo side
+- Fixed Waterfall plume during center engine only mode on the Gojira SH engine
+- Fixed Smokescreen + Waterfall mishap on Mothra
+- Fixed Mothra Interstage node offset
+- Fixed Ghidorah Heavy sideboosters flipping during descent
+- Fixed Gojira RCS plumes not showing up without Waterfall installed
+- Fixed duped texture files in Rodan folder
+- Attempt to fix Rodan re-entry angle
+- Removed Gojira Mk3 parts completely
+- Updated Category tab
+- Updated Tweakscale config
+- Updated Crytanks config
+- Updated craft files
+
 Version 3.3.0
 - Fixed soot on Block 5 texture to match with the new Mk2 KRE leg.
 - Updated craft files
