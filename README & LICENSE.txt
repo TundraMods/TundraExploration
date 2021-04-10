@@ -11,7 +11,10 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on April 8th, 2021
 
-Version 4.0.0:
+Version 4.1.0
+- Fixed Ghidorah Fairing Adapter size order
+
+Version 4.0.0
 - Added white Octopus variant on Ghidorah 9/Heavy
 - Added Rideshare adapter variants
 - Added Waterfall to Haddock RCS puck
