@@ -11,10 +11,16 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on April 8th, 2021
 
-Version 4.1.0
+Version 4.1.0:
+- Added Ghidorah Extended Fairing
+- Fixed ModuleCargoBay in Ghidorah Fairings
 - Fixed Ghidorah Fairing Adapter size order
+- Fixed black raceway on Block 5 GH interstage
+- Fixed Mothra Interstage tech tree
+- Fixed Mothra Payload Fairing connection issues
+- Updated Categories.cfg
 
-Version 4.0.0
+Version 4.0.0:
 - Added white Octopus variant on Ghidorah 9/Heavy
 - Added Rideshare adapter variants
 - Added Waterfall to Haddock RCS puck
