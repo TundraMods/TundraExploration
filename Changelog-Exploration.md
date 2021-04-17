@@ -7,42 +7,49 @@
 | website | forum.kerbalspaceprogram.com/index.php?showtopic=166915                |
 
 ## 4.1.0 [KSP 1.11]
-
+		
 ### Added		
 - Ghidorah Extended Fairing
-
+	
 ### Fixed
 - ModuleCargoBay in Ghidorah Fairings
 - Ghidorah Fairing Adapter size order
 - black raceway on Block 5 GH interstage
 - Mothra Interstage tech tree
 - Mothra Payload Fairing connection issues
-
+	
 ### Changed
 - Updated Categories.cfg
-
+	
 ## 4.0.0 [KSP 1.11]
 		
-- Added white Octopus variant on Ghidorah 9/Heavy
-- Added Rideshare adapter variants
-- Added Waterfall to Haddock RCS puck
+### Add
+- White Octopus variant on Ghidorah 9/Heavy
+- Rideshare adapter variants
+- Waterfall to Haddock RCS puck
 - Revamped all Mothra One parts
 - Revamped Ghidorah 9 Mvac engine
 - Revamped Ghidorah Heavy Nosecone
 - Revamped Ghidorah Heavy Decoupler
 - Revamped Ghidorah 9 Fairing half
-- Fixed TPA naming issue on Ghidorah Fairing
-- Fixed naming issue on Gojira SNX Legs
-- Fixed M1D displayname
-- Fixed soot on Ghidorah Heavy Nosecone
-- Fixed Rodan trunk node not showing up on cargo side
-- Fixed Smokescreen + Waterfall mishap on Mothra
-- Fixed Mothra Interstage node offset
-- Fixed Ghidorah Heavy sideboosters flipping during descent
-- Fixed Gojira RCS plumes not showing up without Waterfall installed
-- Fixed duped texture files in Rodan folder
-- Attempt to fix Rodan re-entry angle
+	
+### Fix
+- TPA naming issue on Ghidorah Fairing
+- Naming issue on Gojira SNX Legs
+- M1D displayname
+- Soot on Ghidorah Heavy Nosecone
+- Rodan trunk node not showing up on cargo side
+- Smokescreen + Waterfall mishap on Mothra
+- Mothra Interstage node offset
+- Ghidorah Heavy sideboosters flipping during descent
+- Gojira RCS plumes not showing up without Waterfall installed
+- Duped texture files in Rodan folder
+- Rodan re-entry angle
+	
+### Remove
 - Removed Gojira Mk3 parts completely
+	
+### Change
 - Updated Category tab
 - Updated Tweakscale config
 - Updated Cryotanks config
