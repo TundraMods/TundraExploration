@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
-namespace SootyShaderLoader
+namespace TundraExploration.SootyShader
 {
     [KSPAddon(KSPAddon.Startup.Instantly, true)]
     public class SootyShaderLoader : MonoBehaviour
@@ -12,9 +16,9 @@ namespace SootyShaderLoader
         private const string macShaderName = "-macosx.ksp";
 
         private static bool loaded;
-        
+
         private static Shader tundraShader;
-        
+
         public static Shader TundraShader
         {
             get { return tundraShader; }
@@ -43,12 +47,12 @@ namespace SootyShaderLoader
                 shaderPath = shadersAssetName + macShaderName;
 
             shaderPath = KSPUtil.ApplicationRootPath + "GameData/TundraExploration/Resources/" + shaderPath;
-            
+
             // KSP-PartTools built AssetBunldes are in the Web format, 
             // and must be loaded using a WWW reference; you cannot use the
             // AssetBundle.CreateFromFile/LoadFromFile methods unless you 
             // manually compiled your bundles for stand-alone use
-            
+
             WWW www = CreateWWW(shaderPath);
 
             if (!string.IsNullOrEmpty(www.error))
