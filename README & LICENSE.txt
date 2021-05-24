@@ -4,14 +4,30 @@ Continued by damonvv.
 
 
 LICENSE
-All codes and configs are distributed under CC-NC-SA-4.0 License.
+All configs are distributed under CC-NC-SA-4.0 License.
 Nertea's HabUtils.dll is distributed under a MIT license.
-The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
+The art assets in this pack (all .dds, .png, .dll and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on April 8th, 2021
+Updated on May 24, 2021
 
-Version 4.1.0:
+Version 5.0.0
+- Added Gigan XL parts
+- Added TundraExploration.dll plugin by Vali
+- Added ModuleTundraRaptor to gimbal out of the way (action group)
+- Added ModuleTundraRCSAnimation for your every day warning needs
+- Added ModuleTundraEngineSwitch for all your 3 engine landing needs
+- Added a new decouple module for your Ghidorah Heavy decouple needs
+- Added a new plugin to actuate Gojira fins
+- Added new soot levels on Ghidorah
+- Added waterfall configs to Rodan
+- Tweaked Gigan solar panel colors
+- Tweaked Rodan docking port texture
+- Fixed Falcon 1 fairing side tech tree to Basic Rocketry
+- Removed Mk3 stuff from configs
+
+
+Version 4.1.0
 - Added Ghidorah Extended Fairing
 - Fixed ModuleCargoBay in Ghidorah Fairings
 - Fixed Ghidorah Fairing Adapter size order
@@ -20,7 +36,7 @@ Version 4.1.0:
 - Fixed Mothra Payload Fairing connection issues
 - Updated Categories.cfg
 
-Version 4.0.0:
+Version 4.0.0
 - Added white Octopus variant on Ghidorah 9/Heavy
 - Added Rideshare adapter variants
 - Added Waterfall to Haddock RCS puck
