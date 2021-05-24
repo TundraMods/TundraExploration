@@ -18,9 +18,9 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 
 # LICENSE
 
-All codes and configs are distributed under CC-NC-SA-4.0 License.
+All configs are distributed under CC-NC-SA-4.0 License.
 Nertea's HabUtils.dll is distributed under a MIT license.
-The art assets in this pack (all .dds, .png and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
+The art assets in this pack (all .dds, .png, .dll and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on October 31, 2020
+Updated on May 24, 2021
