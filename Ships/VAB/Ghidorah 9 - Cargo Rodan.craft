@@ -1,5 +1,5 @@
 ship = Ghidorah 9 - Cargo Rodan
-version = 1.11.2
+version = 1.10.1
 description = Ghidorah 9 first stage carrying the Cargo Rodan pod. Check action groups tab for more info.
 type = VAB
 size = 9.71935081,44.8701515,14.5349379
