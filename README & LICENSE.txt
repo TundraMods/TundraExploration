@@ -1,5 +1,5 @@
 
-Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar, DylanSemrau and the people on the forum for helping with modding!
+Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar, DylanSemrau, Vali and the people on the forum for helping with modding!
 Continued by damonvv.
 
 
@@ -21,10 +21,14 @@ Version 5.0.0
 - Added a new plugin to actuate Gojira fins
 - Added new soot levels on Ghidorah
 - Added waterfall configs to Rodan
+- Added real names config by Jeronimo
 - Tweaked Gigan solar panel colors
 - Tweaked Rodan docking port texture
+- ModuleSootyShader is now ModuleTundraSoot
 - Fixed Falcon 1 fairing side tech tree to Basic Rocketry
+- Fixed Rodan re-entry orientation
 - Removed Mk3 stuff from configs
+- Removed old plugin
 
 
 Version 4.1.0

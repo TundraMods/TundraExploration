@@ -6,6 +6,31 @@
 | author  | Damonvv                                                                |
 | website | forum.kerbalspaceprogram.com/index.php?showtopic=166915                |
 
+## 5.0.0 [KSP 1.11]
+
+### Added
+- Added Gigan XL parts
+- Added TundraExploration.dll plugin by Vali
+- Added ModuleTundraRaptor to gimbal out of the way (action group)
+- Added ModuleTundraRCSAnimation for your every day warning needs
+- Added ModuleTundraEngineSwitch for all your 3 engine landing needs
+- Added a new decouple module for your Ghidorah Heavy decouple needs
+- Added a new plugin to actuate Gojira fins
+- Added new soot levels on Ghidorah
+- Added waterfall configs to Rodan
+- Added real names config by Jeronimo
+
+### Fixed
+- Fixed Falcon 1 fairing side tech tree to Basic Rocketry
+- Fixed Rodan re-entry orientation
+
+### Changed
+- Tweaked Gigan solar panel colors
+- Tweaked Rodan docking port texture
+- ModuleSootyShader is now ModuleTundraSoot
+- Removed Mk3 stuff from configs
+- Removed old plugin
+
 ## 4.1.0 [KSP 1.11]
 		
 ### Added		
