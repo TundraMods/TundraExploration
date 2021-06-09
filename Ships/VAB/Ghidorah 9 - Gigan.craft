@@ -1,8 +1,8 @@
 ship = Ghidorah 9 - Gigan
-version = 1.10.1
+version = 1.11.2
 description = 
 type = VAB
-size = 9.71935081,44.2144508,14.5349379
+size = 9.71934605,44.2144508,14.5349312
 steamPublishedFileId = 0
 persistentId = 3924314273
 rot = 0,0,0,0
@@ -282,36 +282,6 @@ PART
 		{
 		}
 		STOREDPARTS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
 		{
 		}
 		UPGRADESAPPLIED
@@ -758,36 +728,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = False
 		stagingEnabled = True
@@ -837,7 +777,7 @@ PART
 	part = TE.CargoV2.Panel_4294144758
 	partName = Part
 	persistentId = 3549846696
-	pos = 0.228604481,40.1159821,-1.03016186
+	pos = 0.228604659,40.1159821,-1.03016257
 	attPos = 0,0,0
 	attPos0 = 1.03014374,0.0838432312,0.228559986
 	rot = 2.63417483E-08,0.707106113,-2.63418016E-08,-0.707107544
@@ -926,7 +866,7 @@ PART
 	part = TE.CargoV2.Panel_4294142546
 	partName = Part
 	persistentId = 2248944705
-	pos = -0.228516385,40.1159821,1.03013039
+	pos = -0.228516564,40.1159821,1.0301311
 	attPos = 0,0,0
 	attPos0 = -1.03014374,0.0838432312,-0.228559867
 	rot = -2.63418034E-08,-0.707107604,-2.63417466E-08,-0.707106054
@@ -1015,7 +955,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294149180
 	partName = Part
 	persistentId = 2055231069
-	pos = 4.42266464E-05,40.0131378,1.18798709
+	pos = 4.42266464E-05,40.0131378,1.18798816
 	attPos = 0,0,0
 	attPos0 = -1.18799961,-0.0190010071,1.1920924E-07
 	rot = 0,0.707106829,0,0.707106829
@@ -1122,7 +1062,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294138516
 	partName = Part
 	persistentId = 2532272360
-	pos = 4.37498093E-05,40.0131378,-1.18801856
+	pos = 4.37498093E-05,40.0131378,-1.18801963
 	attPos = 0,0,0
 	attPos0 = 1.18799961,-0.0190010071,-1.1920924E-07
 	rot = 0,0.707106769,0,-0.707106888
@@ -1425,7 +1365,7 @@ PART
 	part = parachuteRadial_4293873674
 	partName = Part
 	persistentId = 2872094220
-	pos = 0.768967867,42.5087967,-0.20604831
+	pos = 0.768968582,42.5087967,-0.206048489
 	attPos = -0.0405228436,-0.037525177,-0.151233077
 	attPos0 = 0.246554971,0.705562592,0.920155644
 	rot = -0.0931010172,0.60455519,-0.071438916,-0.787871778
@@ -1572,7 +1512,7 @@ PART
 	part = parachuteRadial_4293873356
 	partName = Part
 	persistentId = 1770041421
-	pos = 0.768968105,42.5087967,0.206016719
+	pos = 0.768968821,42.5087967,0.206016898
 	attPos = 0.0405227393,-0.037525177,-0.151232839
 	attPos0 = -0.246554986,0.705562592,0.920155644
 	rot = 0.0714388564,-0.787871599,0.0931009725,0.604555368
@@ -2565,9 +2505,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleSootyShader
+		name = ModuleTundraSoot
 		isEnabled = True
-		SootyState = False
+		selectedIndex = 0
+		toggleSoot = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2579,36 +2520,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -2676,7 +2587,7 @@ PART
 	part = Grid Fin M Titanium_4294306228
 	partName = Part
 	persistentId = 643850906
-	pos = -0.843459666,28.5669003,-0.84351939
+	pos = -0.843461275,28.5669003,-0.843520999
 	attPos = 0.0403334498,0,0.0403334498
 	attPos0 = -0.883830547,-0.124427795,-0.883830428
 	rot = 0.382683456,-4.95061663E-08,-0.923879683,1.19518489E-07
@@ -2900,43 +2811,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294305744
 	partName = Part
 	persistentId = 854931938
-	pos = -0.843460023,28.5669003,0.843488455
+	pos = -0.843461633,28.5669003,0.843490064
 	attPos = 0.0403329134,0,-0.0403328538
 	attPos0 = -0.883830428,-0.124427795,0.883830369
 	rot = -0.382683516,4.95061805E-08,-0.923879623,1.19518475E-07
@@ -3148,43 +3029,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294305676
 	partName = Part
 	persistentId = 3095344282
-	pos = 0.843548119,28.5669003,0.843488395
+	pos = 0.843549728,28.5669003,0.843490005
 	attPos = -0.0403329134,0,-0.0403329134
 	attPos0 = 0.883830607,-0.124427795,0.883830369
 	rot = -0.923879743,1.19518489E-07,-0.382683426,4.95061663E-08
@@ -3396,43 +3247,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4294305608
 	partName = Part
 	persistentId = 4198560908
-	pos = 0.843547881,28.5669003,-0.843520045
+	pos = 0.84354949,28.5669003,-0.843521655
 	attPos = -0.0403329134,0,0.0403328538
 	attPos0 = 0.883830309,-0.124427795,-0.883830488
 	rot = -0.923879623,1.19518475E-07,0.382683516,-4.95061805E-08
@@ -3644,43 +3465,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.19.F9.CGT_4294169490
 	partName = Part
 	persistentId = 3891400819
-	pos = 4.41074371E-05,28.5643253,-1.24677968
+	pos = 4.41074371E-05,28.5643253,-1.24678326
 	attPos = 0,0,0
 	attPos0 = 1.19209247E-07,-0.127002716,-1.24675441
 	rot = 2.84217094E-14,1.00000012,-2.46062228E-07,1.1920929E-07
@@ -3781,7 +3572,7 @@ PART
 	part = TE2.19.F9.CGT_4294169170
 	partName = Part
 	persistentId = 1065260063
-	pos = 4.39882278E-05,28.5643253,1.24674821
+	pos = 4.39882278E-05,28.5643253,1.24675179
 	attPos = 0,0,0
 	attPos0 = 3.55271436E-14,-0.127002716,1.24675441
 	rot = -2.46062228E-07,0,0,-1.00000012
@@ -3936,44 +3727,6 @@ PART
 	}
 	MODULE
 	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = True
-		isMirrored = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSootyShader
-		isEnabled = True
-		SootyState = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleSootyAction
-			{
-				actionGroup = Custom02
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
@@ -4035,6 +3788,28 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTundraSoot
+		isEnabled = True
+		selectedIndex = 0
+		toggleSoot = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleSootyAction
+			{
+				actionGroup = Custom02
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -4150,36 +3925,114 @@ PART
 	}
 	MODULE
 	{
-		name = WBIMultiModeEngine
+		name = ModuleTundraEngineSwitch
 		isEnabled = True
-		currentEngineID = AllEngines
-		currentEngineIndex = 0
-		autoSwitch = True
+		currentEngineDisplay = All Engines
+		selectedIndex = 0
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ActivateAction
+			ActivateEngineAction
 			{
 				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ShutdownEngineAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			NextEngineModeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			PreviousEngineModeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleEngineModeAction
+			{
+				actionGroup = Custom01
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleEnginesFX
+		isEnabled = True
+		independentThrottle = False
+		independentThrottlePercentage = 0
+		staged = False
+		flameout = False
+		EngineIgnited = False
+		engineShutdown = False
+		currentThrottle = 0
+		thrustPercentage = 100
+		manuallyOverridden = False
+		includeinDVCalcs = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			OnAction
+			{
+				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
-			OnAction
+			ActivateAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
-			OnToggleModeAction
+			ToggleThrottle
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		AXISGROUPS
+		{
+			independentThrottlePercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+			}
+			thrustPercentage
+			{
+				axisGroup = None
+				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				axisSpeedMultiplier = 0
+				axisInverted = None
+				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
+				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
 			}
 		}
 		UPGRADESAPPLIED
@@ -4283,91 +4136,25 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		AXISGROUPS
-		{
-			independentThrottlePercentage
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-			thrustPercentage
-			{
-				axisGroup = None
-				axisIncremental = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				axisSpeedMultiplier = 0
-				axisInverted = None
-				overrideIncremental0 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental1 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental2 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-				overrideIncremental3 = Pitch, Yaw, Roll, TranslateX, TranslateY, TranslateZ, WheelSteer, WheelThrottle, Custom01, Custom02, Custom03, Custom04
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleEnginesFX
-		isEnabled = False
-		independentThrottle = False
-		independentThrottlePercentage = 0
-		staged = False
-		flameout = False
-		EngineIgnited = False
-		engineShutdown = False
-		currentThrottle = 0
-		thrustPercentage = 100
-		manuallyOverridden = True
-		includeinDVCalcs = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			OnAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ShutdownAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ActivateAction
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleThrottle
-			{
-				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -4566,9 +4353,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleSootyShader
+		name = ModuleTundraSoot
 		isEnabled = True
-		SootyState = False
+		selectedIndex = 0
+		toggleSoot = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -4758,9 +4546,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimatedDecoupler
+		name = ModuleTundraDecoupler
 		isEnabled = True
-		animationComplete = False
+		deployState = RETRACTED
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
@@ -4834,7 +4622,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293760230
 	partName = Part
 	persistentId = 648744531
-	pos = 0.69752425,1.40470886,-0.697495937
+	pos = 0.697525322,1.40470886,-0.69749701
 	attPos = 0,0,0
 	attPos0 = -0.69747746,-17.7955971,0.697477281
 	rot = -6.98688396E-08,0.382683456,-2.89406241E-08,-0.923879683
@@ -5004,7 +4792,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293758208
 	partName = Part
 	persistentId = 3170411057
-	pos = -0.697435975,1.40470886,-0.697496116
+	pos = -0.697437048,1.40470886,-0.697497189
 	attPos = 0,0,0
 	attPos0 = 0.697477162,-17.7955971,0.69747746
 	rot = -6.98688396E-08,-0.382683456,2.8940617E-08,-0.923879683
@@ -5174,7 +4962,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293758024
 	partName = Part
 	persistentId = 294152917
-	pos = -0.697436213,1.40470886,0.697464526
+	pos = -0.697437286,1.40470886,0.697465599
 	attPos = 0,0,0
 	attPos0 = 0.6974774,-17.7955971,-0.697477341
 	rot = -2.89406206E-08,-0.923879683,6.98688467E-08,-0.382683456
@@ -5344,7 +5132,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293757840
 	partName = Part
 	persistentId = 3498347347
-	pos = 0.697524011,1.40470886,0.697464585
+	pos = 0.697525084,1.40470886,0.697465658
 	attPos = 0,0,0
 	attPos0 = -0.697477221,-17.7955971,-0.6974774
 	rot = 2.8940617E-08,-0.923879683,6.98688396E-08,0.382683456

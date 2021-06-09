@@ -1,8 +1,8 @@
 ship = Bagorah 9 - Gigan
-version = 1.10.1
+version = 1.11.2
 description = 
 type = VAB
-size = 10.1633034,34.1064301,7.3839426
+size = 10.1632843,34.1064301,7.3839283
 steamPublishedFileId = 0
 persistentId = 3924314273
 rot = 0,0,0,0
@@ -290,36 +290,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = True
 		stagingEnabled = True
@@ -587,7 +557,7 @@ PART
 	part = parachuteRadial_4293873674
 	partName = Part
 	persistentId = 4238265476
-	pos = 0.76892823,32.5115204,-0.205983356
+	pos = 0.768928707,32.5115204,-0.205983475
 	attPos = -0.0405228436,-0.037525177,-0.151233077
 	attPos0 = 0.246554971,0.705562592,0.920155644
 	rot = -0.0931010172,0.60455519,-0.071438916,-0.787871778
@@ -734,7 +704,7 @@ PART
 	part = parachuteRadial_4293873356
 	partName = Part
 	persistentId = 587392249
-	pos = 0.768928468,32.5115204,0.206081912
+	pos = 0.768928945,32.5115204,0.206082031
 	attPos = 0.0405227393,-0.037525177,-0.151232839
 	attPos0 = -0.246554986,0.705562592,0.920155644
 	rot = 0.0714388564,-0.787871599,0.0931009725,0.604555368
@@ -1248,36 +1218,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = False
 		stagingEnabled = True
@@ -1327,10 +1267,10 @@ PART
 	part = TE.CargoV2.Panel_4294144758
 	partName = Part
 	persistentId = 2573337519
-	pos = 0.228564933,30.1187077,-1.03009915
+	pos = 0.228565291,30.1187077,-1.03010058
 	attPos = 0,0,0
 	attPos0 = 1.03014374,0.0838432312,0.228559986
-	rot = 2.63417554E-08,0.707106173,-2.63418087E-08,-0.707107604
+	rot = 2.6341759E-08,0.707106173,-2.63418158E-08,-0.707107604
 	attRot = 0,0,0,1
 	attRot0 = 3.72528923E-08,1,-3.73034902E-14,-1.04308117E-06
 	mir = 1,1,1
@@ -1416,10 +1356,10 @@ PART
 	part = TE.CargoV2.Panel_4294142546
 	partName = Part
 	persistentId = 10676026
-	pos = -0.228557095,30.1187077,1.03019786
+	pos = -0.228557453,30.1187077,1.03019929
 	attPos = 0,0,0
 	attPos0 = -1.03014374,0.0838432312,-0.228559867
-	rot = -2.63418105E-08,-0.707107663,-2.63417537E-08,-0.707106113
+	rot = -2.63418158E-08,-0.707107663,-2.6341759E-08,-0.707106113
 	attRot = 0,0,0,1
 	attRot0 = -4.08562039E-14,-1.07288349E-06,-3.72528923E-08,-1
 	mir = 1,1,1
@@ -1505,7 +1445,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294149180
 	partName = Part
 	persistentId = 1968350815
-	pos = 4.10138E-06,30.0158634,1.18805492
+	pos = 4.10138E-06,30.0158634,1.18805659
 	attPos = 0,0,0
 	attPos0 = -1.18799961,-0.0190010071,1.1920924E-07
 	rot = 0,0.707106888,0,0.707106888
@@ -1612,7 +1552,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4294138516
 	partName = Part
 	persistentId = 3858793726
-	pos = 3.62454284E-06,30.0158634,-1.18795621
+	pos = 3.62454284E-06,30.0158634,-1.18795788
 	attPos = 0,0,0
 	attPos0 = 1.18799961,-0.0190010071,-1.1920924E-07
 	rot = 0,0.707106829,0,-0.707106948
@@ -2313,36 +2253,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = False
 		stagingEnabled = True
@@ -2414,7 +2324,6 @@ PART
 	modMass = 1.95000005
 	modSize = 0,0,0
 	link = TE.19.F910.S1.Engine_4293613164
-	attN = bottom02,Null_0_0|-15|0_0|-1|0_0|-15|0_0|-1|0
 	attN = node_top,TE.19.C.Dragon.Decoupler_4293605812_0|9.25979996|0_0|1.00000012|-1.1920929E-07_0|9.25979996|0_0|1.00000012|-1.1920929E-07
 	attN = node_down,TE.19.F910.S1.Engine_4293613164_0|-9.14672852|0_0|-1.00000012|-1.1920929E-07_0|-9.14672852|0_0|-1.00000012|-1.1920929E-07
 	EVENTS
@@ -2735,7 +2644,7 @@ PART
 	part = TE.Ghidorah.Erector.3_4293611186
 	partName = Part
 	persistentId = 4284620087
-	pos = -1.71000683,1.09057617,4.95714994E-05
+	pos = -1.71001208,1.09057617,4.95714994E-05
 	attPos = 0,0,0
 	attPos0 = -7.10542871E-14,-0.540000916,-1.7099998
 	rot = 0,-0.707107008,0,0.707107008
@@ -2873,9 +2782,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimatedDecoupler
+		name = ModuleTundraDecoupler
 		isEnabled = True
-		animationComplete = False
+		deployState = RETRACTED
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
