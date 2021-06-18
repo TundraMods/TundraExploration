@@ -33,11 +33,14 @@ namespace TundraExploration.Modules
         [KSPEvent(guiActive = true, guiName = "Previous Engine Mode")]
         public void PreviousEngineModeEvent() => SetPreviousEngine();
 
-        [KSPAction(guiName = "#autoLOC_6001382")]
+        [KSPAction(guiName = "Activate Engine")]
         public void ActivateEngineAction(KSPActionParam param) => ActivateActiveEngine();
 
-        [KSPAction(guiName = "#autoLOC_6001381")]
+        [KSPAction(guiName = "Shutdown Engine")]
         public void ShutdownEngineAction(KSPActionParam param) => ShutdownActiveEngine();
+
+        [KSPAction(guiName = "Toggle Engine")]
+        public void ToggleEngineAction(KSPActionParam param) => ToggleActiveEngine();
 
         [KSPAction(guiName = "Next Engine Mode")]
         public void NextEngineModeAction(KSPActionParam param) => SetNextEngine();
@@ -91,6 +94,14 @@ namespace TundraExploration.Modules
         public void ActivateActiveEngine()
         {
             activeEngine.Activate();
+        }
+
+        public void ToggleActiveEngine()
+        {
+            if (activeEngine.EngineIgnited)
+                activeEngine.Shutdown();
+            else
+                activeEngine.Activate();
         }
 
         public void SetNextEngine()
