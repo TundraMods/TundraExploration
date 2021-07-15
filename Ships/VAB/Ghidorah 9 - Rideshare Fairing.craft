@@ -2,7 +2,7 @@ ship = Ghidorah 9 - Rideshare Fairing
 version = 1.10.1
 description = Ghidorah 9 first stage carrying the Cargo Rodan pod. Check action groups tab for more info.
 type = VAB
-size = 10.4329023,50.2642746,9.48654366
+size = 10.4328918,50.7344437,9.48653412
 steamPublishedFileId = 0
 persistentId = 3110757768
 rot = 0,0,0,0
@@ -30,8 +30,8 @@ PART
 	istg = -1
 	resPri = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
+	sidx = 0
+	sqor = 1
 	sepI = -1
 	attm = 0
 	sameVesselCollision = False
@@ -69,6 +69,59 @@ PART
 	}
 	PARTDATA
 	{
+	}
+	MODULE
+	{
+		name = ModuleDecouple
+		isEnabled = True
+		ejectionForcePercent = 100
+		isDecoupled = False
+		stagingEnabled = False
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DecoupleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleToggleCrossfeed
+		isEnabled = True
+		crossfeedStatus = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			EnableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			DisableAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
 	}
 	MODULE
 	{
@@ -196,36 +249,6 @@ PART
 		stagingEnabled = True
 		moduleID = TE_Adapter
 		currentSubtype = Adapter125
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
 		EVENTS
 		{
 		}
@@ -472,7 +495,7 @@ PART
 	part = Decoupler.0_4293346752
 	partName = Part
 	persistentId = 4109351661
-	pos = -0.674700379,40.5052261,4.62830067E-05
+	pos = -0.67470181,40.5052261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = -0.674759805,0,0
 	rot = 0,0,0.707106888,0.707106888
@@ -631,7 +654,7 @@ PART
 	part = probeCoreHex.v2_4293346666
 	partName = Part
 	persistentId = 4234701124
-	pos = -0.894708216,40.5052261,4.62830067E-05
+	pos = -0.894712687,40.5052261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.220001221,0
 	rot = 0,0,0.707106888,0.707106888
@@ -835,36 +858,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -899,7 +892,7 @@ PART
 	part = solarPanels5_4293346568
 	partName = Part
 	persistentId = 1613294124
-	pos = -0.888197541,40.8013,-0.170893282
+	pos = -0.88820231,40.8013,-0.170893282
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = -0.866025805,1.63912773E-07,-8.94069672E-08,0.499999762
@@ -1031,7 +1024,7 @@ PART
 	part = solarPanels5_4293346534
 	partName = Part
 	persistentId = 2464355901
-	pos = -0.888196588,40.5052261,-0.3418338
+	pos = -0.888200998,40.5052261,-0.341834158
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
 	rot = -1.00000024,0,-1.1920929E-07,-6.3220277E-08
@@ -1163,7 +1156,7 @@ PART
 	part = solarPanels5_4293346500
 	partName = Part
 	persistentId = 1132362250
-	pos = -0.888196349,40.2091484,-0.170893162
+	pos = -0.88820076,40.2091484,-0.170893162
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = -0.866025448,0,-8.94069672E-08,-0.500000298
@@ -1295,7 +1288,7 @@ PART
 	part = solarPanels5_4293346466
 	partName = Part
 	persistentId = 387511501
-	pos = -0.888196528,40.2091522,0.170986027
+	pos = -0.888200998,40.2091522,0.170986086
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = -0.499999762,-8.94069672E-08,0,-0.866025805
@@ -1427,7 +1420,7 @@ PART
 	part = solarPanels5_4293346432
 	partName = Part
 	persistentId = 3374900031
-	pos = -0.888196707,40.5052261,0.341926426
+	pos = -0.888201237,40.5052261,0.341926783
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = 8.42937027E-08,-1.1920929E-07,0,-1.00000024
@@ -1559,7 +1552,7 @@ PART
 	part = solarPanels5_4293346398
 	partName = Part
 	persistentId = 1972143897
-	pos = -0.888196766,40.8013,0.170986027
+	pos = -0.888201296,40.8013,0.170986146
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
 	rot = 0.499999762,-1.49011612E-07,0,-0.866025805
@@ -1691,7 +1684,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293346364
 	partName = Part
 	persistentId = 4206574159
-	pos = -1.08220923,40.7341766,4.62830067E-05
+	pos = -1.082214,40.7341766,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0.500000119,-0.500000119,-0.500000119,0.500000119
@@ -1775,7 +1768,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293346298
 	partName = Part
 	persistentId = 658040080
-	pos = -1.08220899,40.3907509,-0.198231906
+	pos = -1.08221376,40.3907509,-0.198231906
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = -0.183012843,-0.683012843,0.183012843,0.683012843
@@ -1859,7 +1852,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293346232
 	partName = Part
 	persistentId = 2671093016
-	pos = -1.08220923,40.3907509,0.198325127
+	pos = -1.082214,40.3907509,0.198325485
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = -0.683012962,-0.183012709,0.683012962,0.183012709
@@ -1943,7 +1936,7 @@ PART
 	part = Decoupler.0_4293345862
 	partName = Part
 	persistentId = 3285065949
-	pos = 6.35236502E-05,40.5052261,0.674810171
+	pos = 6.35236502E-05,40.5052261,0.674811602
 	attPos = 0,0,0
 	attPos0 = -7.10542566E-15,0,0.674759805
 	rot = 0.50000006,0.50000006,0.50000006,0.50000006
@@ -2102,7 +2095,7 @@ PART
 	part = probeCoreHex.v2_4293345770
 	partName = Part
 	persistentId = 183194581
-	pos = 6.35236502E-05,40.5052261,0.894817114
+	pos = 6.35236502E-05,40.5052261,0.894821167
 	attPos = 0,0,0
 	attPos0 = 0,0.220001221,0
 	rot = 0.50000006,0.50000006,0.50000006,0.50000006
@@ -2306,36 +2299,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -2370,7 +2333,7 @@ PART
 	part = solarPanels5_4293345666
 	partName = Part
 	persistentId = 674159327
-	pos = -0.170876056,40.8013,0.888305426
+	pos = -0.170876056,40.8013,0.888309479
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = -0.612372696,0.353553534,0.612372458,0.353553355
@@ -2502,10 +2465,10 @@ PART
 	part = solarPanels5_4293345632
 	partName = Part
 	persistentId = 1649265989
-	pos = -0.341816664,40.5052261,0.888305306
+	pos = -0.341817021,40.5052261,0.88830936
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
-	rot = -0.707106888,1.70530257E-13,0.707106888,-1.19209304E-07
+	rot = -0.707106888,1.42108547E-14,0.707106888,-1.19209304E-07
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0.707106769,0,-8.94069458E-08
 	mir = 1,1,1
@@ -2634,7 +2597,7 @@ PART
 	part = solarPanels5_4293345598
 	partName = Part
 	persistentId = 3729611676
-	pos = -0.170875937,40.2091522,0.888305426
+	pos = -0.170875937,40.2091522,0.888309479
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = -0.612372577,-0.353553534,0.612372458,-0.353553534
@@ -2766,7 +2729,7 @@ PART
 	part = solarPanels5_4293345564
 	partName = Part
 	persistentId = 382811462
-	pos = 0.171003103,40.2091522,0.888305426
+	pos = 0.171003103,40.2091522,0.888309479
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = -0.353553474,-0.612372577,0.353553355,-0.612372577
@@ -2898,7 +2861,7 @@ PART
 	part = solarPanels5_4293345530
 	partName = Part
 	persistentId = 841087320
-	pos = 0.341942787,40.5052261,0.888305306
+	pos = 0.341942787,40.5052261,0.88830936
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = 5.96046519E-08,-0.707106948,-5.96046519E-08,-0.707106829
@@ -3030,7 +2993,7 @@ PART
 	part = solarPanels5_4293345496
 	partName = Part
 	persistentId = 4179038443
-	pos = 0.171003103,40.8013,0.888305426
+	pos = 0.171003103,40.8013,0.888309479
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
 	rot = 0.353553385,-0.612372577,-0.353553444,-0.612372458
@@ -3162,7 +3125,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293345462
 	partName = Part
 	persistentId = 2686872972
-	pos = 6.35236502E-05,40.7341766,1.08231711
+	pos = 6.35236502E-05,40.7341766,1.08232117
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0,0,-0.707106888,0.707106888
@@ -3246,7 +3209,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293345396
 	partName = Part
 	persistentId = 676456204
-	pos = -0.198215351,40.3907509,1.08231711
+	pos = -0.198215708,40.3907509,1.08232117
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = 0,0,0.258819073,0.965925992
@@ -3330,10 +3293,10 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293345330
 	partName = Part
 	persistentId = 2844223283
-	pos = 0.198343292,40.3907509,1.08231711
+	pos = 0.198344007,40.3907509,1.08232117
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
-	rot = 0,-2.98023224E-08,0.965925992,0.258819133
+	rot = 0,-2.98023224E-08,0.965925992,0.258819073
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.612372458,0.353553444,0.353553444,0.612372458
 	mir = 1,1,1
@@ -3414,7 +3377,7 @@ PART
 	part = Decoupler.0_4293345200
 	partName = Part
 	persistentId = 3298902235
-	pos = 0.674827516,40.5052261,4.62830067E-05
+	pos = 0.674828947,40.5052261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0.674759865,0,0
 	rot = 0.707106888,0.707106888,0,0
@@ -3573,7 +3536,7 @@ PART
 	part = probeCoreHex.v2_4293345108
 	partName = Part
 	persistentId = 1315064873
-	pos = 0.894835532,40.5052261,4.62830067E-05
+	pos = 0.894840002,40.5052261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0,0.220001221,0
 	rot = 0.707106888,0.707106888,0,0
@@ -3777,36 +3740,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -3841,7 +3774,7 @@ PART
 	part = solarPanels5_4293345004
 	partName = Part
 	persistentId = 3508932480
-	pos = 0.888322949,40.8013,0.17098704
+	pos = 0.888327122,40.8013,0.170987397
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = -8.94069672E-08,0.499999762,0.866025805,-1.63912773E-07
@@ -3973,7 +3906,7 @@ PART
 	part = solarPanels5_4293344970
 	partName = Part
 	persistentId = 3641925601
-	pos = 0.888323069,40.5052261,0.341927856
+	pos = 0.88832736,40.5052261,0.341928571
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
 	rot = -1.1920929E-07,-6.3220277E-08,1.00000024,0
@@ -4105,7 +4038,7 @@ PART
 	part = solarPanels5_4293344936
 	partName = Part
 	persistentId = 4239861823
-	pos = 0.888324022,40.2091484,0.170986921
+	pos = 0.888328552,40.2091484,0.170987278
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = -8.94069672E-08,-0.500000298,0.866025448,0
@@ -4237,7 +4170,7 @@ PART
 	part = solarPanels5_4293344902
 	partName = Part
 	persistentId = 353300516
-	pos = 0.888324738,40.2091484,-0.170894593
+	pos = 0.888329506,40.2091484,-0.170894951
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = 0,-0.866025805,0.499999762,8.94069672E-08
@@ -4369,7 +4302,7 @@ PART
 	part = solarPanels5_4293344868
 	partName = Part
 	persistentId = 465947436
-	pos = 0.888323665,40.5052261,-0.34183529
+	pos = 0.888328075,40.5052261,-0.341836005
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = 0,-1.00000024,-8.42937027E-08,1.1920929E-07
@@ -4501,7 +4434,7 @@ PART
 	part = solarPanels5_4293344834
 	partName = Part
 	persistentId = 1379937631
-	pos = 0.888323784,40.8013,-0.170894593
+	pos = 0.888328195,40.8013,-0.170894951
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
 	rot = 0,-0.866025805,-0.499999762,1.49011612E-07
@@ -4633,7 +4566,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344800
 	partName = Part
 	persistentId = 1798146092
-	pos = 1.08233571,40.7341766,4.62830067E-05
+	pos = 1.08234024,40.7341766,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = -0.500000119,0.500000119,-0.500000119,0.500000119
@@ -4717,7 +4650,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344734
 	partName = Part
 	persistentId = 4137410204
-	pos = 1.08233654,40.3907509,0.198326617
+	pos = 1.08234131,40.3907509,0.198327333
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = 0.183012843,0.683012843,0.183012843,0.683012843
@@ -4801,7 +4734,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344668
 	partName = Part
 	persistentId = 2240929366
-	pos = 1.08233678,40.3907509,-0.198233932
+	pos = 1.08234155,40.3907509,-0.198234648
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = 0.683012962,0.183012709,0.683012962,0.183012709
@@ -4885,7 +4818,7 @@ PART
 	part = Decoupler.0_4293344538
 	partName = Part
 	persistentId = 100162640
-	pos = 6.35236502E-05,40.5052261,-0.674717903
+	pos = 6.35236502E-05,40.5052261,-0.674719334
 	attPos = 0,0,0
 	attPos0 = 7.10542566E-15,0,-0.674760044
 	rot = 0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -5044,7 +4977,7 @@ PART
 	part = probeCoreHex.v2_4293344446
 	partName = Part
 	persistentId = 2116223137
-	pos = 6.35236502E-05,40.5052261,-0.894724727
+	pos = 6.35236502E-05,40.5052261,-0.89472878
 	attPos = 0,0,0
 	attPos0 = 0,0.220001221,0
 	rot = 0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -5248,36 +5181,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -5312,7 +5215,7 @@ PART
 	part = solarPanels5_4293344342
 	partName = Part
 	persistentId = 3100035151
-	pos = 0.171003103,40.8013,-0.888213038
+	pos = 0.171003103,40.8013,-0.888217092
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = 0.612372458,0.353553325,0.612372577,-0.353553563
@@ -5444,10 +5347,10 @@ PART
 	part = solarPanels5_4293344308
 	partName = Part
 	persistentId = 2395762661
-	pos = 0.341943562,40.5052261,-0.888213038
+	pos = 0.34194392,40.5052261,-0.888217092
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
-	rot = 0.707106829,-1.19209588E-07,0.707106948,0
+	rot = 0.707106829,-1.1920929E-07,0.707106948,0
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0.707106769,0,-8.94069458E-08
 	mir = 1,1,1
@@ -5576,7 +5479,7 @@ PART
 	part = solarPanels5_4293344274
 	partName = Part
 	persistentId = 1318143915
-	pos = 0.171002984,40.2091522,-0.888213038
+	pos = 0.171002984,40.2091522,-0.888217092
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = 0.612372458,-0.353553534,0.612372577,0.353553534
@@ -5708,7 +5611,7 @@ PART
 	part = solarPanels5_4293344240
 	partName = Part
 	persistentId = 3613901360
-	pos = -0.170876056,40.2091522,-0.888213038
+	pos = -0.170876056,40.2091522,-0.888217092
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = 0.353553385,-0.612372577,0.353553444,0.612372577
@@ -5840,7 +5743,7 @@ PART
 	part = solarPanels5_4293344206
 	partName = Part
 	persistentId = 2870472702
-	pos = -0.341817677,40.5052261,-0.888213038
+	pos = -0.341818392,40.5052261,-0.888217092
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = -5.96046519E-08,-0.707106829,-5.96046519E-08,0.707106948
@@ -5972,7 +5875,7 @@ PART
 	part = solarPanels5_4293344172
 	partName = Part
 	persistentId = 3765422509
-	pos = -0.170876056,40.8013,-0.888213038
+	pos = -0.170876056,40.8013,-0.888217092
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
 	rot = -0.353553385,-0.612372458,-0.353553385,0.612372577
@@ -6104,7 +6007,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344138
 	partName = Part
 	persistentId = 2987354214
-	pos = 6.35236502E-05,40.7341766,-1.08222485
+	pos = 6.35236502E-05,40.7341766,-1.0822289
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = -0.707106888,0.707106888,0,0
@@ -6188,7 +6091,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344072
 	partName = Part
 	persistentId = 3366770517
-	pos = 0.198342398,40.3907509,-1.08222485
+	pos = 0.198342755,40.3907509,-1.0822289
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = 0.258819103,0.965925932,-1.49011612E-08,0
@@ -6272,7 +6175,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293344006
 	partName = Part
 	persistentId = 3908801968
-	pos = -0.198214218,40.3907509,-1.08222485
+	pos = -0.198214218,40.3907509,-1.0822289
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = 0.965926111,0.258819044,0,0
@@ -7097,36 +7000,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -7161,7 +7034,7 @@ PART
 	part = solarPanels5_4293187812
 	partName = Part
 	persistentId = 1321040386
-	pos = 0.29614079,43.4899406,-0.170893967
+	pos = 0.296141148,43.4899406,-0.170894146
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = -0.612372458,0.612372577,-0.353553474,0.353553355
@@ -7275,7 +7148,7 @@ PART
 	part = solarPanels5_4293354318
 	partName = Part
 	persistentId = 3409585812
-	pos = 6.34938478E-05,43.4899406,-0.341834158
+	pos = 6.34938478E-05,43.4899406,-0.341834515
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
 	rot = -0.707106829,0.707106948,0,-8.94069672E-08
@@ -7389,7 +7262,7 @@ PART
 	part = solarPanels5_4293354284
 	partName = Part
 	persistentId = 3106376234
-	pos = -0.296013832,43.4899406,-0.170893908
+	pos = -0.29601419,43.4899406,-0.170894086
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = -0.612372518,0.612372458,0.353553414,-0.353553534
@@ -7503,7 +7376,7 @@ PART
 	part = solarPanels5_4293354250
 	partName = Part
 	persistentId = 1175095235
-	pos = -0.296013713,43.4899406,0.170986563
+	pos = -0.296014071,43.4899406,0.170986742
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = -0.353553444,0.353553355,0.612372518,-0.612372577
@@ -7617,7 +7490,7 @@ PART
 	part = solarPanels5_4293354216
 	partName = Part
 	persistentId = 1100185099
-	pos = 6.35832548E-05,43.4899406,0.341926754
+	pos = 6.35832548E-05,43.4899406,0.341927111
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = 0,-1.1920929E-07,0.707106888,-0.707106888
@@ -7731,7 +7604,7 @@ PART
 	part = solarPanels5_4293354182
 	partName = Part
 	persistentId = 1172364151
-	pos = 0.29614085,43.4899406,0.170986563
+	pos = 0.296141207,43.4899406,0.170986742
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
 	rot = 0.353553295,-0.353553534,0.612372518,-0.612372577
@@ -7845,7 +7718,7 @@ PART
 	part = longAntenna_4293323816
 	partName = Part
 	persistentId = 328345300
-	pos = 0.191495255,43.6751633,-0.331522256
+	pos = 0.191495612,43.6751633,-0.331522614
 	attPos = 0,0,0
 	attPos0 = 0.191430196,0.178710952,-0.331566691
 	rot = 0.183012813,0.683012724,-0.683012843,0.183012769
@@ -7976,7 +7849,7 @@ PART
 	part = longAntenna_4293322418
 	partName = Part
 	persistentId = 314499806
-	pos = -0.191368118,43.6751633,-0.331522286
+	pos = -0.191368476,43.6751633,-0.331522644
 	attPos = 0,0,0
 	attPos0 = -0.191430122,0.178710952,-0.331566721
 	rot = -0.183012694,0.683012724,-0.683012843,-0.183012664
@@ -8107,7 +7980,7 @@ PART
 	part = longAntenna_4293322348
 	partName = Part
 	persistentId = 1919819931
-	pos = -0.382799923,43.6751633,4.62830067E-05
+	pos = -0.382800639,43.6751633,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = -0.382860363,0.178710952,0
 	rot = -0.500000119,0.50000006,-0.500000119,-0.50000006
@@ -8238,7 +8111,7 @@ PART
 	part = longAntenna_4293322278
 	partName = Part
 	persistentId = 4158743943
-	pos = -0.191368178,43.6751633,0.331614852
+	pos = -0.191368535,43.6751633,0.33161521
 	attPos = 0,0,0
 	attPos0 = -0.191430166,0.178710952,0.331566721
 	rot = -0.683012843,0.183012769,-0.183012694,-0.683012724
@@ -8369,7 +8242,7 @@ PART
 	part = longAntenna_4293322208
 	partName = Part
 	persistentId = 2747623888
-	pos = 0.191495195,43.6751633,0.331614882
+	pos = 0.191495553,43.6751633,0.331615239
 	attPos = 0,0,0
 	attPos0 = 0.191430151,0.178710952,0.331566751
 	rot = -0.683012843,-0.183012694,0.183012694,-0.683012724
@@ -8500,7 +8373,7 @@ PART
 	part = longAntenna_4293322138
 	partName = Part
 	persistentId = 2612018459
-	pos = 0.382926881,43.6751633,4.63724136E-05
+	pos = 0.382927597,43.6751633,4.63724136E-05
 	attPos = 0,0,0
 	attPos0 = 0.382860303,0.178710952,8.94068748E-08
 	rot = -0.500000238,-0.499999881,0.500000119,-0.50000006
@@ -8804,7 +8677,7 @@ PART
 	part = solarPanels5_4293180234
 	partName = Part
 	persistentId = 2563319044
-	pos = 0.292004585,43.8685875,-0.168506041
+	pos = 0.292004943,43.8685875,-0.16850622
 	attPos = 0.0306941867,0,-0.0177213997
 	attPos0 = 0.261245668,0.0103607178,-0.150830299
 	rot = -0.612373233,0.612372935,-0.353552341,0.353552639
@@ -8918,7 +8791,7 @@ PART
 	part = solarPanels5_4293178568
 	partName = Part
 	persistentId = 1720784442
-	pos = 6.34044409E-05,43.8685875,-0.337058246
+	pos = 6.34044409E-05,43.8685875,-0.337058604
 	attPos = -8.94069601E-08,0,-0.0354427397
 	attPos0 = -2.98023153E-08,0.0103607178,-0.301660538
 	rot = -0.707106948,0.707106769,1.34110451E-06,-8.94069672E-07
@@ -9032,7 +8905,7 @@ PART
 	part = solarPanels5_4293178534
 	partName = Part
 	persistentId = 474555946
-	pos = -0.291877806,43.8685875,-0.168505877
+	pos = -0.291878164,43.8685875,-0.168506056
 	attPos = -0.0306944251,0,-0.0177213103
 	attPos0 = -0.261245728,0.0103607178,-0.150830209
 	rot = -0.612371922,0.612371981,0.353554666,-0.353554249
@@ -9146,7 +9019,7 @@ PART
 	part = solarPanels5_4293178500
 	partName = Part
 	persistentId = 2717816186
-	pos = -0.291877627,43.8685875,0.168598697
+	pos = -0.291877985,43.8685875,0.168598875
 	attPos = -0.0306943059,0,0.0177214593
 	attPos0 = -0.261245668,0.0103607178,0.150830328
 	rot = -0.353552282,0.353552699,0.612373292,-0.612372875
@@ -9260,7 +9133,7 @@ PART
 	part = solarPanels5_4293178466
 	partName = Part
 	persistentId = 598531155
-	pos = 6.36726618E-05,43.8685875,0.337150842
+	pos = 6.36726618E-05,43.8685875,0.3371512
 	attPos = 8.9406953E-08,0,0.0354427397
 	attPos0 = 5.96046306E-08,0.0103607178,0.301660568
 	rot = 1.34110451E-06,-8.94069672E-07,0.707106948,-0.707106769
@@ -9374,7 +9247,7 @@ PART
 	part = solarPanels5_4293178432
 	partName = Part
 	persistentId = 619076304
-	pos = 0.292004824,43.8685875,0.168598503
+	pos = 0.292005181,43.8685875,0.168598682
 	attPos = 0.0306944251,0,0.0177212805
 	attPos0 = 0.261245668,0.0103607178,0.150830299
 	rot = 0.353554606,-0.353554189,0.612371981,-0.612372041
@@ -9488,7 +9361,7 @@ PART
 	part = Decoupler.0_4293343284
 	partName = Part
 	persistentId = 3227507529
-	pos = -0.674701095,41.7552261,4.62830067E-05
+	pos = -0.674702525,41.7552261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = -0.674759805,0,0
 	rot = 0,0,0.707106888,0.707106888
@@ -9647,7 +9520,7 @@ PART
 	part = Decoupler.0_4293340230
 	partName = Part
 	persistentId = 2528164539
-	pos = 6.35236502E-05,41.7552261,0.674811006
+	pos = 6.35236502E-05,41.7552261,0.674812436
 	attPos = 0,0,0
 	attPos0 = -7.10542185E-15,0,0.674759805
 	rot = 0.50000006,0.50000006,0.50000006,0.50000006
@@ -9806,7 +9679,7 @@ PART
 	part = Decoupler.0_4293339544
 	partName = Part
 	persistentId = 3264407809
-	pos = 0.674828231,41.7552261,4.62830067E-05
+	pos = 0.674829662,41.7552261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 0.674759865,0,0
 	rot = 0.707106888,0.707106888,0,0
@@ -9965,7 +9838,7 @@ PART
 	part = Decoupler.0_4293338858
 	partName = Part
 	persistentId = 1624603709
-	pos = 6.35236502E-05,41.7552261,-0.674718499
+	pos = 6.35236502E-05,41.7552261,-0.67471993
 	attPos = 0,0,0
 	attPos0 = 7.10542185E-15,0,-0.674760044
 	rot = 0.50000006,0.50000006,-0.50000006,-0.50000006
@@ -10124,7 +9997,7 @@ PART
 	part = probeCoreHex.v2_4293338760
 	partName = Part
 	persistentId = 974239345
-	pos = 6.35236502E-05,41.7552261,-0.894719601
+	pos = 6.35236502E-05,41.7552261,-0.894723654
 	attPos = 0,0,0
 	attPos0 = 0,0.220000207,0
 	rot = -0.707106888,0,0,0.707106888
@@ -10328,36 +10201,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -10392,7 +10235,7 @@ PART
 	part = solarPanels5_4293338650
 	partName = Part
 	persistentId = 3607216695
-	pos = 0.296138048,41.5842857,-0.888207912
+	pos = 0.296138406,41.5842857,-0.888211966
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = -0.683012724,0.183012813,-0.683012962,-0.183012694
@@ -10524,7 +10367,7 @@ PART
 	part = solarPanels5_4293338616
 	partName = Part
 	persistentId = 1695294196
-	pos = 6.34640455E-05,41.4133453,-0.888207912
+	pos = 6.34640455E-05,41.4133453,-0.888211966
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
 	rot = -0.49999994,0.500000179,-0.500000179,-0.500000179
@@ -10656,10 +10499,10 @@ PART
 	part = solarPanels5_4293338582
 	partName = Part
 	persistentId = 1194963797
-	pos = -0.29601115,41.5842857,-0.888207912
+	pos = -0.296011865,41.5842857,-0.888211966
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
-	rot = -0.183012709,0.683012843,-0.183012709,-0.683012962
+	rot = -0.183012694,0.683012843,-0.183012635,-0.683012962
 	attRot = 0,0,0,1
 	attRot0 = -0.612372458,0.612372398,0.353553385,-0.353553504
 	mir = 1,1,1
@@ -10788,10 +10631,10 @@ PART
 	part = solarPanels5_4293338548
 	partName = Part
 	persistentId = 4186413733
-	pos = -0.29601115,41.9261665,-0.888207912
+	pos = -0.296011865,41.9261665,-0.888211966
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
-	rot = 0.183012977,0.683012843,0.183012798,-0.683012843
+	rot = 0.183013111,0.683012843,0.183012813,-0.683012724
 	attRot = 0,0,0,1
 	attRot0 = -0.353553414,0.353553325,0.612372458,-0.612372518
 	mir = 1,1,1
@@ -10920,10 +10763,10 @@ PART
 	part = solarPanels5_4293338514
 	partName = Part
 	persistentId = 307670158
-	pos = 6.35832548E-05,42.0971069,-0.888208151
+	pos = 6.35832548E-05,42.0971069,-0.888212204
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
-	rot = 0.500000119,0.49999994,0.500000238,-0.5
+	rot = 0.500000238,0.499999881,0.500000358,-0.50000006
 	attRot = 0,0,0,1
 	attRot0 = 0,-1.19209275E-07,0.707106829,-0.707106829
 	mir = 1,1,1
@@ -11052,10 +10895,10 @@ PART
 	part = solarPanels5_4293338480
 	partName = Part
 	persistentId = 2700554861
-	pos = 0.296138048,41.9261665,-0.888207912
+	pos = 0.296138406,41.9261665,-0.888211966
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
-	rot = 0.683012843,0.183012798,0.683012843,-0.183012977
+	rot = 0.683012843,0.183012769,0.683012843,-0.183013067
 	attRot = 0,0,0,1
 	attRot0 = 0.353553265,-0.353553444,0.612372458,-0.612372458
 	mir = 1,1,1
@@ -11184,7 +11027,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293338446
 	partName = Part
 	persistentId = 2949669345
-	pos = 0.22901465,41.7552261,-1.08221984
+	pos = 0.229015365,41.7552261,-1.08222389
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0,-1.00000024,0,0
@@ -11268,10 +11111,10 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293338380
 	partName = Part
 	persistentId = 1721598041
-	pos = -0.114412099,41.5569458,-1.08221984
+	pos = -0.114412457,41.5569458,-1.08222389
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
-	rot = -0.866025686,-0.50000006,0,0
+	rot = -0.866025686,-0.5,0,0
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.612372458,-0.353553355,-0.353553385,0.612372458
 	mir = 1,1,1
@@ -11352,10 +11195,10 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293338314
 	partName = Part
 	persistentId = 1464018572
-	pos = -0.11441198,41.9535065,-1.08221984
+	pos = -0.11441198,41.9535065,-1.08222389
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
-	rot = -0.866025686,0.500000119,0,0
+	rot = -0.866025686,0.5,0,0
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.612372458,0.353553444,0.353553444,0.612372458
 	mir = 1,1,1
@@ -11436,7 +11279,7 @@ PART
 	part = probeCoreHex.v2_4293631886
 	partName = Part
 	persistentId = 2078806948
-	pos = -0.894702494,41.7552261,4.62830067E-05
+	pos = -0.894706964,41.7552261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = 2.980231E-08,0.220000267,0
 	rot = 0.500000119,-0.500000119,-0.500000119,-0.500000119
@@ -11640,36 +11483,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -11704,7 +11517,7 @@ PART
 	part = solarPanels5_4293631824
 	partName = Part
 	persistentId = 2202860908
-	pos = -0.888190746,41.5842857,-0.296028346
+	pos = -0.888194919,41.5842857,-0.296028942
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = 0.96592617,-8.94069672E-08,1.78813934E-07,0.258819133
@@ -11836,10 +11649,10 @@ PART
 	part = solarPanels5_4293631790
 	partName = Part
 	persistentId = 1415246889
-	pos = -0.888190746,41.4133453,4.63426113E-05
+	pos = -0.888195217,41.4133453,4.63426113E-05
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
-	rot = 0.707106829,0,5.96046448E-08,0.707107067
+	rot = 0.707106709,0,0,0.707107067
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0.707106769,0,-8.94069458E-08
 	mir = 1,1,1
@@ -11968,7 +11781,7 @@ PART
 	part = solarPanels5_4293631756
 	partName = Part
 	persistentId = 58089063
-	pos = -0.888190866,41.5842857,0.296120912
+	pos = -0.888195395,41.5842857,0.296121448
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = 0.258819133,5.96046448E-08,8.94069672E-08,0.96592617
@@ -12100,10 +11913,10 @@ PART
 	part = solarPanels5_4293631722
 	partName = Part
 	persistentId = 1944800424
-	pos = -0.888190866,41.9261665,0.296120912
+	pos = -0.888195395,41.9261665,0.296121448
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
-	rot = -0.258819342,5.96046448E-08,7.4505806E-08,0.96592617
+	rot = -0.258819342,8.94069672E-08,7.4505806E-08,0.965925932
 	attRot = 0,0,0,1
 	attRot0 = -0.353553414,0.353553325,0.612372458,-0.612372518
 	mir = 1,1,1
@@ -12232,7 +12045,7 @@ PART
 	part = solarPanels5_4293631688
 	partName = Part
 	persistentId = 2943460345
-	pos = -0.888191164,42.0971069,4.6223402E-05
+	pos = -0.888195693,42.0971069,4.6223402E-05
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = -0.707107067,8.94069672E-08,-8.94069672E-08,0.707106948
@@ -12364,10 +12177,10 @@ PART
 	part = solarPanels5_4293631654
 	partName = Part
 	persistentId = 3302904573
-	pos = -0.888190746,41.9261665,-0.296028346
+	pos = -0.888194919,41.9261665,-0.296028942
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
-	rot = -0.965926051,-5.96046448E-08,-8.94069672E-08,0.258819193
+	rot = -0.965926111,-1.34110451E-07,0,0.258819342
 	attRot = 0,0,0,1
 	attRot0 = 0.353553265,-0.353553444,0.612372458,-0.612372458
 	mir = 1,1,1
@@ -12496,7 +12309,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631620
 	partName = Part
 	persistentId = 1401667714
-	pos = -1.08220291,41.7552261,-0.228904933
+	pos = -1.08220768,41.7552261,-0.228905648
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0,0.707107008,0,-0.707107008
@@ -12580,7 +12393,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631554
 	partName = Part
 	persistentId = 1050368624
-	pos = -1.08220303,41.5569458,0.114521831
+	pos = -1.0822078,41.5569458,0.114522189
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = 0.612372696,0.353553385,-0.612372696,-0.353553385
@@ -12664,7 +12477,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631488
 	partName = Part
 	persistentId = 356641613
-	pos = -1.08220303,41.9535065,0.114521831
+	pos = -1.0822078,41.9535065,0.114522189
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = 0.612372696,-0.353553593,-0.612372696,0.353553593
@@ -12748,7 +12561,7 @@ PART
 	part = probeCoreHex.v2_4293631410
 	partName = Part
 	persistentId = 870516930
-	pos = 6.35236502E-05,41.7552261,0.894812226
+	pos = 6.35236502E-05,41.7552261,0.894816279
 	attPos = 0,0,0
 	attPos0 = 0,0.220000327,0
 	rot = 0,-0.707106888,-0.707106888,0
@@ -12952,36 +12765,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -13016,7 +12799,7 @@ PART
 	part = solarPanels5_4293631348
 	partName = Part
 	persistentId = 3297530532
-	pos = -0.296011388,41.5842857,0.888300538
+	pos = -0.296012104,41.5842857,0.888304591
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = 0.683012962,0.183012709,-0.683012724,0.183012888
@@ -13148,10 +12931,10 @@ PART
 	part = solarPanels5_4293631314
 	partName = Part
 	persistentId = 3400358432
-	pos = 6.35832548E-05,41.4133453,0.888300538
+	pos = 6.35832548E-05,41.4133453,0.888304591
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
-	rot = 0.50000006,0.500000119,-0.50000006,0.500000238
+	rot = 0.499999911,0.500000179,-0.49999997,0.500000179
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0.707106769,0,-8.94069458E-08
 	mir = 1,1,1
@@ -13280,10 +13063,10 @@ PART
 	part = solarPanels5_4293631280
 	partName = Part
 	persistentId = 260322347
-	pos = 0.296138287,41.5842857,0.888300538
+	pos = 0.296138644,41.5842857,0.888304591
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
-	rot = 0.183012709,0.683012962,-0.183012709,0.683012724
+	rot = 0.183012739,0.683012962,-0.183012739,0.683012724
 	attRot = 0,0,0,1
 	attRot0 = -0.612372458,0.612372398,0.353553385,-0.353553504
 	mir = 1,1,1
@@ -13412,7 +13195,7 @@ PART
 	part = solarPanels5_4293631246
 	partName = Part
 	persistentId = 1010397598
-	pos = 0.296138287,41.9261665,0.888300538
+	pos = 0.296138644,41.9261665,0.888304591
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
 	rot = -0.183012694,0.683012903,0.183012933,0.683012784
@@ -13544,10 +13327,10 @@ PART
 	part = solarPanels5_4293631212
 	partName = Part
 	persistentId = 1184292810
-	pos = 6.34640455E-05,42.0971069,0.888300776
+	pos = 6.34640455E-05,42.0971069,0.88830483
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
-	rot = -0.500000238,0.50000006,0.500000238,0.499999881
+	rot = -0.500000179,0.5,0.500000298,0.499999791
 	attRot = 0,0,0,1
 	attRot0 = 0,-1.19209275E-07,0.707106829,-0.707106829
 	mir = 1,1,1
@@ -13676,10 +13459,10 @@ PART
 	part = solarPanels5_4293631178
 	partName = Part
 	persistentId = 4226628053
-	pos = -0.296011388,41.9261665,0.888300538
+	pos = -0.296012104,41.9261665,0.888304591
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
-	rot = -0.683012843,0.183012858,0.683012843,0.183012769
+	rot = -0.683012843,0.183013007,0.683012843,0.183012769
 	attRot = 0,0,0,1
 	attRot0 = 0.353553265,-0.353553444,0.612372458,-0.612372458
 	mir = 1,1,1
@@ -13808,7 +13591,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631144
 	partName = Part
 	persistentId = 343854061
-	pos = -0.228887782,41.7552261,1.08231258
+	pos = -0.228888318,41.7552261,1.08231664
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0,0,0,-1.00000024
@@ -13892,10 +13675,10 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631078
 	partName = Part
 	persistentId = 803260061
-	pos = 0.114539266,41.5569458,1.08231258
+	pos = 0.114539623,41.5569458,1.08231664
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
-	rot = 0,0,-0.866025686,-0.5
+	rot = 0,0,-0.866025686,-0.49999994
 	attRot = 0,0,-0.999999881,0
 	attRot0 = -0.612372458,-0.353553355,-0.353553385,0.612372458
 	mir = 1,1,1
@@ -13976,7 +13759,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293631012
 	partName = Part
 	persistentId = 2358657011
-	pos = 0.114539146,41.9535065,1.08231258
+	pos = 0.114539504,41.9535065,1.08231664
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = 0,0,-0.866025567,0.500000119
@@ -14060,7 +13843,7 @@ PART
 	part = probeCoreHex.v2_4293630934
 	partName = Part
 	persistentId = 595815302
-	pos = 0.894829631,41.7552261,4.62830067E-05
+	pos = 0.894834101,41.7552261,4.62830067E-05
 	attPos = 0,0,0
 	attPos0 = -2.980231E-08,0.220000267,0
 	rot = -0.500000119,-0.500000119,-0.500000119,0.500000119
@@ -14264,36 +14047,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleTripLogger
 		isEnabled = True
 		stagingEnabled = True
@@ -14328,7 +14081,7 @@ PART
 	part = solarPanels5_4293630872
 	partName = Part
 	persistentId = 966517099
-	pos = 0.888317943,41.5842857,0.296121031
+	pos = 0.888322353,41.5842857,0.296122104
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,-0.170939326
 	rot = 1.78813934E-07,0.258819133,-0.96592617,8.94069672E-08
@@ -14460,10 +14213,10 @@ PART
 	part = solarPanels5_4293630838
 	partName = Part
 	persistentId = 2807567339
-	pos = 0.888318002,41.4133453,4.6223402E-05
+	pos = 0.888322651,41.4133453,4.6223402E-05
 	attPos = 0,0,0
 	attPos0 = -2.98023171E-08,-0.00651168823,-0.341878593
-	rot = 5.96046448E-08,0.707107067,-0.707106829,0
+	rot = 0,0.707107067,-0.707106709,0
 	attRot = 0,0,0,1
 	attRot0 = -0.707106709,0.707106769,0,-8.94069458E-08
 	mir = 1,1,1
@@ -14592,7 +14345,7 @@ PART
 	part = solarPanels5_4293630804
 	partName = Part
 	persistentId = 147918208
-	pos = 0.888318062,41.5842857,-0.296028584
+	pos = 0.888322711,41.5842857,-0.296029478
 	attPos = 0,0,0
 	attPos0 = -0.296075612,-0.00651168823,-0.170939237
 	rot = 8.94069672E-08,0.96592617,-0.258819133,-5.96046448E-08
@@ -14724,10 +14477,10 @@ PART
 	part = solarPanels5_4293630770
 	partName = Part
 	persistentId = 3732381982
-	pos = 0.888317943,41.9261665,-0.296028525
+	pos = 0.888322473,41.9261665,-0.296029419
 	attPos = 0,0,0
 	attPos0 = -0.296075553,-0.00651168823,0.170939356
-	rot = 7.4505806E-08,0.96592617,0.258819342,-5.96046448E-08
+	rot = 7.4505806E-08,0.965925932,0.258819342,-8.94069672E-08
 	attRot = 0,0,0,1
 	attRot0 = -0.353553414,0.353553325,0.612372458,-0.612372518
 	mir = 1,1,1
@@ -14856,7 +14609,7 @@ PART
 	part = solarPanels5_4293630736
 	partName = Part
 	persistentId = 3525866197
-	pos = 0.888318121,42.0971069,4.63426113E-05
+	pos = 0.888322532,42.0971069,4.63426113E-05
 	attPos = 0,0,0
 	attPos0 = 5.96046341E-08,-0.00651168823,0.341878623
 	rot = -8.94069672E-08,0.707106948,0.707107067,-8.94069672E-08
@@ -14988,10 +14741,10 @@ PART
 	part = solarPanels5_4293630702
 	partName = Part
 	persistentId = 2521860446
-	pos = 0.888317943,41.9261665,0.29612115
+	pos = 0.888322353,41.9261665,0.296122104
 	attPos = 0,0,0
 	attPos0 = 0.296075553,-0.00651168823,0.170939326
-	rot = -8.94069672E-08,0.258819193,0.965926051,5.96046448E-08
+	rot = 0,0.258819342,0.965926111,1.34110451E-07
 	attRot = 0,0,0,1
 	attRot0 = 0.353553265,-0.353553444,0.612372458,-0.612372458
 	mir = 1,1,1
@@ -15120,7 +14873,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293630668
 	partName = Part
 	persistentId = 385456821
-	pos = 1.08233023,41.7552261,0.228997618
+	pos = 1.082335,41.7552261,0.228998333
 	attPos = 0,0,0
 	attPos0 = 0.228951126,0.1875,1.49011585E-08
 	rot = 0,-0.707107008,0,-0.707107008
@@ -15204,7 +14957,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293630602
 	partName = Part
 	persistentId = 638607609
-	pos = 1.08233035,41.5569458,-0.114429444
+	pos = 1.08233535,41.5569458,-0.114429802
 	attPos = 0,0,0
 	attPos0 = -0.114475586,0.1875,-0.198277533
 	rot = -0.612372696,-0.353553385,-0.612372696,-0.353553385
@@ -15288,7 +15041,7 @@ PART
 	part = TT.19.IRI.ANTENNA.2_4293630536
 	partName = Part
 	persistentId = 335228694
-	pos = 1.08233011,41.9535065,-0.114429325
+	pos = 1.08233488,41.9535065,-0.114429682
 	attPos = 0,0,0
 	attPos0 = -0.114475578,0.1875,0.198277518
 	rot = -0.612372696,0.353553593,-0.612372696,0.353553593
@@ -16076,9 +15829,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleSootyShader
+		name = ModuleTundraSoot
 		isEnabled = True
-		SootyState = False
+		selectedIndex = 0
+		toggleSoot = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -16090,36 +15844,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -16187,7 +15911,7 @@ PART
 	part = Grid Fin M Titanium_4293483416
 	partName = Part
 	persistentId = 269301960
-	pos = 0.883063078,29.0647182,0.88304615
+	pos = 0.883066297,29.0647182,0.883049369
 	attPos = 0,0,0
 	attPos0 = 0.882980049,-0.14850235,0.88297981
 	rot = 0.923879743,1.19518077E-07,0.382683545,4.95059993E-08
@@ -16411,43 +16135,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4293482638
 	partName = Part
 	persistentId = 4287459968
-	pos = 0.883063138,29.0647182,-0.882953167
+	pos = 0.883066356,29.0647182,-0.882956386
 	attPos = 0,0,0
 	attPos0 = 0.88297981,-0.14850235,-0.88297987
 	rot = 0.923879743,1.19518077E-07,-0.382683545,-4.95059993E-08
@@ -16659,43 +16353,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4293482568
 	partName = Part
 	persistentId = 32640686
-	pos = -0.882935882,29.0647182,-0.882953286
+	pos = -0.8829391,29.0647182,-0.882956505
 	attPos = 0,0,0
 	attPos0 = -0.882980108,-0.14850235,-0.882979751
 	rot = 0.382683545,4.95059993E-08,-0.923879743,-1.19518077E-07
@@ -16907,43 +16571,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = Grid Fin M Titanium_4293482498
 	partName = Part
 	persistentId = 2817363288
-	pos = -0.882935941,29.0647182,0.883046031
+	pos = -0.88293916,29.0647182,0.88304925
 	attPos = 0,0,0
 	attPos0 = -0.882979691,-0.14850235,0.882979989
 	rot = -0.382683545,-4.95059993E-08,-0.923879743,-1.19518077E-07
@@ -17155,43 +16789,13 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ControlActionGroup
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleYaw
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			TogglePitch
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-			ToggleRoll
-			{
-				actionGroup = None
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE2.19.F9.CGT_4293480302
 	partName = Part
 	persistentId = 3547805939
-	pos = 6.3881278E-05,29.0157738,-1.24721169
+	pos = 6.3881278E-05,29.0157738,-1.24721813
 	attPos = 0,0,0
 	attPos0 = 1.1920924E-07,-0.197446823,-1.2472254
 	rot = 2.84217094E-14,1.00000024,-2.46062257E-07,1.1920929E-07
@@ -17292,7 +16896,7 @@ PART
 	part = TE2.19.F9.CGT_4293479342
 	partName = Part
 	persistentId = 4044146088
-	pos = 6.32852316E-05,29.0157738,1.2473042
+	pos = 6.32852316E-05,29.0157738,1.24731064
 	attPos = 0,0,0
 	attPos0 = -1.42108454E-14,-0.197446823,1.2472254
 	rot = -2.46062257E-07,0,0,-1.00000024
@@ -17447,44 +17051,6 @@ PART
 	}
 	MODULE
 	{
-		name = FlagDecal
-		isEnabled = True
-		flagDisplayed = True
-		isMirrored = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleSootyShader
-		isEnabled = True
-		SootyState = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleSootyAction
-			{
-				actionGroup = Custom06
-				wasActiveBeforePartWasAdjusted = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
@@ -17546,6 +17112,28 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTundraSoot
+		isEnabled = True
+		selectedIndex = 0
+		toggleSoot = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleSootyAction
+			{
+				actionGroup = Custom02
+				wasActiveBeforePartWasAdjusted = False
+			}
 		}
 		UPGRADESAPPLIED
 		{
@@ -17661,33 +17249,37 @@ PART
 	}
 	MODULE
 	{
-		name = WBIMultiModeEngine
+		name = ModuleTundraEngineSwitch
 		isEnabled = True
-		currentEngineID = AllEngines
-		currentEngineIndex = 0
-		autoSwitch = True
+		currentEngineDisplay = All Engines
+		selectedIndex = 0
 		stagingEnabled = True
 		EVENTS
 		{
 		}
 		ACTIONS
 		{
-			ActivateAction
+			ActivateEngineAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			ShutdownAction
+			ShutdownEngineAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			OnAction
+			NextEngineModeAction
 			{
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-			OnToggleModeAction
+			PreviousEngineModeAction
+			{
+				actionGroup = None
+				wasActiveBeforePartWasAdjusted = False
+			}
+			ToggleEngineModeAction
 			{
 				actionGroup = Custom01
 				wasActiveBeforePartWasAdjusted = False
@@ -17720,21 +17312,25 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -17790,21 +17386,25 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -17860,21 +17460,25 @@ PART
 			OnAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ShutdownAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ActivateAction
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 			ToggleThrottle
 			{
 				actionGroup = None
+				active = False
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -18073,9 +17677,10 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleSootyShader
+		name = ModuleTundraSoot
 		isEnabled = True
-		SootyState = False
+		selectedIndex = 0
+		toggleSoot = False
 		stagingEnabled = True
 		EVENTS
 		{
@@ -18141,7 +17746,7 @@ PART
 	part = TE.Ghidorah.Erector.2_4293607386
 	partName = Part
 	persistentId = 2501309559
-	pos = -2.89995313,1.1021843,-0.0479542911
+	pos = -2.89996028,1.1021843,-0.0479542911
 	attPos = 0,0,0
 	attPos0 = 2.89999914,-0.430000305,0.0480003245
 	rot = 0,-0.707107008,0,0.707107008
@@ -18240,7 +17845,7 @@ PART
 		{
 			ToggleAction
 			{
-				actionGroup = Custom02
+				actionGroup = Custom05
 				wasActiveBeforePartWasAdjusted = False
 			}
 		}
@@ -18264,9 +17869,9 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleAnimatedDecoupler
+		name = ModuleTundraDecoupler
 		isEnabled = True
-		animationComplete = False
+		deployState = RETRACTED
 		ejectionForcePercent = 100
 		isDecoupled = False
 		stagingEnabled = True
@@ -18291,7 +17896,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293778960
 	partName = Part
 	persistentId = 3328755784
-	pos = 0.695917726,1.93854523,-0.695807934
+	pos = 0.695919514,1.93854523,-0.695809722
 	attPos = 0,0,0
 	attPos0 = -0.695843339,-17.7836399,0.69584316
 	rot = -6.98688325E-08,0.382683545,-2.89406241E-08,-0.923879743
@@ -18461,7 +18066,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293776808
 	partName = Part
 	persistentId = 896764253
-	pos = -0.69579035,1.93854523,-0.695808053
+	pos = -0.695792139,1.93854523,-0.695809841
 	attPos = 0,0,0
 	attPos0 = 0.695843101,-17.7836399,0.695843279
 	rot = -6.98688325E-08,-0.382683545,2.89406135E-08,-0.923879743
@@ -18631,7 +18236,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293776624
 	partName = Part
 	persistentId = 1231248320
-	pos = -0.695790589,1.93854523,0.695900798
+	pos = -0.695792377,1.93854523,0.695902586
 	attPos = 0,0,0
 	attPos0 = 0.695843279,-17.7836399,-0.695843279
 	rot = -2.89406206E-08,-0.923879743,6.9868868E-08,-0.382683545
@@ -18801,7 +18406,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293776440
 	partName = Part
 	persistentId = 1337025906
-	pos = 0.695917666,1.93854523,0.695900798
+	pos = 0.695919454,1.93854523,0.695902586
 	attPos = 0,0,0
 	attPos0 = -0.69584322,-17.7836399,-0.695843279
 	rot = 2.89406135E-08,-0.923879743,6.98688325E-08,0.382683545
@@ -18971,7 +18576,7 @@ PART
 	part = TE.19.F9.Fairing_4293206640
 	partName = Part
 	persistentId = 3547885922
-	pos = -0.884936929,39.3742256,4.6402216E-05
+	pos = -0.884937644,39.3742256,4.6402216E-05
 	attPos = 0,0,0
 	attPos0 = 2.56295465E-08,-0.119998932,-0.885000348
 	rot = 0,-0.707106829,0,0.707106829
@@ -19147,7 +18752,7 @@ PART
 	part = TE.19.F9.Fairing_4293828128
 	partName = Part
 	persistentId = 35050908
-	pos = 0.885063887,39.3742256,4.63426113E-05
+	pos = 0.885064602,39.3742256,4.63426113E-05
 	attPos = 0,0,0
 	attPos0 = -1.53781002E-07,-0.119998932,0.885000229
 	rot = 0,0.707106888,0,0.707106769
