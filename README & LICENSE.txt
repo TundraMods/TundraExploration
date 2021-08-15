@@ -11,6 +11,13 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on May 24, 2021
 
+Version 5.1.0
+- Updated Real_names.cfg
+- SH RCS Switchable between cold and hot gas
+- Added Variant to disable TopBase SL Raptor
+- Added Variant to disable TopBase VAC Raptor
+- Added toggle engine action for Ghidorah Octopus engine
+
 Version 5.0.0
 - Added Gigan XL parts
 - Added TundraExploration.dll plugin by Vali
