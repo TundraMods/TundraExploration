@@ -9,7 +9,12 @@ Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png, .dll and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on May 24, 2021
+Updated on Jan 23, 2022
+
+Version 6.0.0
+- Deprecated Gijora
+- Added Reverse Control Point for Cargo Rodan
+- Changed Ghidorah Interstage technology to HeavierRocketry
 
 Version 5.1.0
 - Updated Real_names.cfg
