@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace TundraExploration.Modules
 {
-    public class ModuleSootyShader : PartModule
+    public class ModuleTundraSoot : PartModule
     {
         [UI_VariantSelector(affectSymCounterparts = UI_Scene.None, controlEnabled = true, scene = UI_Scene.Editor)]
         [KSPField(isPersistant = true, guiActiveEditor = false, guiActive = false, guiName = "Soot Variant")]
