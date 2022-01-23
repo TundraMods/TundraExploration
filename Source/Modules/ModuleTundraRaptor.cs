@@ -58,11 +58,19 @@ namespace TundraExploration.Modules
             if (HighLogic.LoadedSceneIsFlight)
             {
                 gimbalModule = part.Modules.GetModule<ModuleGimbal>();
-
                 List<ModuleGimbal> modules = vessel.FindPartModulesImplementing<ModuleGimbal>().ToList();
-                transforms = modules.Select(m => m.part.transform).ToList();
+                List<ModuleGimbal> sortedmodules = new List<ModuleGimbal>();
+                for (int i = 0; i < modules.Count; i++)
+                {
+                    if (modules[i].part.Modules.Contains("ModuleTundraRaptor"))
+                    {
+                        sortedmodules.Add(modules[i]);
+                    }
 
-                if (gimbalModule == null || modules.Count <= 1)
+                }
+                transforms = sortedmodules.Select(m => m.part.transform).ToList();
+
+                if (gimbalModule == null || sortedmodules.Count <= 1)
                     enableActuateOut = false;
             }
             else

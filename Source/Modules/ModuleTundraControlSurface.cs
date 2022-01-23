@@ -142,6 +142,23 @@ namespace TundraExploration
             ignoreYaw = true;
             ignoreRoll = true;
         }
+
+        [KSPAction(guiName = "Toggle Actuation")]
+        public void ToggleAllAction(KSPActionParam param)
+        {
+            ignorePitch = !ignorePitch;
+            ignoreYaw = !ignoreYaw;
+            ignoreRoll = !ignoreRoll;
+        }
+
+        [KSPAction(guiName = "Set to flip angles")]
+        public void ActivateFlipAngles(KSPActionParam param)
+        {
+            deployAngle = ctrlSurfaceFlipDeployAngle;
+
+        }
+
+
         #endregion
 
         /// <summary>
@@ -169,6 +186,12 @@ namespace TundraExploration
         public Vector3 ctrlSurfaceDeployRange = new Vector3(0, 90, 60);
 
         /// <summary>
+        /// The deploy angle the surface will be set to on activation of "Set to Flip Angles"
+        /// </summary>
+        [KSPField]
+        public float ctrlSurfaceFlipDeployAngle = 70f;
+
+        /// <summary>
         /// Controls the range of the authority limiter (in degrees)
         /// </summary>
         [KSPField]
@@ -180,7 +203,7 @@ namespace TundraExploration
         /// </summary>
         [KSPField]
         public float ctrlSurfaceArea = 1f;
-        
+
         /// <summary>
         /// Defines a deadband, a treshold - where below the value, the actuation will not be applied to the wings
         /// </summary>
@@ -223,26 +246,26 @@ namespace TundraExploration
                 controlAuthorityField.stepIncrement = 0.25f;
             }
 
-/*            if (Fields.TryGetFieldUIControl("pitchAuthority", out UI_FloatRange pitchAuthorityField))
-            {
-                pitchAuthorityField.minValue = controlAuthorityRange.x;
-                pitchAuthorityField.maxValue = controlAuthorityRange.y;
-                pitchAuthorityField.stepIncrement = 0.25f;
-            }
+            /*            if (Fields.TryGetFieldUIControl("pitchAuthority", out UI_FloatRange pitchAuthorityField))
+                        {
+                            pitchAuthorityField.minValue = controlAuthorityRange.x;
+                            pitchAuthorityField.maxValue = controlAuthorityRange.y;
+                            pitchAuthorityField.stepIncrement = 0.25f;
+                        }
 
-            if (Fields.TryGetFieldUIControl("yawAuthority", out UI_FloatRange yawAuthorityField))
-            {
-                yawAuthorityField.minValue = controlAuthorityRange.x;
-                yawAuthorityField.maxValue = controlAuthorityRange.y;
-                yawAuthorityField.stepIncrement = 0.25f;
-            }
+                        if (Fields.TryGetFieldUIControl("yawAuthority", out UI_FloatRange yawAuthorityField))
+                        {
+                            yawAuthorityField.minValue = controlAuthorityRange.x;
+                            yawAuthorityField.maxValue = controlAuthorityRange.y;
+                            yawAuthorityField.stepIncrement = 0.25f;
+                        }
 
-            if (Fields.TryGetFieldUIControl("rollAuthority", out UI_FloatRange rollAuthorityField))
-            {
-                rollAuthorityField.minValue = controlAuthorityRange.x;
-                rollAuthorityField.maxValue = controlAuthorityRange.y;
-                rollAuthorityField.stepIncrement = 0.25f;
-            }*/
+                        if (Fields.TryGetFieldUIControl("rollAuthority", out UI_FloatRange rollAuthorityField))
+                        {
+                            rollAuthorityField.minValue = controlAuthorityRange.x;
+                            rollAuthorityField.maxValue = controlAuthorityRange.y;
+                            rollAuthorityField.stepIncrement = 0.25f;
+                        }*/
 
             defaultRotation = ctrlSurface.localRotation;
 
@@ -289,34 +312,34 @@ namespace TundraExploration
 
                 liftForce += GetLiftVector(liftVector, liftDot, absDot, Qlift, (float)part.machNumber) * ctrlSurfaceArea;
                 dragForce += GetDragVector(nVel, absDot, Qdrag, (float)part.machNumber) * ctrlSurfaceArea;
-                
+
                 part.AddForceAtPosition(liftForce /* (1.0f - (deflection / (1.5f * ctrlSurfaceRange.y)))*/, part.partTransform.TransformPoint(part.CoLOffset));
                 part.AddForceAtPosition(dragForce, part.partTransform.TransformPoint(part.CoPOffset));
-                part.AddForceAtPosition((deploy ? ((controlAuthority == 0 ? Vector3.zero : torque.normalized) * direction * dragForce.magnitude * 1.1f) : Vector3.zero) * 
+                part.AddForceAtPosition((deploy ? ((controlAuthority == 0 ? Vector3.zero : torque.normalized) * direction * dragForce.magnitude * 1.1f) : Vector3.zero) *
                                        (Mathf.Sign(direction) == 1 ? -1f : 1f), part.partTransform.TransformPoint(part.CoPOffset));
 
-/*                if (deploy)
-                {
-                    if (Mathf.Sign(direction) == 1f)
-                    {
-                        part.AddForceAtPosition(torque.normalized * direction * dragForce.magnitude * -1f, part.partTransform.TransformPoint(part.CoPOffset));
-                    }
-                    else
-                    {
-                        part.AddForceAtPosition(torque.normalized * direction * dragForce.magnitude, part.partTransform.TransformPoint(part.CoPOffset));
-                    }
-                }*/
+                /*                if (deploy)
+                                {
+                                    if (Mathf.Sign(direction) == 1f)
+                                    {
+                                        part.AddForceAtPosition(torque.normalized * direction * dragForce.magnitude * -1f, part.partTransform.TransformPoint(part.CoPOffset));
+                                    }
+                                    else
+                                    {
+                                        part.AddForceAtPosition(torque.normalized * direction * dragForce.magnitude, part.partTransform.TransformPoint(part.CoPOffset));
+                                    }
+                                }*/
 
                 liftPointer.DrawLine(part.transform, liftForce, PhysicsGlobals.AeroForceDisplayScale, PhysicsGlobals.AeroForceDisplay);
                 dragPointer.DrawLine(part.transform, dragForce, PhysicsGlobals.AeroForceDisplayScale, PhysicsGlobals.AeroForceDisplay);
-                
+
 
                 if (liftScalar > 0)
                     liftScalar = liftForce.magnitude;
-                
+
                 if (dragScalar > 0)
                     dragScalar = dragForce.magnitude;
-                
+
                 float delta = 0f;
                 bool sign = false;
                 if (Mathf.Sign(deflection) == 1)
@@ -337,7 +360,7 @@ namespace TundraExploration
             else
             {
                 CtrlSurfaceUpdateEditor();
-            }  
+            }
         }
 
         public void CtrlSurfaceUpdate()
@@ -427,7 +450,7 @@ namespace TundraExploration
         public void AssumeDragCubePosition(string name)
         {
             float action = 0f;
-            switch(name)
+            switch (name)
             {
                 case "fullDeflectionNeg":
                     action = ctrlSurfaceRange.x;
@@ -444,7 +467,7 @@ namespace TundraExploration
             {
                 ctrlSurface = part.FindModelTransform(transformName);
             }
-            
+
             if (ctrlSurface != null)
             {
                 ctrlSurface.localRotation = defaultRotation;
@@ -466,7 +489,7 @@ namespace TundraExploration
             {
                 Destroy(liftPointer.gameObject);
                 Destroy(dragPointer.gameObject);
-            }           
+            }
         }
     }
 }
