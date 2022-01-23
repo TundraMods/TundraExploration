@@ -7,14 +7,11 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 - Gigan (Cargo Dragon (CRS1
 - Ghidorah 9 (Falcon 9)
 - Ghidorah Heavy (Falcon Heavy)
-- Gojira (Starship 2019)
 - Mothra One (Falcon 1)
 
 # Known issues
 
-- Landing Gojira might be hard. A guide is being made to teach you how to use Gojira.
-- Caution using Gojira for stations, it can wobble and break it. Use "Autostruts" on Gojira for a temporary fix!
-- No IVA on Gojira.
+-
 
 # LICENSE
 
