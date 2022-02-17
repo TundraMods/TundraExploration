@@ -4,7 +4,7 @@ This mod was originally created by @tygoo7 and will be continued by me. Tundra E
 # Current parts
 
 - Rodan (Crew & Cargo Dragon V2)
-- Gigan (Cargo Dragon (CRS1
+- Gigan (Cargo Dragon (CRS1))
 - Ghidorah 9 (Falcon 9)
 - Ghidorah Heavy (Falcon Heavy)
 - Mothra One (Falcon 1)
