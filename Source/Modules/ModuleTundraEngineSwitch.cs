@@ -52,7 +52,7 @@ namespace TundraExploration.Modules
         public void ToggleEngineModeAction(KSPActionParam param) => SetNextEngine();
 
         [KSPAction(guiName = "Toggle Independent Throttle")]
-        public void ToggleIndependentThrottleAction(KSPActionParam param) => ToggleIndependentThrottle();
+        public void ToggleIndependentThrottleAction(KSPActionParam param) => ToggleIndependentThrottle(param);
 
         private ModuleEnginesFX activeEngine;
         private ModuleEnginesFX oldEngine;
@@ -107,10 +107,10 @@ namespace TundraExploration.Modules
                 activeEngine.Activate();
         }
 
-        public void ToggleIndependentThrottle()
+        public void ToggleIndependentThrottle(KSPActionParam param)
         {
-            activeEngine.independentThrottle = !activeEngine.independentThrottle;
-}
+            activeEngine.ToggleThrottle(param);
+        }
 
         public void SetNextEngine()
         {
