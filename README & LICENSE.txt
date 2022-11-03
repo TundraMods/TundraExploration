@@ -11,8 +11,19 @@ All bundled mods are distributed under their own licenses.
 This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on Jan 23, 2022
 
+Version 6.1.0
+- Added actuated pusher inside Ghidorah Interstage
+- Fixed Independent Throttle Action
+- Fixed cfg syntax errors
+- Fixed SN15 parts still showing up in categories list
+- Fixed ActuateOut not persisting through vessel reloads
+- Fixed Gimbal lock not functioning properly on symmetrical parts
+- Removed last remains from Gojira
+- Removed HabUtils.dll since it is no longer used
+- Updated Tundra Plugin to inherit new features from SEP plugin
+
 Version 6.0.0
-- Deprecated Gijora
+- Deprecated Gojira
 - Added Reverse Control Point for Cargo Rodan
 - Changed Ghidorah Interstage technology to HeavierRocketry
 
