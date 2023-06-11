@@ -59,7 +59,7 @@ namespace TundraExploration.Modules
         /// Speed of the Soot Transition
         /// </summary>
         [KSPField]
-        public float SootySpeed = 2;
+        public float SootySpeed = 0.5f;
 
         [KSPField]
         public bool ShowTransitionEvent = true;
@@ -78,6 +78,7 @@ namespace TundraExploration.Modules
 
         public List<Transform> ModelObjects = new List<Transform>();
         public List<SootyVariant> sootyVariants = new List<SootyVariant>();
+        public List<FlagVariant> flagVariants = new List<FlagVariant>();
 
         private float materialState = 0;
         private Coroutine TransitionRoutine;
@@ -88,11 +89,11 @@ namespace TundraExploration.Modules
         {
             base.OnLoad(node);
 
-            if (node.HasNode("SUBTYPE"))
+            if (node.HasNode("SOOT"))
             {
                 multipleSootTextures = true;
 
-                List<ConfigNode> subtypes = node.GetNodes("SUBTYPE").ToList();
+                List<ConfigNode> subtypes = node.GetNodes("SOOT").ToList();
                 foreach (ConfigNode subtype in subtypes)
                 {
                     SootyVariant sootyVariant = new SootyVariant();
@@ -115,7 +116,33 @@ namespace TundraExploration.Modules
                     }
                 }
 
-                Debug.Log($"[TundraExploration] [{part.name}] {sootyVariants.Count} Subtypes loaded!");
+                Debug.Log($"[TundraExploration] [{part.name}] {sootyVariants.Count} Soot subtypes loaded!");
+            }
+            if (node.HasNode("FLAG"))
+            {
+                List<ConfigNode> subtypes = node.GetNodes("FLAG").ToList();
+
+                foreach (ConfigNode subtype in subtypes)
+                {
+                    FlagVariant flagVariant = new FlagVariant();
+                    flagVariant.name = subtype.GetValue("name");
+                    flagVariant.texturePath = subtype.GetValue("texturePath");
+                    flagVariant.flagPrefix = subtype.GetValue("flagPrefix");
+                    flagVariant.Tiling = Array.ConvertAll(subtype.GetValue("Tiling").Split(','), float.Parse);
+                    flagVariant.Offset = Array.ConvertAll(subtype.GetValue("Offset").Split(','), float.Parse);
+                    flagVariant.Alpha = float.Parse(subtype.GetValue("Alpha"));
+                    flagVariant.Spec = float.Parse(subtype.GetValue("Spec"));
+                    flagVariant.isSelectable = bool.Parse(subtype.GetValue("isSelectable"));
+
+                    flagVariants.Add(flagVariant);
+                }
+
+                foreach(FlagVariant flag in flagVariants)
+                {
+                    Debug.Log($"SOFIE, Flag with prefix: {flag.flagPrefix} and name: {flag.name} with texture {flag.texturePath} with Tiling: {flag.Tiling[0]}, {flag.Tiling[1]} with Offset: {flag.Offset[0]}, {flag.Offset[1]} and is {flag.isSelectable} selectable");
+                }
+                Debug.Log($"[TundraExploration] [{part.name}] {flagVariants.Count} flag subtypes loaded!");
+
             }
 
             if (loaded)
@@ -168,7 +195,9 @@ namespace TundraExploration.Modules
             {
                 materialState = 1f;
                 SetMaterialState();
-            }            
+            }
+
+            SetFlag(flagVariants[0]);
         }
 
         private void OnTextureSwitch(bool isNewPart = false)
@@ -233,6 +262,26 @@ namespace TundraExploration.Modules
                     StopCoroutine(TransitionRoutine);
 
                 TransitionRoutine = StartCoroutine(AnimateMaterial(toggleSoot));
+            }
+        }
+
+        private void SetFlag(FlagVariant flag)
+        {
+            Debug.Log($"SOFIE setting flag: {string.Concat(flag.flagPrefix, flag.name)}");
+            foreach (Transform transform in ModelObjects)
+            {
+                Renderer renderer = transform.gameObject.GetComponent<Renderer>();
+                Texture texture = GameDatabase.Instance.GetTexture(flag.texturePath, false);
+                string currentflag = string.Concat(flag.flagPrefix, flag.name);
+
+                if (renderer == null)
+                    continue;
+
+                renderer.material.SetTexture(currentflag, texture);
+                renderer.material.SetTextureScale(currentflag, new Vector2(flag.Tiling[0], flag.Tiling[1]));
+                renderer.material.SetTextureOffset(currentflag, new Vector2(flag.Offset[0], flag.Offset[1]));
+                renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Alpha"), flag.Alpha);
+                renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Spec"), flag.Spec);
             }
         }
 
