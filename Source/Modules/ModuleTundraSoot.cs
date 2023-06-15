@@ -196,8 +196,11 @@ namespace TundraExploration.Modules
                 materialState = 1f;
                 SetMaterialState();
             }
-
-            SetFlag(flagVariants[0]);
+            
+            foreach (FlagVariant flagVariant in flagVariants)
+            {
+                SetFlag(flagVariant);
+            }
         }
 
         private void OnTextureSwitch(bool isNewPart = false)
@@ -294,7 +297,7 @@ namespace TundraExploration.Modules
                 if (renderer == null)
                     continue;
 
-                renderer.material.SetFloat("_State", materialState);
+                renderer.material.SetFloat("_Soot1Alpha", materialState);
             }
         }
 
