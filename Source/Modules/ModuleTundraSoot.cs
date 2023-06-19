@@ -80,7 +80,8 @@ namespace TundraExploration.Modules
         public List<SootyVariant> sootyVariants = new List<SootyVariant>();
         public List<FlagVariant> flagVariants = new List<FlagVariant>();
 
-        private float materialState = 0;
+        private float Soot1_State = 0;
+        private float Soot2_State = 0;
         private Coroutine TransitionRoutine;
 
         private Texture defaultTexture;
@@ -100,6 +101,7 @@ namespace TundraExploration.Modules
                     sootyVariant.name = subtype.GetValue("name");
                     sootyVariant.displayName = subtype.GetValue("displayName");
                     sootyVariant.texturePath = subtype.GetValue("texturePath");
+                    sootyVariant.sootState = Array.ConvertAll(subtype.GetValue("sootState").Split(','), float.Parse);
                     sootyVariant.primaryHexColor = subtype.GetValue("primaryHexColor");
                     sootyVariant.secondaryHexColor = subtype.GetValue("secondaryHexColor");
                     subtype.TryGetValue("transitionsFrom", ref sootyVariant.transitionsFrom);
@@ -137,10 +139,6 @@ namespace TundraExploration.Modules
                     flagVariants.Add(flagVariant);
                 }
 
-                foreach(FlagVariant flag in flagVariants)
-                {
-                    Debug.Log($"SOFIE, Flag with prefix: {flag.flagPrefix} and name: {flag.name} with texture {flag.texturePath} with Tiling: {flag.Tiling[0]}, {flag.Tiling[1]} with Offset: {flag.Offset[0]}, {flag.Offset[1]} and is {flag.isSelectable} selectable");
-                }
                 Debug.Log($"[TundraExploration] [{part.name}] {flagVariants.Count} flag subtypes loaded!");
 
             }
@@ -193,14 +191,16 @@ namespace TundraExploration.Modules
 
             if (toggleSoot)
             {
-                materialState = 1f;
+                Soot1_State = sootyVariants[selectedIndex].sootState[0];
+                Soot2_State = sootyVariants[selectedIndex].sootState[1];
                 SetMaterialState();
             }
             
-            foreach (FlagVariant flagVariant in flagVariants)
-            {
-                SetFlag(flagVariant);
-            }
+            // Sadly this bit seems broken hence it is commented out, If you know what's going on. please uncomment it and go nuts! - Sofie
+            //foreach (FlagVariant flagVariant in flagVariants)
+            //{
+            //    SetFlag(flagVariant);
+            //}
         }
 
         private void OnTextureSwitch(bool isNewPart = false)
@@ -209,7 +209,9 @@ namespace TundraExploration.Modules
             bool doTransition = !string.IsNullOrEmpty(sootyVariant.transitionsFrom);
 
             if (doTransition)
-                SetMaterial(sootyVariant.transitionsTexture, DefaultTextureID);
+            {
+                //SetMaterial(sootyVariant.transitionsTexture, DefaultTextureID); // I believe this is no longer neccecary with the new shader
+            }
             else
                 SetMaterial(defaultTexture, DefaultTextureID);
 
@@ -217,7 +219,8 @@ namespace TundraExploration.Modules
 
             if (!isNewPart)
             {
-                materialState = 1f;
+                Soot1_State = sootyVariants[selectedIndex].sootState[0];
+                Soot2_State = sootyVariants[selectedIndex].sootState[1];
                 SetMaterialState();
                 toggleSoot = true;
             }
@@ -270,7 +273,6 @@ namespace TundraExploration.Modules
 
         private void SetFlag(FlagVariant flag)
         {
-            Debug.Log($"SOFIE setting flag: {string.Concat(flag.flagPrefix, flag.name)}");
             foreach (Transform transform in ModelObjects)
             {
                 Renderer renderer = transform.gameObject.GetComponent<Renderer>();
@@ -281,8 +283,9 @@ namespace TundraExploration.Modules
                     continue;
 
                 renderer.material.SetTexture(currentflag, texture);
-                renderer.material.SetTextureScale(currentflag, new Vector2(flag.Tiling[0], flag.Tiling[1]));
-                renderer.material.SetTextureOffset(currentflag, new Vector2(flag.Offset[0], flag.Offset[1]));
+                //renderer.material.SetTextureScale(currentflag, new Vector2(flag.Tiling[0], flag.Tiling[1]));
+                //renderer.material.SetTextureOffset(currentflag, new Vector2(flag.Offset[0], flag.Offset[1]));
+                renderer.material.SetColor(string.Concat(currentflag, "_ST"), new Vector4(flag.Tiling[0], flag.Tiling[1], flag.Offset[0], flag.Offset[1]));
                 renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Alpha"), flag.Alpha);
                 renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Spec"), flag.Spec);
             }
@@ -297,20 +300,47 @@ namespace TundraExploration.Modules
                 if (renderer == null)
                     continue;
 
-                renderer.material.SetFloat("_Soot1Alpha", materialState);
+                renderer.material.SetFloat("_Soot1Alpha", Soot1_State);
+                renderer.material.SetFloat("_Soot2Alpha", Soot2_State);
             }
         }
 
         private IEnumerator AnimateMaterial(bool isForward)
         {
+            bool hasPrevious = false;
+            SootyVariant prevVariant = null;
+            float adjustedSoot1Speed;
+            float adjustedSoot2Speed;
+            if (!string.IsNullOrEmpty(sootyVariants[selectedIndex].transitionsFrom))
+            {
+                prevVariant = sootyVariants.Where(v => v.name == sootyVariants[selectedIndex].transitionsFrom).FirstOrDefault();
+                adjustedSoot1Speed = SootySpeed * Mathf.Abs(sootyVariants[selectedIndex].sootState[0] - prevVariant.sootState[0]);
+                adjustedSoot2Speed = SootySpeed * Mathf.Abs(sootyVariants[selectedIndex].sootState[1] - prevVariant.sootState[1]);
+                hasPrevious = true;
+            }
+            else
+            {
+                adjustedSoot1Speed = SootySpeed * sootyVariants[selectedIndex].sootState[0];
+                adjustedSoot2Speed = SootySpeed * sootyVariants[selectedIndex].sootState[1];
+            }
+            Debug.Log($"[{moduleName}] Soot1 Speed: {adjustedSoot1Speed}, Soot2 Speed: {adjustedSoot2Speed}");
             if (toggleSoot)
             {
-                while (materialState < 1)
+                while (Soot1_State < sootyVariants[selectedIndex].sootState[0] || Soot2_State < sootyVariants[selectedIndex].sootState[1])
                 {
-                    materialState = Mathf.Lerp(materialState, 1, TimeWarp.deltaTime * (HighLogic.LoadedSceneIsEditor ? SootySpeed * 5 : SootySpeed));
+                    if (Soot1_State != sootyVariants[selectedIndex].sootState[0])
+                        Soot1_State = Mathf.Lerp(Soot1_State, sootyVariants[selectedIndex].sootState[0], TimeWarp.deltaTime * (HighLogic.LoadedSceneIsEditor ? adjustedSoot1Speed * 5 : adjustedSoot1Speed));
 
-                    if (materialState > 0.99f)
-                        materialState = 1;
+                    if (Soot2_State != sootyVariants[selectedIndex].sootState[1])
+                        Soot2_State = Mathf.Lerp(Soot2_State, sootyVariants[selectedIndex].sootState[1], TimeWarp.deltaTime * (HighLogic.LoadedSceneIsEditor ? adjustedSoot2Speed * 5 : adjustedSoot2Speed));
+
+                    if (Soot1_State > sootyVariants[selectedIndex].sootState[0] - 0.01f)
+                        Soot1_State = sootyVariants[selectedIndex].sootState[0];
+
+                    if (Soot2_State > sootyVariants[selectedIndex].sootState[1] - 0.01f)
+                        Soot2_State = sootyVariants[selectedIndex].sootState[1];
+
+                    Debug.Log($"[{moduleName}] Soot1 State: {Soot1_State}, Soot2 State: {Soot2_State}");
 
                     SetMaterialState();
 
@@ -319,13 +349,22 @@ namespace TundraExploration.Modules
             }
             else
             {
-                while (materialState > 0)
+                while (Soot1_State > (hasPrevious ? prevVariant.sootState[0] : 0) || Soot2_State > (hasPrevious ? prevVariant.sootState[1] : 0))
                 {
-                    materialState = Mathf.Lerp(materialState, 0, TimeWarp.deltaTime * SootySpeed);
-                    //print("[TundraExploration] - Setting soot to: " + materialState.ToString());
+                    if (Soot1_State != (hasPrevious ? prevVariant.sootState[0] : 0))
+                        Soot1_State = Mathf.Lerp(Soot1_State, (hasPrevious ? prevVariant.sootState[0] : 0), TimeWarp.deltaTime * (HighLogic.LoadedSceneIsEditor ? adjustedSoot1Speed * 5 : adjustedSoot1Speed));
 
-                    if (materialState < 0.001f)
-                        materialState = 0;
+                    if (Soot2_State != (hasPrevious ? prevVariant.sootState[1] : 0))
+                        Soot2_State = Mathf.Lerp(Soot2_State, (hasPrevious ? prevVariant.sootState[1] : 0), TimeWarp.deltaTime * (HighLogic.LoadedSceneIsEditor ? adjustedSoot2Speed * 5 : adjustedSoot2Speed));
+
+
+                    if (Soot1_State < (hasPrevious ? prevVariant.sootState[0] : 0) + 0.01f)
+                        Soot1_State = (hasPrevious ? prevVariant.sootState[0] : 0);
+
+                    if (Soot2_State < (hasPrevious ? prevVariant.sootState[1] : 0) + 0.01f)
+                        Soot2_State = (hasPrevious ? prevVariant.sootState[1] : 0);
+
+                    Debug.Log($"[{moduleName}] Soot1 State: {Soot1_State}, Soot2 State: {Soot2_State} {hasPrevious}");
 
                     SetMaterialState();
 

@@ -13,11 +13,11 @@ namespace TundraExploration.SootyShader
     {
         public string name;
         public string texturePath;
-        public string flagPrefix = "_Flag";
-        public float[] Tiling = new float[] {1f, 1f};
-        public float[] Offset = new float[] {0f, 0f};
-        public float Alpha = 1;
-        public float Spec = 0;
-        public bool isSelectable = false;
+        public string flagPrefix;
+        public float[] Tiling;
+        public float[] Offset;
+        public float Alpha;
+        public float Spec;
+        public bool isSelectable;
     }
 }

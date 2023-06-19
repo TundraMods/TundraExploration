@@ -14,6 +14,7 @@ namespace TundraExploration.SootyShader
         public string name;
         public string displayName;
         public string texturePath;
+        public float[] sootState;
         public string primaryHexColor;
         public string secondaryHexColor;
         public string transitionsFrom;
