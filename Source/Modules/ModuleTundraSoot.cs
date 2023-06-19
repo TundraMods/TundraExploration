@@ -195,12 +195,12 @@ namespace TundraExploration.Modules
                 Soot2_State = sootyVariants[selectedIndex].sootState[1];
                 SetMaterialState();
             }
-            
+
             // Sadly this bit seems broken hence it is commented out, If you know what's going on. please uncomment it and go nuts! - Sofie
-            //foreach (FlagVariant flagVariant in flagVariants)
-            //{
-            //    SetFlag(flagVariant);
-            //}
+            foreach (FlagVariant flagVariant in flagVariants)
+            {
+                SetFlag(flagVariant);
+            }
         }
 
         private void OnTextureSwitch(bool isNewPart = false)
@@ -286,8 +286,8 @@ namespace TundraExploration.Modules
                 //renderer.material.SetTextureScale(currentflag, new Vector2(flag.Tiling[0], flag.Tiling[1]));
                 //renderer.material.SetTextureOffset(currentflag, new Vector2(flag.Offset[0], flag.Offset[1]));
                 renderer.material.SetColor(string.Concat(currentflag, "_ST"), new Vector4(flag.Tiling[0], flag.Tiling[1], flag.Offset[0], flag.Offset[1]));
-                renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Alpha"), flag.Alpha);
-                renderer.material.SetFloat(string.Concat(flag.flagPrefix, "Spec"), flag.Spec);
+                renderer.material.SetFloat(string.Concat(currentflag, "Alpha"), flag.Alpha);
+                renderer.material.SetFloat(string.Concat(currentflag, "Spec"), flag.Spec);
             }
         }
 
