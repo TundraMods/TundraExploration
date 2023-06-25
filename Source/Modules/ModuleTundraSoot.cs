@@ -66,12 +66,6 @@ namespace TundraExploration.Modules
         private string DefaultTextureID = "_MainTex";
 
         /// <summary>
-        /// Name of the Texture ID in the Shader
-        /// </summary>
-        [KSPField]
-        private string TextureID = "_MainTex2";
-
-        /// <summary>
         /// Speed of the Soot Transition
         /// </summary>
         [KSPField]
@@ -116,22 +110,14 @@ namespace TundraExploration.Modules
                     SootyVariant sootyVariant = new SootyVariant();
                     sootyVariant.name = subtype.GetValue("name");
                     sootyVariant.displayName = subtype.GetValue("displayName");
-                    sootyVariant.texturePath = subtype.GetValue("texturePath");
+                    sootyVariant.soot1texturePath = subtype.GetValue("soot1texturePath");
+                    sootyVariant.soot2texturePath = subtype.GetValue("soot2texturePath");
                     sootyVariant.sootState = Array.ConvertAll(subtype.GetValue("sootState").Split(','), float.Parse);
                     sootyVariant.primaryHexColor = subtype.GetValue("primaryHexColor");
                     sootyVariant.secondaryHexColor = subtype.GetValue("secondaryHexColor");
                     subtype.TryGetValue("transitionsFrom", ref sootyVariant.transitionsFrom);
 
                     sootyVariants.Add(sootyVariant);
-                }
-
-                foreach (SootyVariant sootyVariant in sootyVariants)
-                {
-                    if (!string.IsNullOrEmpty(sootyVariant.transitionsFrom))
-                    {
-                        SootyVariant variant = sootyVariants.Where(v => v.name == sootyVariant.transitionsFrom).FirstOrDefault();
-                        sootyVariant.transitionsTexture = variant.texturePath;
-                    }
                 }
 
                 Debug.Log($"[TundraExploration] [{part.name}] {sootyVariants.Count} Soot subtypes loaded!");
@@ -205,7 +191,7 @@ namespace TundraExploration.Modules
                     selectedIndexField.onFieldChanged += delegate { OnTextureSwitch(); };
                 }
 
-                LoadMaterial();
+                //LoadMaterial();
                 OnTextureSwitch(true);
                 Debug.Log($"[Tundra Exploration] Texture switched to: {selectedIndex}");
             }
@@ -235,7 +221,7 @@ namespace TundraExploration.Modules
             FlagVariant flagVariant = flagVariants.Where(v => v.name == name).FirstOrDefault();
             if (flagVariant != null)
             {
-                var flagBrowser = (Instantiate((Object)(new FlagBrowserGUIButton(null, null, null, null)).FlagBrowserPrefab) as GameObject).GetComponent<FlagBrowser>();
+                var flagBrowser = (Instantiate((UnityEngine.Object)(new FlagBrowserGUIButton(null, null, null, null)).FlagBrowserPrefab) as GameObject).GetComponent<FlagBrowser>();
                 flagBrowser.OnFlagSelected = flag => { OnCustomFlagSelected(flag, flagVariant); };
             }
         }
@@ -265,9 +251,10 @@ namespace TundraExploration.Modules
                 //SetMaterial(sootyVariant.transitionsTexture, DefaultTextureID); // I believe this is no longer neccecary with the new shader
             }
             else
-                SetMaterial(defaultTexture, DefaultTextureID);
+                //SetMaterial(defaultTexture, DefaultTextureID);
 
-            SetMaterial(sootyVariant.texturePath, TextureID);
+            SetMaterial(sootyVariant.soot1texturePath, "_Soot1");
+            SetMaterial(sootyVariant.soot2texturePath, "_Soot2");
 
             if (!isNewPart)
             {
@@ -382,7 +369,7 @@ namespace TundraExploration.Modules
                 adjustedSoot1Speed = SootySpeed * sootyVariants[selectedIndex].sootState[0];
                 adjustedSoot2Speed = SootySpeed * sootyVariants[selectedIndex].sootState[1];
             }
-            Debug.Log($"[{moduleName}] Soot1 Speed: {adjustedSoot1Speed}, Soot2 Speed: {adjustedSoot2Speed}");
+            //Debug.Log($"[{moduleName}] Soot1 Speed: {adjustedSoot1Speed}, Soot2 Speed: {adjustedSoot2Speed}");
             if (toggleSoot)
             {
                 while (Soot1_State < sootyVariants[selectedIndex].sootState[0] || Soot2_State < sootyVariants[selectedIndex].sootState[1])
@@ -398,8 +385,6 @@ namespace TundraExploration.Modules
 
                     if (Soot2_State > sootyVariants[selectedIndex].sootState[1] - 0.01f)
                         Soot2_State = sootyVariants[selectedIndex].sootState[1];
-
-                    Debug.Log($"[{moduleName}] Soot1 State: {Soot1_State}, Soot2 State: {Soot2_State}");
 
                     SetMaterialState();
 
@@ -423,8 +408,6 @@ namespace TundraExploration.Modules
                     if (Soot2_State < (hasPrevious ? prevVariant.sootState[1] : 0) + 0.01f)
                         Soot2_State = (hasPrevious ? prevVariant.sootState[1] : 0);
 
-                    Debug.Log($"[{moduleName}] Soot1 State: {Soot1_State}, Soot2 State: {Soot2_State} {hasPrevious}");
-
                     SetMaterialState();
 
                     yield return null;
@@ -446,25 +429,6 @@ namespace TundraExploration.Modules
                 Texture texture = GameDatabase.Instance.GetTexture(path, false);
                 renderer.material.SetTexture(textureID, texture);
             }
-        }
-
-        private void SetMaterial(Texture texture, string textureID)
-        {
-            foreach (Transform transform in ModelObjects)
-            {
-                Renderer renderer = transform.gameObject.GetComponent<Renderer>();
-
-                if (renderer == null)
-                    continue;
-
-                renderer.material.SetTexture(textureID, texture);
-            }
-        }
-
-        private void LoadMaterial()
-        {
-            Renderer renderer = ModelObjects[0].gameObject.GetComponent<Renderer>();
-            defaultTexture = renderer.material.GetTexture(DefaultTextureID);
         }
 
         public void LoadObjects()
@@ -496,12 +460,6 @@ namespace TundraExploration.Modules
             if (shader == null)
                 return;
 
-            Texture tex = GameDatabase.Instance.GetTexture(multipleSootTextures ? sootyVariants[selectedIndex].texturePath : TextureName, false);
-
-            if (tex == null)
-                return;
-
-
             LoadObjects();
             for (int i = ModelObjects.Count - 1; i >= 0; i--)
             {
@@ -511,7 +469,6 @@ namespace TundraExploration.Modules
                     continue;
 
                 render.material.shader = shader;
-                render.material.SetTexture(TextureID, tex);
             }
 
             loaded = true;

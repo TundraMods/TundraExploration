@@ -13,11 +13,11 @@ namespace TundraExploration.SootyShader
     {
         public string name;
         public string displayName;
-        public string texturePath;
+        public string soot1texturePath;
+        public string soot2texturePath;
         public float[] sootState;
         public string primaryHexColor;
         public string secondaryHexColor;
         public string transitionsFrom;
-        public string transitionsTexture;
     }
 }
