@@ -12,6 +12,7 @@ namespace TundraExploration.SootyShader
     public class FlagVariant : ScriptableObject
     {
         public string name;
+        public bool active;
         public string texturePath;
         public string flagPrefix;
         public float[] Tiling;
@@ -19,5 +20,6 @@ namespace TundraExploration.SootyShader
         public float Alpha;
         public float Spec;
         public bool isSelectable;
+        public string guiName;
     }
 }
