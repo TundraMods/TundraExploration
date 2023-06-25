@@ -2,8 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TundraExploration.SootyShader;
 using UnityEngine;
 
@@ -24,6 +22,24 @@ namespace TundraExploration.Modules
 
         [KSPAction("Toggle Soot")]
         public void ToggleSootyAction(KSPActionParam param) => ToggleSooty();
+
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag1Selector")]
+        public void Flag1Selector() => FlagSelector("1");
+
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag2Selector")]
+        public void Flag2Selector() => FlagSelector("2");
+
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag3Selector")]
+        public void Flag3Selector() => FlagSelector("3");
+
+        [KSPEvent(guiActiveEditor = true, guiName = "Flag1Toggle")]
+        public void Flag1Toggle() => FlagToggle("1");
+
+        [KSPEvent(guiActiveEditor = true, guiName = "Flag2Toggle")]
+        public void Flag2Toggle() => FlagToggle("2");
+
+        [KSPEvent(guiActiveEditor = true, guiName = "Flag3Toggle")]
+        public void Flag3Toggle() => FlagToggle("3");
 
         /// <summary>
         /// Name of the shader
@@ -128,6 +144,7 @@ namespace TundraExploration.Modules
                 {
                     FlagVariant flagVariant = new FlagVariant();
                     flagVariant.name = subtype.GetValue("name");
+                    flagVariant.active = bool.Parse(subtype.GetValue("active"));
                     flagVariant.texturePath = subtype.GetValue("texturePath");
                     flagVariant.flagPrefix = subtype.GetValue("flagPrefix");
                     flagVariant.Tiling = Array.ConvertAll(subtype.GetValue("Tiling").Split(','), float.Parse);
@@ -135,6 +152,11 @@ namespace TundraExploration.Modules
                     flagVariant.Alpha = float.Parse(subtype.GetValue("Alpha"));
                     flagVariant.Spec = float.Parse(subtype.GetValue("Spec"));
                     flagVariant.isSelectable = bool.Parse(subtype.GetValue("isSelectable"));
+                    flagVariant.guiName = subtype.GetValue("guiName");
+                    if (string.IsNullOrEmpty(flagVariant.guiName))
+                    {
+                        flagVariant.guiName = String.Concat(flagVariant.flagPrefix, flagVariant.name);
+                    }
 
                     flagVariants.Add(flagVariant);
                 }
@@ -148,7 +170,6 @@ namespace TundraExploration.Modules
 
             LoadShader();
         }
-
         public override void OnStart(StartState state)
         {
             base.OnStart(state);
@@ -196,11 +217,42 @@ namespace TundraExploration.Modules
                 SetMaterialState();
             }
 
-            // Sadly this bit seems broken hence it is commented out, If you know what's going on. please uncomment it and go nuts! - Sofie
             foreach (FlagVariant flagVariant in flagVariants)
             {
+                if (flagVariant.isSelectable)
+                {
+                    Events["Flag" + flagVariant.name + "Selector"].active = true;
+                    Events["Flag" + flagVariant.name + "Selector"].guiName = String.Concat("Select ", flagVariant.guiName);
+
+                }
+                Events["Flag" + flagVariant.name + "Toggle"].guiName = String.Concat("Toggle ", flagVariant.guiName);
+
                 SetFlag(flagVariant);
             }
+        }
+        private void FlagSelector(string name)
+        {
+            FlagVariant flagVariant = flagVariants.Where(v => v.name == name).FirstOrDefault();
+            if (flagVariant != null)
+            {
+                var flagBrowser = (Instantiate((Object)(new FlagBrowserGUIButton(null, null, null, null)).FlagBrowserPrefab) as GameObject).GetComponent<FlagBrowser>();
+                flagBrowser.OnFlagSelected = flag => { OnCustomFlagSelected(flag, flagVariant); };
+            }
+        }
+
+        private void FlagToggle(string name)
+        {
+            FlagVariant flagVariant = flagVariants.Where(v => v.name == name).FirstOrDefault();
+            if (flagVariant != null)
+            {
+                flagVariant.active = !flagVariant.active;
+                SetFlag(flagVariant);
+            }
+        }
+        private void OnCustomFlagSelected(FlagBrowser.FlagEntry newFlagEntry, FlagVariant flagVariant)
+        {
+            flagVariant.texturePath = newFlagEntry.textureInfo.name;
+            SetFlag(flagVariant);
         }
 
         private void OnTextureSwitch(bool isNewPart = false)
@@ -275,19 +327,26 @@ namespace TundraExploration.Modules
         {
             foreach (Transform transform in ModelObjects)
             {
-                Renderer renderer = transform.gameObject.GetComponent<Renderer>();
-                Texture texture = GameDatabase.Instance.GetTexture(flag.texturePath, false);
-                string currentflag = string.Concat(flag.flagPrefix, flag.name);
+                if (flag.active) { 
+                    Renderer renderer = transform.gameObject.GetComponent<Renderer>();
+                    Texture texture = GameDatabase.Instance.GetTexture(flag.texturePath, false);
+                    string currentflag = string.Concat(flag.flagPrefix, flag.name);
 
-                if (renderer == null)
-                    continue;
+                    if (renderer == null)
+                        continue;
 
-                renderer.material.SetTexture(currentflag, texture);
-                //renderer.material.SetTextureScale(currentflag, new Vector2(flag.Tiling[0], flag.Tiling[1]));
-                //renderer.material.SetTextureOffset(currentflag, new Vector2(flag.Offset[0], flag.Offset[1]));
-                renderer.material.SetColor(string.Concat(currentflag, "_ST"), new Vector4(flag.Tiling[0], flag.Tiling[1], flag.Offset[0], flag.Offset[1]));
-                renderer.material.SetFloat(string.Concat(currentflag, "Alpha"), flag.Alpha);
-                renderer.material.SetFloat(string.Concat(currentflag, "Spec"), flag.Spec);
+                    renderer.material.SetTexture(currentflag, texture);
+                    renderer.material.SetColor(string.Concat(currentflag, "_ST"), new Vector4(flag.Tiling[0], flag.Tiling[1], flag.Offset[0], flag.Offset[1]));
+                    renderer.material.SetFloat(string.Concat(currentflag, "Alpha"), flag.Alpha);
+                    renderer.material.SetFloat(string.Concat(currentflag, "Spec"), flag.Spec);
+                }
+                else
+                {
+                    Renderer renderer = transform.gameObject.GetComponent<Renderer>();
+                    string currentflag = string.Concat(flag.flagPrefix, flag.name);
+
+                    renderer.material.SetFloat(string.Concat(currentflag, "Alpha"), 0);
+                }
             }
         }
 
