@@ -1,25 +1,25 @@
 {
 	"NAME": "<b><color=#ffffff>Tundra</color> <color=#0090ff>Exploration</color></b>",
-	"URL": "https://raw.githubusercontent.com/damonvv/TundraExploration/master/GameData/TundraExploration/Versioning/TundraExploration.version",
+	"URL": "https://raw.githubusercontent.com/TundraMods/TundraExploration/master/GameData/TundraExploration/Versioning/TundraExploration.version",
 	"DOWNLOAD": "https://forum.kerbalspaceprogram.com/index.php?/topic/166915-131-tundra-exploration",
 	"VERSION":
 	{
 		"MAJOR": 6,
-		"MINOR": 1,
+		"MINOR": 9,
 		"PATCH": 0,
-		"BUILD": 0
+		"BUILD": 10
 	},
 	"KSP_VERSION":
 	{
 		"MAJOR": 1,
 		"MINOR": 12,
-		"PATCH": 4
+		"PATCH": 5
 	},
 	"KSP_VERSION_MIN":
 	{
 		"MAJOR": 1,
-		"MINOR": 8,
-		"PATCH": 1
+		"MINOR": 12,
+		"PATCH": 5
 	},
 	"KSP_VERSION_MAX":
 	{
