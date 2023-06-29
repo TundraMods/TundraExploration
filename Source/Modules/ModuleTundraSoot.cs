@@ -54,18 +54,6 @@ namespace TundraExploration.Modules
         public string ObjectNames;
 
         /// <summary>
-        /// Path of the Soot Texture. Use the SUBTYPE {} node for multiple soots
-        /// </summary>
-        [KSPField]
-        public string TextureName;
-
-        /// <summary>
-        /// Name of the Default Texture ID in the shader
-        /// </summary>
-        [KSPField]
-        private string DefaultTextureID = "_MainTex";
-
-        /// <summary>
         /// Speed of the Soot Transition
         /// </summary>
         [KSPField]
@@ -93,8 +81,6 @@ namespace TundraExploration.Modules
         private float Soot1_State = 0;
         private float Soot2_State = 0;
         private Coroutine TransitionRoutine;
-
-        private Texture defaultTexture;
 
         public override void OnLoad(ConfigNode node)
         {
@@ -202,6 +188,16 @@ namespace TundraExploration.Modules
                 Soot2_State = sootyVariants[selectedIndex].sootState[1];
                 SetMaterialState();
             }
+            else
+            {
+                if (!string.IsNullOrEmpty(sootyVariants[selectedIndex].transitionsFrom))
+                {
+                    SootyVariant prevVariant = sootyVariants.Where(v => v.name == sootyVariants[selectedIndex].transitionsFrom).FirstOrDefault();
+                    Soot1_State = prevVariant.sootState[0];
+                    Soot2_State = prevVariant.sootState[1];
+                    SetMaterialState();
+                }
+            }
 
             foreach (FlagVariant flagVariant in flagVariants)
             {
@@ -243,18 +239,12 @@ namespace TundraExploration.Modules
 
         private void OnTextureSwitch(bool isNewPart = false)
         {
+            Debug.Log(selectedIndex);
             SootyVariant sootyVariant = sootyVariants[selectedIndex];
-            bool doTransition = !string.IsNullOrEmpty(sootyVariant.transitionsFrom);
-
-            if (doTransition)
-            {
-                //SetMaterial(sootyVariant.transitionsTexture, DefaultTextureID); // I believe this is no longer neccecary with the new shader
-            }
-            else
-                //SetMaterial(defaultTexture, DefaultTextureID);
 
             SetMaterial(sootyVariant.soot1texturePath, "_Soot1");
             SetMaterial(sootyVariant.soot2texturePath, "_Soot2");
+
 
             if (!isNewPart)
             {
@@ -263,7 +253,7 @@ namespace TundraExploration.Modules
                 SetMaterialState();
                 toggleSoot = true;
             }
-            
+
             Debug.Log($"[Tundra Exploration] Texture switched to: {selectedIndex}");
         }
 
@@ -369,7 +359,7 @@ namespace TundraExploration.Modules
                 adjustedSoot1Speed = SootySpeed * sootyVariants[selectedIndex].sootState[0];
                 adjustedSoot2Speed = SootySpeed * sootyVariants[selectedIndex].sootState[1];
             }
-            //Debug.Log($"[{moduleName}] Soot1 Speed: {adjustedSoot1Speed}, Soot2 Speed: {adjustedSoot2Speed}");
+            //Debug.Log($"[{moduleName}] Soot1 Speed: {adjustedSoot1Speed}, Soot2 Speed: {adjustedSoot2Speed} Soot1 State: {Soot1_State}, Soot2 State: {Soot2_State}");
             if (toggleSoot)
             {
                 while (Soot1_State < sootyVariants[selectedIndex].sootState[0] || Soot2_State < sootyVariants[selectedIndex].sootState[1])
