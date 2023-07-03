@@ -57,7 +57,7 @@ Shader "KSP/Bumped Specular Soot"
         CGPROGRAM
 
         #include "../LightingKSP.cginc"
-        #pragma surface surf BlinnPhongSmooth keepalpha
+        #pragma surface surf BlinnPhongSmooth
 
 		#pragma target 3.5
 
@@ -65,11 +65,11 @@ Shader "KSP/Bumped Specular Soot"
 
 		half _Shininess;
 
-		sampler2D _MainTex;
+	    sampler2D _MainTex;
 
-        float4 _Flag1_ST;
-        float4 _Flag2_ST;
-        float4 _Flag3_ST;
+    	float4 _Flag1_ST;
+		float4 _Flag2_ST;
+		float4 _Flag3_ST;
 
         #define DEFGRP(NAME, N) \
 			sampler2D _##NAME##N;\
