@@ -32,13 +32,13 @@ namespace TundraExploration.Modules
         [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag3Selector")]
         public void Flag3Selector() => FlagSelector("3");
 
-        [KSPEvent(guiActiveEditor = true, guiName = "Flag1Toggle")]
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag1Toggle")]
         public void Flag1Toggle() => FlagToggle("1");
 
-        [KSPEvent(guiActiveEditor = true, guiName = "Flag2Toggle")]
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag2Toggle")]
         public void Flag2Toggle() => FlagToggle("2");
 
-        [KSPEvent(guiActiveEditor = true, guiName = "Flag3Toggle")]
+        [KSPEvent(active = false, guiActiveEditor = true, guiName = "Flag3Toggle")]
         public void Flag3Toggle() => FlagToggle("3");
 
         /// <summary>
@@ -208,6 +208,7 @@ namespace TundraExploration.Modules
 
                 }
                 Events["Flag" + flagVariant.name + "Toggle"].guiName = String.Concat("Toggle ", flagVariant.guiName);
+                Events["Flag" + flagVariant.name + "Toggle"].active = true;
 
                 SetFlag(flagVariant);
             }
