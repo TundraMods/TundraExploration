@@ -156,6 +156,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\ModuleTundraDepthMask.cs" />
     <Compile Include="Modules\ModuleTundraAnchoredDecoupler.cs" />
     <Compile Include="Modules\ModuleTundraControlSurface.cs" />
     <Compile Include="Modules\ModuleTundraSoot.cs" />
