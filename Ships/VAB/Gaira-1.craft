@@ -17,9 +17,9 @@ PART
 	part = TT.G1.BASE_4292348674
 	partName = Part
 	persistentId = 3552515898
-	pos = 0,15,0
+	pos = -1.28149986E-06,15,0
 	attPos = 0,0,0
-	attPos0 = 0,15,0
+	attPos0 = -1.28149986E-06,15,0
 	rot = 0,0,0,1
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
@@ -85,21 +85,6 @@ PART
 		beingAttached = False
 		beingSettled = False
 		reinitResourcesOnStoreInVessel = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleFreeIva
-		isEnabled = True
 		stagingEnabled = True
 		EVENTS
 		{
@@ -374,36 +359,6 @@ PART
 	}
 	MODULE
 	{
-		name = TrajectoriesVesselSettings
-		isEnabled = True
-		Initialized = False
-		EntryAngle = 3.1415926535897931
-		EntryHorizon = False
-		HighAngle = 3.1415926535897931
-		HighHorizon = False
-		LowAngle = 3.1415926535897931
-		LowHorizon = False
-		GroundAngle = 3.1415926535897931
-		GroundHorizon = False
-		RetrogradeEntry = True
-		TargetBody = 
-		TargetPosition_x = 0
-		TargetPosition_y = 0
-		TargetPosition_z = 0
-		ManualTargetTxt = 
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
 		name = ModuleB9PartInfo
 		isEnabled = False
 		stagingEnabled = True
@@ -453,7 +408,7 @@ PART
 	part = TT.G1.TOP_4292320910
 	partName = Part
 	persistentId = 319612979
-	pos = 0,17.3410263,0
+	pos = -1.28149986E-06,17.3410263,0
 	attPos = 0,0,0
 	attPos0 = 0,2.34102631,0
 	rot = 0,0,0,1
@@ -638,7 +593,7 @@ PART
 	part = TT.G1.AFT_4292318670
 	partName = Part
 	persistentId = 2283323825
-	pos = 0,12.8549576,0
+	pos = -1.28149986E-06,12.8549576,0
 	attPos = 0,0,0
 	attPos0 = 0,-2.14504242,0
 	rot = 0,0,0,1
@@ -799,7 +754,7 @@ PART
 	part = TT.G1.Thuster_4292315284
 	partName = Part
 	persistentId = 1055505057
-	pos = 0.845800996,13.0098162,0.48832342
+	pos = 0.845799685,13.0098162,0.48832342
 	attPos = -0.0226503015,0.203184128,-0.0130771697
 	attPos0 = 0.868451297,-0.0483255386,0.50140059
 	rot = 0,0.866025388,0,-0.49999997
@@ -883,7 +838,7 @@ PART
 	part = TT.G1.Thuster_4292309658
 	partName = Part
 	persistentId = 3805243529
-	pos = -0.845800996,13.0098162,0.48832342
+	pos = -0.845802307,13.0098162,0.48832342
 	attPos = 0.0226503015,0.203184128,-0.0130771697
 	attPos0 = -0.868451297,-0.0483255386,0.50140059
 	rot = 0,0.866025388,0,0.49999997
@@ -967,7 +922,7 @@ PART
 	part = TT.G1.Thuster_4292311322
 	partName = Part
 	persistentId = 711838764
-	pos = 0.847306073,13.0111427,-0.489192516
+	pos = 0.847304821,13.0111427,-0.489192516
 	attPos = -0.0385367274,0.197132111,0.022249192
 	attPos0 = 0.8858428,-0.0409469604,-0.511441708
 	rot = 0,0.49999994,0,-0.866025448
@@ -1051,7 +1006,7 @@ PART
 	part = TT.G1.Thuster_4292309018
 	partName = Part
 	persistentId = 1071773518
-	pos = -0.847306073,13.0111427,-0.489192516
+	pos = -0.847307324,13.0111427,-0.489192516
 	attPos = 0.0385367274,0.197132111,0.022249192
 	attPos0 = -0.8858428,-0.0409469604,-0.511441708
 	rot = 0,0.49999994,0,0.866025448
@@ -1135,7 +1090,7 @@ PART
 	part = TT.G1.RCS_4292281846
 	partName = Part
 	persistentId = 3271421405
-	pos = -2.31960787E-11,13.0715103,1.19487095
+	pos = -1.28152305E-06,13.0715103,1.19487095
 	attPos = -2.31960787E-11,-0.0908889771,-0.047704339
 	attPos0 = 0,-1.83760071,1.24257529
 	rot = 0,1,0,-2.43123577E-10
@@ -1251,7 +1206,7 @@ PART
 	part = TT.G1.RCS_4292276952
 	partName = Part
 	persistentId = 673684828
-	pos = -1.04435742E-07,13.0715103,-1.19487095
+	pos = -1.38593555E-06,13.0715103,-1.19487095
 	attPos = 4.19363744E-09,-0.0908889771,0.047704339
 	attPos0 = -1.08629379E-07,-1.83760071,-1.24257529
 	rot = 0,-4.39545111E-08,0,-1
@@ -1367,7 +1322,7 @@ PART
 	part = TT.G1.RCS_4292299860
 	partName = Part
 	persistentId = 2417899607
-	pos = -5.32560274E-10,16.8253822,1.20342875
+	pos = -1.28203237E-06,16.8253822,1.20342875
 	attPos = -5.32560274E-10,-0.00381469727,-0.0442521572
 	attPos0 = 0,1.82919693,1.2476809
 	rot = -1,0,6.01734129E-09,0
@@ -1483,7 +1438,7 @@ PART
 	part = TT.G1.RCS_4292273766
 	partName = Part
 	persistentId = 3682071282
-	pos = -1.0467452E-07,16.8253822,-1.20342875
+	pos = -1.3861744E-06,16.8253822,-1.20342875
 	attPos = 4.40120829E-09,-0.00381469727,0.0442521572
 	attPos0 = -1.09075728E-07,1.82919693,-1.2476809
 	rot = 4.97287296E-08,0,1,0
@@ -1599,7 +1554,7 @@ PART
 	part = TT.G1.SOLAR_4292040322
 	partName = Part
 	persistentId = 3230725644
-	pos = 1.23947251,16.2752209,7.44743716E-08
+	pos = 1.2394712,16.2752209,7.44743716E-08
 	attPos = 0,0,0
 	attPos0 = 1.23947251,1.27522087,7.44743716E-08
 	rot = 0,-0.707106829,-0.707106829,0
@@ -1648,10 +1603,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -1672,7 +1625,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -1692,7 +1645,7 @@ PART
 	part = TT.G1.SOLAR_4292037762
 	partName = Part
 	persistentId = 1243948122
-	pos = -1.23947251,16.2752209,7.44743716E-08
+	pos = -1.23947382,16.2752209,7.44743716E-08
 	attPos = 0,0,0
 	attPos0 = -1.23947251,1.27522087,7.44743716E-08
 	rot = -0.707106888,-3.09086197E-08,-3.09086161E-08,-0.70710665
@@ -1741,10 +1694,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -1765,7 +1716,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -1785,7 +1736,7 @@ PART
 	part = TT.G1.SOLAR_4292036856
 	partName = Part
 	persistentId = 414053485
-	pos = 1.23696792,15.5195255,7.43250865E-08
+	pos = 1.23696661,15.5195255,7.43250865E-08
 	attPos = 0,0,0
 	attPos0 = 1.23696792,0.519525528,7.43250865E-08
 	rot = 0,-0.707106829,-0.707106829,0
@@ -1834,10 +1785,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -1858,7 +1807,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -1878,7 +1827,7 @@ PART
 	part = TT.G1.SOLAR_4292036198
 	partName = Part
 	persistentId = 1721911363
-	pos = -1.23696792,15.5195255,7.43250865E-08
+	pos = -1.23696923,15.5195255,7.43250865E-08
 	attPos = 0,0,0
 	attPos0 = -1.23696792,0.519525528,7.43250865E-08
 	rot = -0.707106888,-3.09086197E-08,-3.09086161E-08,-0.70710665
@@ -1927,10 +1876,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -1951,7 +1898,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -1971,7 +1918,7 @@ PART
 	part = TT.G1.SOLAR_4292035286
 	partName = Part
 	persistentId = 2191360965
-	pos = 1.23488152,14.5280218,7.42007273E-08
+	pos = 1.23488021,14.5280218,7.42007273E-08
 	attPos = 0,0,0
 	attPos0 = 1.23488152,-0.471978188,7.42007273E-08
 	rot = 0,-0.707106829,-0.707106829,0
@@ -2020,10 +1967,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -2044,7 +1989,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -2064,7 +2009,7 @@ PART
 	part = TT.G1.SOLAR_4292034926
 	partName = Part
 	persistentId = 377506738
-	pos = -1.23488152,14.5280218,7.42007273E-08
+	pos = -1.23488283,14.5280218,7.42007273E-08
 	attPos = 0,0,0
 	attPos0 = -1.23488152,-0.471978188,7.42007273E-08
 	rot = -0.707106888,-3.09086197E-08,-3.09086161E-08,-0.70710665
@@ -2113,10 +2058,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -2137,7 +2080,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -2157,7 +2100,7 @@ PART
 	part = TT.G1.SOLAR_4292034008
 	partName = Part
 	persistentId = 4127710692
-	pos = 1.23543465,13.7915936,7.42336965E-08
+	pos = 1.23543334,13.7915936,7.42336965E-08
 	attPos = 0,0,0
 	attPos0 = 1.23543465,-1.20840645,7.42336965E-08
 	rot = 0,-0.707106829,-0.707106829,0
@@ -2206,10 +2149,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -2230,7 +2171,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
@@ -2250,7 +2191,7 @@ PART
 	part = TT.G1.SOLAR_4292033628
 	partName = Part
 	persistentId = 225647846
-	pos = -1.23543465,13.7915936,7.42336965E-08
+	pos = -1.23543596,13.7915936,7.42336965E-08
 	attPos = 0,0,0
 	attPos0 = -1.23543465,-1.20840645,7.42336965E-08
 	rot = -0.707106888,-3.09086197E-08,-3.09086161E-08,-0.70710665
@@ -2299,10 +2240,8 @@ PART
 	}
 	MODULE
 	{
-		name = KopernicusSolarPanel
+		name = ModuleDeployableSolarPanel
 		isEnabled = True
-		trackingBodyName = 
-		_manualTracking = False
 		efficiencyMult = 1
 		launchUT = -1
 		currentRotation = (-0.707106829, 0, 0.707106829, 0)
@@ -2323,7 +2262,7 @@ PART
 			}
 			ExtendAction
 			{
-				actionGroup = Custom08
+				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
 			RetractAction
