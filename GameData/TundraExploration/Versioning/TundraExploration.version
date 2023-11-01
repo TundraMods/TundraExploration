@@ -4,10 +4,10 @@
 	"DOWNLOAD": "https://forum.kerbalspaceprogram.com/index.php?/topic/166915-131-tundra-exploration",
 	"VERSION":
 	{
-		"MAJOR": 6,
-		"MINOR": 9,
+		"MAJOR": 7,
+		"MINOR": 0,
 		"PATCH": 0,
-		"BUILD": 10
+		"BUILD": 0
 	},
 	"KSP_VERSION":
 	{
