@@ -71,7 +71,25 @@ namespace TundraExploration.Modules
         [KSPField]
         public bool EVAClean = false;
 
-        public bool multipleSootTextures;
+        [KSPField(isPersistant = true)]
+        public bool Flag1Active;
+
+        [KSPField(isPersistant = true)]
+        public string Flag1TexturePath;
+
+		[KSPField(isPersistant = true)]
+		public bool Flag2Active;
+
+		[KSPField(isPersistant = true)]
+		public string Flag2TexturePath;
+
+		[KSPField(isPersistant = true)]
+		public bool Flag3Active;
+
+		[KSPField(isPersistant = true)]
+		public string Flag3TexturePath;
+
+		public bool multipleSootTextures;
         public bool loaded;
 
         public List<Transform> ModelObjects = new List<Transform>();
@@ -116,8 +134,6 @@ namespace TundraExploration.Modules
                 {
                     FlagVariant flagVariant = new FlagVariant();
                     flagVariant.name = subtype.GetValue("name");
-                    flagVariant.active = bool.Parse(subtype.GetValue("active"));
-                    flagVariant.texturePath = subtype.GetValue("texturePath");
                     flagVariant.flagPrefix = subtype.GetValue("flagPrefix");
                     flagVariant.Tiling = Array.ConvertAll(subtype.GetValue("Tiling").Split(','), float.Parse);
                     flagVariant.Offset = Array.ConvertAll(subtype.GetValue("Offset").Split(','), float.Parse);
@@ -225,16 +241,44 @@ namespace TundraExploration.Modules
 
         private void FlagToggle(string name)
         {
-            FlagVariant flagVariant = flagVariants.Where(v => v.name == name).FirstOrDefault();
-            if (flagVariant != null)
-            {
-                flagVariant.active = !flagVariant.active;
-                SetFlag(flagVariant);
-            }
+			FlagVariant flagVariant = flagVariants.Where(v => v.name == name).FirstOrDefault();
+            if (flagVariant == null) return;
+            switch (name)
+			{
+				case "1":
+					if (Flag1TexturePath == string.Empty) return; 
+                    Flag1Active = !Flag1Active;
+                    break;
+				case "2":
+					if (Flag2TexturePath == string.Empty) return;
+                    Flag2Active = !Flag2Active;
+					break;
+				case "3":
+					if (Flag3TexturePath == string.Empty) return; 
+                    Flag3Active = !Flag3Active;
+					break;
+				default:
+                    return;
+			}
+                
+            SetFlag(flagVariant);
         }
         private void OnCustomFlagSelected(FlagBrowser.FlagEntry newFlagEntry, FlagVariant flagVariant)
         {
-            flagVariant.texturePath = newFlagEntry.textureInfo.name;
+			switch (flagVariant.name)
+			{
+				case "1":
+					Flag1TexturePath = newFlagEntry.textureInfo.name;
+					break;
+				case "2":
+					Flag2TexturePath = newFlagEntry.textureInfo.name;
+					break;
+				case "3":
+					Flag3TexturePath = newFlagEntry.textureInfo.name;
+					break;
+				default:
+					return;
+			}
             SetFlag(flagVariant);
         }
 
@@ -303,11 +347,29 @@ namespace TundraExploration.Modules
 
         private void SetFlag(FlagVariant flag)
         {
+            bool flagActive = false;
+            string flagTexturePath = string.Empty;
+            switch (flag.name)
+            {
+				case "1":
+					flagActive = Flag1Active;
+					flagTexturePath = Flag1TexturePath;
+					break;
+				case "2":
+					flagActive = Flag2Active;
+					flagTexturePath = Flag2TexturePath;
+					break;
+				case "3":
+					flagActive = Flag3Active;
+					flagTexturePath = Flag3TexturePath;
+					break;
+                default: return;
+			}
             foreach (Transform transform in ModelObjects)
             {
-                if (flag.active) { 
+                if (flagActive) { 
                     Renderer renderer = transform.gameObject.GetComponent<Renderer>();
-                    Texture texture = GameDatabase.Instance.GetTexture(flag.texturePath, false);
+                    Texture texture = GameDatabase.Instance.GetTexture(flagTexturePath, false);
                     string currentflag = string.Concat(flag.flagPrefix, flag.name);
 
                     if (renderer == null)

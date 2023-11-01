@@ -12,8 +12,6 @@ namespace TundraExploration.SootyShader
     public class FlagVariant : ScriptableObject
     {
         public string name;
-        public bool active;
-        public string texturePath;
         public string flagPrefix;
         public float[] Tiling;
         public float[] Offset;
