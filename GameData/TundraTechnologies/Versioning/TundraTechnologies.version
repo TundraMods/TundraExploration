@@ -1,13 +1,13 @@
 {
 	"NAME": "<b><color=#ffffff>Tundra</color> <color=#0090ff>Technologies</color></b>",
-	"URL": "https://raw.githubusercontent.com/damonvv/TundraExploration/master/GameData/TundraTechnologies/Versioning/TundraTechnologies.version",
+	"URL": "https://raw.githubusercontent.com/TundraMods/TundraExploration/master/GameData/TundraTechnologies/Versioning/TundraTechnologies.version",
 	"DOWNLOAD": "https://forum.kerbalspaceprogram.com/index.php?/topic/166915-131-tundra-exploration",
 	"VERSION":
 	{
-		"MAJOR": 6,
+		"MAJOR": 7,
 		"MINOR": 0,
 		"PATCH": 0,
-		"BUILD": 1
+		"BUILD": 0
 	},
 	"KSP_VERSION":
 	{
