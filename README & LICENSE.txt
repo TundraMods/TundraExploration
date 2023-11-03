@@ -1,15 +1,49 @@
 
-Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar, DylanSemrau, Vali and the people on the forum for helping with modding!
-Continued by damonvv.
+Special thanks to Nertea, Beale, Cobalt, JadeOfMaar, Nessus, Neistridlar, DylanSemrau, Vali, Sofish, Drewcassidy, Sanchez, Brooklindevil, Nora and the people on the forum for helping with modding!
+Continued by Damon.
 
 
 LICENSE
 All configs are distributed under CC-NC-SA-4.0 License.
 Nertea's HabUtils.dll is distributed under a MIT license.
 The art assets in this pack (all .dds, .png, .dll and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
-All bundled mods are distributed under their own licenses.
-This mod can only be downloaded at SpaceDock.info. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
+This mod can only be downloaded at SpaceDock.info or Github.com. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on Jan 23, 2022
+
+Version 7.0.0
+- Revamped Ghidorah parts
+- Revamped Rodan parts
+- Revamped IVA for Rodan
+- Added IVA for Rodan I4 command pod
+- Added Gaira (Haven-1) parts
+- Added IVA for Gaira-1
+- Added more soot options with new and improved soot shader plugin (Thanks Sofie)
+- Added small RCS block for 2nd stage tank
+- Added smaller nozzle variant to Marlin Vacuum Engine
+- Added Main Chute part for Rodan
+- Added Drogue Chute part for Rodan
+- Added color variants to Rodan parts
+- Added TE (US) flag
+- Added Mono to Kaijuu Goods
+- Added RCS warning when Rodan nose cone is closed
+- Added ModuleTundraCutDrogue for automatically cutting the drogue chutes when the mains deploy, Full credit to Jsolson and the rest of the Bluedog Design Bureau team for allowing us to use and adapt this module for Tundra!
+- Flags are now covered in soot
+- Fixed Ghidorah fairing shape
+- Fixed RCS plumes on Haddock
+- Fixed drag cubes on Rodan
+- Fixed Waterfall plumes on Cargo Rodan
+- Removed unused FX files
+- Removed unused Texture Unlimited configs
+- Updated Mvac waterfall plume
+- Updated USI-LS patch
+- Updated KIS patch
+- Updated CCTanks patch
+- Updated Pathfinder patch
+- Updated Craft files
+- Support for Hullcam
+- Support for Boiloff
+- Support for FreeIVA
+
 
 Version 6.1.0
 - Added actuated pusher inside Ghidorah Interstage
