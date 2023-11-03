@@ -13,7 +13,7 @@ namespace TundraExploration.Modules
         public const string MODULENAME = "ModuleTundraRCSAnimation";
 
         [KSPField]
-        public int RCSModuleIndex = 0;
+        public string RCSThrusterTransformName = "";
 
         [KSPField]
         public int deployedPosition = 1;
@@ -34,9 +34,11 @@ namespace TundraExploration.Modules
                 return;
 
             moduleAnimate = part.Modules.GetModule<ModuleAnimateGeneric>();
-            moduleRCS = part.Modules.GetModule(RCSModuleIndex) as ModuleRCSFX;
+			moduleRCS = part.Modules.GetModules<ModuleRCSFX>()
+				       .FirstOrDefault(m => m.thrusterTransformName == RCSThrusterTransformName);
 
-            if (moduleAnimate == null)
+
+			if (moduleAnimate == null)
             {
                 Debug.LogError($"[{MODULENAME}] Could not find ModuleAnimateGeneric on part '{part.name}'");
                 initialized = false;
@@ -44,7 +46,7 @@ namespace TundraExploration.Modules
 
             if (moduleRCS == null)
             {
-                Debug.LogError($"[{MODULENAME}] Could not find ModuleRCSFX at index '{RCSModuleIndex}' on part '{part.name}'");
+                Debug.LogError($"[{MODULENAME}] Could not find ModuleRCSFX at with ThrusterTransformName '{RCSThrusterTransformName}' on part '{part.name}'");
                 initialized = false;
             }
 
