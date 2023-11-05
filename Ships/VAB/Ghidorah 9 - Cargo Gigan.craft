@@ -2,7 +2,7 @@ ship = Ghidorah 9 - Cargo Gigan
 version = 1.12.5
 description = Key 1: Engine Mode Switch¨Key 2: Erector move out¨Key 5: Toggle Soot¨Key 8: Extend Solar Panels
 type = VAB
-size = 10.4328747,45.9972839,9.48651886
+size = 10.4328756,45.9972839,9.48651886
 steamPublishedFileId = 0
 persistentId = 877107822
 rot = 0,0,0,0
@@ -560,7 +560,7 @@ PART
 	part = TE.CargoV2.Panel_4292947384
 	partName = Part
 	persistentId = 4065933999
-	pos = -0.29717654,41.7534447,-1.03828835
+	pos = -0.297176421,41.7534447,-1.03828812
 	attPos = 0,-0.0270051956,0
 	attPos0 = 1.0301435,0.112195969,0.250239581
 	rot = -1.6360715E-09,0.50000006,2.83375901E-09,-0.866025388
@@ -649,7 +649,7 @@ PART
 	part = TE.CargoV2.Panel_4292940650
 	partName = Part
 	persistentId = 3874061603
-	pos = 0.299539983,41.7534447,0.996213675
+	pos = 0.299539864,41.7534447,0.996213436
 	attPos = 0,-0.0270051956,0
 	attPos0 = -1.0301435,0.112195969,-0.250239491
 	rot = 2.83375834E-09,-0.866025448,1.63607106E-09,-0.50000006
@@ -738,7 +738,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4292916552
 	partName = Part
 	persistentId = 883711686
-	pos = -0.592818499,41.6492538,-1.04987538
+	pos = -0.592818379,41.6492538,-1.04987526
 	attPos = 0,0,0
 	attPos0 = 1.18799937,-0.0190010071,-1.1920929E-07
 	rot = 0,0.5,0,-0.866025448
@@ -845,7 +845,7 @@ PART
 	part = TE.19.C.Dragon.Solar.Shield_4292916252
 	partName = Part
 	persistentId = 3976557941
-	pos = 0.595181942,41.6492538,1.0078007
+	pos = 0.595181823,41.6492538,1.00780058
 	attPos = 0,0,0
 	attPos0 = -1.18799937,-0.0190010071,1.31185516E-07
 	rot = 0,-0.866025448,0,-0.49999997
@@ -1800,10 +1800,10 @@ PART
 	part = TE.F9.S2.RCS_4293062070
 	partName = Part
 	persistentId = 3144477773
-	pos = 0.774509549,34.5475883,-0.794365406
+	pos = 0.774508953,34.5475883,-0.794364929
 	attPos = -0.0445958376,0.0311775208,-0.0445956588
 	attPos0 = -0.728730261,-2.79056549,-0.728730321
-	rot = 0.365706444,0.351426065,0.1514806,-0.848417521
+	rot = 0.365706384,0.351426065,0.151480585,-0.848417521
 	attRot = 0,0,0,1
 	attRot0 = 0.365706295,-0.351426005,-0.151480481,-0.848417521
 	mir = 1,1,1
@@ -1880,31 +1880,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061596
 	partName = Part
 	persistentId = 1500544810
-	pos = -0.772146225,34.5475883,-0.794365048
+	pos = -0.772145629,34.5475883,-0.794364572
 	attPos = -0.0445959568,0.0311775208,0.0445960164
 	attPos0 = -0.728730261,-2.79056549,0.728730202
-	rot = 0.365706354,-0.351426244,-0.151480526,-0.84841758
+	rot = 0.365706354,-0.351426214,-0.151480526,-0.84841764
 	attRot = 0,0,0,1
 	attRot0 = 0.151480526,-0.848417521,-0.365706235,-0.351426095
 	mir = 1,1,1
@@ -1981,31 +1966,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061516
 	partName = Part
 	persistentId = 3214160712
-	pos = -0.772145867,34.5475883,0.752291143
+	pos = -0.772145391,34.5475883,0.752290726
 	attPos = 0.044596076,0.0311775208,0.0445958972
 	attPos0 = 0.728730381,-2.79056549,0.728730202
-	rot = 0.1514806,-0.848417521,-0.365706444,-0.351426065
+	rot = 0.151480585,-0.848417521,-0.365706384,-0.351426065
 	attRot = 0,0,0,1
 	attRot0 = -0.151480496,-0.84841758,-0.365706325,0.351426065
 	mir = 1,1,1
@@ -2082,31 +2052,16 @@ PART
 		{
 		}
 	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061436
 	partName = Part
 	persistentId = 1204167991
-	pos = 0.774509847,34.5475883,0.752290249
+	pos = 0.77450937,34.5475883,0.752289534
 	attPos = 0.0445958376,0.0311775208,-0.044596076
 	attPos0 = 0.728730261,-2.79056549,-0.728730261
-	rot = -0.151480526,-0.84841758,-0.365706354,0.351426244
+	rot = -0.151480526,-0.84841764,-0.365706354,0.351426214
 	attRot = 0,0,0,1
 	attRot0 = -0.365706235,-0.351426095,-0.151480526,0.848417521
 	mir = 1,1,1
@@ -2178,21 +2133,6 @@ PART
 				actionGroup = None
 				wasActiveBeforePartWasAdjusted = False
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleWaterfallFX
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -2505,12 +2445,6 @@ PART
 		isEnabled = True
 		selectedIndex = 0
 		toggleSoot = False
-		Flag1Active = True
-		Flag1TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_2
-		Flag2Active = False
-		Flag2TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_3
-		Flag3Active = True
-		Flag3TexturePath = TundraExploration/Flags/TE_FLAG
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2704,12 +2638,6 @@ PART
 		isEnabled = True
 		selectedIndex = 1
 		toggleSoot = False
-		Flag1Active = True
-		Flag1TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_2
-		Flag2Active = True
-		Flag2TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_1
-		Flag3Active = True
-		Flag3TexturePath = TundraExploration/Flags/TE_FLAG
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3346,12 +3274,6 @@ PART
 		isEnabled = True
 		selectedIndex = 0
 		toggleSoot = False
-		Flag1Active = False
-		Flag1TexturePath = 
-		Flag2Active = False
-		Flag2TexturePath = 
-		Flag3Active = False
-		Flag3TexturePath = 
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3400,7 +3322,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293178990
 	partName = Part
 	persistentId = 4176979665
-	pos = 0.69407475,3.07808304,0.671855688
+	pos = 0.694074392,3.07808304,0.671855211
 	attPos = 0,0,0
 	attPos0 = 0.692891419,-14.1761703,-0.692891419
 	rot = 0,0.923879683,0,-0.382683516
@@ -3570,10 +3492,10 @@ PART
 	part = KRE-FalconLegMk2-M_4293178020
 	partName = Part
 	persistentId = 4066172962
-	pos = 0.694074452,3.07808304,-0.713930368
+	pos = 0.694074035,3.07808304,-0.713930011
 	attPos = 0,0,0
 	attPos0 = -0.692891359,-14.1761703,-0.692891419
-	rot = 0,0.382683545,0,-0.923879623
+	rot = 0,0.382683516,0,-0.923879623
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.382683396,0,-0.923879564
 	mir = 1,1,1
@@ -3740,7 +3662,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293177840
 	partName = Part
 	persistentId = 3327947991
-	pos = -0.691711366,3.07808304,-0.71393013
+	pos = -0.691711009,3.07808304,-0.713929653
 	attPos = 0,0,0
 	attPos0 = -0.692891359,-14.1761703,0.692891479
 	rot = 0,-0.382683635,0,-0.923879683
@@ -3910,10 +3832,10 @@ PART
 	part = KRE-FalconLegMk2-M_4293177660
 	partName = Part
 	persistentId = 1867240828
-	pos = -0.691711247,3.07808304,0.671855688
+	pos = -0.69171083,3.07808304,0.67185533
 	attPos = 0,0,0
 	attPos0 = 0.692891419,-14.1761703,0.692891359
-	rot = 0,-0.923879623,0,-0.382683545
+	rot = 0,-0.923879623,0,-0.382683516
 	attRot = 0,0,0,1
 	attRot0 = 0,-0.923879564,0,0.382683396
 	mir = 1,1,1
@@ -4080,10 +4002,10 @@ PART
 	part = TE2.19.F9.CGT_4293183416
 	partName = Part
 	persistentId = 2359986656
-	pos = 0.00118130038,30.4035721,-1.2695446
+	pos = 0.00118135998,30.4035721,-1.26954317
 	attPos = 0,0,0
 	attPos0 = -1.24850285,-0.30840683,7.43893906E-08
-	rot = 0,-5.96046448E-08,0,1.00000024
+	rot = 0,-2.98023224E-08,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -4196,7 +4118,7 @@ PART
 	part = TE2.19.F9.CGT_4293182372
 	partName = Part
 	persistentId = 2981084432
-	pos = 0.00118213485,30.4035721,1.22746992
+	pos = 0.00118207524,30.4035721,1.22746849
 	attPos = 0,0,0
 	attPos0 = 1.24850285,-0.30840683,-1.83528755E-07
 	rot = 0,1.00000024,0,-5.96046448E-08
@@ -4312,10 +4234,10 @@ PART
 	part = Grid Fin M Titanium_4293181220
 	partName = Part
 	persistentId = 3155161969
-	pos = 0.850192904,30.5430984,0.827973843
+	pos = 0.850192547,30.5430984,0.827973247
 	attPos = -0.0288287997,-0.00583267212,0.0288287997
 	attPos0 = 0.877838016,-0.163047791,-0.877837956
-	rot = 0.923879623,0,0.382683545,0
+	rot = 0.923879623,0,0.382683516,0
 	attRot = 0.99999994,0,0,0
 	attRot0 = 0.923879564,0,-0.382683426,0
 	mir = 1,1,1
@@ -4542,7 +4464,7 @@ PART
 	part = Grid Fin M Titanium_4293180814
 	partName = Part
 	persistentId = 2537748014
-	pos = 0.850192904,30.5430984,-0.870048463
+	pos = 0.850192428,30.5430984,-0.870047927
 	attPos = 0.0288287997,-0.00583267212,0.0288287997
 	attPos0 = -0.877837837,-0.163047791,-0.877838016
 	rot = 0.923879683,0,-0.382683635,0
@@ -4760,10 +4682,10 @@ PART
 	part = Grid Fin M Titanium_4293180748
 	partName = Part
 	persistentId = 406802612
-	pos = -0.84782964,30.5430984,-0.870048046
+	pos = -0.847829163,30.5430984,-0.870047569
 	attPos = 0.0288287997,-0.00583267212,-0.0288287997
 	attPos0 = -0.877837956,-0.163047791,0.877838016
-	rot = 0.382683545,0,-0.923879623,0
+	rot = 0.382683516,0,-0.923879623,0
 	attRot = 0.99999994,0,0,0
 	attRot0 = -0.382683456,0,-0.923879564,0
 	mir = 1,1,1
@@ -4978,7 +4900,7 @@ PART
 	part = Grid Fin M Titanium_4293180682
 	partName = Part
 	persistentId = 432733595
-	pos = -0.847828925,30.5430984,0.827973843
+	pos = -0.847828388,30.5430984,0.827973187
 	attPos = -0.0288287997,-0.00583267212,-0.0288287997
 	attPos0 = 0.877837956,-0.163047791,0.877837896
 	rot = -0.382683635,0,-0.923879683,0
@@ -5196,7 +5118,7 @@ PART
 	part = TE.Ghidorah.Erector.2_4292898430
 	partName = Part
 	persistentId = 1036313392
-	pos = -2.89882326,2.40317154,-0.0690369904
+	pos = -2.89882135,2.40317154,-0.0690372288
 	attPos = 0,0,0
 	attPos0 = -0.0480007045,-0.773803711,2.90000033
 	rot = 0,0.707106888,0,-0.707106829
