@@ -2,7 +2,7 @@ ship = Ghidorah 9 - Cargo Rodan
 version = 1.12.5
 description = Key 1: Engine Mode Switch¨Key 2: Erector move out¨Key 5: Toggle Soot¨Key 8: Hatch Open/Close¨Key 9: Drogue Chute¨:Key 0: Main Chute¨TAB: Abort
 type = VAB
-size = 9.71933651,70.4966736,14.5349159
+size = 9.71933746,70.4966736,14.5349159
 steamPublishedFileId = 0
 persistentId = 877107822
 rot = 0,0,0,0
@@ -20,7 +20,7 @@ PART
 	pos = 0.000385075837,42.4804688,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0.000385075837,42.4804688,-2.89529544E-05
-	rot = 0,-0.707106769,0,-0.707106769
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,-0.707106709,0,-0.707106709
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -353,6 +353,22 @@ PART
 	}
 	MODULE
 	{
+		name = ModuleTundraRCSAnimation
+		isEnabled = True
+		rcsState = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
 		name = ModuleB9PartSwitch
 		isEnabled = True
 		stagingEnabled = True
@@ -380,6 +396,51 @@ PART
 		{
 		}
 		STOREDPARTS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
 		{
 		}
 		UPGRADESAPPLIED
@@ -451,7 +512,7 @@ PART
 	pos = 0.000385075837,41.2889709,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.1914978,0
-	rot = 0,-0.707106769,0,-0.707106769
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -604,7 +665,7 @@ PART
 	pos = 0.000385075837,40.0709686,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.21800041,0
-	rot = 0,-0.707106769,0,-0.707106769
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -884,10 +945,10 @@ PART
 	part = TE.CD2.POD.MAINS_4293123326
 	partName = Part
 	persistentId = 1144230576
-	pos = -0.542615414,43.0485115,-2.9191373E-05
+	pos = -0.542615533,43.0485115,-2.9191373E-05
 	attPos = 0,0,0
 	attPos0 = 1.71363382E-07,0.568042755,-0.54300034
-	rot = 0,-0.707106769,0,-0.707106769
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,-0.707106709,0,0.707106709
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1039,6 +1100,23 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleTundraCutDrogue
+		isEnabled = True
+		autoCutDrogue = True
+		triggered = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -1048,7 +1126,7 @@ PART
 	pos = 0.000384897023,42.4804688,-2.9118868E-05
 	attPos = 0,0,0
 	attPos0 = 1.65913647E-07,0,-1.78813977E-07
-	rot = 0,-0.707106769,0,-0.707106769
+	rot = 0,-0.707106829,0,-0.707106829
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1167,6 +1245,23 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleTundraCutDrogue
+		isEnabled = True
+		autoCutDrogue = True
+		triggered = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -1176,7 +1271,7 @@ PART
 	pos = 0.000385075837,38.52911,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.54185867,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0.707106769,0,0.707106769
 	attRot0 = 0,1,0,0
 	mir = 1,1,1
@@ -1380,7 +1475,7 @@ PART
 	pos = 0.000385075837,35.4838295,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.04528046,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0,0,0.999999881
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1562,7 +1657,7 @@ PART
 	pos = 0.000385075837,31.7288284,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-3.75499916,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -1947,10 +2042,10 @@ PART
 	part = TE.F9.S2.RCS_4293062070
 	partName = Part
 	persistentId = 2286263939
-	pos = 0.773712158,32.7244415,-0.77335602
+	pos = 0.773712397,32.7244415,-0.773356259
 	attPos = -0.0445958376,0.0311775208,-0.0445956588
 	attPos0 = -0.728730261,-2.79056549,-0.728730321
-	rot = 0.365706295,0.351426065,0.151480526,-0.848417461
+	rot = 0.365706354,0.351426095,0.151480526,-0.848417521
 	attRot = 0,0,0,1
 	attRot0 = 0.365706295,-0.351426005,-0.151480481,-0.848417521
 	mir = 1,1,1
@@ -2027,16 +2122,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061596
 	partName = Part
 	persistentId = 4240515434
-	pos = -0.772942066,32.7244415,-0.773356199
+	pos = -0.772942245,32.7244415,-0.773356438
 	attPos = -0.0445959568,0.0311775208,0.0445960164
 	attPos0 = -0.728730261,-2.79056549,0.728730202
-	rot = 0.365706325,-0.351426005,-0.151480496,-0.848417521
+	rot = 0.365706384,-0.351426035,-0.151480496,-0.84841764
 	attRot = 0,0,0,1
 	attRot0 = 0.151480526,-0.848417521,-0.365706235,-0.351426095
 	mir = 1,1,1
@@ -2113,16 +2223,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061516
 	partName = Part
 	persistentId = 3027600530
-	pos = -0.772942066,32.7244415,0.773298442
+	pos = -0.772942305,32.7244415,0.773298681
 	attPos = 0.044596076,0.0311775208,0.0445958972
 	attPos0 = 0.728730381,-2.79056549,0.728730202
-	rot = 0.151480526,-0.848417461,-0.365706295,-0.351426065
+	rot = 0.151480526,-0.848417521,-0.365706354,-0.351426095
 	attRot = 0,0,0,1
 	attRot0 = -0.151480496,-0.84841758,-0.365706325,0.351426065
 	mir = 1,1,1
@@ -2199,16 +2324,31 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
 	part = TE.F9.S2.RCS_4293061436
 	partName = Part
 	persistentId = 539057789
-	pos = 0.773712397,32.7244415,0.773298144
+	pos = 0.773712575,32.7244415,0.773298383
 	attPos = 0.0445958376,0.0311775208,-0.044596076
 	attPos0 = 0.728730261,-2.79056549,-0.728730261
-	rot = -0.151480496,-0.848417521,-0.365706325,0.351426005
+	rot = -0.151480496,-0.84841764,-0.365706384,0.351426035
 	attRot = 0,0,0,1
 	attRot0 = -0.365706235,-0.351426095,-0.151480526,0.848417521
 	mir = 1,1,1
@@ -2285,6 +2425,21 @@ PART
 		{
 		}
 	}
+	MODULE
+	{
+		name = ModuleWaterfallFX
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
 }
 PART
 {
@@ -2294,7 +2449,7 @@ PART
 	pos = 0.000385075837,28.8888321,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-6.59499741,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,-0.707106769,0,0.707106769
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2592,6 +2747,12 @@ PART
 		isEnabled = True
 		selectedIndex = 0
 		toggleSoot = False
+		Flag1Active = True
+		Flag1TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_2
+		Flag2Active = False
+		Flag2TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_3
+		Flag3Active = True
+		Flag3TexturePath = TundraExploration/Flags/TE_FLAG
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2662,7 +2823,7 @@ PART
 	pos = 0.000385075837,15.4311028,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-13.4577293,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -2785,6 +2946,12 @@ PART
 		isEnabled = True
 		selectedIndex = 0
 		toggleSoot = False
+		Flag1Active = True
+		Flag1TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_2
+		Flag2Active = True
+		Flag2TexturePath = TundraExploration/Parts/Ghidorah9/TE_23_F9_Decals_1
+		Flag3Active = True
+		Flag3TexturePath = TundraExploration/Flags/TE_FLAG
 		stagingEnabled = True
 		EVENTS
 		{
@@ -2864,7 +3031,7 @@ PART
 	pos = 0.000385075837,1.35382843,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-14.0772743,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -3421,6 +3588,12 @@ PART
 		isEnabled = True
 		selectedIndex = 0
 		toggleSoot = False
+		Flag1Active = False
+		Flag1TexturePath = 
+		Flag2Active = False
+		Flag2TexturePath = 
+		Flag3Active = False
+		Flag3TexturePath = 
 		stagingEnabled = True
 		EVENTS
 		{
@@ -3472,7 +3645,7 @@ PART
 	pos = 0.000385075837,-0.375083923,-2.89529544E-05
 	attPos = 0,0,0
 	attPos0 = 0,-1.72891235,0
-	rot = 0,-0.707106769,0,0.707106769
+	rot = 0,-0.707106829,0,0.707106829
 	attRot = 0,0,0,1
 	attRot0 = 0,0,0,1
 	mir = 1,1,1
@@ -3669,10 +3842,10 @@ PART
 	part = KRE-FalconLegMk2-M_4293178990
 	partName = Part
 	persistentId = 1846029723
-	pos = 0.693277299,1.25493622,0.692863405
+	pos = 0.693277419,1.25493622,0.692863524
 	attPos = 0,0,0
 	attPos0 = 0.692891419,-14.1761703,-0.692891419
-	rot = 0,0.923879504,0,-0.382683396
+	rot = 0,0.923879623,0,-0.382683426
 	attRot = 0,0,0,1
 	attRot0 = 0,0.382683486,0,-0.923879564
 	mir = 1,1,1
@@ -3839,7 +4012,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293178020
 	partName = Part
 	persistentId = 911738786
-	pos = 0.693277419,1.25493622,-0.692921102
+	pos = 0.693277538,1.25493622,-0.692921221
 	attPos = 0,0,0
 	attPos0 = -0.692891359,-14.1761703,-0.692891419
 	rot = 0,0.382683456,0,-0.923879564
@@ -4009,7 +4182,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293177840
 	partName = Part
 	persistentId = 2187484588
-	pos = -0.692507148,1.25493622,-0.692921281
+	pos = -0.692507267,1.25493622,-0.6929214
 	attPos = 0,0,0
 	attPos0 = -0.692891359,-14.1761703,0.692891479
 	rot = 0,-0.382683456,0,-0.923879564
@@ -4179,7 +4352,7 @@ PART
 	part = KRE-FalconLegMk2-M_4293177660
 	partName = Part
 	persistentId = 1514517189
-	pos = -0.692507088,1.25493622,0.692863286
+	pos = -0.692507207,1.25493622,0.692863405
 	attPos = 0,0,0
 	attPos0 = 0.692891419,-14.1761703,0.692891359
 	rot = 0,-0.923879564,0,-0.382683456
@@ -4349,10 +4522,10 @@ PART
 	part = TE2.19.F9.CGT_4293183416
 	partName = Part
 	persistentId = 3389371398
-	pos = 0.000385075837,28.5804253,-1.24853384
+	pos = 0.000385075837,28.5804253,-1.24853432
 	attPos = 0,0,0
 	attPos0 = -1.24850285,-0.30840683,7.43893906E-08
-	rot = 0,0,0,1
+	rot = 0,0,0,1.00000012
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106829,0,0.707106829
 	mir = 1,1,1
@@ -4465,10 +4638,10 @@ PART
 	part = TE2.19.F9.CGT_4293182372
 	partName = Part
 	persistentId = 3864783720
-	pos = 0.000385195046,28.5804253,1.24847591
+	pos = 0.000385195046,28.5804253,1.24847639
 	attPos = 0,0,0
 	attPos0 = 1.24850285,-0.30840683,-1.83528755E-07
-	rot = 0,1,0,-8.94069672E-08
+	rot = 0,1.00000012,0,-1.1920929E-07
 	attRot = 0,0,0,1
 	attRot0 = 0,0.707106769,0,-0.707106888
 	mir = 1,1,1
@@ -4581,7 +4754,7 @@ PART
 	part = Grid Fin M Titanium_4293181220
 	partName = Part
 	persistentId = 2499300279
-	pos = 0.849395394,28.7199516,0.848981619
+	pos = 0.849395573,28.7199516,0.848981857
 	attPos = -0.0288287997,-0.00583267212,0.0288287997
 	attPos0 = 0.877838016,-0.163047791,-0.877837956
 	rot = 0.923879564,0,0.382683456,0
@@ -4811,7 +4984,7 @@ PART
 	part = Grid Fin M Titanium_4293180814
 	partName = Part
 	persistentId = 201518082
-	pos = 0.849395633,28.7199516,-0.849039018
+	pos = 0.849395871,28.7199516,-0.849039257
 	attPos = 0.0288287997,-0.00583267212,0.0288287997
 	attPos0 = -0.877837837,-0.163047791,-0.877838016
 	rot = 0.923879564,0,-0.382683456,0
@@ -5029,7 +5202,7 @@ PART
 	part = Grid Fin M Titanium_4293180748
 	partName = Part
 	persistentId = 2412776967
-	pos = -0.848625243,28.7199516,-0.849039376
+	pos = -0.848625541,28.7199516,-0.849039614
 	attPos = 0.0288287997,-0.00583267212,-0.0288287997
 	attPos0 = -0.877837956,-0.163047791,0.877838016
 	rot = 0.382683456,0,-0.923879564,0
@@ -5247,7 +5420,7 @@ PART
 	part = Grid Fin M Titanium_4293180682
 	partName = Part
 	persistentId = 4208255613
-	pos = -0.848625183,28.7199516,0.848981321
+	pos = -0.848625422,28.7199516,0.848981559
 	attPos = -0.0288287997,-0.00583267212,-0.0288287997
 	attPos0 = 0.877837956,-0.163047791,0.877837896
 	rot = -0.382683456,0,-0.923879564,0
