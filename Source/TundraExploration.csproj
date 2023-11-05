@@ -32,7 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
@@ -67,7 +67,7 @@
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AccessibilityModule">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
@@ -80,14 +80,14 @@
     </Reference>
     <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.ARModule">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.ARModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AudioModule">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.AudioModule.dll</HintPath>
@@ -102,7 +102,7 @@
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CrashReportingModule">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
@@ -123,39 +123,41 @@
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.InputModule">
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.InputModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.InputModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextCoreModule">
       <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.TextCoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UIModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>E:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+      <HintPath>N:\KSP Modding\KSP_x64_Data\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\ModuleTundraCutDrogue.cs" />
+    <Compile Include="Modules\ModuleTundraDepthMask.cs" />
     <Compile Include="Modules\ModuleTundraAnchoredDecoupler.cs" />
     <Compile Include="Modules\ModuleTundraControlSurface.cs" />
     <Compile Include="Modules\ModuleTundraSoot.cs" />
@@ -165,6 +167,7 @@
     <Compile Include="Modules\ModuleTundraRCSAnimation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SootyShader\SootyShaderLoader.cs" />
+    <Compile Include="SootyShader\FlagVariant.cs" />
     <Compile Include="SootyShader\SootyVariant.cs" />
     <Compile Include="Utils\Vector3Renderer.cs" />
     <Compile Include="Utils\Vector3Utils.cs" />
@@ -173,6 +176,6 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>xcopy /Y "$(TargetPath)" "C:\Users\Sofie\Documents\GitHub\TundraExploration\GameData\TundraExploration\Plugin"
-xcopy /Y "$(TargetPath)" "E:\KSP Modding\GameData\TundraExploration\Plugin"</PostBuildEvent>
+xcopy /Y "$(TargetPath)" "N:\KSP Modding\GameData\TundraExploration\Plugin"</PostBuildEvent>
   </PropertyGroup>
 </Project>
