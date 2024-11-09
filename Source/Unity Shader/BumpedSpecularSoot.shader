@@ -52,12 +52,17 @@ Shader "KSP/Bumped Specular Soot"
         }
         ZWrite On
         ZTest LEqual
-        Blend SrcAlpha OneMinusSrcAlpha
 
+		Stencil
+		{
+			Ref 1
+			Comp Always
+			Pass Replace
+		}
         CGPROGRAM
 
         #include "../LightingKSP.cginc"
-        #pragma surface surf BlinnPhongSmooth
+        #pragma surface surf BlinnPhongKSP
 
 		#pragma target 3.5
 
