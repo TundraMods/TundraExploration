@@ -1,0 +1,11 @@
+depends:
+  - name: SpaceXLegs
+  - name: B9PartSwitch
+  - name: ModuleManager
+  - name: TundraTechnologies
+  - name: SmokeScreen
+recommends:
+  - name: Waterfall
+  - name: FMRS
+  - name: FreeIva
+  
