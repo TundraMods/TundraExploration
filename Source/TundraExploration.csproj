@@ -33,21 +33,15 @@
     <PackageReference Include="KSPBuildTools" Version="0.0.2" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Modules\ModuleTundraCutDrogue.cs" />
-    <Compile Include="Modules\ModuleTundraDepthMask.cs" />
     <Compile Include="Modules\ModuleTundraAnchoredDecoupler.cs" />
-    <Compile Include="Modules\ModuleTundraControlSurface.cs" />
     <Compile Include="Modules\ModuleTundraSoot.cs" />
     <Compile Include="Modules\ModuleTundraDecoupler.cs" />
     <Compile Include="Modules\ModuleTundraEngineSwitch.cs" />
-    <Compile Include="Modules\ModuleTundraRaptor.cs" />
     <Compile Include="Modules\ModuleTundraRCSAnimation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SootyShader\SootyShaderLoader.cs" />
     <Compile Include="SootyShader\FlagVariant.cs" />
     <Compile Include="SootyShader\SootyVariant.cs" />
-    <Compile Include="Utils\Vector3Renderer.cs" />
-    <Compile Include="Utils\Vector3Utils.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="HOW_TO_BUILD.txt" />

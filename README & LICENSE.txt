@@ -8,7 +8,18 @@ All configs are distributed under CC-NC-SA-4.0 License.
 The art assets in this pack (all .dds, .png, .dll and .mu files) are distributed under an All Rights Reserved license. You may not redistribute or re-use these assets without express permission from the author.
 All the .cs files are licensed under GPL v3.
 This mod can only be downloaded at SpaceDock.info or Github.com. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
-Updated on Nov 3rd, 2023
+Updated on Nov 21st, 2024
+
+Version 7.1.0
+- Switched project to make use of KSP Build Tools
+- Switched to internally defined dependencies using internal .CKAN file
+- Depend on KSPCommunityPartModules
+- Removed ModuleTundraDepthMask
+- Removed ModuleTundraCutDrogue
+- Removed ModuleTundraControlSurface
+- Removed ModuleTundraRaptor
+- Removed Vector3 Renderer
+- Support Deferred
 
 Version 7.0.0
 - Revamped Ghidorah parts

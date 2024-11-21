@@ -2,10 +2,14 @@ depends:
   - name: SpaceXLegs
   - name: B9PartSwitch
   - name: ModuleManager
-  - name: TundraTechnologies
   - name: SmokeScreen
+  - name: KSPCommunityPartModules
+    version: v0.4.0
 recommends:
   - name: Waterfall
   - name: FMRS
   - name: FreeIva
-  
+  - name: TundraTechnologies
+supports:
+  - name: HullcamVDSContinued
+  - name: Deferred
