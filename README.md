@@ -1,6 +1,8 @@
 # TundraExploration
 This mod was originally created by @tygoo7 and will be continued by me. Tundra Exploration will continue to focus on stock-alike SpaceX and various other space related parts in KSP. Expect many more parts to be added in the future. If you have any suggestions, please leave a comment!
 
+### DO NOT CLONE THE MAIN BRANCH CODE. The plugin is only available in the release package: [Github Releases](https://github.com/TundraMods/TundraExploration/releases/)  
+
 # Current parts
 
 - Rodan (Crew & Cargo Dragon V2)

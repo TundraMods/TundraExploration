@@ -3,3 +3,5 @@ Source/.vs/
 Source/bin/
 Source/obj/
 GameData/*/Parts/@thumbs
+GameData/TundraExploration/Plugin/
+*.user

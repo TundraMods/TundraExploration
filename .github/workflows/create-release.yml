@@ -1,0 +1,16 @@
+name: create-release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version-string:
+        type: string
+        required: true
+
+jobs:
+  create-release:
+    uses: KSPModdingLibs/KSPBuildTools/.github/workflows/create-release.yml@main
+    with:
+      solution-file-path: 'Source/TundraExploration.sln'
+      version-string: ${{ inputs.version-string }}
+      artifacts: GameData Ships Extras README*
