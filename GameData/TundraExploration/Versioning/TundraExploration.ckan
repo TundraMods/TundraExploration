@@ -10,6 +10,6 @@ recommends:
   - name: FMRS
   - name: FreeIva
   - name: TundraTechnologies
+  - name: Deferred
 supports:
   - name: HullcamVDSContinued
-  - name: Deferred
