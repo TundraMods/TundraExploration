@@ -1160,7 +1160,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTundraDepthMask
+		name = ModuleDepthMask
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -1205,7 +1205,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTundraCutDrogue
+		name = ModuleAutoCutDrogue
 		isEnabled = True
 		autoCutDrogue = True
 		triggered = False
@@ -1305,7 +1305,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTundraDepthMask
+		name = ModuleDepthMask
 		isEnabled = True
 		stagingEnabled = True
 		EVENTS
@@ -1383,7 +1383,7 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleTundraCutDrogue
+		name = ModuleAutoCutDrogue
 		isEnabled = True
 		autoCutDrogue = True
 		triggered = False
