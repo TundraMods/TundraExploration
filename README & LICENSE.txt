@@ -11,6 +11,17 @@ This mod can only be downloaded at SpaceDock.info or Github.com. If you notice a
 Updated on Nov 21st, 2024
 
 Version 7.1.0
+- Added support for Deferred Shader
+- Added RO1/R0 Patch
+- Fixed issue on FH nosecone
+- Fixed Gaira Habitat
+- Fixed Block 4 logo orientation
+- Fixed title errors
+- Fixed an issue where B9PS throws an error on ModuleID TE-MVAC when RealFuels-Stock is installed
+- Fixed depthmask issue
+- Removed background from flags
+- Updated B9Tanks config
+- Updated RealFuels Patch
 - Switched project to make use of KSP Build Tools
 - Switched to internally defined dependencies using internal .CKAN file
 - Depend on KSPCommunityPartModules
@@ -19,7 +30,6 @@ Version 7.1.0
 - Removed ModuleTundraControlSurface
 - Removed ModuleTundraRaptor
 - Removed Vector3 Renderer
-- Support Deferred
 
 Version 7.0.0
 - Revamped Ghidorah parts
