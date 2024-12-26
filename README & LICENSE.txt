@@ -10,7 +10,7 @@ All the .cs files are licensed under GPL v3.
 This mod can only be downloaded at SpaceDock.info or Github.com. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on Nov 21st, 2024
 
-Version 7.1.0
+Version 7.1.1
 - Added support for Deferred Shader
 - Added RO1/R0 Patch
 - Fixed issue on FH nosecone
