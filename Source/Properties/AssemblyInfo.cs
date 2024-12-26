@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("aa25c009-e9be-4673-87fa-b01a3f107c33")]
+[assembly: Guid("9639afef-cce4-4814-b385-f3ca3568a6d8")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -32,10 +32,10 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("7.0.0")]
-[assembly: AssemblyFileVersion("7.0.0")]
+[assembly: AssemblyVersion("7.1.0")]
+[assembly: AssemblyFileVersion("7.1.0")]
 
-[assembly: KSPAssembly(name: "TundraExploration"
+[assembly: KSPAssembly(name: "BoringCrewServices"
                      , versionMajor: 7
-                     , versionMinor: 0
+                     , versionMinor: 1
                      , versionRevision: 0)]
