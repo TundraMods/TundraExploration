@@ -35,7 +35,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@")]
 [assembly: AssemblyFileVersion("@VERSION_MAJOR@.@VERSION_MINOR@.@VERSION_PATCH@")]
 
-[assembly: KSPAssembly(name: "BoringCrewServices"
+[assembly: KSPAssembly(name: "TundraExploration"
                      , versionMajor: @VERSION_MAJOR@
                      , versionMinor: @VERSION_MINOR@
                      , versionRevision: @VERSION_PATCH@)]
