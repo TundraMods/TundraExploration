@@ -10,6 +10,19 @@ All the .cs files are licensed under GPL v3.
 This mod can only be downloaded at SpaceDock.info or Github.com. If you notice any other downloadlink on any other website than SpaceDock, please let me know on the KSP forums.
 Updated on Nov 21st, 2024
 
+Version 7.2.0
+- Added/Fixed bulkheadProfile values.
+- Added Methane options to remaining tanks after hard deprecation of Starship-alike parts.
+- Added System Heat for, and adjusted RVS-42 cargo trunk radiator.
+- Added VABOrgaanizer config.
+- Made **Kaijuu Tanks** switchable in flight.
+- Moved B9 subtype color keys to tank definitions.
+- Set proper values for life support units per volume. They were quite nerfed, now they're normal and comparable to CryoTanks and procedural tanks
+- Removed Starship-related patches.
+- Removed references and integration to legacy Pathfinder resource switching.
+- Removed MonoPropellant from **Kaijuu Goods** selector on parts that have the **Fuel Bias** selector. This fixes the B9PS nag and in-flight CTD on fuel switch on those parts.
+- Updated detections for TAC / Kerbalism tank types.
+
 Version 7.1.1
 - Added support for Deferred Shader
 - Added RO1/R0 Patch
